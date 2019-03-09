@@ -1,0 +1,82 @@
+group = 'com.github.halower'
+version = "2.0.7.523"
+
+buildscript {
+    ext {
+        SPRING_IO_VERSION = '1.0.6.RELEASE'
+    }
+    repositories {
+        maven { url 'http://192.168.2.23:8081/repository/maven-public/'}
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
+    }
+}
+
+repositories {
+    maven { url 'http://192.168.2.23:8081/repository/maven-public/'}
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply  plugin: "io.spring.dependency-management"
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+repositories {
+    maven { url 'http://192.168.2.23:8081/repository/maven-public/'}
+}
+
+configurations {
+    all*.exclude module: 'spring-boot-starter-tomcat'
+}
+
+dependencies {
+    implementation ("org.springframework.boot:spring-boot-starter")
+    implementation ("org.springframework.boot:spring-boot-starter-web") {
+        exclude(module: 'spring-boot-starter-tomcat')
+    }
+    implementation("org.springframework.boot:spring-boot-starter-undertow")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-cache")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.projectlombok:lombok")
+    implementation("org.modelmapper:modelmapper")
+    implementation("com.alibaba:fastjson")
+    implementation("com.aliyun.oss:aliyun-sdk-oss")
+    implementation("org.freemarker:freemarker")
+    implementation("com.querydsl:querydsl-jpa")
+    implementation("com.querydsl:querydsl-apt")
+    implementation("com.querydsl:querydsl-sql")
+    implementation("joda-time:joda-time:2.5")
+    implementation("com.spring4all:swagger-spring-boot-starter")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+ext {
+    NEWBIE_VERSION="2.0.7.520"
+    NEXUS_HOST = "http://192.168.2.23:8081/repository/maven-releases/"
+    NEXUS_USERNAME = "admin"
+    NEXUS_PASSWORD = "admin123"
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${NEWBIE_VERSION}"
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "${NEXUS_HOST}") {
+                authentication(userName: "${NEXUS_USERNAME}", password: "${NEXUS_PASSWORD}")
+            }
+        }
+    }
+}
+

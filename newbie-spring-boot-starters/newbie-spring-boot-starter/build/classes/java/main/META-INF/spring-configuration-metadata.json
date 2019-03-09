@@ -1,0 +1,67 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
+      "name": "newbie",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfig"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "name": "newbie.storage",
+      "type": "com.newbie.core.storage.config.StorageConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
+      "defaultValue": "USER-ID",
+      "name": "newbie.auditor-tag-in-head",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
+      "defaultValue": false,
+      "name": "newbie.auto-record-request-details",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
+      "defaultValue": "dev",
+      "name": "newbie.env",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
+      "defaultValue": false,
+      "name": "newbie.receive-request-event",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "name": "newbie.storage.access-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "defaultValue": "upload",
+      "name": "newbie.storage.bucket",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "name": "newbie.storage.endpoint",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "name": "newbie.storage.secret-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "name": "newbie.storage.service",
+      "type": "java.lang.String"
+    }
+  ]
+}
