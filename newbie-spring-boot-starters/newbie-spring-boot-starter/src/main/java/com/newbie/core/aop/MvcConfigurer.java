@@ -1,4 +1,4 @@
-package com.newbie.core.config;
+package com.newbie.core.aop;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

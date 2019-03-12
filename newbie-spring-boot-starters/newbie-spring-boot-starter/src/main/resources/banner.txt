@@ -1,3 +1,4 @@
+${AnsiColor.GREEN}
  __  __  ____    __      __  ____    ______   ____
 /\ \/\ \/\  _`\ /\ \  __/\ \/\  _`\ /\__  _\ /\  _`\
 \ \ `\\ \ \ \L\_\ \ \/\ \ \ \ \ \L\ \/_/\ \/ \ \ \L\_\
@@ -6,3 +7,8 @@
    \ \_\ \_\ \____/\ `\___x___/\ \____/ /\_____\\ \____/
     \/_/\/_/\/___/  '\/__//__/  \/___/  \/_____/ \/___/
                           欢迎使用NEWBIW辅助你的开发进程
+${AnsiColor.BLUE}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
+Powered By halower.github.com
+NewBieBoot ${newbie-boot.version} ${newbie-boot.formatted-version}基于 Spring Boot 的基础上进行构建，并且完全兼容 Spring Boot。
+${AnsiColor.BLACK}

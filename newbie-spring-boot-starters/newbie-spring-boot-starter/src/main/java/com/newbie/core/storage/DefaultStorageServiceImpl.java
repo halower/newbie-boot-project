@@ -5,6 +5,7 @@ import com.newbie.core.exception.ResponseTypes;
 import com.newbie.core.storage.config.StorageConfig;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,6 +17,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Service("default_storage_service")
+@ComponentScan("com.newbie.core.storage")
 public class DefaultStorageServiceImpl implements StorageService {
     @Autowired
     private HttpServletResponse response;

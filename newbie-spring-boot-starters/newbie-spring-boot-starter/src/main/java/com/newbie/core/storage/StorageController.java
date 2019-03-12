@@ -1,6 +1,7 @@
 package com.newbie.core.storage;
 import com.newbie.core.dto.ResponseResult;
 import com.newbie.core.exception.ResponseTypes;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -9,6 +10,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/api/storage")
+@ComponentScan("com.newbie.core.storage")
 public class StorageController {
     @Resource(name ="${newbie.storage.service:default_storage_service}")
     private StorageService storageService;
