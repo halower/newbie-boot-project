@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "2.0.7.531.6"
+version = "2.0.7.531.6.6.3"
 
 buildscript {
     ext {

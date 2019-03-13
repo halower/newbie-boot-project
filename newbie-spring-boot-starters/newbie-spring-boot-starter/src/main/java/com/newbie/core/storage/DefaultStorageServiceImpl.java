@@ -2,7 +2,7 @@ package com.newbie.core.storage;
 
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.ResponseTypes;
-import com.newbie.core.storage.config.StorageConfig;
+import com.newbie.core.storage.config.StorageConfiguation;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,7 +23,7 @@ public class DefaultStorageServiceImpl implements StorageService {
     private HttpServletResponse response;
 
     @Autowired
-    private StorageConfig storageConfig;
+    private StorageConfiguation storageConfig;
 
     @Autowired
     private Environment env;

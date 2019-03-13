@@ -5,10 +5,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 
+@Data
 @Configuration
 @ConfigurationProperties(prefix = "newbie.storage")
-@Data
-public class StorageConfig {
+public class StorageConfiguation {
     private String bucket = "upload";
     private String accessKey;
     private String secretKey;
