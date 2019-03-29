@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.openfeign:feign-slf4j:10.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.openfeign/feign-slf4j/10.1.0/8cc808dea8e8c0f87d31a7693f4d3638a5293699/feign-slf4j-10.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.openfeign/feign-slf4j/10.1.0/824ff615b144bf1c0ecdab322f77563a223e90aa/feign-slf4j-10.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

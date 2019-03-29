@@ -8,3 +8,4 @@ import org.springframework.context.annotation.Import;
 @Import({ VersionEndpointConfiguration.class })
 public class NewBieBootInfraAutoConfiguration {
 }
+

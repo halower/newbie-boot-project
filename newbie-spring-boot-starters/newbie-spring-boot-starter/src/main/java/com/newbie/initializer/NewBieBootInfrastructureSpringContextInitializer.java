@@ -18,7 +18,7 @@ public class NewBieBootInfrastructureSpringContextInitializer
     public void initialize(ConfigurableApplicationContext applicationContext) {
         Environment environment = applicationContext.getEnvironment();
         if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
-            return;
+            log.info("当前接入SpringCloud环境");
         }
         log.info("NewBieBoot基础设施已经准备就绪!");
     }

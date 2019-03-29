@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" group="newbie-spring-boot-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis.iml" group="newbie-spring-boot-starter-redis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" group="newbie-spring-boot-starter-redis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" group="newbie-spring-boot-starter-redis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" group="newbie-spring-boot-starter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" group="newbie-spring-boot-starter" />
+      <module fileurl="file://$PROJECT_DIR$/newbie-spring-boot-starters.iml" filepath="$PROJECT_DIR$/newbie-spring-boot-starters.iml" />
+    </modules>
+  </component>
+</project>

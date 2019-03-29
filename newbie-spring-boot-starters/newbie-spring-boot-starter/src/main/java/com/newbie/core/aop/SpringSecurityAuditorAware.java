@@ -1,6 +1,6 @@
 package com.newbie.core.aop;
 
-import com.newbie.core.aop.config.NewBieBasicConfig;
+import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.AuditorAware;
@@ -14,7 +14,7 @@ import java.util.Optional;
 @Component
 public class SpringSecurityAuditorAware implements AuditorAware<String> {
     @Autowired
-    private NewBieBasicConfig basicConfig;
+    private NewBieBasicConfiguration basicConfig;
 
     @Override
     @SneakyThrows

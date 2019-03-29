@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-starter</artifactId>
-  <version>2.0.7.531.6.6.3</version>
+  <version>alpha.1.0.1.1</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -11,12 +11,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -30,7 +30,7 @@
           <groupId>*</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
           <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
@@ -41,12 +41,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -56,12 +56,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -71,12 +71,28 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
           <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>2.1.2.RELEASE</version>
+      <scope>runtime</scope>
+      <exclusions>
         <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -86,12 +102,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -101,12 +117,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -116,12 +132,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -131,12 +147,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -146,27 +162,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
         </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.aliyun.oss</groupId>
-      <artifactId>aliyun-sdk-oss</artifactId>
-      <scope>runtime</scope>
-      <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
           <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -176,12 +177,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -191,12 +192,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -206,12 +207,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -221,12 +222,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -237,12 +238,28 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
           <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.7</version>
+      <scope>runtime</scope>
+      <exclusions>
         <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -252,12 +269,12 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>spring-boot-starter-tomcat</artifactId>
           <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          <groupId>org.jboss.spec.javax.servlet</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -278,7 +295,7 @@
       <dependency>
         <groupId>com.github.halower</groupId>
         <artifactId>newbie-spring-boot-dependencies</artifactId>
-        <version>2.0.7.520</version>
+        <version>alpha.1.0.1</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

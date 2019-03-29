@@ -1,7 +1,7 @@
 package com.newbie.core.aop;
 
 import com.alibaba.fastjson.JSON;
-import com.newbie.core.aop.config.NewBieBasicConfig;
+import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.audit.BusinessEventData;
 import com.newbie.core.event.EventBus;
 import io.swagger.annotations.ApiOperation;
@@ -25,7 +25,7 @@ import java.lang.reflect.Method;
 @Component
 public class BaseRequestAspect {
     @Autowired
-    private NewBieBasicConfig basicConfig;
+    private NewBieBasicConfiguration basicConfig;
 
     @Pointcut(value ="execution(public * *..controller..*.*(..))")
     public void logPointCut() {
@@ -43,25 +43,25 @@ public class BaseRequestAspect {
         String methodName = joinPoint.getSignature().getName();
         Method[] methods = targetClass.getMethods();
         Object[]  args = joinPoint.getArgs();
-        BusinessEventData businessLog;
+        BusinessEventData businessEventData;
         for (Method method : methods) {
             if (method.getName().equalsIgnoreCase(methodName)) {
                 Class<?>[] clazz = method.getParameterTypes();
                 if (clazz.length == args.length) {
                     var desc = method.getAnnotation(ApiOperation.class);
-                    businessLog = BusinessEventData.builder().requestUrl(request.getRequestURL().toString())
+                    businessEventData = BusinessEventData.builder().requestUrl(request.getRequestURL().toString())
                             .requestIp(request.getRemoteAddr()).requestMethod(request.getMethod())
                             .callMethod(joinPoint.getSignature().getDeclaringTypeName() + "." + methodName)
                             .args(JSON.toJSONString(args))
                             .retrunVal(JSON.toJSONString(next))
                             .offsetTime((System.currentTimeMillis() - startTime) + "")
                             .build();
-                    businessLog.setDescription(desc!= null? desc.value(): "");
+                    businessEventData.setDescription(desc!= null? desc.value(): "");
                     if(basicConfig.isReceiveRequestEvent()) {
-                        EventBus.trigger(businessLog);
+                        EventBus.trigger(businessEventData);
                     }
                     if(basicConfig.isAutoRecordRequestDetails()){
-                        log.info(JSON.toJSONString(businessLog));
+                        log.info(JSON.toJSONString(businessEventData));
                     }
                     break;
                 }

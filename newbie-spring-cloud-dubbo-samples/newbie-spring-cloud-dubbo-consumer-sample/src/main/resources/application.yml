@@ -1,0 +1,31 @@
+dubbo:
+  registry:
+    address: spring-cloud://localhost:8500
+
+server:
+  port: 50000
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        enabled: false
+        register-enabled: false
+    zookeeper:
+      enabled: false
+    consul:
+      discovery:
+        enabled: true
+        host: 127.0.0.1
+        port: 8500
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

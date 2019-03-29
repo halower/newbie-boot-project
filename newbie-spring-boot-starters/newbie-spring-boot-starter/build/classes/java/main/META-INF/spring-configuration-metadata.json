@@ -1,518 +1,86 @@
 {
-  "hints": [],
   "groups": [
     {
-      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
       "name": "management.endpoint.versions",
-      "type": "com.newbie.endpoint.NewbieBootVersionEndpoint"
+      "type": "com.newbie.endpoint.NewbieBootVersionEndpoint",
+      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint"
     },
     {
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
       "name": "newbie",
-      "type": "com.newbie.core.aop.config.NewBieBasicConfig"
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
       "name": "newbie.storage",
-      "type": "com.newbie.core.storage.config.StorageConfig"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.SecondaryDataSourceConfiguation",
-      "name": "spring.datasource.read",
-      "sourceMethod": "secondaryDataSourceProperties()",
-      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.SecondaryDataSourceConfiguation",
-      "name": "spring.datasource.read",
-      "sourceMethod": "secondaryDataSource()",
-      "type": "javax.sql.DataSource"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.xa",
-      "sourceMethod": "getXa()",
-      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.PrimaryDataSourceConfiguation",
-      "name": "spring.datasource.write",
-      "sourceMethod": "primaryDataSourceProperties()",
-      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.PrimaryDataSourceConfiguation",
-      "name": "spring.datasource.write",
-      "sourceMethod": "primaryDataSource()",
-      "type": "javax.sql.DataSource"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.ReadDataSourceConfiguration",
-      "name": "spring.datasource.write",
-      "type": "com.newbie.core.persistent.datasource.ReadDataSourceConfiguration"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.WriteDataSourceConfiguration",
-      "name": "spring.datasource.write",
-      "type": "com.newbie.core.persistent.datasource.WriteDataSourceConfiguration"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.xa",
-      "sourceMethod": "getXa()",
-      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.ReadJpaConfiguation",
-      "name": "spring.jpa.read",
-      "type": "com.newbie.core.persistent.datasource.ReadJpaConfiguation"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.SecondaryDataSourceConfiguation",
-      "name": "spring.jpa.read",
-      "sourceMethod": "secondaryJpaProperties()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.hibernate",
-      "sourceMethod": "getHibernate()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.read.hibernate.naming",
-      "sourceMethod": "getNaming()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.PrimaryDataSourceConfiguation",
-      "name": "spring.jpa.write",
-      "sourceMethod": "primaryJpaProperties()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.WriteJpaConfiguation",
-      "name": "spring.jpa.write",
-      "type": "com.newbie.core.persistent.datasource.WriteJpaConfiguation"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.hibernate",
-      "sourceMethod": "getHibernate()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.write.hibernate.naming",
-      "sourceMethod": "getNaming()",
-      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming"
+      "type": "com.newbie.core.storage.config.StorageConfig",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     }
   ],
   "properties": [
     {
-      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
-      "defaultValue": "0ms",
       "name": "management.endpoint.versions.cache.time-to-live",
+      "type": "java.time.Duration",
       "description": "Maximum time that a response can be cached.",
-      "type": "java.time.Duration"
-    },
-    {
       "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
-      "defaultValue": true,
+      "defaultValue": "0ms"
+    },
+    {
       "name": "management.endpoint.versions.enabled",
+      "type": "java.lang.Boolean",
       "description": "Whether to enable the versions endpoint.",
-      "type": "java.lang.Boolean"
+      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
+      "defaultValue": true
     },
     {
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
-      "defaultValue": "USER-ID",
       "name": "newbie.auditor-tag-in-head",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "USER-ID"
     },
     {
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
-      "defaultValue": false,
       "name": "newbie.auto-record-request-details",
-      "type": "java.lang.Boolean"
+      "type": "java.lang.Boolean",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": false
     },
     {
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
-      "defaultValue": "dev",
       "name": "newbie.env",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "dev"
     },
     {
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfig",
-      "defaultValue": false,
       "name": "newbie.receive-request-event",
-      "type": "java.lang.Boolean"
+      "type": "java.lang.Boolean",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": false
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
       "name": "newbie.storage.access-key",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
-      "defaultValue": "upload",
       "name": "newbie.storage.bucket",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig",
+      "defaultValue": "upload"
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
       "name": "newbie.storage.endpoint",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
       "name": "newbie.storage.secret-key",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     },
     {
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
       "name": "newbie.storage.service",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.continue-on-error",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.data",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.data-password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.data-username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.driver-class-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.generate-unique-name",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.initialization-mode",
-      "type": "org.springframework.boot.jdbc.DataSourceInitializationMode"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.jndi-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.platform",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.schema",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.schema-password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.schema-username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.separator",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.sql-script-encoding",
-      "type": "java.nio.charset.Charset"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.type",
-      "type": "java.lang.Class<? extends javax.sql.DataSource>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.url",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.read.username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
-      "name": "spring.datasource.read.xa.data-source-class-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
-      "name": "spring.datasource.read.xa.properties",
-      "type": "java.util.Map<java.lang.String,java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.continue-on-error",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.data",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.data-password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.data-username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.driver-class-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.generate-unique-name",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.initialization-mode",
-      "type": "org.springframework.boot.jdbc.DataSourceInitializationMode"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.jndi-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.platform",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.ReadDataSourceConfiguration",
-      "name": "spring.datasource.write.scan-entity-packages",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.WriteDataSourceConfiguration",
-      "name": "spring.datasource.write.scan-entity-packages",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.ReadDataSourceConfiguration",
-      "name": "spring.datasource.write.scan-repository-packages",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "com.newbie.core.persistent.datasource.WriteDataSourceConfiguration",
-      "name": "spring.datasource.write.scan-repository-packages",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.schema",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.schema-password",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.schema-username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.separator",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.sql-script-encoding",
-      "type": "java.nio.charset.Charset"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.type",
-      "type": "java.lang.Class<? extends javax.sql.DataSource>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.url",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
-      "name": "spring.datasource.write.username",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
-      "name": "spring.datasource.write.xa.data-source-class-name",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
-      "name": "spring.datasource.write.xa.properties",
-      "type": "java.util.Map<java.lang.String,java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.database",
-      "type": "org.springframework.orm.jpa.vendor.Database"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.database-platform",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.generate-ddl",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.read.hibernate.ddl-auto",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming",
-      "name": "spring.jpa.read.hibernate.naming.implicit-strategy",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming",
-      "name": "spring.jpa.read.hibernate.naming.physical-strategy",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.read.hibernate.use-new-id-generator-mappings",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.mapping-resources",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.open-in-view",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.properties",
-      "type": "java.util.Map<java.lang.String,java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.read.show-sql",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.database",
-      "type": "org.springframework.orm.jpa.vendor.Database"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.database-platform",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.generate-ddl",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.write.hibernate.ddl-auto",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming",
-      "name": "spring.jpa.write.hibernate.naming.implicit-strategy",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Naming",
-      "name": "spring.jpa.write.hibernate.naming.physical-strategy",
-      "type": "java.lang.String"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
-      "name": "spring.jpa.write.hibernate.use-new-id-generator-mappings",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.mapping-resources",
-      "type": "java.util.List<java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.open-in-view",
-      "type": "java.lang.Boolean"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.properties",
-      "type": "java.util.Map<java.lang.String,java.lang.String>"
-    },
-    {
-      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
-      "name": "spring.jpa.write.show-sql",
-      "type": "java.lang.Boolean"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     }
-  ]
+  ],
+  "hints": []
 }

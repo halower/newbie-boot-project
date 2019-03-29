@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.javax-inject:1_2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_2/f146c0e62c9a8c62e04fb99b6f1b8e1cd8213be9/org.apache.servicemix.bundles.javax-inject-1_2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/1_2/9086a857a5ff878c0c20a3d806f4ed1d3d46f8a3/org.apache.servicemix.bundles.javax-inject-1_2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

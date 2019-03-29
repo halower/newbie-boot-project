@@ -1,6 +1,6 @@
 package com.newbie.core.aop;
 
-import com.newbie.core.aop.config.NewBieBasicConfig;
+import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.dto.ResponseResult;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.ResponseTypes;
@@ -18,18 +18,17 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class ErrorControllerAdvice  {
     @Autowired
-    private NewBieBasicConfig basicConfig;
+    private NewBieBasicConfiguration basicConfig;
 
     @ExceptionHandler(value=Exception.class)
     @ResponseBody
     public ResponseResult allExceptionHandler(HttpServletRequest request, Exception exception) {
-        if(exception instanceof BusinessException){
+       var isDev = basicConfig.getEnv().equals("dev");
+        if(exception instanceof  BusinessException){
             var exceptionType = ((BusinessException) exception).getExceptionType();
-            ResponseResult res = new ResponseResult(exceptionType,!basicConfig.getEnv().equals("dev")? exceptionType.getDesc() : exception.getMessage(),null);
-            return res;
+            return new ResponseResult(exceptionType, exception.getMessage(),null);
         }
-        var res = new ResponseResult(ResponseTypes.UNKNOW,!basicConfig.getEnv().equals("dev")? ResponseTypes.UNKNOW.getDesc() : exception.getMessage(),null);
-        return  res;
-
+        log.error(exception.getMessage());
+        return new ResponseResult(ResponseTypes.UNKNOW, exception.getMessage(),isDev?exception.getStackTrace():null);
     }
 }

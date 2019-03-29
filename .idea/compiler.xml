@@ -7,10 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="newbie-spring-boot-dependencies" />
+        <module name="newbie-spring-boot-management" />
+        <module name="newbie-spring-cloud-dubbo-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="newbie-spring-boot-commons_main" target="1.8" />
+      <module name="newbie-spring-boot-commons_test" target="1.8" />
+      <module name="newbie-spring-boot-management~1" target="1.5" />
       <module name="newbie-spring-boot-parent" target="1.5" />
+      <module name="newbie-spring-boot-starter-dubbo_main" target="1.8" />
+      <module name="newbie-spring-boot-starter-dubbo_test" target="1.8" />
       <module name="newbie-spring-boot-starter_generated" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_main" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_test" target="1.8" />
@@ -18,6 +26,13 @@
       <module name="newbie-spring-boot-stater-jpa_test" target="1.8" />
       <module name="newbie-spring-boot-stater-oss_main" target="1.8" />
       <module name="newbie-spring-boot-stater-oss_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-consumer-sample_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-consumer-sample_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-providers-sample_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-providers-sample_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples_test" target="1.8" />
+      <module name="newbiespringbootmanagement" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

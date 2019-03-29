@@ -1,3 +1,0 @@
-rootProject.name = "newbie-spring-boot-starters"
-include ":newbie-spring-boot-starter"
-include ":newbie-spring-boot-starter-redis"

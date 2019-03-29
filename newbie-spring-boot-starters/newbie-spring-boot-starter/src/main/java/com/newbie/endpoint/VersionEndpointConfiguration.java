@@ -16,5 +16,4 @@ public class VersionEndpointConfiguration {
             return new NewbieBootVersionEndpoint();
         }
     }
-
 }

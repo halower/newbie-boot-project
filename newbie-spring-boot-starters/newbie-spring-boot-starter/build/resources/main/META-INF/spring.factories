@@ -2,8 +2,7 @@ org.springframework.context.ApplicationContextInitializer=\
 com.newbie.initializer.NewBieBootInfrastructureSpringContextInitializer
 
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.newbie.starter.NewBieApplicationConfiguration,\
-  com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration,\
-  com.newbie.autoconfigure.NewBieSimpleCqrsAutoConfiguation
+  com.newbie.autoconfigure.NewBieApplicationConfiguration,\
+  com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration
 
 org.springframework.boot.env.EnvironmentPostProcessor=com.newbie.env.EnvironmentCustomizer

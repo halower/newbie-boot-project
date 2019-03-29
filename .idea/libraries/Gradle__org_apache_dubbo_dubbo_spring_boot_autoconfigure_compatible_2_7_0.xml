@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.dubbo:dubbo-spring-boot-autoconfigure-compatible:2.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure-compatible/2.7.0/3b34dddae18092f3ff5e8fef36f27ab9b8160275/dubbo-spring-boot-autoconfigure-compatible-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure-compatible/2.7.0/deaff0e8e9f0b4a054189a90addbe3553888c17e/dubbo-spring-boot-autoconfigure-compatible-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
