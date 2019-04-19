@@ -6,7 +6,7 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-dependencies</artifactId>
-    <version>alpha.1.0.1</version>
+    <version>alpha.qcs.1.3.3</version>
 
     <properties>
         <DUBBO_VERSION>2.7.0</DUBBO_VERSION>
@@ -27,9 +27,39 @@
         <JODA_TIME_VERSION>2.5</JODA_TIME_VERSION>
         <HTTP_CLIENT_VERSION>4.5.7</HTTP_CLIENT_VERSION>
         <DUBBO_VERSION>2.7.0</DUBBO_VERSION>
+        <JLINQ_VERSION>1.8.25</JLINQ_VERSION>
+        <LOG-SERVICE-VERSION>0.1.1-ALPHA</LOG-SERVICE-VERSION>
+        <VALIDATION_API_VERSION>2.0.1.Final</VALIDATION_API_VERSION>
+        <JACKSON_ANNOTATIONS_VERSION>2.9.5</JACKSON_ANNOTATIONS_VERSION>
+        <SWAGGER_ANNOTATIONS_VERSION>1.5.22</SWAGGER_ANNOTATIONS_VERSION>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.jinq</groupId>
+                <artifactId>jinq-jpa</artifactId>
+                <version>${JLINQ_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${SWAGGER_ANNOTATIONS_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${VALIDATION_API_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tfswx.tyyw.log-service</groupId>
+                <artifactId>collector</artifactId>
+                <version>${LOG-SERVICE-VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${JACKSON_ANNOTATIONS_VERSION}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
@@ -196,13 +226,13 @@
         <repository>
             <id>nexus-releases</id>
             <url>
-                http://192.168.2.23:8081/repository/maven-releases/
+                http://192.168.2.119:8081/repository/maven-releases/
             </url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <url>
-                http://192.168.2.23:8081/repository/snapshots/
+                http://192.168.2.119:8081/repository/snapshots/
             </url>
         </snapshotRepository>
     </distributionManagement>

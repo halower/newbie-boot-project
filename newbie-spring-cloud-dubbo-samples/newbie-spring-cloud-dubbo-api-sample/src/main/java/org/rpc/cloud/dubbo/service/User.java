@@ -21,7 +21,7 @@ import java.io.Serializable;
 /**
  * User Entity
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class User implements Serializable {
 

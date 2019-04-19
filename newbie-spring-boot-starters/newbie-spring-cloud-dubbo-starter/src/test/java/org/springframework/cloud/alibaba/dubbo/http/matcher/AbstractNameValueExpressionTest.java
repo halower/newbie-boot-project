@@ -26,7 +26,7 @@ import java.lang.reflect.Constructor;
 /**
  * {@link AbstractNameValueExpression} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public abstract class AbstractNameValueExpressionTest<T extends AbstractNameValueExpression> {
 

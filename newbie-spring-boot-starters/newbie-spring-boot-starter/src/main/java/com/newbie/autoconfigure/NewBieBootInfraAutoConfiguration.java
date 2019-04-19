@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@Import({ VersionEndpointConfiguration.class })
+@Import({VersionEndpointConfiguration.class})
 public class NewBieBootInfraAutoConfiguration {
 }
 

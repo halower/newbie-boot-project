@@ -10,4 +10,6 @@ include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-provider-sa
 include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-api-sample'
 include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-consumer-sample'
 include 'newbie-spring-boot-api-dto'
+include 'newbie-spring-boot-starters:newbie-spring-boot-oauth'
+findProject(':newbie-spring-boot-starters:newbie-spring-boot-oauth')?.name = 'newbie-spring-boot-oauth'
 

@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.1.0"
+version = "alpha.qcs.1.1"
 
 
 apply plugin: 'java'
@@ -14,7 +14,7 @@ buildscript {
         SPRING_IO_VERSION = '1.0.6.RELEASE'
     }
     repositories {
-        maven { url 'http://192.168.2.23:8081/repository/maven-public/'}
+        maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
     }
     dependencies {
         classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
@@ -22,7 +22,7 @@ buildscript {
 }
 
 repositories {
-    maven { url 'http://192.168.2.23:8081/repository/maven-public/'}
+    maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
 }
 
 apply  plugin: "io.spring.dependency-management"
@@ -37,8 +37,8 @@ dependencies {
 }
 
 ext {
-    NEWBIE_VERSION="alpha.1.0"
-    NEXUS_HOST = "http://192.168.2.23:8081/repository/maven-releases/"
+    NEWBIE_VERSION="alpha.qcs.1.1"
+    NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
     NEXUS_USERNAME = "admin"
     NEXUS_PASSWORD = "admin123"
 }

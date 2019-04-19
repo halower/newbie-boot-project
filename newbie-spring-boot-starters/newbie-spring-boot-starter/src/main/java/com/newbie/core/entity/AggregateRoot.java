@@ -2,7 +2,7 @@ package com.newbie.core.entity;
 
 import java.io.Serializable;
 
-public abstract class AggregateRoot <K extends Serializable> implements BaseEntity {
+public abstract class AggregateRoot <K extends Serializable> implements Serializable {
     /**
      * get aggregate root
      *

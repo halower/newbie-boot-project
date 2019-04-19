@@ -41,7 +41,7 @@ import static java.util.Collections.unmodifiableList;
 /**
  * {@link HttpMessageConverter} Resolver
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class HttpMessageConverterResolver {
 

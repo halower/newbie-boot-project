@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.1.0.1.2"
+version = "alpha.qcs.1.2.2"
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -14,7 +14,7 @@ buildscript {
     }
     repositories {
         maven { url "https://plugins.gradle.org/m2/" }
-        maven { url 'http://192.168.2.23:8081/repository/maven-public/' }
+        maven { url 'http://192.168.2.119:8081/repository/maven-public/' }
     }
     dependencies {
         classpath 'com.netflix.nebula:gradle-extra-configurations-plugin:5.0.0'
@@ -26,44 +26,48 @@ buildscript {
 repositories {
     maven { url 'https://repo.spring.io/snapshot' }
     maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
-    maven { url 'http://192.168.2.23:8081/repository/maven-public/' }
+    maven { url 'http://192.168.2.119:8081/repository/maven-public/' }
 }
 
 
 apply plugin: "io.spring.dependency-management"
 apply plugin: 'nebula.optional-base'
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-actuator', version: '2.1.2.RELEASE', optional
-    compile group: 'org.springframework.boot', name: 'spring-boot-actuator-autoconfigure', version: '2.1.2.RELEASE', optional
-    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.1.2.RELEASE', optional
-    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.1.2.RELEASE', optional
-    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.2.RELEASE', optional
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-commons', version: '2.1.0.RELEASE', optional
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-context', version: '2.1.0.RELEASE', optional
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '2.1.0.RELEASE', optional
-    compile(group: 'org.springframework.cloud', name: 'spring-cloud-starter-zookeeper-discovery', version: '2.1.0.RELEASE',optional)
-    compile(group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.12',optional)
-    compile(group: 'org.apache.curator', name: 'curator-framework', version: '4.0.1',optional)
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-discovery', version: '2.1.0.RELEASE', optional
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-openfeign-core', version: '2.1.0.RELEASE', optional
-    compile(group: 'org.apache.dubbo', name: 'dubbo', version: '2.7.0') {
+    compile group: 'org.springframework.boot', name: 'spring-boot-actuator', version:'2.1.2.RELEASE',optional
+    compile group: 'org.springframework.boot', name: 'spring-boot-actuator-autoconfigure', version:'2.1.2.RELEASE',optional
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version:'2.1.2.RELEASE',optional
+    compile group: 'org.springframework.boot', name: 'spring-boot', version:'2.1.2.RELEASE',optional
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version:'2.1.2.RELEASE',optional
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-commons', version:'2.1.0.RELEASE',optional
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-context', version:'2.1.0.RELEASE',optional
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version:'2.1.0.RELEASE',optional
+    compile(group: 'org.springframework.cloud', name: 'spring-cloud-starter-zookeeper-discovery', version:'2.1.0.RELEASE',optional)
+    compile(group: 'org.apache.zookeeper', name: 'zookeeper', version:'3.4.12') {
+        exclude(module: 'slf4j-log4j12')
+    }
+    compile(group: 'org.apache.curator', name: 'curator-framework', version:'4.0.1') {
+        exclude(module: 'zookeeper')
+    }
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-discovery', version:'2.1.0.RELEASE',optional
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-openfeign-core', version:'2.1.0.RELEASE'
+    compile(group: 'org.apache.dubbo', name: 'dubbo', version:'2.7.1') {
         exclude(module: 'spring')
         exclude(module: 'servlet-api')
         exclude(module: 'log4j')
     }
-    compile group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: '2.7.0'
-    compile group: 'io.netty', name: 'netty-all', version: '4.1.31.Final'
-    compile group: 'io.github.openfeign', name: 'feign-jaxrs2', version: '9.7.0'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'org.springframework', name: 'spring-test', version: '5.1.4.RELEASE'
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.2.RELEASE'
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-test', version: '2.1.2.RELEASE'
-    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    compile group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version:'2.7.0'
+    compile group: 'io.netty', name: 'netty-all', version:'4.1.31.Final'
+    compile group: 'io.github.openfeign', name: 'feign-jaxrs2', version:'9.7.0'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'org.springframework', name: 'spring-test', version:'5.1.4.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'2.1.2.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-test', version:'2.1.2.RELEASE'
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version:'4.0.1'
 }
 
 ext {
-    NEWBIE_VERSION="alpha.1.0.1"
-    NEXUS_HOST = "http://192.168.2.23:8081/repository/maven-releases/"
+    NEWBIE_VERSION="alpha.qcs.1.1"
+    NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
     NEXUS_USERNAME = "admin"
     NEXUS_PASSWORD = "admin123"
 }

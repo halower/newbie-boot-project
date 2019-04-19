@@ -6,19 +6,49 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>alpha.1.0.1</version>
+    <version>alpha.qcs.1.4.1</version>
 
     <properties>
-        <NEWBIE_BOOT_VERSION>alpha.1.0</NEWBIE_BOOT_VERSION>
-        <NEWBIE_BOOT_REDIS_VERSION>alpha.1.0</NEWBIE_BOOT_REDIS_VERSION>
-        <NEWBIE_BOOT_COMMONS_VERSION>alpha.1.0</NEWBIE_BOOT_COMMONS_VERSION>
-        <NEWBIE_BOOT_DUBBO_VERSION>alpha.1.0</NEWBIE_BOOT_DUBBO_VERSION>
+        <NEWBIE_BOOT_STATER_VERSION>alpha.qcs.1.3.2</NEWBIE_BOOT_STATER_VERSION>
+        <NEWBIE_BOOT_REDIS_VERSION>alpha.qcs.1.1</NEWBIE_BOOT_REDIS_VERSION>
+        <NEWBIE_BOOT_DTO_VERSION>alpha.qcs.1.2.6</NEWBIE_BOOT_DTO_VERSION>
+        <NEWBIE_BOOT_DUBBO_VERSION>alpha.qcs.1.2.2</NEWBIE_BOOT_DUBBO_VERSION>
+        <NEWBIE_NACOS_DISCOVERY_VERSION>alpha.qcs.1.2.5</NEWBIE_NACOS_DISCOVERY_VERSION>
+        <CONSUL_DISCOVERY_VERSION>2.1.1.RELEASE</CONSUL_DISCOVERY_VERSION>
+        <OPEN_FEIGN_VERSION>2.1.0.RELEASE</OPEN_FEIGN_VERSION>
         <LOGSTASH_VERSION>5.2</LOGSTASH_VERSION>
         <H2_VERSION>1.4.197</H2_VERSION>
-        <DM_VERSION>16</DM_VERSION>
+        <DM_VERSION>18</DM_VERSION>
+        <LOG-SERVICE-VERSION>0.1.1-ALPHA</LOG-SERVICE-VERSION>
+        <ORACLE_OJDBC_VERSION>11.2.0.3</ORACLE_OJDBC_VERSION>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.tfswx.tyyw.log-service</groupId>
+                <artifactId>collector</artifactId>
+                <version>${LOG-SERVICE-VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc6</artifactId>
+                <version>${ORACLE_OJDBC_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dm</groupId>
+                <artifactId>dialect</artifactId>
+                <version>hibernate5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dm</groupId>
+                <artifactId>hibernateSpatial</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.halower</groupId>
+                <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
+                <version>${NEWBIE_NACOS_DISCOVERY_VERSION}</version>
+            </dependency>
             <dependency>
                 <groupId>com.dm</groupId>
                 <artifactId>jdbcDriver</artifactId>
@@ -37,7 +67,7 @@
             <dependency>
                 <groupId>com.github.halower</groupId>
                 <artifactId>newbie-spring-boot-starter</artifactId>
-                <version>${NEWBIE_BOOT_VERSION}</version>
+                <version>${NEWBIE_BOOT_STATER_VERSION}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>
@@ -46,8 +76,8 @@
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>
-                <artifactId>newbie-spring-boot-commons</artifactId>
-                <version>${NEWBIE_BOOT_COMMONS_VERSION}</version>
+                <artifactId>newbie-spring-boot-api-dto</artifactId>
+                <version>${NEWBIE_BOOT_DTO_VERSION}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>
@@ -60,14 +90,14 @@
                 <version>${H2_VERSION}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${DUBBO_VERSION}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+                <version>${CONSUL_DISCOVERY_VERSION}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>${DUBBO_VERSION}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${OPEN_FEIGN_VERSION}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -75,13 +105,13 @@
         <repository>
             <id>nexus-releases</id>
             <url>
-                http://192.168.2.23:8081/repository/maven-releases/
+                http://192.168.2.119:8081/repository/maven-releases/
             </url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <url>
-                http://192.168.2.23:8081/repository/snapshots/
+                http://192.168.2.119:8081/repository/snapshots/
             </url>
         </snapshotRepository>
     </distributionManagement>

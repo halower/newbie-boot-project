@@ -23,7 +23,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * HTTP Server Request
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public interface HttpServerRequest extends HttpRequest, HttpInputMessage {
 

@@ -25,7 +25,7 @@ import static org.springframework.cloud.alibaba.dubbo.http.DefaultHttpRequest.bu
 /**
  * {@link ParamExpression} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class ParamExpressionTest extends AbstractNameValueExpressionTest<ParamExpression> {
 

@@ -10,6 +10,17 @@ import java.lang.annotation.Target;
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 public @interface RemoteFacade {
+    /**
+     * 是否为内部接口
+     * @return
+     */
+     boolean isInner() default  false;
+
+    /**
+     * 权限Key
+     * @return
+     */
+     String  value() default "";
 }

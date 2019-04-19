@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/newbie-spring-boot.iml" filepath="$PROJECT_DIR$/newbie-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis.iml" filepath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/备份-newbie-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/modules/备份-newbie-spring-boot.iml" />
     </modules>
   </component>
 </project>

@@ -29,7 +29,7 @@ import static org.springframework.cloud.alibaba.dubbo.http.util.HttpUtils.getPar
  *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 class ParamExpression extends AbstractNameValueExpression<String> {
 

@@ -1,18 +1,18 @@
 {
-  "hints": [],
   "groups": [
     {
-      "sourceType": "com.newbie.config.AppCacheConfig",
       "name": "newbie.cache",
-      "type": "com.newbie.config.AppCacheConfig"
+      "type": "com.newbie.config.AppCacheConfig",
+      "sourceType": "com.newbie.config.AppCacheConfig"
     }
   ],
   "properties": [
     {
-      "sourceType": "com.newbie.config.AppCacheConfig",
-      "defaultValue": "cache-topic",
       "name": "newbie.cache.topic",
-      "type": "java.lang.String"
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.config.AppCacheConfig",
+      "defaultValue": "cache-topic"
     }
-  ]
+  ],
+  "hints": []
 }

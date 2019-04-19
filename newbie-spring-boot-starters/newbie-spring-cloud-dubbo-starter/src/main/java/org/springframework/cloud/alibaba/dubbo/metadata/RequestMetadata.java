@@ -43,7 +43,7 @@ import static org.springframework.http.MediaType.parseMediaTypes;
 /**
  * Request Metadata
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class RequestMetadata {
 

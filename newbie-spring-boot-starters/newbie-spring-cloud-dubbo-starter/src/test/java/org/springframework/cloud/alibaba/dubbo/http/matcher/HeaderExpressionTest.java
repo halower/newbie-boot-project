@@ -25,7 +25,7 @@ import static org.springframework.cloud.alibaba.dubbo.http.DefaultHttpRequest.bu
 /**
  * {@link HeaderExpression} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class HeaderExpressionTest extends AbstractNameValueExpressionTest<HeaderExpression> {
 

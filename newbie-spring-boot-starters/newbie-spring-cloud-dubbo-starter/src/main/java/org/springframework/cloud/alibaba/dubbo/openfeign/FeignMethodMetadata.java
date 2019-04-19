@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
 /**
  * Feign {@link Method} Metadata
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 class FeignMethodMetadata {
 

@@ -6,7 +6,7 @@ import lombok.*;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
-public class BusinessEventData extends FullAudited  implements EventData{
+public class BusinessEventData extends BaseAudited  implements EventData{
     /***
      * 请求路径
      */

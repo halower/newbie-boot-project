@@ -27,7 +27,7 @@ import java.lang.reflect.Constructor;
 /**
  * {@link AbstractMediaTypeExpression} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public abstract class AbstractMediaTypeExpressionTest<T extends AbstractMediaTypeExpression> {
 

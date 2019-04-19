@@ -33,7 +33,7 @@ import static org.springframework.util.ClassUtils.resolveClassName;
 /**
  * org.springframework.cloud.openfeign.Targeter {@link BeanPostProcessor}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class TargeterBeanPostProcessor implements BeanPostProcessor, BeanClassLoaderAware {
 
@@ -69,7 +69,7 @@ public class TargeterBeanPostProcessor implements BeanPostProcessor, BeanClassLo
             Class<?> targetClass = resolveClassName(TARGETER_CLASS_NAME, classLoader);
             if (targetClass.isAssignableFrom(beanClass)) {
                 return newProxyInstance(classLoader, new Class[]{targetClass},
-                        new TargeterInvocationHandler(bean, environment, dubboServiceMetadataRepository,
+                        new TargeterInvocationHandler(bean, environment, classLoader, dubboServiceMetadataRepository,
                                 dubboGenericServiceFactory, contextFactory));
             }
         }

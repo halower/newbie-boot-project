@@ -38,7 +38,7 @@ import static org.springframework.util.StringUtils.trimAllWhitespace;
 /**
  * Http Utilities class
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public abstract class HttpUtils {
 

@@ -29,7 +29,7 @@ import java.util.Set;
 /**
  * {@link DubboTransportedMethodMetadataResolver} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class DubboTransportedMethodMetadataResolverTest {
 

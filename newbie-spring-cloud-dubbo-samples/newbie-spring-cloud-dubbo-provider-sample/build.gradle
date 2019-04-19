@@ -1,0 +1,38 @@
+group = 'com.github.halower'
+version = "alpha.1.0"
+
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+buildscript {
+    ext {
+        SPRING_IO_VERSION = '1.0.6.RELEASE'
+    }
+    repositories {
+        maven { url 'http://192.168.2.23:8081/repository/maven-public/' }
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
+    }
+}
+
+repositories {
+    maven { url 'https://repo.spring.io/snapshot' }
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+    maven { url 'http://192.168.2.23:8081/repository/maven-public/' }
+}
+
+apply plugin: "io.spring.dependency-management"
+
+dependencies {
+compile project(":newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-api-sample")
+compile ("org.springframework.cloud:spring-cloud-starter-openfeign:2.1.1.RELEASE")
+compile ("com.github.halower:newbie-spring-boot-starter:alpha.1.0.1")
+    compile project(":newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter")
+compile ("org.springframework.cloud:spring-cloud-starter-consul-discovery:2.1.1.RELEASE")
+}

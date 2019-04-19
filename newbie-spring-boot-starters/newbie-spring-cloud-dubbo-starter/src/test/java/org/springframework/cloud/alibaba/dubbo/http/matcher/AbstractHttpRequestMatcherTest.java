@@ -21,7 +21,7 @@ import org.junit.Test;
 /**
  * {@link AbstractHttpRequestMatcher} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public abstract class AbstractHttpRequestMatcherTest<T extends AbstractHttpRequestMatcher> {
 

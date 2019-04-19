@@ -22,7 +22,7 @@ import org.junit.Test;
 /**
  * {@link HttpUtils} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class HttpUtilsTest {
 

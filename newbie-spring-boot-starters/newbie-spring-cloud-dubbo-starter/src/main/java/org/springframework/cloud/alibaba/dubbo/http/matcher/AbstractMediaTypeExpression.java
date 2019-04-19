@@ -23,7 +23,7 @@ import org.springframework.http.MediaType;
  *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class AbstractMediaTypeExpression implements MediaTypeExpression, Comparable<AbstractMediaTypeExpression> {
 

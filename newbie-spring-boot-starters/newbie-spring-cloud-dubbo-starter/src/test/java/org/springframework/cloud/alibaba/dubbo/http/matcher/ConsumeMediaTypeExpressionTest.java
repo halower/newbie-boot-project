@@ -23,7 +23,7 @@ import org.springframework.http.MediaType;
 /**
  * {@link ConsumeMediaTypeExpression} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class ConsumeMediaTypeExpressionTest extends AbstractMediaTypeExpressionTest<ConsumeMediaTypeExpression> {
 

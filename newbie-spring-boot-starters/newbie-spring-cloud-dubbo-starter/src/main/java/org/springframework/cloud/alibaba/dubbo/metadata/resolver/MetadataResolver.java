@@ -25,7 +25,7 @@ import java.util.Set;
 /**
  * The REST metadata resolver
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public interface MetadataResolver {
 

@@ -5,7 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/newbie-spring-boot-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/newbiespringbootmanagement/pom.xml" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/pom.xml" />
       </list>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="alpha.1.0.1.1" status="integration" publication="20190327184318"/>
+  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="test.2.0" status="integration" publication="20190418134326"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -27,6 +27,12 @@
     <artifact name="newbie-spring-boot-starter" type="jar" ext="jar" conf="apiElements,archives,runtime,runtimeElements"/>
   </publications>
   <dependencies>
+    <dependency org="commons-io" name="commons-io" rev="2.6" conf="compile-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="org.projectlombok" name="lombok" rev="" conf="compileOnly-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
@@ -43,7 +49,7 @@
     <dependency org="org.springframework.boot" name="spring-boot-starter-cache" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
-    <dependency org="org.springframework.boot" name="spring-boot-autoconfigure" rev="2.1.2.RELEASE" conf="implementation-&gt;default">
+    <dependency org="org.springframework.boot" name="spring-boot-autoconfigure" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-configuration-processor" rev="" conf="implementation-&gt;default">
@@ -52,16 +58,7 @@
     <dependency org="org.springframework.boot" name="spring-boot-starter-data-jpa" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
-    <dependency org="org.projectlombok" name="lombok" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
-    <dependency org="org.modelmapper" name="modelmapper" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
     <dependency org="com.alibaba" name="fastjson" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
-    <dependency org="org.freemarker" name="freemarker" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
     <dependency org="com.querydsl" name="querydsl-jpa" rev="" conf="implementation-&gt;default">
@@ -73,13 +70,28 @@
     <dependency org="com.querydsl" name="querydsl-sql" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
-    <dependency org="joda-time" name="joda-time" rev="2.5" conf="implementation-&gt;default">
+    <dependency org="joda-time" name="joda-time" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
-    <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.7" conf="implementation-&gt;default">
+    <dependency org="org.freemarker" name="freemarker" rev="2.3.23" conf="implementation-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="org.apache.commons" name="commons-lang3" rev="3.9" conf="implementation-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="org.apache.httpcomponents" name="httpclient" rev="" conf="implementation-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="org.jinq" name="jinq-jpa" rev="" conf="implementation-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="com.github.halower" name="newbie-spring-boot-api-dto" rev="alpha.qcs.1.2.6" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
     <dependency org="com.spring4all" name="swagger-spring-boot-starter" rev="" conf="implementation-&gt;default">
+      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    </dependency>
+    <dependency org="com.tfswx.tyyw.log-service" name="collector" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="" conf="testImplementation-&gt;default"/>

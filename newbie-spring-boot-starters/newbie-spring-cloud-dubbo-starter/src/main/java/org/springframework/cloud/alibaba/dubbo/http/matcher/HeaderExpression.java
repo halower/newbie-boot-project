@@ -27,7 +27,7 @@ import org.springframework.util.ObjectUtils;
  *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 class HeaderExpression extends AbstractNameValueExpression<String> {
 

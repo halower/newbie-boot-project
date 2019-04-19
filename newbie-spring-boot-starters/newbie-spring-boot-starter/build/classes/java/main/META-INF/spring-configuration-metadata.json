@@ -9,11 +9,6 @@
       "name": "newbie",
       "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
-    },
-    {
-      "name": "newbie.storage",
-      "type": "com.newbie.core.storage.config.StorageConfig",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     }
   ],
   "properties": [
@@ -54,32 +49,6 @@
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": false
-    },
-    {
-      "name": "newbie.storage.access-key",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig"
-    },
-    {
-      "name": "newbie.storage.bucket",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig",
-      "defaultValue": "upload"
-    },
-    {
-      "name": "newbie.storage.endpoint",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig"
-    },
-    {
-      "name": "newbie.storage.secret-key",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig"
-    },
-    {
-      "name": "newbie.storage.service",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.storage.config.StorageConfig"
     }
   ],
   "hints": []

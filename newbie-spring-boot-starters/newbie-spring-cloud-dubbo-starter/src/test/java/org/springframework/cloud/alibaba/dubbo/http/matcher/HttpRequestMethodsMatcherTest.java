@@ -25,7 +25,7 @@ import java.util.HashSet;
 /**
  * {@link HttpRequestMethodsMatcher} Test
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public class HttpRequestMethodsMatcherTest extends AbstractHttpRequestMatcherTest<HttpRequestMethodsMatcher> {
 

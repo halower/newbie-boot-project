@@ -31,7 +31,7 @@ import java.util.Objects;
 /**
  * {@link Method} Metadata
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class MethodMetadata {

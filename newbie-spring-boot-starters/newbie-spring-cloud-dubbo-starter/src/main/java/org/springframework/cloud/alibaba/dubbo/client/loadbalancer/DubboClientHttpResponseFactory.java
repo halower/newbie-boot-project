@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * Dubbo {@link ClientHttpResponse} Factory
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 class DubboClientHttpResponseFactory {
 

@@ -14,7 +14,6 @@ import java.util.Map;
 
 @RestController
 public class DubboController {
-
     @Reference(version = "1.0.0")
     private EchoService echoService;
 
@@ -50,14 +49,6 @@ public class DubboController {
         return echoService.echo("by dubbo");
     }
 
-//    @GetMapping("/dubbo2")
-//    public User dubbo2() {
-//        User user = new User();
-//        user.setId(1L);
-//        user.setName("halower");
-//        user.setAge(11);
-//        return echoService.requestBodyUser(user);
-//    }
     @GetMapping("/feign")
     public String feign() {
         return feignEchoService.echo("by feign");

@@ -23,7 +23,7 @@ import java.util.Set;
 /**
  * Dubbo Metadata Configuration Service
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 public interface DubboMetadataConfigService {
 

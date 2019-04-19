@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
 /**
  * {@link DubboMetadataConfigService} {@link InvocationHandler}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ *
  */
 class DubboMetadataConfigServiceInvocationHandler implements InvocationHandler {
 

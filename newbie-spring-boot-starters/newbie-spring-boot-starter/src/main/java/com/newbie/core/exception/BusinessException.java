@@ -1,5 +1,6 @@
 package com.newbie.core.exception;
 
+import com.newbie.dto.ResponseTypes;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
