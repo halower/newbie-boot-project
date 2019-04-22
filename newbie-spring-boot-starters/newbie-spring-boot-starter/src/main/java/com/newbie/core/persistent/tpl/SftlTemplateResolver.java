@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.sql;
+package com.newbie.core.persistent.tpl;
 
 import lombok.var;
 
@@ -41,13 +41,15 @@ public class SftlTemplateResolver implements TemplateResolver {
             public Void next() {
                 do {
                     String line = lines.get(index);
-                    if (isNameLine(line)) {
-                        name = StringUtils.trim(StringUtils.remove(line, "--"));
-                    }
-                    else {
-                        line = StringUtils.trimToNull(line);
-                        if (line != null) {
-                            content.append(line).append(" ");
+                    if(!isCommentLine(line)) {
+                        if (isNameLine(line)) {
+                            name = StringUtils.trim(StringUtils.remove(line, "--"));
+                        }
+                        else {
+                            line = StringUtils.trimToNull(line);
+                            if (line != null) {
+                                content.append(line).append(" ");
+                            }
                         }
                     }
                     index++;
@@ -67,6 +69,10 @@ public class SftlTemplateResolver implements TemplateResolver {
 
             private boolean isNameLine(String line) {
                 return StringUtils.contains(line, "--");
+            }
+
+            private boolean isCommentLine(String line) {
+                return StringUtils.startsWith(line, "#");
             }
 
             private boolean isNextNameLine() {

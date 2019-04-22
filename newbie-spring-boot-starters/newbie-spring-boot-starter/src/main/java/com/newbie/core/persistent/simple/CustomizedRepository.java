@@ -1,6 +1,11 @@
 package com.newbie.core.persistent.simple;
+import com.newbie.core.persistent.criteria.QueryFilter;
+import com.newbie.core.utils.page.Pagination;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.PagingAndSortingRepository;
+
+import java.util.List;
 
 
 /**
@@ -38,14 +43,14 @@ public interface CustomizedRepository<T,ID> extends PagingAndSortingRepository<T
      * @param entity 更新对象（映射字段与实体对象一致）
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
-     void update(Object entity,Class<T> entityType);
+     int update(Object entity, Class<T> entityType);
 
     /**
      * 更新部分字段
      * @param entity 更新对象（映射字段与实体对象一致）
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
-    void updateIgnoreNull(Object entity,Class<T> entityType);
+    int updateIgnoreNull(Object entity, Class<T> entityType);
     /**
      * 软删除
      * @param idPropName 主键对应属性名称
@@ -53,18 +58,32 @@ public interface CustomizedRepository<T,ID> extends PagingAndSortingRepository<T
      * @param entityType 实体类型
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
-    void softDelete(String idPropName, Object idValue, Class<T> entityType);
+    int softDelete(String idPropName, Object idValue, Class<T> entityType);
     /**
      * 软删除
      * @param entity 普通删除Dto对象
      * @param entityType 实体类型
      */
-    void softDelete(Object entity, Class<T> entityType);
+    int softDelete(Object entity, Class<T> entityType);
 
     /**
      * 软删除
      * @param entity 普通删除对象
      * @param entityType 实体类型
      */
-     void softDeleteWithAnyId(Object entity, Class<T> entityType);
+     int softDeleteWithAnyId(Object entity, Class<T> entityType);
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return 查询结果
+     */
+     List<T> queryWithFilterE(QueryFilter queryFilter);
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return
+     */
+    Pagination queryPageWithFilterE(QueryFilter queryFilter, PageRequest pageRequest);
 }

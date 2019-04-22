@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.sql;
+package com.newbie.core.persistent.tpl;
 
 import org.springframework.core.io.Resource;
 

@@ -2,18 +2,20 @@ package com.newbie.core.persistent.simple;
 
 import com.newbie.core.annotations.DeletedId;
 import com.newbie.core.annotations.UpdatedId;
+import com.newbie.core.persistent.FieldWithValue;
+import com.newbie.core.persistent.criteria.QueryBuilder;
+import com.newbie.core.persistent.criteria.QueryFilter;
+import com.newbie.core.utils.page.Pager;
+import com.newbie.core.utils.page.Pagination;
 import lombok.var;
-import org.jinq.jpa.JPAJinqStream;
-import org.jinq.jpa.JinqJPAStreamProvider;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.Id;
-import javax.persistence.PersistenceUnit;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaUpdate;
 import javax.persistence.criteria.Predicate;
@@ -96,7 +98,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
-    public void update(Object entity,Class<T> entityType) {
+    public int update(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
@@ -110,7 +112,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
-        em.createQuery(criteria).executeUpdate();
+        return em.createQuery(criteria).executeUpdate();
     }
 
     /**
@@ -119,7 +121,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
-    public void updateIgnoreNull(Object entity,Class<T> entityType) {
+    public int updateIgnoreNull(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
@@ -133,7 +135,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
-        em.createQuery(criteria).executeUpdate();
+        return em.createQuery(criteria).executeUpdate();
     }
 
     /**
@@ -144,13 +146,13 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
-    public void softDelete(String idPropName, Object idValue, Class<T> entityType){
+    public int softDelete(String idPropName, Object idValue, Class<T> entityType){
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = builder.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"),"Y");
         criteria.where(builder.equal(root.get(idPropName), idValue));
-        em.createQuery(criteria).executeUpdate();
+        return em.createQuery(criteria).executeUpdate();
     }
 
     /**
@@ -159,7 +161,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entityType 实体类型
      */
     @Override
-    public void softDelete(Object entity, Class<T> entityType){
+    public int softDelete(Object entity, Class<T> entityType){
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
@@ -172,7 +174,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
-        em.createQuery(criteria).executeUpdate();
+        return em.createQuery(criteria).executeUpdate();
     }
     /**
      * 软删除
@@ -180,7 +182,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entityType 实体类型
      */
     @Override
-    public void softDeleteWithAnyId(Object entity, Class<T> entityType){
+    public int softDeleteWithAnyId(Object entity, Class<T> entityType){
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
@@ -193,7 +195,34 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.or(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
-        em.createQuery(criteria).executeUpdate();
+        return em.createQuery(criteria).executeUpdate();
+    }
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return
+     */
+    public List<T> queryWithFilterE(QueryFilter queryFilter){
+        var result = new QueryBuilder<T>().execute(em,queryFilter);
+        return result;
+    }
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return
+     */
+    public Pagination queryPageWithFilterE(QueryFilter queryFilter, PageRequest pageRequest){
+        var query = new QueryBuilder<T>().createQuery(em,queryFilter);
+        int total = query.getResultList().size();
+        int pageSize = pageRequest.getPageSize();
+        int pageIndex = pageRequest.getPageNumber() + 1;
+        int start = (pageIndex - 1) * pageSize;
+        query.setFirstResult(start);
+        query.setMaxResults(pageSize);
+        List content =query.getResultList();
+        return new Pager<T>().build(content,pageIndex,pageSize,total);
     }
 
 
@@ -222,8 +251,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return map;
     }
 
-    private List<KV> getUpdatedIds(Object entity){
-        var kvs = new ArrayList<KV>();
+    private List<FieldWithValue> getUpdatedIds(Object entity){
+        var kvs = new ArrayList<FieldWithValue>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
@@ -237,8 +266,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return kvs;
     }
 
-    private List<KV>  getDeletedIds(Object entity){
-        var kvs = new ArrayList<KV>();
+    private List<FieldWithValue>  getDeletedIds(Object entity){
+        var kvs = new ArrayList<FieldWithValue>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
@@ -252,8 +281,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return kvs;
     }
 
-    private  List<KV> getId(Object entity){
-        var kvs = new ArrayList<KV>();
+    private  List<FieldWithValue> getId(Object entity){
+        var kvs = new ArrayList<FieldWithValue>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
@@ -271,7 +300,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return getId(entity).size()==0;
     }
 
-    private KV fetchId(Object dto, Field field) {
+    private FieldWithValue fetchId(Object dto, Field field) {
         var name = field.getName();
         Object value = null;
         try {
@@ -279,7 +308,6 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        return KV.builder().key(name).value(value).build();
+        return FieldWithValue.builder().key(name).value(value).build();
     }
-
 }

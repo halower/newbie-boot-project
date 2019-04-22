@@ -1,6 +1,5 @@
-package com.newbie.core.persistent.simple;
+package com.newbie.core.persistent;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,7 +10,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class KV {
+public class FieldWithValue {
   private String key;
   private Object value;
 }

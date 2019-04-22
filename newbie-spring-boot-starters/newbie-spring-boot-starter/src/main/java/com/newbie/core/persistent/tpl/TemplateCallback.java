@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.sql;
+package com.newbie.core.persistent.tpl;
 
 /**
  * @Author: 谢海龙

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-starter</artifactId>
-  <version>test.2.0</version>
+  <version>test.2.4</version>
   <dependencies>
     <dependency>
       <groupId>commons-io</groupId>

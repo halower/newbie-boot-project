@@ -1,6 +1,5 @@
-package com.newbie.core.persistent.sql;
+package com.newbie.core.persistent.tpl;
 
-import com.newbie.core.persistent.criteria.QueryBuilder;
 import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
 import lombok.extern.log4j.Log4j2;
@@ -22,7 +21,6 @@ import java.util.Map;
  */
 @Log4j2
 public class JPQLResolver {
-    private QueryBuilder builder;
     private static Configuration cfg = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
     private static StringTemplateLoader sqlTemplateLoader = new StringTemplateLoader();
     private String sqlFileName;
@@ -34,11 +32,13 @@ public class JPQLResolver {
         cfg.setTemplateLoader(sqlTemplateLoader);
     }
 
-    public String jpql(Object criteraEntity) {
-        builder = new QueryBuilder(criteraEntity);
-        return builder.buildQueryString();
-    }
-    public String sql( String methodName, Map<String, Object> model) {
+    /**
+     * 获取模板SQL字符串
+     * @param methodName 方法名
+     * @param model 填充值
+     * @return
+     */
+    public String getSql( String methodName, Map<String, Object> model) {
         try {
             StringWriter writer = new StringWriter();
             cfg.getTemplate(getTemplateKey(methodName), "UTF-8").process(model, writer);

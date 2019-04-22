@@ -1,6 +1,6 @@
 group = 'com.github.halower'
 //version = "alpha.qcs.1.3.2"
-version = "test.2.0"
+version = "test.2.4"
 buildscript {
     ext {
         SPRING_IO_VERSION = '1.0.6.RELEASE'
@@ -50,9 +50,9 @@ dependencies {
     implementation("com.alibaba:fastjson")
     implementation("com.querydsl:querydsl-jpa")
     implementation("com.querydsl:querydsl-apt")
-    implementation("com.querydsl:querydsl-sql")
+    implementation("com.querydsl:querydsl-tpl")
     implementation("joda-time:joda-time")
-    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile ("commons-io:commons-io:2.6")
     implementation("org.freemarker:freemarker:2.3.23")
     implementation("org.apache.commons:commons-lang3:3.9")
     implementation("org.apache.httpcomponents:httpclient")
