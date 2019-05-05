@@ -1,4 +1,4 @@
-package com.newbie.core.utils;
+package com.newbie.core.utils.env;
 
 import com.newbie.constants.NewbieBootInfraConstants;
 import org.springframework.context.ApplicationContext;

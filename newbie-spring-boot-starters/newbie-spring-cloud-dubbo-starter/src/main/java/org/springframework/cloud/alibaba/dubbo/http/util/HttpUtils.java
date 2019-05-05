@@ -138,7 +138,7 @@ public abstract class HttpUtils {
 //     * Parse a read-only  {@link MultiValueMap} of  {@link HttpCookie} from {@link HttpHeaders}
 //     *
 //     * @param httpHeaders {@link HttpHeaders}
-//     * @return non-null, the key is a cookie name , the value is {@link HttpCookie}
+//     * @return non-null, the name is a cookie name , the value is {@link HttpCookie}
 //     */
 //    public static MultiValueMap<String, HttpCookie> parseCookies(HttpHeaders httpHeaders) {
 //

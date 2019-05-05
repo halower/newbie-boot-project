@@ -1,4 +1,4 @@
-package com.newbie.core.persistent;
+package com.newbie.core.persistent.config;
 
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,8 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class FieldWithValue {
-  private String key;
+public class FieldInfo {
+  private String name;
   private Object value;
+  private String type;
 }

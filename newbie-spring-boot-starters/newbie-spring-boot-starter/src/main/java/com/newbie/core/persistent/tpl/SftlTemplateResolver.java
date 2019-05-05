@@ -55,16 +55,10 @@ public class SftlTemplateResolver implements TemplateResolver {
                     index++;
                 } while (!isLastLine() && !isNextNameLine());
 
-                //next template
                 callback.process(name, content.toString());
                 name = null;
                 content = new StringBuilder();
                 return null;
-            }
-
-            @Override
-            public void remove() {
-                //ignore
             }
 
             private boolean isNameLine(String line) {

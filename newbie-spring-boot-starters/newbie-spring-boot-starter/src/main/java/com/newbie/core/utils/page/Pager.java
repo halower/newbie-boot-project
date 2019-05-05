@@ -42,6 +42,6 @@ public class Pager<T> {
      * @return
      */
     public Pagination build(List<T> content, int pageIndex,int pageSize, long total){
-        return new Pagination<T>(content,pageIndex,pageSize,  total);
+        return new Pagination<>(content, pageIndex, pageSize, total);
     }
 }

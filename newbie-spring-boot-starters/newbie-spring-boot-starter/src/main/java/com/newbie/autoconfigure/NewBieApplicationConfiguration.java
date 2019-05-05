@@ -1,6 +1,5 @@
 package com.newbie.autoconfigure;
 
-//import com.newbie.core.aop.ErrorControllerAdvice;
 import com.newbie.core.aop.ErrorControllerAdvice;
 import com.newbie.core.aop.MvcConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;

@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.criteria.annotation;
+package com.newbie.core.persistent.criteria.enums;
 
 public enum Operator {
 		

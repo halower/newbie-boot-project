@@ -104,7 +104,7 @@ public @interface DubboTransported {
     String[] listener() default {};
 
     /**
-     * Customized parameter key-value pair, for example: {key1, value1, key2, value2}
+     * Customized parameter name-value pair, for example: {key1, value1, key2, value2}
      *
      * @see Reference#parameters()
      */

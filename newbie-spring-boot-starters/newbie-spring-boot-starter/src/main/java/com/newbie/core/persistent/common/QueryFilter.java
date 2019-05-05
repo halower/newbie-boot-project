@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.criteria;
+package com.newbie.core.persistent.common;
 
 /**
  * @Author: 谢海龙

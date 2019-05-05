@@ -13,10 +13,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="newbie-spring-boot-auth_main" target="1.8" />
+      <module name="newbie-spring-boot-auth_test" target="1.8" />
       <module name="newbie-spring-boot-commons_main" target="1.8" />
       <module name="newbie-spring-boot-commons_test" target="1.8" />
       <module name="newbie-spring-boot-dependencies~1" target="1.5" />
+      <module name="newbie-spring-boot-jwt_main" target="1.8" />
+      <module name="newbie-spring-boot-jwt_main~1" target="1.8" />
+      <module name="newbie-spring-boot-jwt_test" target="1.8" />
+      <module name="newbie-spring-boot-jwt_test~1" target="1.8" />
       <module name="newbie-spring-boot-management~1" target="1.5" />
+      <module name="newbie-spring-boot-oauth_main" target="1.8" />
+      <module name="newbie-spring-boot-oauth_test" target="1.8" />
       <module name="newbie-spring-boot-parent" target="1.5" />
       <module name="newbie-spring-boot-starter-dubbo_main" target="1.8" />
       <module name="newbie-spring-boot-starter-dubbo_test" target="1.8" />

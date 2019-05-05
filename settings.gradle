@@ -1,6 +1,7 @@
 rootProject.name = "newbie-spring-boot"
 include "newbie-spring-boot-dependencies"
 include "newbie-spring-boot-management"
+include "newbie-spring-boot-api-dto"
 include "newbie-spring-boot-starters"
 include "newbie-spring-boot-starters:newbie-spring-boot-starter"
 include "newbie-spring-boot-starters:newbie-spring-boot-starter-redis"
@@ -9,7 +10,6 @@ include 'newbie-spring-cloud-dubbo-samples'
 include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-provider-sample'
 include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-api-sample'
 include 'newbie-spring-cloud-dubbo-samples:newbie-spring-cloud-dubbo-consumer-sample'
-include 'newbie-spring-boot-api-dto'
-include 'newbie-spring-boot-starters:newbie-spring-boot-oauth'
-findProject(':newbie-spring-boot-starters:newbie-spring-boot-oauth')?.name = 'newbie-spring-boot-oauth'
+
+
 

@@ -2,6 +2,7 @@ package com.newbie.core.persistent.tpl;
 
 import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
+import lombok.Data;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.io.DefaultResourceLoader;
@@ -20,15 +21,15 @@ import java.util.Map;
  * @Description
  */
 @Log4j2
-public class JPQLResolver {
-    private static Configuration cfg = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
-    private static StringTemplateLoader sqlTemplateLoader = new StringTemplateLoader();
-    private String sqlFileName;
-    public JPQLResolver(String sqlFileName) {
+@Data
+public class SQLTemplateResolver {
+    private  Configuration cfg = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
+    private  StringTemplateLoader sqlTemplateLoader = new StringTemplateLoader();
+    private  String sqlFileName;
+    private List<Resource> resourceList = new ArrayList<>();
+    public SQLTemplateResolver(String sqlFileName) {
         this.sqlFileName = sqlFileName;
         loadIfPossible(sqlFileName);
-    }
-    static {
         cfg.setTemplateLoader(sqlTemplateLoader);
     }
 
@@ -51,7 +52,6 @@ public class JPQLResolver {
 
     public void loadIfPossible(final String sqlFileName) {
     try {
-        List<Resource> resourceList = new ArrayList<>();
         ResourceLoader loader = new DefaultResourceLoader();
         Resource loaderResource = loader.getResource("classpath:sqls/" + sqlFileName + ".sftl");
         resourceList.add(loaderResource);

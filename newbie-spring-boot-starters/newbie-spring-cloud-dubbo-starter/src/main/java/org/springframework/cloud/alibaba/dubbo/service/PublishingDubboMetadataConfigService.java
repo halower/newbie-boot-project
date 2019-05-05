@@ -34,7 +34,7 @@ import static org.springframework.util.ObjectUtils.isEmpty;
 public class PublishingDubboMetadataConfigService implements DubboMetadataConfigService {
 
     /**
-     * A Map to store REST metadata temporary, its' key is the special service name for a Dubbo service,
+     * A Map to store REST metadata temporary, its' name is the special service name for a Dubbo service,
      * the value is a JSON content of JAX-RS or Spring MVC REST metadata from the annotated methods.
      */
     private final Set<ServiceRestMetadata> serviceRestMetadata = new LinkedHashSet<>();

@@ -30,27 +30,15 @@ public abstract class BaseEntity implements Serializable {
     private Date cjsj;
 
     /**
-     * 创建人员编号
-     */
-    @CreatedBy
-    @Column(name = "CJRYBM")
-    private String cjrybm;
-
-    /**
      * 最后修改时间
      */
     @LastModifiedDate
     @Column(name = "ZHXGSJ")
     private Date zhxgsj;
-    /**
-     * 最后修改人员编号
-     */
-    @LastModifiedBy
-    @Column(name = "ZHXGRYBM")
+
     /**
      * 数据标识编号
      */
-    private String zhxgrybm;
     @Column(name = "SJBSBH")
     private String sjbsbh;
 

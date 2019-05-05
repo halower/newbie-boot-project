@@ -1,10 +1,11 @@
 package com.newbie.core.persistent.simple;
 
 import com.newbie.core.annotations.DeletedId;
+import com.newbie.core.annotations.DeletedIds;
 import com.newbie.core.annotations.UpdatedId;
-import com.newbie.core.persistent.FieldWithValue;
+import com.newbie.core.persistent.config.FieldInfo;
 import com.newbie.core.persistent.criteria.QueryBuilder;
-import com.newbie.core.persistent.criteria.QueryFilter;
+import com.newbie.core.persistent.tpl.QueryExecutor;
 import com.newbie.core.utils.page.Pager;
 import com.newbie.core.utils.page.Pagination;
 import lombok.var;
@@ -22,10 +23,8 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.Function;
 
 /**
  * @Author: 谢海龙
@@ -36,9 +35,7 @@ import java.util.Map;
 @Transactional(readOnly = true)
 public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJpaRepository<T,ID>  implements CustomizedRepository<T,ID>
 {
-
     private  EntityManager em;
-
     public CustomizedRepositoryImpl(JpaEntityInformation<T, ?> entityInformation, EntityManager entityManager) {
         super(entityInformation, entityManager);
         this.em = entityManager;
@@ -107,7 +104,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere=new ArrayList<>();
         ids.forEach(id -> {
-            listWhere.add(cb.equal(root.get(id.getKey()), id.getValue().toString()));
+            listWhere.add(cb.equal(root.get(id.getName()), id.getValue().toString()));
         });
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
@@ -130,7 +127,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere=new ArrayList<>();
         ids.forEach(id -> {
-            listWhere.add(cb.equal(root.get(id.getKey()), id.getValue().toString()));
+            listWhere.add(cb.equal(root.get(id.getName()), id.getValue().toString()));
         });
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
@@ -167,15 +164,34 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"),"Y");
         var deletedIds = getDeletedIds(entity);
+        var deletedIdss = getDeletedIdss(entity);
         List<Predicate> listWhere=new ArrayList<>();
-        deletedIds.forEach(id -> {
-            listWhere.add(cb.equal(root.get(id.getKey()), id.getValue().toString()));
-        });
+        buildCriteriaByDeleteIdss(cb, root, deletedIdss, listWhere);
+        var it = deletedIds.iterator();
+        while (it.hasNext()){
+            var item = it.next();
+            listWhere.add(cb.equal(root.get(item.getName()), item.getValue().toString()));
+        }
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
         return em.createQuery(criteria).executeUpdate();
     }
+
+    private void buildCriteriaByDeleteIdss(CriteriaBuilder cb, Root<T> root, List<FieldInfo> deletedIdss, List<Predicate> listWhere) {
+        deletedIdss.forEach(id -> {
+            if ((id.getValue() == null) || (((Collection)id.getValue()).size() == 0)) {
+                return;
+            }
+            Iterator iterator = ((Collection)id.getValue()).iterator();
+            CriteriaBuilder.In in = cb.in(root.get(id.getName()));
+            while (iterator.hasNext()) {
+                in.value(iterator.next());
+            }
+            listWhere.add(in);
+        });
+    }
+
     /**
      * 软删除
      * @param entity 普通删除对象
@@ -188,10 +204,14 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"),"Y");
         var deletedIds = getDeletedIds(entity);
+        var deletedIdss = getDeletedIdss(entity);
         List<Predicate> listWhere=new ArrayList<>();
-        deletedIds.forEach(id -> {
-            listWhere.add(cb.equal(root.get(id.getKey()), id.getValue().toString()));
-        });
+        buildCriteriaByDeleteIdss(cb, root, deletedIdss, listWhere);
+        var it = deletedIds.iterator();
+        while (it.hasNext()){
+            var item = it.next();
+            listWhere.add(cb.equal(root.get(item.getName()), item.getValue().toString()));
+        }
         var predicatesWhereArr=new Predicate[listWhere.size()];
         var predicatesWhere= cb.or(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
@@ -203,9 +223,10 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param queryFilter
      * @return
      */
-    public List<T> queryWithFilterE(QueryFilter queryFilter){
-        var result = new QueryBuilder<T>().execute(em,queryFilter);
-        return result;
+    @Override
+    public <S> List<S> queryWithFilterE(S queryFilter,Function<S,String> func) {
+        var data = new QueryBuilder<S>().execute(em,queryFilter,func);
+        return data;
     }
 
     /**
@@ -213,18 +234,82 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param queryFilter
      * @return
      */
-    public Pagination queryPageWithFilterE(QueryFilter queryFilter, PageRequest pageRequest){
-        var query = new QueryBuilder<T>().createQuery(em,queryFilter);
+    @Override
+    public <S> List<S> queryWithFilterE(S queryFilter) {
+        var data = new QueryBuilder<S>().execute(em,queryFilter,null);
+        return data;
+    }
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return
+     */
+    @Override
+    public <S> Pagination<S> queryPageWithFilterE(S queryFilter, PageRequest pageRequest) {
+        return queryPageWithFilterE(queryFilter,null,pageRequest);
+    }
+
+    /**
+     * 按照条件对象查询
+     * @param queryFilter
+     * @return
+     */
+    @Override
+    public <S> Pagination<S> queryPageWithFilterE(S queryFilter,Function<S,String> func, PageRequest pageRequest) {
+        var query = new QueryBuilder<S>().createQuery(em,queryFilter,func);
         int total = query.getResultList().size();
         int pageSize = pageRequest.getPageSize();
         int pageIndex = pageRequest.getPageNumber() + 1;
         int start = (pageIndex - 1) * pageSize;
         query.setFirstResult(start);
         query.setMaxResults(pageSize);
-        List content =query.getResultList();
-        return new Pager<T>().build(content,pageIndex,pageSize,total);
+        var content =(List<S>)query.getResultList();
+        var pagination = new Pager<S>().build(content,pageIndex,pageSize,total);
+        return pagination;
     }
 
+
+    /***
+     * 按照JPQL模板查询
+     * @param tplName 模板名称
+     * @param method  对应方法
+     * @param model   参数对象
+     * @param resultType 返回类型
+     */
+    public <S> List<S> queryWithTemplate(String tplName, String method, Object model, Class<S> resultType){
+        return new QueryExecutor<S>().query(em,tplName,method,model,resultType);
+    }
+
+    /***
+     * 按照JPQL模板查询
+     * @param tplName 模板名称
+     * @param method  对应方法
+     * @param model   参数对象
+     * @param resultType 返回类型
+     */
+    public <S> Pagination<S> queryPageWithTemplate(String tplName, String method, Object model,Class<S> resultType, PageRequest pageRequest){
+        return new QueryExecutor<S>().queryPage(em,tplName,method,model,resultType,pageRequest);
+    }
+
+
+    /**
+     * 按照原生SQL模板模板查询
+     * @param entity
+     * @return
+     */
+    public <S> List<S> nativeQueryWithTemplate( String tplName, String method, Object entity, Class<S> resultType){
+        return new QueryExecutor<S>().nativeQuery(em,tplName,method,entity, resultType);
+    }
+
+    /**
+     * 按照SQL模板分页查询
+     * @param entity
+     * @return
+     */
+    public <S> Pagination<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType, PageRequest pageRequest){
+        return new QueryExecutor<S>().nativeQueryPage(em,tplName,method,entity,resultType,pageRequest);
+    }
 
     private static Map<String, Object> getFiledAndValue(Object obj,boolean ignoreNullFields) {
         var map = new HashMap<String, Object>();
@@ -251,8 +336,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return map;
     }
 
-    private List<FieldWithValue> getUpdatedIds(Object entity){
-        var kvs = new ArrayList<FieldWithValue>();
+    private List<FieldInfo> getUpdatedIds(Object entity){
+        var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
@@ -266,13 +351,15 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return kvs;
     }
 
-    private List<FieldWithValue>  getDeletedIds(Object entity){
-        var kvs = new ArrayList<FieldWithValue>();
+    private List<FieldInfo>  getDeletedIds(Object entity){
+        var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
-        Field[] fields = cla.getDeclaredFields();
-        for (Field field : fields) {
+        var fields = cla.getDeclaredFields();
+        var it = Arrays.stream(fields).iterator();
+        while (it.hasNext()){
+            var field = it.next();
             field.setAccessible(true);
-            DeletedId id = field.getDeclaredAnnotation(DeletedId.class);
+            var id = field.getDeclaredAnnotation(DeletedId.class);
             if(id!=null) {
                 var kv =  fetchId(entity,field);
                 kvs.add(kv);
@@ -281,8 +368,25 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return kvs;
     }
 
-    private  List<FieldWithValue> getId(Object entity){
-        var kvs = new ArrayList<FieldWithValue>();
+    private List<FieldInfo>  getDeletedIdss(Object entity){
+        var kvs = new ArrayList<FieldInfo>();
+        var cla = entity.getClass();
+        Field[] fields = cla.getDeclaredFields();
+        var it = Arrays.stream(fields).iterator();
+        while (it.hasNext()){
+            var field = it.next();
+            field.setAccessible(true);
+            var id = field.getDeclaredAnnotation(DeletedIds.class);
+            if(id!=null) {
+                var kv =  fetchId(entity,field);
+                kvs.add(kv);
+            }
+        }
+        return kvs;
+    }
+
+    private  List<FieldInfo> getId(Object entity){
+        var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
@@ -300,7 +404,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return getId(entity).size()==0;
     }
 
-    private FieldWithValue fetchId(Object dto, Field field) {
+    private FieldInfo fetchId(Object dto, Field field) {
         var name = field.getName();
         Object value = null;
         try {
@@ -308,6 +412,6 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        return FieldWithValue.builder().key(name).value(value).build();
+        return FieldInfo.builder().name(name).value(value).build();
     }
 }

@@ -1,5 +1,14 @@
 package com.newbie.constants;
 
+import com.google.common.collect.ImmutableMap;
+import com.newbie.core.persistent.common.DateParameterConstructor;
+import com.newbie.core.persistent.common.ParameterConstructor;
+import com.newbie.core.persistent.common.TimeParameterConstructor;
+import com.newbie.core.persistent.common.TimeStampParameterConstructor;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * NewbieBootInfraConstants
  *
@@ -14,8 +23,6 @@ public class NewbieBootInfraConstants {
 
     public static final String NEWBIE_DEFAULT_PROPERTY_SOURCE              = "newbieConfigurationProperties";
     public static final String NEWBIE_BOOTSTRAP                            = "newbieBootstrap";
-    public static final String SPRING_CLOUD_BOOTSTRAP                    = "bootstrap";
-    public static final String NEWBIE_HIGH_PRIORITY_CONFIG                 = "newbieHighPriorityConfig";
 
     /**
      * {@link org.springframework.boot.ResourceBanner#getVersionsMap}
@@ -34,14 +41,10 @@ public class NewbieBootInfraConstants {
     public static final String ENDPOINTS_WEB_EXPOSURE_INCLUDE_CONFIG     = "management.endpoints.web.exposure.include";
     public static final String NEWBIE_DEFAULT_ENDPOINTS_WEB_EXPOSURE_VALUE = "info, health, versions, readiness";
 
-    /**
-     * root application context name
-     */
-    public static final String ROOT_APPLICATION_CONTEXT                  = "RootApplicationContext";
 
-    /**
-     * newbie configuration prefix
-     */
-    public static final String PREFIX                                    = "com.newbie.boot";
+    public static final Map<String, ParameterConstructor> DATE_PARAMETER_PROCESSOR = ImmutableMap.<String, ParameterConstructor>builder()
+            .put("DATE", new DateParameterConstructor())
+            .put("TIME", new TimeParameterConstructor())
+            .put("TIMESTAMP", new TimeStampParameterConstructor()).build();
 
 }
