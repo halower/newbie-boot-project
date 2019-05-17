@@ -26,6 +26,8 @@ public interface CustomizedRepository<T,ID> extends PagingAndSortingRepository<T
      * @return
      */
     <S extends T> S insert(S entity);
+
+    <S extends T> List<S> insertAll(Iterable<S> entities);
     /**
      *  修改
      * @param entity
@@ -42,11 +44,20 @@ public interface CustomizedRepository<T,ID> extends PagingAndSortingRepository<T
     <S extends T> S insertOrUpdate(S entity);
 
     /**
+     * 新增或者修改
+     * @param entity
+     * @param <S>
+     * @return
+     */
+    <S extends T> S insertOrUpdate(S entity, Class<T> entityType);
+    /**
      * 更新部分字段
      * @param entity 更新对象（映射字段与实体对象一致）
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
      int update(Object entity, Class<T> entityType);
+
+    <S extends T> List<S> updateAll(Iterable<S> entities);
 
     /**
      * 更新部分字段
@@ -54,6 +65,10 @@ public interface CustomizedRepository<T,ID> extends PagingAndSortingRepository<T
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     int updateIgnoreNull(Object entity, Class<T> entityType);
+
+    <S extends T> List<S> updateAll(Iterable<S> entities, Class<T> entityType);
+
+    <S extends T> List<S> updateIgnoreNull(Iterable<S> entities, Class<T> entityType);
     /**
      * 软删除
      * @param idPropName 主键对应属性名称

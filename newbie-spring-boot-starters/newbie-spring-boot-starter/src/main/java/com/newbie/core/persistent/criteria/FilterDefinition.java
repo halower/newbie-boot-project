@@ -29,5 +29,5 @@ public class FilterDefinition {
     private Object value;
     private Class<?> target;
     private Boolean isExtend;
-    private Integer order;
+    private Integer joinOrder;
 }

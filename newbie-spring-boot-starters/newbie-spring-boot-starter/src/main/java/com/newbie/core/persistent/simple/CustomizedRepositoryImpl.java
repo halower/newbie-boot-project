@@ -6,14 +6,17 @@ import com.newbie.core.annotations.UpdatedId;
 import com.newbie.core.persistent.config.FieldInfo;
 import com.newbie.core.persistent.criteria.QueryBuilder;
 import com.newbie.core.persistent.tpl.QueryExecutor;
+import com.newbie.core.utils.Utils;
 import com.newbie.core.utils.page.Pager;
 import com.newbie.core.utils.page.Pagination;
+import lombok.SneakyThrows;
 import lombok.var;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Id;
@@ -60,6 +63,17 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return entity;
     }
 
+    @Override
+    @Transactional
+    public <S extends T> List<S> insertAll(Iterable<S> entities) {
+        Assert.notNull(entities, "The given Iterable of entities not be null!");
+        List<S> result = new ArrayList<S>();
+        for (S entity : entities) {
+            result.add(insert(entity));
+        }
+        return result;
+    }
+
     /**
      * 更新
      * @param entity
@@ -72,6 +86,41 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return em.merge(entity);
     }
 
+
+    @Override
+    @Transactional
+    public <S extends T> List<S> updateAll(Iterable<S> entities) {
+        Assert.notNull(entities, "The given Iterable of entities not be null!");
+        List<S> result = new ArrayList<S>();
+        for (S entity : entities) {
+            result.add(update(entity));
+        }
+        return result;
+    }
+
+    @Override
+    @Transactional
+    public <S extends T> List<S> updateAll(Iterable<S> entities, Class<T> entityType) {
+        Assert.notNull(entities, "The given Iterable of entities not be null!");
+        List<S> result = new ArrayList<S>();
+        for (S entity : entities) {
+            update(entity,entityType);
+            result.add(entity);
+        }
+        return result;
+    }
+
+    @Override
+    @Transactional
+    public <S extends T> List<S> updateIgnoreNull(Iterable<S> entities, Class<T> entityType) {
+        Assert.notNull(entities, "The given Iterable of entities not be null!");
+        List<S> result = new ArrayList<S>();
+        for (S entity : entities) {
+            updateIgnoreNull(entity,entityType);
+            result.add(entity);
+        }
+        return result;
+    }
     /**
      * 新增或者修改
      * @param entity
@@ -86,6 +135,25 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
             return entity;
         } else {
             return em.merge(entity);
+        }
+    }
+
+
+    /**
+     * 新增或者修改
+     * @param entity
+     * @param <S>
+     * @return
+     */
+    @Override
+    @Transactional
+    public <S extends T> S insertOrUpdate(S entity, Class<T> entityType) {
+        if (isNew(entity)) {
+            em.persist(entity);
+            return entity;
+        } else {
+            this.update(entity,entityType);
+            return entity;
         }
     }
 
@@ -313,8 +381,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
 
     private static Map<String, Object> getFiledAndValue(Object obj,boolean ignoreNullFields) {
         var map = new HashMap<String, Object>();
-        Class cla = obj.getClass();
-        Field[] fields = cla.getDeclaredFields();
+        Field[] fields = Utils.bean.getFields(obj);
         for (Field field : fields) {
             field.setAccessible(true);
             Object val = null;
@@ -385,14 +452,15 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return kvs;
     }
 
+    @SneakyThrows
     private  List<FieldInfo> getId(Object entity){
         var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
-            var id = field.getDeclaredAnnotation(Id.class);
-            if(id!=null) {
+            var idAnnotation = field.getDeclaredAnnotation(Id.class);
+            if(idAnnotation!=null && field.get(entity)!=null) {
                 var kv =  fetchId(entity,field);
                 kvs.add(kv);
             }

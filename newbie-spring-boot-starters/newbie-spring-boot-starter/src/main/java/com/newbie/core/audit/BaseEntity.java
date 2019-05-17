@@ -2,12 +2,7 @@ package com.newbie.core.audit;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.Where;
-import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -16,6 +11,7 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.UUID;
 
 @Data
 @EntityListeners(AuditingEntityListener.class)
@@ -26,7 +22,7 @@ public abstract class BaseEntity implements Serializable {
      * 创建时间
      */
     @CreatedDate
-    @Column(name = "CJSJ")
+    @Column(name = "CJSJ",updatable = false, nullable = false)
     private Date cjsj;
 
     /**
@@ -40,7 +36,7 @@ public abstract class BaseEntity implements Serializable {
      * 数据标识编号
      */
     @Column(name = "SJBSBH")
-    private String sjbsbh;
+    private String sjbsbh = UUID.randomUUID().toString();
 
     /**
      * 是否删除

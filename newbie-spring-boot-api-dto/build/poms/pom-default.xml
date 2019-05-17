@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-api-dto</artifactId>
-  <version>alpha.qcs.1.5.0</version>
+  <version>alpha.qcs.1.5.2</version>
   <dependencies>
     <dependency>
       <groupId>org.modelmapper</groupId>

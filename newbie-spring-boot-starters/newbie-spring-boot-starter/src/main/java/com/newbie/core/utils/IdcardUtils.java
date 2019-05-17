@@ -300,7 +300,7 @@ public class IdcardUtils {
      * @return 年龄
      */
     public static int getAgeByIdCard(String idCard) {
-        int iAge = 0;
+        int iAge;
         if (idCard.length() == CHINA_ID_MIN_LENGTH) {
             idCard = conver15CardTo18(idCard);
         }

@@ -1,17 +1,29 @@
 {
   "groups": [
     {
+      "name": "app",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
       "name": "management.endpoint.versions",
       "type": "com.newbie.endpoint.NewbieBootVersionEndpoint",
       "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint"
-    },
-    {
-      "name": "newbie",
-      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
     }
   ],
   "properties": [
+    {
+      "name": "app.auth-secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "tyyw"
+    },
+    {
+      "name": "app.env",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "dev"
+    },
     {
       "name": "management.endpoint.versions.cache.time-to-live",
       "type": "java.time.Duration",
@@ -27,28 +39,20 @@
       "defaultValue": true
     },
     {
-      "name": "newbie.auditor-tag-in-head",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "defaultValue": "USER-ID"
-    },
-    {
-      "name": "newbie.auto-record-request-details",
+      "name": "app.auto-record-request-details",
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "defaultValue": false
+      "defaultValue": false,
+      "deprecated": true,
+      "deprecation": {}
     },
     {
-      "name": "newbie.env",
-      "type": "java.lang.String",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "defaultValue": "dev"
-    },
-    {
-      "name": "newbie.receive-request-event",
+      "name": "app.receive-request-event",
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "defaultValue": false
+      "defaultValue": false,
+      "deprecated": true,
+      "deprecation": {}
     }
   ],
   "hints": []

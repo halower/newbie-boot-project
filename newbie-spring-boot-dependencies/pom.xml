@@ -6,7 +6,7 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-dependencies</artifactId>
-    <version>alpha.qcs.1.3.6</version>
+    <version>alpha.qcs.1.4.2</version>
 
     <properties>
         <DUBBO_VERSION>2.7.0</DUBBO_VERSION>
@@ -35,9 +35,22 @@
         <COMMONS_IO_VERSION>2.6</COMMONS_IO_VERSION>
         <COMMONS_BEANUTILS_VERSION>1.9.3</COMMONS_BEANUTILS_VERSION>
         <COMMONS_LANG3_VERSION>3.9</COMMONS_LANG3_VERSION>
+        <JJWT_VERSION>0.9.1</JJWT_VERSION>
+        <OPEN_FEIGN_VERSION>2.1.0.RELEASE</OPEN_FEIGN_VERSION>
+        <NEWBIE_BOOT_DUBBO_VERSION>alpha.qcs.1.2.2</NEWBIE_BOOT_DUBBO_VERSION>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.github.halower</groupId>
+                <artifactId>newbie-spring-cloud-dubbo-starter</artifactId>
+                <version>${NEWBIE_BOOT_DUBBO_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${JJWT_VERSION}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -57,6 +70,11 @@
                 <groupId>org.jinq</groupId>
                 <artifactId>jinq-jpa</artifactId>
                 <version>${JLINQ_VERSION}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
+                <version>${ADN_VERSION}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger</groupId>

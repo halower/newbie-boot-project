@@ -10,17 +10,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-api-dto" />
-            <option value="$PROJECT_DIR$/newbie-spring-boot-auth" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-management" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter" />
-            <option value="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples" />
-            <option value="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-api-sample" />
-            <option value="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-consumer-sample" />
-            <option value="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-provider-sample" />
+            <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
           </set>
         </option>
       </GradleProjectSettings>

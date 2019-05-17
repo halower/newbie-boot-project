@@ -10,9 +10,8 @@ import org.springframework.core.Ordered;
 import org.springframework.core.env.Environment;
 
 @Log
-public class NewBieBootInfrastructureSpringContextInitializer
-                                                           implements
-                                                           ApplicationContextInitializer<ConfigurableApplicationContext>,
+public class NewBieBootInfrastructureSpringContextInitializer implements
+        ApplicationContextInitializer<ConfigurableApplicationContext>,
                                                            Ordered {
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
@@ -20,6 +19,7 @@ public class NewBieBootInfrastructureSpringContextInitializer
         if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
             log.info("当前接入SpringCloud环境");
         }
+
         log.info("NewBieBoot基础设施已经准备就绪!");
     }
 

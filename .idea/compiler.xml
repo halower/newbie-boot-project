@@ -35,10 +35,16 @@
       <module name="newbie-spring-boot-stater-jpa_test" target="1.8" />
       <module name="newbie-spring-boot-stater-oss_main" target="1.8" />
       <module name="newbie-spring-boot-stater-oss_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-consumer-sample_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-consumer-sample_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-providers-sample_main" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-providers-sample_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-api-sample_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-api-sample_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-consumer-sample_main" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-consumer-sample_test" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-provider-sample_main" target="1.8" />
+      <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-provider-sample_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_main" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-starter_main" target="1.8" />

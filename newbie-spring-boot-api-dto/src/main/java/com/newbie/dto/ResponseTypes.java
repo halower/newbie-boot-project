@@ -25,6 +25,7 @@ public enum ResponseTypes {
     INVALID_DATA("1019", "数据不完整或数据之间矛盾"),
     METHOD_NOT_ALLOWED("1020","方法不允许操作"),
     TIMEOUT("1021","操作超时"),
+    UNAUTHORIZED("1022","当前操作未授权"),
     UNKNOW("1030","服务器内部错误,请联系管理员");
 
     private String code;

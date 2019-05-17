@@ -49,9 +49,7 @@ public class Utils {
     /**
      * 时间操作
      */
-    public static DateTimeUtil datetime() {
-        return new DateTimeUtil();
-    }
+    public static DateTimeUtil datetime = new DateTimeUtil();
 
     /**
      * 金额操作

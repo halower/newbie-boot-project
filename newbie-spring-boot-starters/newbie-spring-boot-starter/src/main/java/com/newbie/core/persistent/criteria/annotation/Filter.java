@@ -26,5 +26,5 @@ public @interface Filter {
 	boolean whereGroupIsAnd() default true;
 	boolean inOn() default false;
 	Operator operator() default Operator.EQ;
-	int order() default 0;
+	int joinOrder() default 0;
 }

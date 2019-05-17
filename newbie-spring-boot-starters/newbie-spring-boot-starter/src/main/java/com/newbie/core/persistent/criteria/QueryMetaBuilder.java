@@ -125,7 +125,9 @@ public class QueryMetaBuilder {
 	}
 
 	private Map<String, List<FilterDefinition>> getGroupJoinFilters() {
-		var joins = getAllFilters().stream().sorted(Comparator.comparingInt(FilterDefinition::getOrder)).filter(x -> !x.getJoinFrom().getSimpleName().equals("Object"));
+		var joins = getAllFilters().stream()
+				.sorted(Comparator.comparingInt(FilterDefinition::getJoinOrder))
+				.filter(x -> !x.getJoinFrom().getSimpleName().equals("Object"));
 		return joins.collect(Collectors.groupingBy(o -> o.getJoinFrom().getSimpleName(), LinkedHashMap::new,Collectors.toList()));
 	}
 

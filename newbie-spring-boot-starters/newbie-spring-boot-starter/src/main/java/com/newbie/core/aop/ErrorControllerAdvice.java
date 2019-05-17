@@ -4,6 +4,7 @@ import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 
-@Slf4j
+@Log
 @ControllerAdvice
 public class ErrorControllerAdvice  {
     @Autowired

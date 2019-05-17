@@ -37,7 +37,7 @@ public class NewbieBootVersionEndpoint {
                         .of(resourcePatternResolver.getResources(NEWBIE_BOOT_VERSION_PROPERTIES))
                         .map(this::loadProperties).collect(Collectors.toList());
             } catch (Exception ex) {
-                log.warn("Load properties failed: {}", ex.getMessage());
+                log.warn("加载properties文件失败: {}", ex.getMessage());
             }
         }
         return endpointResult;
@@ -49,14 +49,14 @@ public class NewbieBootVersionEndpoint {
      * @param resourceLocation the resource locations to load
      */
     private Properties loadProperties(Resource resourceLocation) {
-        Assert.notNull(resourceLocation, "Properties resource location must not be null.");
+        Assert.notNull(resourceLocation, "properties 资源不能为空.");
 
-        log.info("Loading properties file from {}", resourceLocation);
+        log.info("加载properties文件失败，位置： {}", resourceLocation);
         Properties result = new Properties();
         try {
             PropertiesLoaderUtils.fillProperties(result, new EncodedResource(resourceLocation));
         } catch (IOException ex) {
-            log.warn("Error occurred when loading properties from {}: {}", resourceLocation,
+            log.warn("加载 properties文件失败{}: 原因{}", resourceLocation,
                 ex.getMessage());
         }
         return result;

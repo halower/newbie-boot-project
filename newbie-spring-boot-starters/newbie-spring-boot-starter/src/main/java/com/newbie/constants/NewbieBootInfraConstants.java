@@ -30,9 +30,7 @@ public class NewbieBootInfraConstants {
     public static final String NEWBIE_BOOT_VERSION                         = "newbie-boot.version";
     public static final String NEWBIE_BOOT_FORMATTED_VERSION               = "newbie-boot.formatted-version";
 
-    /**
-     * resource pattern of properties file which is used to save some information of starters.
-     */
+
     public static final String NEWBIE_BOOT_VERSION_PROPERTIES  = "classpath*:META-INF/newbie.versions.properties";
 
     /**

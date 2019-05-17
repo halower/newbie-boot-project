@@ -4,7 +4,6 @@ import com.newbie.core.persistent.criteria.annotation.Filter;
 import com.newbie.core.persistent.criteria.annotation.FilterEntity;
 import com.newbie.core.persistent.criteria.annotation.Filters;
 import com.newbie.core.persistent.criteria.enums.Operator;
-import freemarker.template.utility.StringUtil;
 import lombok.SneakyThrows;
 import lombok.var;
 import org.springframework.util.StringUtils;
@@ -81,7 +80,7 @@ public class AnnotationReader {
         filterDef.setJoinType(filter.joinType());
         filterDef.setIsExtend(filter.isExtend());
         filterDef.setTargetProp(filter.targetProp());
-        filterDef.setOrder(filter.order());
+        filterDef.setJoinOrder(filter.joinOrder());
         filterDef.setOn(filter.on());
         filterDef.setInWhere(filter.inWhere());
         filterDef.setWhereGroup(StringUtils.isEmpty(filter.whereGroup())?"DEFAULT_GROUP":filter.whereGroup());

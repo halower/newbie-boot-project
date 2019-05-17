@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.qcs.1.5.0"
+version = "alpha.qcs.1.5.2"
 
 
 apply plugin: 'java'

@@ -1,6 +1,7 @@
 package com.newbie.core.utils.env;
 
 import com.newbie.constants.NewbieBootInfraConstants;
+import com.newbie.core.audit.CurrentUserInfo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
@@ -11,7 +12,6 @@ public class NewBieBootEnvUtils {
     private final static String SPRING_CLOUD_MARK_NAME = "org.springframework.cloud.bootstrap.BootstrapConfiguration";
 
     private static ApplicationContext context ;
-
     public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
         if (environment instanceof ConfigurableEnvironment) {
             return !((ConfigurableEnvironment) environment).getPropertySources().contains(

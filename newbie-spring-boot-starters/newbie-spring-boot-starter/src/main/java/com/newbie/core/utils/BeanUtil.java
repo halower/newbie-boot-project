@@ -137,6 +137,24 @@ public class BeanUtil {
     }
 
     /**
+     * 获取当前类及父类的所有字段
+     *
+     * @param  o 当前对象
+     * @return 字段信息
+     */
+    public static Field[] getFields(Object o){
+        Class c= o.getClass();
+        List<Field> fieldList = new ArrayList<>();
+        while (c!= null){
+            fieldList.addAll(new ArrayList<>(Arrays.asList(c.getDeclaredFields())));
+            c= c.getSuperclass();
+        }
+        Field[] fields = new Field[fieldList.size()];
+        fieldList.toArray(fields);
+        return fields;
+    }
+
+    /**
      * 获取Class的方法信息
      *
      * @param clazz                    目标Class类型
