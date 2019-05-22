@@ -37,7 +37,9 @@ public class QueryMetaBuilder {
 			if(joins.size()>0) {
 				var joinType = joins.get(0).getJoinType().getValue();
 				queryBuffer.append(" "+ joinType + " " + group +" "+group.toLowerCase()+ " ON " );
-				if(joins.size()>1) queryBuffer.append("( ");
+				if(joins.size()>1) {
+					queryBuffer.append("( ");
+				}
 				var jit = joins.iterator();
 				while (jit.hasNext()){
 					var filter = jit.next();
@@ -50,9 +52,13 @@ public class QueryMetaBuilder {
 					} else {
 						queryBuffer.append(group.toLowerCase() +"."+onOther+ "=" + joinTo +"."+onTo);
 					}
-					if(jit.hasNext()) queryBuffer.append(" AND ");
+					if(jit.hasNext()) {
+						queryBuffer.append(" AND ");
+					}
 				}
-				if(joins.size()>1) queryBuffer.append(" ) ");
+				if(joins.size()>1) {
+					queryBuffer.append(" ) ");
+				}
 			}
 		});
 		var whereFilters =  getWhereFilters();
@@ -142,7 +148,9 @@ public class QueryMetaBuilder {
             var defaultTarget = reader.getRootEntity().getSimpleName().toLowerCase();
 			if(filters!=null) {
 				for (var filter : filters.value()) {
-					if(!filter.inSelect()) continue;
+					if(!filter.inSelect()) {
+						continue;
+					}
 					var target = filter.target().getSimpleName().toLowerCase();
 					var targetProp = StringUtils.isNotEmpty(filter.targetProp())?  filter.targetProp(): field.getName();
 					if(!(field.getName().endsWith("_In") && field.getName().endsWith("_Max") && field.getName().endsWith("_Min"))) {

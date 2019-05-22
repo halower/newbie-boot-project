@@ -6,7 +6,7 @@ ${AnsiColor.GREEN}
   \ \ \`\ \ \ \L\ \ \ \_/ \_\ \ \ \L\ \ \_\ \__\ \ \L\ \
    \ \_\ \_\ \____/\ `\___x___/\ \____/ /\_____\\ \____/
     \/_/\/_/\/___/  '\/__//__/  \/___/  \/_____/ \/___/
-                          欢迎使用NEWBIW辅助你的开发进程
+                          欢迎使用NEWBIWE(新手)辅助你的开发进程
 ${AnsiColor.BLUE}
 Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
 NewBieBoot ${newbie-boot.version} ${newbie-boot.formatted-version}基于 Spring Boot 的基础上进行构建，并且完全兼容 Spring Boot。

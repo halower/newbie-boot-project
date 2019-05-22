@@ -8,6 +8,6 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @EnableJpaRepositories(repositoryBaseClass = DefaultExtendedQueryDslJpaRepository.class)
-public @interface EnablePlusJpaRepositories {
+public @interface EnableJPQLRepositories {
 }
 

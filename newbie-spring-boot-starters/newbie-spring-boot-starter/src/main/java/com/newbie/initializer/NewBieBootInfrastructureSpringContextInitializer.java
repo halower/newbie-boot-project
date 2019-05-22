@@ -17,10 +17,10 @@ public class NewBieBootInfrastructureSpringContextInitializer implements
     public void initialize(ConfigurableApplicationContext applicationContext) {
         Environment environment = applicationContext.getEnvironment();
         if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
-            log.info("当前接入SpringCloud环境");
+            log.info("\n当前接入SpringCloud环境");
         }
 
-        log.info("NewBieBoot基础设施已经准备就绪!");
+        log.info("\nNewBieBoot基础设施已经准备就绪!");
     }
 
     @Override
@@ -28,5 +28,4 @@ public class NewBieBootInfrastructureSpringContextInitializer implements
         //设置为最高优先级
         return HIGHEST_PRECEDENCE;
     }
-
 }

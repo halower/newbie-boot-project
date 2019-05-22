@@ -6,255 +6,247 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-dependencies</artifactId>
-    <version>alpha.qcs.1.4.2</version>
+    <version>alpha.1.0.5</version>
 
     <properties>
-        <DUBBO_VERSION>2.7.0</DUBBO_VERSION>
-        <SPRING_BOOT_VERSION>2.1.2.RELEASE</SPRING_BOOT_VERSION>
-        <QUERY_DSLJPA_VERSION>4.2.1</QUERY_DSLJPA_VERSION>
-        <QUERY_DSLSQL_VERSION>4.2.1</QUERY_DSLSQL_VERSION>
-        <LOMBOK_VERSION>1.16.22</LOMBOK_VERSION>
-        <MODELMAPPER_VERSION>2.1.0</MODELMAPPER_VERSION>
-        <FASTJSON_VERSION>1.2.49</FASTJSON_VERSION>
-        <SPRING4ALL_VERSION>1.8.0.RELEASE</SPRING4ALL_VERSION>
-        <JPA_EXTRA_VERSION>2.1.1.RELEASE</JPA_EXTRA_VERSION>
-        <REDIS_VERSION>2.0.5.RELEASE</REDIS_VERSION>
-        <JACKSON_VERSION>2.9.5</JACKSON_VERSION>
-        <ALIYUN_SDK_OSS_VERSION>2.8.3</ALIYUN_SDK_OSS_VERSION>
-        <LOGSTASH_VERSION>5.2</LOGSTASH_VERSION>
-        <FREEMARK_VERSION>2.3.23</FREEMARK_VERSION>
-        <HTTPCLIENT_VERSION>4.5.7</HTTPCLIENT_VERSION>
-        <JODA_TIME_VERSION>2.5</JODA_TIME_VERSION>
-        <HTTP_CLIENT_VERSION>4.5.7</HTTP_CLIENT_VERSION>
-        <DUBBO_VERSION>2.7.0</DUBBO_VERSION>
-        <JLINQ_VERSION>1.8.25</JLINQ_VERSION>
-        <LOG-SERVICE-VERSION>0.3-ALPHA</LOG-SERVICE-VERSION>
-        <VALIDATION_API_VERSION>2.0.1.Final</VALIDATION_API_VERSION>
-        <JACKSON_ANNOTATIONS_VERSION>2.9.5</JACKSON_ANNOTATIONS_VERSION>
-        <SWAGGER_ANNOTATIONS_VERSION>1.5.22</SWAGGER_ANNOTATIONS_VERSION>
-        <COMMONS_IO_VERSION>2.6</COMMONS_IO_VERSION>
-        <COMMONS_BEANUTILS_VERSION>1.9.3</COMMONS_BEANUTILS_VERSION>
-        <COMMONS_LANG3_VERSION>3.9</COMMONS_LANG3_VERSION>
-        <JJWT_VERSION>0.9.1</JJWT_VERSION>
-        <OPEN_FEIGN_VERSION>2.1.0.RELEASE</OPEN_FEIGN_VERSION>
-        <NEWBIE_BOOT_DUBBO_VERSION>alpha.qcs.1.2.2</NEWBIE_BOOT_DUBBO_VERSION>
+        <spring_boot_version>2.1.2.RELEASE</spring_boot_version>
+        <query_dsljpa_version>4.2.1</query_dsljpa_version>
+        <query_dslsql_version>4.2.1</query_dslsql_version>
+        <lombok_version>1.16.22</lombok_version>
+        <dubbo_version>2.7.1</dubbo_version>
+        <modelmapper_version>2.1.0</modelmapper_version>
+        <fastjson_version>1.2.49</fastjson_version>
+        <spring4all_version>1.8.0.RELEASE</spring4all_version>
+        <jpa_extra_version>2.1.1.RELEASE</jpa_extra_version>
+        <redis_version>2.0.5.RELEASE</redis_version>
+        <jackson_version>2.9.5</jackson_version>
+        <aliyun_sdk_oss_version>2.8.3</aliyun_sdk_oss_version>
+        <logstash_version>5.2</logstash_version>
+        <freemark_version>2.3.23</freemark_version>
+        <httpclient_version>4.5.7</httpclient_version>
+        <joda_time_version>2.5</joda_time_version>
+        <http_client_version>4.5.7</http_client_version>
+        <jlinq_version>1.8.25</jlinq_version>
+        <validation_api_version>2.0.1.Final</validation_api_version>
+        <jackson_annotations_version>2.9.5</jackson_annotations_version>
+        <swagger_annotations_version>1.5.22</swagger_annotations_version>
+        <commons_io_version>2.6</commons_io_version>
+        <alibaba_version>0.9.0.RELEASE</alibaba_version>
+        <commons_beanutils_version>1.9.3</commons_beanutils_version>
+        <commons_lang3_version>3.9</commons_lang3_version>
+        <jjwt_version>0.9.1</jjwt_version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.github.halower</groupId>
-                <artifactId>newbie-spring-cloud-dubbo-starter</artifactId>
-                <version>${NEWBIE_BOOT_DUBBO_VERSION}</version>
-            </dependency>
-            <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
-                <version>${JJWT_VERSION}</version>
+                <version>${jjwt_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>${COMMONS_LANG3_VERSION}</version>
+                <version>${commons_lang3_version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
-                <version>${COMMONS_BEANUTILS_VERSION}</version>
+                <version>${commons_beanutils_version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>${COMMONS_IO_VERSION}</version>
+                <version>${commons_io_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-registry-nacos</artifactId>
+                <version>${dubbo_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jinq</groupId>
                 <artifactId>jinq-jpa</artifactId>
-                <version>${JLINQ_VERSION}</version>
+                <version>${jlinq_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
-                <version>${ADN_VERSION}</version>
+                <version>${alibaba_version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
-                <version>${SWAGGER_ANNOTATIONS_VERSION}</version>
+                <version>${swagger_annotations_version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
-                <version>${VALIDATION_API_VERSION}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.tfswx.tyyw.log-service</groupId>
-                <artifactId>collector</artifactId>
-                <version>${LOG-SERVICE-VERSION}</version>
+                <version>${validation_api_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>${JACKSON_ANNOTATIONS_VERSION}</version>
+                <version>${jackson_annotations_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>${DUBBO_VERSION}</version>
+                <version>${dubbo_version}</version>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
-                <version>${JODA_TIME_VERSION}</version>
+                <version>${joda_time_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>${HTTP_CLIENT_VERSION}</version>
+                <version>${http_client_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>${HTTPCLIENT_VERSION}</version>
+                <version>${httpclient_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${DUBBO_VERSION}</version>
+                <version>${dubbo_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>${DUBBO_VERSION}</version>
+                <version>${dubbo_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
-                <version>${ALIYUN_SDK_OSS_VERSION}</version>
+                <version>${aliyun_sdk_oss_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
-                <version>${FREEMARK_VERSION}</version>
+                <version>${freemark_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-undertow</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-cache</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-jdbc</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.querydsl</groupId>
                 <artifactId>querydsl-jpa</artifactId>
-                <version>${QUERY_DSLJPA_VERSION}</version>
+                <version>${query_dsljpa_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.querydsl</groupId>
                 <artifactId>querydsl-apt</artifactId>
-                <version>${QUERY_DSLJPA_VERSION}</version>
+                <version>${query_dsljpa_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.querydsl</groupId>
                 <artifactId>querydsl-sql</artifactId>
-                <version>${QUERY_DSLSQL_VERSION}</version>
+                <version>${query_dslsql_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>${LOMBOK_VERSION}</version>
+                <version>${lombok_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.modelmapper</groupId>
                 <artifactId>modelmapper</artifactId>
-                <version>${MODELMAPPER_VERSION}</version>
+                <version>${modelmapper_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.spring4all</groupId>
                 <artifactId>swagger-spring-boot-starter</artifactId>
-                <version>${SPRING4ALL_VERSION}</version>
+                <version>${spring4all_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.slyak</groupId>
                 <artifactId>spring-data-jpa-extra</artifactId>
-                <version>${JPA_EXTRA_VERSION}</version>
+                <version>${jpa_extra_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>${SPRING_BOOT_VERSION}</version>
+                <version>${spring_boot_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
-                <version>${REDIS_VERSION}</version>
+                <version>${redis_version}</version>
             </dependency>
             <dependency>
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
-                <version>${LOGSTASH_VERSION}</version>
+                <version>${logstash_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>${FASTJSON_VERSION}</version>
+                <version>${fastjson_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jsr310</artifactId>
-                <version>${JACKSON_VERSION}</version>
+                <version>${jackson_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.module</groupId>
                 <artifactId>jackson-module-parameter-names</artifactId>
-                <version>${JACKSON_VERSION}</version>
+                <version>${jackson_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jdk8</artifactId>
-                <version>${JACKSON_VERSION}</version>
+                <version>${jackson_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
-                <version>${ALIYUN_SDK_OSS_VERSION}</version>
+                <version>${aliyun_sdk_oss_version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

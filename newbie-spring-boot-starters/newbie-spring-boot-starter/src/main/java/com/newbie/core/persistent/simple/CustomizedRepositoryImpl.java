@@ -110,17 +110,6 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return result;
     }
 
-    @Override
-    @Transactional
-    public <S extends T> List<S> updateIgnoreNull(Iterable<S> entities, Class<T> entityType) {
-        Assert.notNull(entities, "The given Iterable of entities not be null!");
-        List<S> result = new ArrayList<S>();
-        for (S entity : entities) {
-            updateIgnoreNull(entity,entityType);
-            result.add(entity);
-        }
-        return result;
-    }
     /**
      * 新增或者修改
      * @param entity
@@ -163,6 +152,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
+    @Transactional
     public int update(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
@@ -186,6 +176,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
+    @Transactional
     public int updateIgnoreNull(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
@@ -203,6 +194,17 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return em.createQuery(criteria).executeUpdate();
     }
 
+    @Override
+    @Transactional
+    public <S extends T> List<S> updateIgnoreNull(Iterable<S> entities, Class<T> entityType) {
+        Assert.notNull(entities, "The given Iterable of entities not be null!");
+        List<S> result = new ArrayList<S>();
+        for (S entity : entities) {
+            updateIgnoreNull(entity,entityType);
+            result.add(entity);
+        }
+        return result;
+    }
     /**
      * 软删除
      * @param idPropName 主键对应属性名称
@@ -211,6 +213,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
+    @Transactional
     public int softDelete(String idPropName, Object idValue, Class<T> entityType){
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = builder.createCriteriaUpdate(entityType);
@@ -226,6 +229,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entityType 实体类型
      */
     @Override
+    @Transactional
     public int softDelete(Object entity, Class<T> entityType){
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
@@ -266,6 +270,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entityType 实体类型
      */
     @Override
+    @Transactional
     public int softDeleteWithAnyId(Object entity, Class<T> entityType){
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
@@ -292,6 +297,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @return
      */
     @Override
+    @Transactional
     public <S> List<S> queryWithFilterE(S queryFilter,Function<S,String> func) {
         var data = new QueryBuilder<S>().execute(em,queryFilter,func);
         return data;
@@ -345,6 +351,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param model   参数对象
      * @param resultType 返回类型
      */
+    @Override
     public <S> List<S> queryWithTemplate(String tplName, String method, Object model, Class<S> resultType){
         return new QueryExecutor<S>().query(em,tplName,method,model,resultType);
     }
@@ -356,7 +363,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param model   参数对象
      * @param resultType 返回类型
      */
-    public <S> Pagination<S> queryPageWithTemplate(String tplName, String method, Object model,Class<S> resultType, PageRequest pageRequest){
+    @Override
+    public <S> Pagination<S> queryPageWithTemplate(String tplName, String method, Object model, Class<S> resultType, PageRequest pageRequest){
         return new QueryExecutor<S>().queryPage(em,tplName,method,model,resultType,pageRequest);
     }
 
@@ -366,7 +374,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entity
      * @return
      */
-    public <S> List<S> nativeQueryWithTemplate( String tplName, String method, Object entity, Class<S> resultType){
+    @Override
+    public <S> List<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType){
         return new QueryExecutor<S>().nativeQuery(em,tplName,method,entity, resultType);
     }
 
@@ -375,6 +384,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param entity
      * @return
      */
+    @Override
     public <S> Pagination<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType, PageRequest pageRequest){
         return new QueryExecutor<S>().nativeQueryPage(em,tplName,method,entity,resultType,pageRequest);
     }
@@ -393,8 +403,12 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
                 }
                 if(ignoreNullFields) {
                     UpdatedId idFlag = field.getDeclaredAnnotation(UpdatedId.class);
-                    if (val != null && idFlag==null) map.put(field.getName(), val);
-                } else map.put(field.getName(), val);
+                    if (val != null && idFlag==null) {
+                        map.put(field.getName(), val);
+                    }
+                } else {
+                    map.put(field.getName(), val);
+                }
 
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();

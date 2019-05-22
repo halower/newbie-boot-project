@@ -40,7 +40,7 @@ public class CustomAuditorAware implements AuditorAware<String> {
             }
             String token = request.getHeader("Authorization").replace(PREFIX, "").trim();
             Claims claims = getClaimsFormToken(token);
-            CurrentUserInfo currentUserInfo = JSON.parseObject(claims.getSubject(), CurrentUserInfo.class);
+            CurrentUserContext currentUserInfo = JSON.parseObject(claims.getSubject(), CurrentUserContext.class);
             return Optional.of(currentUserInfo.getRybm());
         }
     }

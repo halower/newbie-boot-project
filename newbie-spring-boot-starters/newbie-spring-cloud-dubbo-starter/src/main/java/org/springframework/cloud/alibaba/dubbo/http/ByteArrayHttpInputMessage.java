@@ -44,7 +44,7 @@ class ByteArrayHttpInputMessage implements HttpInputMessage {
     }
 
     @Override
-    public InputStream getBody() throws IOException {
+    public InputStream getBody() {
         return inputStream;
     }
 

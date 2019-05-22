@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-cloud-dubbo-starter</artifactId>
-  <version>alpha.1.0.1.2</version>
+  <version>alpha.qcs.1.2.2</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -201,6 +201,10 @@
       <scope>compile</scope>
       <exclusions>
         <exclusion>
+          <artifactId>slf4j-log4j12</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jsr305</artifactId>
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
@@ -213,7 +217,6 @@
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
       </exclusions>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.apache.curator</groupId>
@@ -222,6 +225,10 @@
       <scope>compile</scope>
       <exclusions>
         <exclusion>
+          <artifactId>zookeeper</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jsr305</artifactId>
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
@@ -234,7 +241,6 @@
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
       </exclusions>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
@@ -276,12 +282,11 @@
           <groupId>com.google.code.findbugs</groupId>
         </exclusion>
       </exclusions>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.apache.dubbo</groupId>
       <artifactId>dubbo</artifactId>
-      <version>2.7.0</version>
+      <version>2.7.1</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -400,7 +405,7 @@
       <dependency>
         <groupId>com.github.halower</groupId>
         <artifactId>newbie-spring-boot-dependencies</artifactId>
-        <version>alpha.1.0.1</version>
+        <version>alpha.qcs.1.1</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

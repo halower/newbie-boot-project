@@ -17,8 +17,9 @@ public class AnnotationReader {
     private Object bean;
 
     public AnnotationReader(Object bean) {
-        if (!bean.getClass().isAnnotationPresent(FilterEntity.class))
+        if (!bean.getClass().isAnnotationPresent(FilterEntity.class)) {
             throw new IllegalArgumentException("对象" + bean + "未使用@FilterEntity定义");
+        }
         this.bean = bean;
     }
 
@@ -37,7 +38,9 @@ public class AnnotationReader {
             field.setAccessible(true);
             var filter = field.getAnnotation(Filter.class);
             if(filter!=null) {
-                if (filtersResolver(isWhere, filterDefinitions, field, filter)) continue;
+                if (filtersResolver(isWhere, filterDefinitions, field, filter)) {
+                    continue;
+                }
             }
             var filters = field.getAnnotation(Filters.class);
             if(filters!=null) {
@@ -45,7 +48,9 @@ public class AnnotationReader {
                 while (it.hasNext()){
                     var subFilter = it.next();
                     if(subFilter!=null) {
-                        if (filtersResolver(isWhere, filterDefinitions, field, subFilter)) continue;
+                        if (filtersResolver(isWhere, filterDefinitions, field, subFilter)) {
+                            continue;
+                        }
                     }
                 }
             }
@@ -57,20 +62,30 @@ public class AnnotationReader {
     private boolean filtersResolver(boolean isWhere, List<FilterDefinition> filterDefinitions, Field field, Filter filter) {
         var value = field.get(this.bean);
         if(isWhere){
-            if (!filter.inWhere() || filter.isExtend()) return true;
+            if (!filter.inWhere() || filter.isExtend()) {
+                return true;
+            }
             if(value==null) {
                 if(filter.inWhere()){
                     if (filter.operator().equals(Operator.BETWEEN)) {
                         var max = bean.getClass().getDeclaredField(field.getName() + "_Max");
                         var min = bean.getClass().getDeclaredField(field.getName() + "_Min");
-                        if (max == null || min == null) return true;
+                        if (max == null || min == null) {
+                            return true;
+                        }
                     }
                     else if (filter.operator().equals(Operator.IN)) {
                         var in = bean.getClass().getDeclaredField(field.getName() + "_In");
-                        if (in == null) return true;
+                        if (in == null) {
+                            return true;
+                        }
                     }
-                    else return true;
-                } else return true;
+                    else {
+                        return true;
+                    }
+                } else {
+                    return true;
+                }
             }
         }
         var filterDef = new FilterDefinition();

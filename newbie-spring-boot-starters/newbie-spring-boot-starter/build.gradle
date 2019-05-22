@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.qcs.1.6.5"
+version = "alpha.1.1.0"
 buildscript {
     ext {
         SPRING_IO_VERSION = '1.0.6.RELEASE'
@@ -70,7 +70,7 @@ ext {
 
 dependencyManagement {
     imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:+"
+        mavenBom "com.github.halower:newbie-spring-boot-dependencies:alpha.1.0.1"
     }
 }
 

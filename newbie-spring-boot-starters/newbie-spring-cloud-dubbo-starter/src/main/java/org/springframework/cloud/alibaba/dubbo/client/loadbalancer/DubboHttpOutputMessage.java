@@ -34,7 +34,7 @@ class DubboHttpOutputMessage implements HttpOutputMessage {
     private final HttpHeaders httpHeaders = new HttpHeaders();
 
     @Override
-    public FastByteArrayOutputStream getBody() throws IOException {
+    public FastByteArrayOutputStream getBody() {
         return outputStream;
     }
 

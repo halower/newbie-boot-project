@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-cloud-openclient</artifactId>
-  <version>alpha.qcs.1.0.2</version>
+  <version>alpha.1.1.0</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
@@ -17,9 +17,8 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.github.halower</groupId>
-      <artifactId>newbie-spring-cloud-dubbo-starter</artifactId>
-      <version>alpha.qcs.1.2.2</version>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -29,20 +28,8 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
-      <version>2.1.0.RELEASE</version>
-      <scope>runtime</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>annotations</artifactId>
-          <groupId>com.google.code.findbugs</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-registry-nacos</artifactId>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -56,8 +43,8 @@
     <dependencies>
       <dependency>
         <groupId>com.github.halower</groupId>
-        <artifactId>newbie-spring-boot-management</artifactId>
-        <version>alpha.qcs.1.7.0</version>
+        <artifactId>newbie-spring-boot-dependencies</artifactId>
+        <version>alpha.1.0.5</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

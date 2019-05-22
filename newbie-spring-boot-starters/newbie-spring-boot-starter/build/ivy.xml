@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="alpha.qcs.1.6.5" status="integration" publication="20190516223042"/>
+  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="alpha.1.1.0" status="integration" publication="20190522200935"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -91,7 +91,7 @@
     <dependency org="org.jinq" name="jinq-jpa" rev="" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
-    <dependency org="com.github.halower" name="newbie-spring-boot-api-dto" rev="alpha.qcs.1.5.2" conf="implementation-&gt;default">
+    <dependency org="com.github.halower" name="newbie-spring-boot-api-dto" rev="alpha.1.0.0" conf="implementation-&gt;default">
       <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
     </dependency>
     <dependency org="com.spring4all" name="swagger-spring-boot-starter" rev="" conf="implementation-&gt;default">

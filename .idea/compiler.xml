@@ -31,6 +31,8 @@
       <module name="newbie-spring-boot-starter_generated" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_main" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_test" target="1.8" />
+      <module name="newbie-spring-boot-starters-newbie-spring-cloud-dubbo-starter_main" target="1.8" />
+      <module name="newbie-spring-boot-starters-newbie-spring-cloud-dubbo-starter_test" target="1.8" />
       <module name="newbie-spring-boot-stater-jpa_main" target="1.8" />
       <module name="newbie-spring-boot-stater-jpa_test" target="1.8" />
       <module name="newbie-spring-boot-stater-oss_main" target="1.8" />
@@ -47,8 +49,6 @@
       <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-provider-sample_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_main" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_test" target="1.8" />
-      <module name="newbie-spring-cloud-dubbo-starter_main" target="1.8" />
-      <module name="newbie-spring-cloud-dubbo-starter_test" target="1.8" />
       <module name="newbiespringbootmanagement" target="1.5" />
       <module name="spring-cloud-alibaba-nacos-discovery_main" target="1.8" />
       <module name="spring-cloud-alibaba-nacos-discovery_test" target="1.8" />

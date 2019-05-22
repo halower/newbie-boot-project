@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.halower" module="newbie-spring-cloud-openclient" revision="alpha.qcs.1.0.2" status="integration" publication="20190516145959"/>
+  <info organisation="com.github.halower" module="newbie-spring-cloud-openclient" revision="alpha.1.1.0" status="integration" publication="20190522200941"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -30,13 +30,10 @@
     <dependency org="org.springframework.cloud" name="spring-cloud-alibaba-nacos-discovery" rev="" conf="implementation-&gt;default">
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
-    <dependency org="com.github.halower" name="newbie-spring-cloud-dubbo-starter" rev="alpha.qcs.1.2.2" conf="implementation-&gt;default">
+    <dependency org="org.apache.dubbo" name="dubbo-spring-boot-starter" rev="" conf="implementation-&gt;default">
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
-    <dependency org="org.springframework.cloud" name="spring-cloud-starter-zipkin" rev="2.1.0.RELEASE" conf="implementation-&gt;default">
-      <exclude org="com.google.code.findbugs" module="annotations"/>
-    </dependency>
-    <dependency org="org.springframework.cloud" name="spring-cloud-starter-openfeign" rev="" conf="implementation-&gt;default">
+    <dependency org="org.apache.dubbo" name="dubbo-registry-nacos" rev="" conf="implementation-&gt;default">
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
   </dependencies>

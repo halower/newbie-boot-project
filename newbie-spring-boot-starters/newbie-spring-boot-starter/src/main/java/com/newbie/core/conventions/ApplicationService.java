@@ -1,10 +1,10 @@
 package com.newbie.core.conventions;
 
-import com.newbie.core.audit.CurrentUserInfo;
-import com.newbie.core.audit.UserManager;
+import com.newbie.core.audit.CurrentUserContext;
+import com.newbie.core.utils.env.UserInfoManager;
 
 public interface ApplicationService {
-     default CurrentUserInfo getCurrentUserInfo(){
-         return UserManager.getUserInfo();
+     default CurrentUserContext getCurrentUserInfo(){
+         return UserInfoManager.getInstance().getUserInfo();
      }
 }

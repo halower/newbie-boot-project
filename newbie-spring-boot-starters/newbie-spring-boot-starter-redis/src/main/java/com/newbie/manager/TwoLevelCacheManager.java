@@ -23,7 +23,7 @@ public class TwoLevelCacheManager extends RedisCacheManager {
         return new RedisAndLocalCache(this, (RedisCache) cache);
     }
     public void publishMessage(String cacheName) {
-        this.redisTemplate.convertAndSend(redisCacheConfig.appCacheTopic, cacheName);
+        this.redisTemplate.convertAndSend(SecondLevelCacheConfig.appCacheTopic, cacheName);
     }
 
     public void receiver(String name) {

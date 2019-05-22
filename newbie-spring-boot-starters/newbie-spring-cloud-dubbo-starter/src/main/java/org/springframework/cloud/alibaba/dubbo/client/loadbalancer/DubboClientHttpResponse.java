@@ -48,17 +48,17 @@ class DubboClientHttpResponse implements ClientHttpResponse {
     }
 
     @Override
-    public HttpStatus getStatusCode() throws IOException {
+    public HttpStatus getStatusCode() {
         return httpStatus;
     }
 
     @Override
-    public int getRawStatusCode() throws IOException {
+    public int getRawStatusCode() {
         return httpStatus.value();
     }
 
     @Override
-    public String getStatusText() throws IOException {
+    public String getStatusText() {
         return statusText;
     }
 

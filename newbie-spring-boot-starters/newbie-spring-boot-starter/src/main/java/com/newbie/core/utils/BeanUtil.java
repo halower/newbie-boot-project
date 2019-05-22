@@ -142,7 +142,7 @@ public class BeanUtil {
      * @param  o 当前对象
      * @return 字段信息
      */
-    public static Field[] getFields(Object o){
+    public  Field[] getFields(Object o){
         Class c= o.getClass();
         List<Field> fieldList = new ArrayList<>();
         while (c!= null){

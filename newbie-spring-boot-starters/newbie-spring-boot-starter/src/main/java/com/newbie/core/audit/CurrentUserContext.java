@@ -14,9 +14,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CurrentUserInfo {
+public class CurrentUserContext {
     private String dlbm;
     private String dwbm;
     private String dwmc;
     private String rybm;
+    private String bmsah;
 }

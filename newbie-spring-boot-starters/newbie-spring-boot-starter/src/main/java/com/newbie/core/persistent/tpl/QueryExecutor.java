@@ -105,7 +105,9 @@ public class QueryExecutor<T> {
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
-            if(!nameParameters.contains(":"+name)) continue;
+            if(!nameParameters.contains(":"+name)) {
+                continue;
+            }
 //            var dateFlag = field.getAnnotation(Temporal.class);
 //            if (dateFlag != null) {
 //                NewbieBootInfraConstants.DATE_PARAMETER_PROCESSOR.get(dateFlag).drive(query, name, (Date) value);

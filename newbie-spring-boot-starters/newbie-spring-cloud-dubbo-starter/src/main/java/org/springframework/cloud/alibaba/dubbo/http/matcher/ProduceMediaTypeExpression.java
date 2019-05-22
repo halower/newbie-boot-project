@@ -41,7 +41,7 @@ class ProduceMediaTypeExpression extends AbstractMediaTypeExpression {
 
     public final boolean match(List<MediaType> acceptedMediaTypes) {
         boolean match = matchMediaType(acceptedMediaTypes);
-        return (!isNegated() ? match : !match);
+        return (!isNegated() == match);
     }
 
     private boolean matchMediaType(List<MediaType> acceptedMediaTypes) {

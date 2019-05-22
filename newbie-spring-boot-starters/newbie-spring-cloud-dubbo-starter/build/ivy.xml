@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.halower" module="newbie-spring-cloud-dubbo-starter" revision="alpha.1.0.1.2" status="integration" publication="20190327200623"/>
+  <info organisation="com.github.halower" module="newbie-spring-cloud-dubbo-starter" revision="alpha.qcs.1.2.2" status="integration" publication="20190521041119"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -73,11 +73,13 @@
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
     <dependency org="org.apache.zookeeper" name="zookeeper" rev="3.4.12" conf="compile-&gt;default">
+      <exclude org="*" module="slf4j-log4j12"/>
       <exclude org="com.google.code.findbugs" module="jsr305"/>
       <exclude org="commons-logging" module="commons-logging"/>
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
     <dependency org="org.apache.curator" name="curator-framework" rev="4.0.1" conf="compile-&gt;default">
+      <exclude org="*" module="zookeeper"/>
       <exclude org="com.google.code.findbugs" module="jsr305"/>
       <exclude org="commons-logging" module="commons-logging"/>
       <exclude org="com.google.code.findbugs" module="annotations"/>
@@ -92,7 +94,7 @@
       <exclude org="commons-logging" module="commons-logging"/>
       <exclude org="com.google.code.findbugs" module="annotations"/>
     </dependency>
-    <dependency org="org.apache.dubbo" name="dubbo" rev="2.7.0" conf="compile-&gt;default">
+    <dependency org="org.apache.dubbo" name="dubbo" rev="2.7.1" conf="compile-&gt;default">
       <exclude org="*" module="spring"/>
       <exclude org="com.google.code.findbugs" module="jsr305"/>
       <exclude org="commons-logging" module="commons-logging"/>

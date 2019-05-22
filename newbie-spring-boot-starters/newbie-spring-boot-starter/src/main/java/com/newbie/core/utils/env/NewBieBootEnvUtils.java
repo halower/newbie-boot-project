@@ -1,7 +1,6 @@
 package com.newbie.core.utils.env;
 
 import com.newbie.constants.NewbieBootInfraConstants;
-import com.newbie.core.audit.CurrentUserInfo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;

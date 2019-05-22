@@ -28,10 +28,11 @@ public class QueryBuilder<E> {
         while (it.hasNext()) {
             var fi= it.next();
             var name = fi.getName();
-            if( NewbieBootInfraConstants.DATE_PARAMETER_PROCESSOR.containsKey(name))
+            if( NewbieBootInfraConstants.DATE_PARAMETER_PROCESSOR.containsKey(name)) {
                 NewbieBootInfraConstants.DATE_PARAMETER_PROCESSOR.get(fi.getType()).drive(query, fi.getName(), (Date) fi.getValue());
-            else
+            } else {
                 query.setParameter(name,fi.getValue());
+            }
         }
         var result =query.getResultList();
         return (List<E>) result;
@@ -73,7 +74,9 @@ public class QueryBuilder<E> {
             if(filters!=null) {
                 for (var filter : filters.value()) {
                     value = field.get(filterEntity);
-                    if(value== null || !filter.inWhere() || !filter.inOn()) continue;
+                    if(value== null || !filter.inWhere() || !filter.inOn()) {
+                        continue;
+                    }
                     validParameters.add(FieldInfo.builder().name(field.getName()).value(value).build());
                 }
             }
