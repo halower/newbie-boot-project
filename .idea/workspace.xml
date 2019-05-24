@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8bc808c-950f-474b-8feb-8f58e7687d1e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -172,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoForWebFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserInfoForWebFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="31" column="51" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="360">
+              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,11 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/49a9da44db6e6b5f44ce15ddfcfe2b6666151b25/javax.servlet-api-4.0.1-sources.jar!/javax/servlet/Filter.java">
+      <file leaf-file-name="app-config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="116" column="24" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -1907,7 +1908,6 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/querydsl/extend/DefaultExtendedQueryDslJpaRepository.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/env/EnvironmentCustomizer.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/ServiceVersion.java" />
@@ -1915,6 +1915,7 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/env/UserInfoManager.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/WebFilterConfiguration.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties" />
       </list>
     </option>
   </component>
@@ -1963,6 +1964,311 @@
             <path>
               <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
               <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="audit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="conventions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="persistent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="persistent" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="persistent" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="persistent" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="initializer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="newbie" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newbie-spring-boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
@@ -2404,7 +2710,7 @@
       <workItem from="1558081435700" duration="28734000" />
       <workItem from="1558439151365" duration="3083000" />
       <workItem from="1558446762928" duration="43862000" />
-      <workItem from="1558665347988" duration="10813000" />
+      <workItem from="1558665347988" duration="11137000" />
     </task>
     <task id="LOCAL-00001" summary="代码抽离">
       <created>1553837261805</created>
@@ -2424,7 +2730,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492458000" />
+    <option name="totallyTimeSpent" value="492782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2735,13 +3041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-api-dto/src/main/java/com/newbie/dto/ResponseTypes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -2912,11 +3211,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="360">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/app-config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>

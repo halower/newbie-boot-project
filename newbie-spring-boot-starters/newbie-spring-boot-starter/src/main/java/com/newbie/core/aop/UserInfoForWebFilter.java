@@ -9,7 +9,6 @@ import com.newbie.core.utils.env.NewBieBootEnvUtils;
 import com.newbie.dto.ResponseTypes;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j2;
 import lombok.var;
 import org.apache.commons.lang3.StringUtils;
@@ -41,8 +40,9 @@ public class UserInfoForWebFilter implements Filter {
             var basicConfiguration = NewBieBootEnvUtils.getBean(NewBieBasicConfiguration.class);
             String authorization = httpRequest.getHeader(header);
             if (null == authorization && basicConfiguration.getEnv().equals(dev)) {
+                log.info("\n当前未开发模式，且尚未接收到token，返回默认参数");
                 currentUserInfo = CurrentUserContext.builder()
-                        .dlbm("开发者")
+                        .dlbm("测试开发者")
                         .rybm("5101001001")
                         .dwmc("测试单位")
                         .dwbm("510100").build();
