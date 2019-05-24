@@ -10,6 +10,7 @@ import com.newbie.dto.ResponseTypes;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j2;
 import lombok.var;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.rpc.RpcContext;
@@ -27,7 +28,7 @@ import java.io.IOException;
  */
 @Configuration
 @Component
-@Log
+@Log4j2
 public class UserInfoForWebFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException  {
@@ -60,6 +61,7 @@ public class UserInfoForWebFilter implements Filter {
             chain.doFilter(request,response);
         }catch (Exception ex) {
             ex.printStackTrace();
+            log.error(ex.getMessage());
         }finally {
             UserInfoManager.getInstance().remove();
         }
