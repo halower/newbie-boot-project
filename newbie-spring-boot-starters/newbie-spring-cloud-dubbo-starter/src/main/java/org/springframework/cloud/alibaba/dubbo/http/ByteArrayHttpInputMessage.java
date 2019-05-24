@@ -26,7 +26,7 @@ import java.io.InputStream;
 /**
  * Byte array {@link HttpInputMessage} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class ByteArrayHttpInputMessage implements HttpInputMessage {
 
@@ -44,7 +44,7 @@ class ByteArrayHttpInputMessage implements HttpInputMessage {
     }
 
     @Override
-    public InputStream getBody() {
+    public InputStream getBody() throws IOException {
         return inputStream;
     }
 

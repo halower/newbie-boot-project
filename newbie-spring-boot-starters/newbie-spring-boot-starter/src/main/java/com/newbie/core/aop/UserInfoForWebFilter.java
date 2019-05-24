@@ -15,10 +15,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @Author: 谢海龙
@@ -28,33 +28,43 @@ import javax.servlet.http.HttpServletResponse;
 @Configuration
 @Component
 @Log
-public class UserInfoForWebFilter extends HandlerInterceptorAdapter {
+public class UserInfoForWebFilter implements Filter {
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        final String prefix = "Bearer ";
-        final String dev = "dev";
-        final String header = "Authorization";
-        CurrentUserContext currentUserInfo;
-        var basicConfiguration = NewBieBootEnvUtils.getBean(NewBieBasicConfiguration.class);
-        String authorization = request.getHeader(header);
-        if (null == authorization && basicConfiguration.getEnv().equals(dev)) {
-            currentUserInfo = CurrentUserContext.builder()
-                    .dlbm("开发者")
-                    .rybm("5101001001")
-                    .dwmc("测试单位")
-                    .dwbm("510100").build();
-        } else {
-            if (null != authorization && !StringUtils.startsWithIgnoreCase(authorization, prefix)) {
-                throw new BusinessException(ResponseTypes.TOKEN_UNVALID);
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException  {
+        try {
+            HttpServletRequest httpRequest = (HttpServletRequest)request;
+            final String prefix = "Bearer ";
+            final String dev = "dev";
+            final String header = "Authorization";
+            CurrentUserContext currentUserInfo;
+            var basicConfiguration = NewBieBootEnvUtils.getBean(NewBieBasicConfiguration.class);
+            String authorization = httpRequest.getHeader(header);
+            if (null == authorization && basicConfiguration.getEnv().equals(dev)) {
+                currentUserInfo = CurrentUserContext.builder()
+                        .dlbm("开发者")
+                        .rybm("5101001001")
+                        .dwmc("测试单位")
+                        .dwbm("510100").build();
+            } else {
+                if (null != authorization && !StringUtils.startsWithIgnoreCase(authorization, prefix)) {
+                    throw new BusinessException(ResponseTypes.TOKEN_UNVALID);
+                }
+                String token = httpRequest.getHeader(header).replace(prefix, "").trim();
+                Claims claims = Jwts.parser()
+                        .setSigningKey(basicConfiguration.getAuthSecretKey()).parseClaimsJws(token)
+                        .getBody();
+                currentUserInfo = JSON.parseObject(claims.getSubject(), CurrentUserContext.class);
             }
-            String token = request.getHeader(header).replace(prefix, "").trim();
-            Claims claims = Jwts.parser()
-                    .setSigningKey(basicConfiguration.getAuthSecretKey()).parseClaimsJws(token)
-                    .getBody();
-            currentUserInfo = JSON.parseObject(claims.getSubject(), CurrentUserContext.class);
+            UserInfoManager.getInstance().bind(currentUserInfo);
+            RpcContext.getContext().setAttachment("currentUserInfo",JSON.toJSONString(currentUserInfo));
+            chain.doFilter(request,response);
+        }catch (Exception ex) {
+            ex.printStackTrace();
+        }finally {
+            UserInfoManager.getInstance().remove();
         }
-        UserInfoManager.getInstance().bind(currentUserInfo);
-        RpcContext.getContext().setAttachment("currentUserInfo",JSON.toJSONString(currentUserInfo));
-        return true;
     }
+
 }
+
+

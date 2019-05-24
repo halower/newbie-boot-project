@@ -24,7 +24,7 @@ import java.util.Objects;
 /**
  * {@link Method} Parameter Metadata
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class MethodParameterMetadata {
@@ -61,8 +61,12 @@ public class MethodParameterMetadata {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         MethodParameterMetadata that = (MethodParameterMetadata) o;
         return index == that.index &&
                 Objects.equals(name, that.name) &&

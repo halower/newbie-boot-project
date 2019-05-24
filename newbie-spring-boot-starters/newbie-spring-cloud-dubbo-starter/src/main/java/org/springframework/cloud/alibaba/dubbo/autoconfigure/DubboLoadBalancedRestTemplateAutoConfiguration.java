@@ -1,4 +1,19 @@
-
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.cloud.alibaba.dubbo.autoconfigure;
 
 import org.springframework.beans.factory.BeanClassLoaderAware;
@@ -20,6 +35,7 @@ import org.springframework.cloud.alibaba.dubbo.service.DubboGenericServiceFactor
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor;
 import org.springframework.cloud.client.loadbalancer.RestTemplateCustomizer;
+import org.springframework.cloud.client.loadbalancer.RetryLoadBalancerInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.Environment;
@@ -33,10 +49,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Dubbo Auto-{@link Configuration} for {@link LoadBalanced @LoadBalanced} {@link RestTemplate}
+ *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ */
 @Configuration
 @ConditionalOnClass(name = {"org.springframework.web.client.RestTemplate"})
 @AutoConfigureAfter(name = {"org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration"})
-public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClassLoaderAware {
+public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClassLoaderAware, SmartInitializingSingleton {
 
     private static final Class<DubboTransported> DUBBO_TRANSPORTED_CLASS = DubboTransported.class;
 
@@ -45,8 +66,11 @@ public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClass
     @Autowired
     private DubboServiceMetadataRepository repository;
 
-    @Autowired
+    @Autowired(required = false)
     private LoadBalancerInterceptor loadBalancerInterceptor;
+
+    @Autowired(required = false)
+    private RetryLoadBalancerInterceptor retryLoadBalancerInterceptor;
 
     @Autowired
     private ConfigurableListableBeanFactory beanFactory;
@@ -66,6 +90,17 @@ public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClass
 
     private ClassLoader classLoader;
 
+    /**
+     * The {@link ClientHttpRequestInterceptor} bean that may be {@link LoadBalancerInterceptor} or {@link RetryLoadBalancerInterceptor}
+     */
+    private ClientHttpRequestInterceptor loadBalancerInterceptorBean;
+
+    @Override
+    public void afterSingletonsInstantiated() {
+        loadBalancerInterceptorBean = retryLoadBalancerInterceptor != null ?
+                retryLoadBalancerInterceptor :
+                loadBalancerInterceptor;
+    }
 
     /**
      * Adapt the {@link RestTemplate} beans that are annotated  {@link LoadBalanced @LoadBalanced} and
@@ -120,7 +155,7 @@ public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClass
 
         List<ClientHttpRequestInterceptor> interceptors = new ArrayList<>(restTemplate.getInterceptors());
 
-        int index = interceptors.indexOf(loadBalancerInterceptor);
+        int index = loadBalancerInterceptorBean == null ? -1 : interceptors.indexOf(loadBalancerInterceptorBean);
 
         index = index < 0 ? 0 : index;
 
@@ -137,4 +172,5 @@ public class DubboLoadBalancedRestTemplateAutoConfiguration implements BeanClass
     public void setBeanClassLoader(ClassLoader classLoader) {
         this.classLoader = classLoader;
     }
+
 }

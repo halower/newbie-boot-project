@@ -22,7 +22,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * HTTP Request Header {@link DubboGenericServiceParameterResolver Dubbo GenericService Parameter Resolver}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class RequestHeaderServiceParameterResolver extends AbstractNamedValueServiceParameterResolver {
 

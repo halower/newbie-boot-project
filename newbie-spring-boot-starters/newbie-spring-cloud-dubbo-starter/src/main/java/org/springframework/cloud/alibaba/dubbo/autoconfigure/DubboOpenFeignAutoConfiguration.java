@@ -32,7 +32,7 @@ import static org.springframework.cloud.alibaba.dubbo.autoconfigure.DubboOpenFei
 /**
  * Dubbo Feign Auto-{@link Configuration Configuration}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @ConditionalOnClass(name = {"feign.Feign", TARGETER_CLASS_NAME})
 @AutoConfigureAfter(name = {"org.springframework.cloud.openfeign.FeignAutoConfiguration"})

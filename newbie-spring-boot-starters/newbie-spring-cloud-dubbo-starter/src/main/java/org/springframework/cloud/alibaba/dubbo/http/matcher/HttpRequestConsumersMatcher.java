@@ -32,7 +32,7 @@ import java.util.Set;
  *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class HttpRequestConsumersMatcher extends AbstractHttpRequestMatcher {
 

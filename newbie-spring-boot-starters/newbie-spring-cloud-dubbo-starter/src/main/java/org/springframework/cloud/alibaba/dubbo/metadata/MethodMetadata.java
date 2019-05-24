@@ -31,7 +31,7 @@ import java.util.Objects;
 /**
  * {@link Method} Metadata
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class MethodMetadata {
@@ -110,8 +110,12 @@ public class MethodMetadata {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         MethodMetadata that = (MethodMetadata) o;
         return Objects.equals(name, that.name) &&
                 Objects.equals(returnType, that.returnType) &&

@@ -47,7 +47,7 @@ import static java.lang.reflect.Proxy.newProxyInstance;
 /**
  * org.springframework.cloud.openfeign.Targeter {@link InvocationHandler}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class TargeterInvocationHandler implements InvocationHandler {
 

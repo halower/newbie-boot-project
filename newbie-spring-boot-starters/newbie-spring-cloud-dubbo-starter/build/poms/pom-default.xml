@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-cloud-dubbo-starter</artifactId>
-  <version>alpha.qcs.1.2.2</version>
+  <version>alpha.1.0.0</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>

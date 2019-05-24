@@ -21,13 +21,20 @@ import org.springframework.stereotype.Component;
 public class UserInfoForDubboFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-        String userInfo = RpcContext.getContext().getAttachment("currentUserInfo");
-        if (StringUtils.isNotBlank(userInfo)) {
-            var currentUserInfo = JSON.parseObject(userInfo, CurrentUserContext.class);
-            UserInfoManager.getInstance().bind(currentUserInfo);
-        }
-        Result result = invoker.invoke(invocation);
-        UserInfoManager.getInstance().remove();
+        Result result = null;
+       try{
+           String userInfo = RpcContext.getContext().getAttachment("currentUserInfo");
+           if (StringUtils.isNotBlank(userInfo)) {
+               var currentUserInfo = JSON.parseObject(userInfo, CurrentUserContext.class);
+               UserInfoManager.getInstance().bind(currentUserInfo);
+           }
+            result = invoker.invoke(invocation);
+            return result;
+       }catch (RpcException ex) {
+           ex.printStackTrace();
+       }finally {
+           UserInfoManager.getInstance().remove();
+       }
         return result;
     }
 }

@@ -32,7 +32,7 @@ import static org.apache.dubbo.common.utils.PojoUtils.realize;
 /**
  * Dubbo {@link GenericService} for {@link InvocationHandler}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboInvocationHandler implements InvocationHandler {
 

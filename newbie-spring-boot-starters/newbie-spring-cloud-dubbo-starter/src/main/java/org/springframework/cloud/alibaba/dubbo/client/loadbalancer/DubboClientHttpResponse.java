@@ -27,7 +27,7 @@ import java.io.InputStream;
 /**
  * Dubbo {@link ClientHttpResponse} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @see DubboTransporterInterceptor
  */
 class DubboClientHttpResponse implements ClientHttpResponse {
@@ -48,17 +48,17 @@ class DubboClientHttpResponse implements ClientHttpResponse {
     }
 
     @Override
-    public HttpStatus getStatusCode() {
+    public HttpStatus getStatusCode() throws IOException {
         return httpStatus;
     }
 
     @Override
-    public int getRawStatusCode() {
+    public int getRawStatusCode() throws IOException {
         return httpStatus.value();
     }
 
     @Override
-    public String getStatusText() {
+    public String getStatusText() throws IOException {
         return statusText;
     }
 

@@ -21,7 +21,7 @@ import java.util.Objects;
 /**
  * Dubbo Rest Service Metadata
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboRestServiceMetadata {
 
@@ -44,8 +44,12 @@ public class DubboRestServiceMetadata {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof DubboRestServiceMetadata)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof DubboRestServiceMetadata)) {
+            return false;
+        }
         DubboRestServiceMetadata that = (DubboRestServiceMetadata) o;
         return Objects.equals(serviceRestMetadata, that.serviceRestMetadata) &&
                 Objects.equals(restMethodMetadata, that.restMethodMetadata);

@@ -35,7 +35,6 @@ public class DefaultExtendedQueryDslJpaRepository<T, ID extends Serializable> ex
     private final EntityPath<T> path;
     private final JPAQueryFactory jpaQueryFactory;
     private final Supplier<JPASQLQuery<T>> jpaSqlFactory;
-    private final EntityManager entityManager;
 
     DefaultExtendedQueryDslJpaRepository(JpaEntityInformation<T, ID> entityInformation, EntityManager entityManager) throws SQLException {
         super(entityInformation, entityManager, SimpleEntityPathResolver.INSTANCE);
@@ -43,7 +42,6 @@ public class DefaultExtendedQueryDslJpaRepository<T, ID extends Serializable> ex
         this.path = SimpleEntityPathResolver.INSTANCE.createPath(entityInformation.getJavaType());
         SQLTemplates sqlTemplates = getSQLServerTemplates(entityManager.getEntityManagerFactory());
         this.jpaSqlFactory = () -> new JPASQLQuery<>(entityManager, sqlTemplates);
-        this.entityManager = entityManager;
     }
 
     @SafeVarargs

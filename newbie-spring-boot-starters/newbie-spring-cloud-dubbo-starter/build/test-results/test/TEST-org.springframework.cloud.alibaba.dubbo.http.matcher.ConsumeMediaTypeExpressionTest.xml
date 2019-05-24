@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-23T12:35:08" hostname="DESKTOP-4DO1SUF" time="0.236">
+  <properties/>
+  <testcase name="testMatch" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest" time="0.235"/>
+  <testcase name="testGetMediaTypeAndNegated" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest" time="0.0"/>
+  <testcase name="testCompareTo" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest" time="0.0"/>
+  <testcase name="testEqualsAndHashCode" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

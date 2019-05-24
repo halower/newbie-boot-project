@@ -30,9 +30,9 @@ import org.springframework.cloud.alibaba.dubbo.metadata.repository.DubboServiceM
 import org.springframework.cloud.alibaba.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver;
 import org.springframework.cloud.alibaba.dubbo.metadata.resolver.MetadataResolver;
 import org.springframework.cloud.alibaba.dubbo.service.DubboGenericServiceFactory;
-import org.springframework.cloud.alibaba.dubbo.service.DubboMetadataConfigServiceExporter;
-import org.springframework.cloud.alibaba.dubbo.service.DubboMetadataConfigServiceProxy;
-import org.springframework.cloud.alibaba.dubbo.service.PublishingDubboMetadataConfigService;
+import org.springframework.cloud.alibaba.dubbo.service.DubboMetadataServiceExporter;
+import org.springframework.cloud.alibaba.dubbo.service.DubboMetadataServiceProxy;
+import org.springframework.cloud.alibaba.dubbo.service.IntrospectiveDubboMetadataService;
 import org.springframework.cloud.alibaba.dubbo.util.JSONUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,23 +46,23 @@ import java.util.function.Supplier;
 /**
  * Spring Boot Auto-Configuration class for Dubbo Metadata
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @Import({DubboServiceMetadataRepository.class,
-        PublishingDubboMetadataConfigService.class,
-        DubboMetadataConfigServiceExporter.class,
+        IntrospectiveDubboMetadataService.class,
+        DubboMetadataServiceExporter.class,
         JSONUtils.class})
 public class DubboMetadataAutoConfiguration {
 
     @Autowired
-    private PublishingDubboMetadataConfigService dubboMetadataConfigService;
+    private ObjectProvider<DubboServiceMetadataRepository> dubboServiceMetadataRepository;
 
     @Autowired
     private MetadataResolver metadataResolver;
 
     @Autowired
-    private DubboMetadataConfigServiceExporter dubboMetadataConfigServiceExporter;
+    private DubboMetadataServiceExporter dubboMetadataConfigServiceExporter;
 
     @Bean
     @ConditionalOnMissingBean
@@ -77,8 +77,8 @@ public class DubboMetadataAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    public DubboMetadataConfigServiceProxy dubboMetadataConfigServiceProxy(DubboGenericServiceFactory factory) {
-        return new DubboMetadataConfigServiceProxy(factory);
+    public DubboMetadataServiceProxy dubboMetadataConfigServiceProxy(DubboGenericServiceFactory factory) {
+        return new DubboMetadataServiceProxy(factory);
     }
 
     // Event-Handling
@@ -87,7 +87,6 @@ public class DubboMetadataAutoConfiguration {
     public void onServiceBeanExported(ServiceBeanExportedEvent event) {
         ServiceBean serviceBean = event.getServiceBean();
         publishServiceRestMetadata(serviceBean);
-        exportDubboMetadataConfigService();
     }
 
     @EventListener(ApplicationFailedEvent.class)
@@ -97,15 +96,11 @@ public class DubboMetadataAutoConfiguration {
 
     @EventListener(ContextClosedEvent.class)
     public void onContextClosed() {
-        dubboMetadataConfigServiceExporter.unexport();
+        unExportDubboMetadataConfigService();
     }
 
     private void publishServiceRestMetadata(ServiceBean serviceBean) {
-        dubboMetadataConfigService.publishServiceRestMetadata(metadataResolver.resolveServiceRestMetadata(serviceBean));
-    }
-
-    private void exportDubboMetadataConfigService() {
-        dubboMetadataConfigServiceExporter.export();
+        dubboServiceMetadataRepository.getIfAvailable().publishServiceRestMetadata(metadataResolver.resolveServiceRestMetadata(serviceBean));
     }
 
     private void unExportDubboMetadataConfigService() {

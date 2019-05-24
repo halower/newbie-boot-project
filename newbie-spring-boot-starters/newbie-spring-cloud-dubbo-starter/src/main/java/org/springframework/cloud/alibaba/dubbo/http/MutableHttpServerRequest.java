@@ -32,7 +32,7 @@ import static org.springframework.cloud.alibaba.dubbo.http.util.HttpUtils.getPar
 /**
  * Mutable {@link HttpServerRequest} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class MutableHttpServerRequest implements HttpServerRequest {
 
@@ -73,6 +73,7 @@ public class MutableHttpServerRequest implements HttpServerRequest {
     }
 
     // Override method since Spring Framework 5.0
+    @Override
     public String getMethodValue() {
         return httpMethod.name();
     }

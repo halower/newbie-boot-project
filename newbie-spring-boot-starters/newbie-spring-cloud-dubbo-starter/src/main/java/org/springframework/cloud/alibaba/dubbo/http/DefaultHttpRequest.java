@@ -32,7 +32,7 @@ import static org.springframework.web.util.UriComponentsBuilder.fromPath;
 /**
  * Default {@link HttpRequest} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DefaultHttpRequest implements HttpRequest {
 
@@ -60,6 +60,7 @@ public class DefaultHttpRequest implements HttpRequest {
         return HttpMethod.resolve(getMethodValue());
     }
 
+    @Override
     public String getMethodValue() {
         return method;
     }

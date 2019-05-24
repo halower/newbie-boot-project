@@ -33,7 +33,7 @@ import static org.springframework.util.ClassUtils.resolveClassName;
 /**
  * org.springframework.cloud.openfeign.Targeter {@link BeanPostProcessor}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class TargeterBeanPostProcessor implements BeanPostProcessor, BeanClassLoaderAware {
 

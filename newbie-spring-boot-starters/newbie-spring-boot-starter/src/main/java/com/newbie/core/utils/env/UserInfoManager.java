@@ -36,7 +36,6 @@ public class UserInfoManager {
      */
     public CurrentUserContext getUserInfo() {
         CurrentUserContext userInfo = userInfoThreadLocal.get();
-        remove();
         return userInfo;
     }
     /**

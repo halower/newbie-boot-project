@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-23T12:35:08" hostname="DESKTOP-4DO1SUF" time="0.017">
+  <properties/>
+  <testcase name="testMatch" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest" time="0.003"/>
+  <testcase name="testIsCaseSensitiveName" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest" time="0.0"/>
+  <testcase name="testEqualsAndHashCode" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest" time="0.001"/>
+  <testcase name="testGetNameAndValue" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

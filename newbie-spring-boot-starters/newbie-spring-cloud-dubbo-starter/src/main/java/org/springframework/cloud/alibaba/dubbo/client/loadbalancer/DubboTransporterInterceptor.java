@@ -48,7 +48,7 @@ import static org.springframework.web.util.UriComponentsBuilder.fromUri;
 /**
  * Dubbo Transporter {@link ClientHttpRequestInterceptor} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @see LoadBalancerInterceptor
  */
 public class DubboTransporterInterceptor implements ClientHttpRequestInterceptor {

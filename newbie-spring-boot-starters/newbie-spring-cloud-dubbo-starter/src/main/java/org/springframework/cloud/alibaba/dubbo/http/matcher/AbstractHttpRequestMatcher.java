@@ -23,7 +23,7 @@ import java.util.Iterator;
  * Abstract {@link HttpRequestMatcher} implementation
  *
  * @author Rossen Stoyanchev
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public abstract class AbstractHttpRequestMatcher implements HttpRequestMatcher {
 

@@ -36,9 +36,9 @@ import java.util.function.Function;
  */
 @Repository
 @Transactional(readOnly = true)
-public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJpaRepository<T,ID>  implements CustomizedRepository<T,ID>
-{
-    private  EntityManager em;
+public class CustomizedRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> implements CustomizedRepository<T, ID> {
+    private EntityManager em;
+
     public CustomizedRepositoryImpl(JpaEntityInformation<T, ?> entityInformation, EntityManager entityManager) {
         super(entityInformation, entityManager);
         this.em = entityManager;
@@ -52,6 +52,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
 
     /**
      * 新增
+     *
      * @param entity
      * @param <S>
      * @return
@@ -76,6 +77,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
 
     /**
      * 更新
+     *
      * @param entity
      * @param <S>
      * @return
@@ -104,7 +106,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         Assert.notNull(entities, "The given Iterable of entities not be null!");
         List<S> result = new ArrayList<S>();
         for (S entity : entities) {
-            update(entity,entityType);
+            update(entity, entityType);
             result.add(entity);
         }
         return result;
@@ -112,6 +114,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
 
     /**
      * 新增或者修改
+     *
      * @param entity
      * @param <S>
      * @return
@@ -130,6 +133,7 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
 
     /**
      * 新增或者修改
+     *
      * @param entity
      * @param <S>
      * @return
@@ -141,13 +145,14 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
             em.persist(entity);
             return entity;
         } else {
-            this.update(entity,entityType);
+            this.update(entity, entityType);
             return entity;
         }
     }
 
-     /**
+    /**
      * 更新部分字段
+     *
      * @param entity 更新对象（映射字段与实体对象一致）
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
@@ -157,21 +162,22 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
-        Map<String, Object> kvs = getFiledAndValue(entity,false);
+        Map<String, Object> kvs = getFiledAndValue(entity, false);
         kvs.forEach((k, v) -> criteria.set(root.get(k), v));
         var ids = getUpdatedIds(entity);
-        List<Predicate> listWhere=new ArrayList<>();
+        List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
             listWhere.add(cb.equal(root.get(id.getName()), id.getValue().toString()));
         });
-        var predicatesWhereArr=new Predicate[listWhere.size()];
-        var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
+        var predicatesWhereArr = new Predicate[listWhere.size()];
+        var predicatesWhere = cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
         return em.createQuery(criteria).executeUpdate();
     }
 
     /**
      * 更新部分字段
+     *
      * @param entity 更新对象（映射字段与实体对象一致
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
@@ -181,15 +187,15 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
-        Map<String, Object> kvs = getFiledAndValue(entity,true);
+        Map<String, Object> kvs = getFiledAndValue(entity, true);
         kvs.forEach((k, v) -> criteria.set(root.get(k), v));
         var ids = getUpdatedIds(entity);
-        List<Predicate> listWhere=new ArrayList<>();
+        List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
             listWhere.add(cb.equal(root.get(id.getName()), id.getValue().toString()));
         });
-        var predicatesWhereArr=new Predicate[listWhere.size()];
-        var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
+        var predicatesWhereArr = new Predicate[listWhere.size()];
+        var predicatesWhere = cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
         return em.createQuery(criteria).executeUpdate();
     }
@@ -200,146 +206,143 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         Assert.notNull(entities, "The given Iterable of entities not be null!");
         List<S> result = new ArrayList<S>();
         for (S entity : entities) {
-            updateIgnoreNull(entity,entityType);
+            updateIgnoreNull(entity, entityType);
             result.add(entity);
         }
         return result;
     }
+
     /**
      * 软删除
+     *
      * @param idPropName 主键对应属性名称
-     * @param idValue 主键对应属性值
+     * @param idValue    主键对应属性值
      * @param entityType 实体类型
      * @apiNote 更新主键字段需要使用@UpdateId 注解标注
      */
     @Override
     @Transactional
-    public int softDelete(String idPropName, Object idValue, Class<T> entityType){
+    public int softDelete(String idPropName, Object idValue, Class<T> entityType) {
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = builder.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
-        criteria.set(root.get("sfsc"),"Y");
+        criteria.set(root.get("sfsc"), "Y");
         criteria.where(builder.equal(root.get(idPropName), idValue));
         return em.createQuery(criteria).executeUpdate();
     }
 
     /**
      * 软删除
-     * @param entity 普通删除对象
+     *
+     * @param entity     普通删除对象
      * @param entityType 实体类型
      */
     @Override
     @Transactional
-    public int softDelete(Object entity, Class<T> entityType){
+    public int softDelete(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
-        criteria.set(root.get("sfsc"),"Y");
+        criteria.set(root.get("sfsc"), "Y");
         var deletedIds = getDeletedIds(entity);
         var deletedIdss = getDeletedIdss(entity);
-        List<Predicate> listWhere=new ArrayList<>();
+        List<Predicate> listWhere = new ArrayList<>();
         buildCriteriaByDeleteIdss(cb, root, deletedIdss, listWhere);
         var it = deletedIds.iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             var item = it.next();
             listWhere.add(cb.equal(root.get(item.getName()), item.getValue().toString()));
         }
-        var predicatesWhereArr=new Predicate[listWhere.size()];
-        var predicatesWhere= cb.and(listWhere.toArray(predicatesWhereArr));
+        var predicatesWhereArr = new Predicate[listWhere.size()];
+        var predicatesWhere = cb.and(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
         return em.createQuery(criteria).executeUpdate();
     }
 
-    private void buildCriteriaByDeleteIdss(CriteriaBuilder cb, Root<T> root, List<FieldInfo> deletedIdss, List<Predicate> listWhere) {
-        deletedIdss.forEach(id -> {
-            if ((id.getValue() == null) || (((Collection)id.getValue()).size() == 0)) {
-                return;
-            }
-            Iterator iterator = ((Collection)id.getValue()).iterator();
-            CriteriaBuilder.In in = cb.in(root.get(id.getName()));
-            while (iterator.hasNext()) {
-                in.value(iterator.next());
-            }
-            listWhere.add(in);
-        });
-    }
 
     /**
      * 软删除
-     * @param entity 普通删除对象
+     *
+     * @param entity     普通删除对象
      * @param entityType 实体类型
      */
     @Override
     @Transactional
-    public int softDeleteWithAnyId(Object entity, Class<T> entityType){
+    public int softDeleteWithAnyId(Object entity, Class<T> entityType) {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
-        criteria.set(root.get("sfsc"),"Y");
+        criteria.set(root.get("sfsc"), "Y");
         var deletedIds = getDeletedIds(entity);
         var deletedIdss = getDeletedIdss(entity);
-        List<Predicate> listWhere=new ArrayList<>();
+        List<Predicate> listWhere = new ArrayList<>();
         buildCriteriaByDeleteIdss(cb, root, deletedIdss, listWhere);
         var it = deletedIds.iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             var item = it.next();
             listWhere.add(cb.equal(root.get(item.getName()), item.getValue().toString()));
         }
-        var predicatesWhereArr=new Predicate[listWhere.size()];
-        var predicatesWhere= cb.or(listWhere.toArray(predicatesWhereArr));
+        var predicatesWhereArr = new Predicate[listWhere.size()];
+        var predicatesWhere = cb.or(listWhere.toArray(predicatesWhereArr));
         criteria.where(predicatesWhere);
         return em.createQuery(criteria).executeUpdate();
     }
 
     /**
      * 按照条件对象查询
+     *
      * @param queryFilter
      * @return
      */
     @Override
-    @Transactional
-    public <S> List<S> queryWithFilterE(S queryFilter,Function<S,String> func) {
-        var data = new QueryBuilder<S>().execute(em,queryFilter,func);
+    @Transactional(readOnly = true)
+    public <S> List<S> queryWithFilterE(S queryFilter, Function<S, String> func) {
+        var data = new QueryBuilder<S>().execute(em, queryFilter, func);
         return data;
     }
 
     /**
      * 按照条件对象查询
+     *
      * @param queryFilter
      * @return
      */
     @Override
+    @Transactional(readOnly = true)
     public <S> List<S> queryWithFilterE(S queryFilter) {
-        var data = new QueryBuilder<S>().execute(em,queryFilter,null);
+        var data = new QueryBuilder<S>().execute(em, queryFilter, null);
         return data;
     }
 
     /**
      * 按照条件对象查询
+     *
      * @param queryFilter
      * @return
      */
     @Override
+    @Transactional(readOnly = true)
     public <S> Pagination<S> queryPageWithFilterE(S queryFilter, PageRequest pageRequest) {
-        return queryPageWithFilterE(queryFilter,null,pageRequest);
+        return queryPageWithFilterE(queryFilter, null, pageRequest);
     }
 
     /**
      * 按照条件对象查询
+     *
      * @param queryFilter
      * @return
      */
     @Override
-    public <S> Pagination<S> queryPageWithFilterE(S queryFilter,Function<S,String> func, PageRequest pageRequest) {
-        var query = new QueryBuilder<S>().createQuery(em,queryFilter,func);
+    public <S> Pagination<S> queryPageWithFilterE(S queryFilter, Function<S, String> func, PageRequest pageRequest) {
+        var query = new QueryBuilder<S>().createQuery(em, queryFilter, func);
         int total = query.getResultList().size();
         int pageSize = pageRequest.getPageSize();
         int pageIndex = pageRequest.getPageNumber() + 1;
         int start = (pageIndex - 1) * pageSize;
         query.setFirstResult(start);
         query.setMaxResults(pageSize);
-        var content =(List<S>)query.getResultList();
-        var pagination = new Pager<S>().build(content,pageIndex,pageSize,total);
+        var content = (List<S>) query.getResultList();
+        var pagination = new Pager<S>().build(content, pageIndex, pageSize, total);
         return pagination;
     }
 
@@ -352,8 +355,8 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param resultType 返回类型
      */
     @Override
-    public <S> List<S> queryWithTemplate(String tplName, String method, Object model, Class<S> resultType){
-        return new QueryExecutor<S>().query(em,tplName,method,model,resultType);
+    public <S> List<S> queryWithTemplate(String tplName, String method, Object model, Class<S> resultType) {
+        return new QueryExecutor<S>().query(em, tplName, method, model, resultType);
     }
 
     /***
@@ -364,32 +367,48 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
      * @param resultType 返回类型
      */
     @Override
-    public <S> Pagination<S> queryPageWithTemplate(String tplName, String method, Object model, Class<S> resultType, PageRequest pageRequest){
-        return new QueryExecutor<S>().queryPage(em,tplName,method,model,resultType,pageRequest);
+    public <S> Pagination<S> queryPageWithTemplate(String tplName, String method, Object model, Class<S> resultType, PageRequest pageRequest) {
+        return new QueryExecutor<S>().queryPage(em, tplName, method, model, resultType, pageRequest);
     }
 
 
     /**
      * 按照原生SQL模板模板查询
+     *
      * @param entity
      * @return
      */
     @Override
-    public <S> List<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType){
-        return new QueryExecutor<S>().nativeQuery(em,tplName,method,entity, resultType);
+    public <S> List<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType) {
+        return new QueryExecutor<S>().nativeQuery(em, tplName, method, entity, resultType);
     }
 
     /**
      * 按照SQL模板分页查询
+     *
      * @param entity
      * @return
      */
     @Override
-    public <S> Pagination<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType, PageRequest pageRequest){
-        return new QueryExecutor<S>().nativeQueryPage(em,tplName,method,entity,resultType,pageRequest);
+    public <S> Pagination<S> nativeQueryWithTemplate(String tplName, String method, Object entity, Class<S> resultType, PageRequest pageRequest) {
+        return new QueryExecutor<S>().nativeQueryPage(em, tplName, method, entity, resultType, pageRequest);
     }
 
-    private static Map<String, Object> getFiledAndValue(Object obj,boolean ignoreNullFields) {
+    private void buildCriteriaByDeleteIdss(CriteriaBuilder cb, Root<T> root, List<FieldInfo> deletedIdss, List<Predicate> listWhere) {
+        deletedIdss.forEach(id -> {
+            if ((id.getValue() == null) || (((Collection) id.getValue()).size() == 0)) {
+                return;
+            }
+            Iterator iterator = ((Collection) id.getValue()).iterator();
+            CriteriaBuilder.In in = cb.in(root.get(id.getName()));
+            while (iterator.hasNext()) {
+                in.value(iterator.next());
+            }
+            listWhere.add(in);
+        });
+    }
+
+    private static Map<String, Object> getFiledAndValue(Object obj, boolean ignoreNullFields) {
         var map = new HashMap<String, Object>();
         Field[] fields = Utils.bean.getFields(obj);
         for (Field field : fields) {
@@ -401,9 +420,9 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
-                if(ignoreNullFields) {
+                if (ignoreNullFields) {
                     UpdatedId idFlag = field.getDeclaredAnnotation(UpdatedId.class);
-                    if (val != null && idFlag==null) {
+                    if (val != null && idFlag == null) {
                         map.put(field.getName(), val);
                     }
                 } else {
@@ -417,49 +436,49 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
         return map;
     }
 
-    private List<FieldInfo> getUpdatedIds(Object entity){
+    private List<FieldInfo> getUpdatedIds(Object entity) {
         var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             UpdatedId id = field.getDeclaredAnnotation(UpdatedId.class);
-            if(id!=null) {
-                var kv =  fetchId(entity,field);
+            if (id != null) {
+                var kv = fetchId(entity, field);
                 kvs.add(kv);
             }
         }
         return kvs;
     }
 
-    private List<FieldInfo>  getDeletedIds(Object entity){
+    private List<FieldInfo> getDeletedIds(Object entity) {
         var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         var fields = cla.getDeclaredFields();
         var it = Arrays.stream(fields).iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             var field = it.next();
             field.setAccessible(true);
             var id = field.getDeclaredAnnotation(DeletedId.class);
-            if(id!=null) {
-                var kv =  fetchId(entity,field);
+            if (id != null) {
+                var kv = fetchId(entity, field);
                 kvs.add(kv);
             }
         }
         return kvs;
     }
 
-    private List<FieldInfo>  getDeletedIdss(Object entity){
+    private List<FieldInfo> getDeletedIdss(Object entity) {
         var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         var it = Arrays.stream(fields).iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             var field = it.next();
             field.setAccessible(true);
             var id = field.getDeclaredAnnotation(DeletedIds.class);
-            if(id!=null) {
-                var kv =  fetchId(entity,field);
+            if (id != null) {
+                var kv = fetchId(entity, field);
                 kvs.add(kv);
             }
         }
@@ -467,23 +486,23 @@ public class CustomizedRepositoryImpl<T,ID extends Serializable> extends SimpleJ
     }
 
     @SneakyThrows
-    private  List<FieldInfo> getId(Object entity){
+    private List<FieldInfo> getId(Object entity) {
         var kvs = new ArrayList<FieldInfo>();
         var cla = entity.getClass();
         Field[] fields = cla.getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             var idAnnotation = field.getDeclaredAnnotation(Id.class);
-            if(idAnnotation!=null && field.get(entity)!=null) {
-                var kv =  fetchId(entity,field);
+            if (idAnnotation != null && field.get(entity) != null) {
+                var kv = fetchId(entity, field);
                 kvs.add(kv);
             }
         }
         return kvs;
     }
 
-    private  boolean isNew(Object entity){
-        return getId(entity).size()==0;
+    private boolean isNew(Object entity) {
+        return getId(entity).size() == 0;
     }
 
     private FieldInfo fetchId(Object dto, Field field) {

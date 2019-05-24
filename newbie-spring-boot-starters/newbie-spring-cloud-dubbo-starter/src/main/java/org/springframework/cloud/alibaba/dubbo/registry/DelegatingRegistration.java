@@ -25,7 +25,7 @@ import java.util.Map;
 /**
  * The {@link Registration} of Dubbo uses an external of {@link ServiceInstance} instance as the delegate.
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class DelegatingRegistration implements Registration {
 

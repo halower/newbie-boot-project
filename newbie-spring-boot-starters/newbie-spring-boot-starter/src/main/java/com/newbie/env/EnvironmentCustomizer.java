@@ -3,6 +3,7 @@ package com.newbie.env;
 
 import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration;
+import com.newbie.core.utils.env.NewBieBootEnvUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -35,7 +36,9 @@ public class EnvironmentCustomizer implements EnvironmentPostProcessor {
         /**
          * set required properties, {@link MissingRequiredPropertiesException}
          **/
-        environment.setRequiredProperties(NewbieBootInfraConstants.APP_NAME_KEY);
+        if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
+            environment.setRequiredProperties(NewbieBootInfraConstants.APP_NAME_KEY);
+        }
     }
 
     /**

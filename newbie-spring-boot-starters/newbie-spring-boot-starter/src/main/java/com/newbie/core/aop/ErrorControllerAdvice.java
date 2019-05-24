@@ -5,7 +5,6 @@ import com.newbie.core.exception.BusinessException;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.java.Log;
-import lombok.extern.slf4j.Slf4j;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -19,13 +18,14 @@ import javax.servlet.http.HttpServletRequest;
 @Log
 @ControllerAdvice
 public class ErrorControllerAdvice  {
+    private final static String DEV= "dev";
     @Autowired
     private NewBieBasicConfiguration basicConfig;
 
     @ExceptionHandler(value=Exception.class)
     @ResponseBody
     public ResponseResult allExceptionHandler(HttpServletRequest request, Exception exception) {
-       var isDev = basicConfig.getEnv().equals("dev");
+       var isDev = basicConfig.getEnv().equals(DEV);
        if(isDev) { exception.printStackTrace(); }
         if(exception instanceof BusinessException){
             var exceptionType = ((BusinessException) exception).getExceptionType();

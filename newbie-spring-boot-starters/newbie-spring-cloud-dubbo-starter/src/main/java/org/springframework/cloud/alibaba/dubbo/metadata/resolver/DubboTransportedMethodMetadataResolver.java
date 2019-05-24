@@ -35,7 +35,7 @@ import static feign.Feign.configKey;
 /**
  * {@link MethodMetadata} Resolver for the {@link DubboTransported}  annotated classes or methods in client side.
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @see DubboTransportedMethodMetadata
  */
 public class DubboTransportedMethodMetadataResolver {

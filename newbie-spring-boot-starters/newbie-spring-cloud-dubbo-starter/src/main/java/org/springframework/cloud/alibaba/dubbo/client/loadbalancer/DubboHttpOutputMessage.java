@@ -25,7 +25,7 @@ import java.io.IOException;
 /**
  * Dubbo {@link HttpOutputMessage} implementation
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class DubboHttpOutputMessage implements HttpOutputMessage {
 
@@ -34,7 +34,7 @@ class DubboHttpOutputMessage implements HttpOutputMessage {
     private final HttpHeaders httpHeaders = new HttpHeaders();
 
     @Override
-    public FastByteArrayOutputStream getBody() {
+    public FastByteArrayOutputStream getBody() throws IOException {
         return outputStream;
     }
 

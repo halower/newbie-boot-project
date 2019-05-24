@@ -25,6 +25,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 })
 @Configuration
 @EnableSwagger2Doc
-@PropertySource("classpath:/META-INF/dubbo/dubbo-config.properties")
+@PropertySource("classpath:/META-INF/dubbo/app-config.properties")
 public class NewBieApplicationConfiguration {
 }

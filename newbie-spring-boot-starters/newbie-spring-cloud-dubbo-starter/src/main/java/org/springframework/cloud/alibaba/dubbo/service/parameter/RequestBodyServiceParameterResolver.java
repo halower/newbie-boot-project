@@ -35,7 +35,7 @@ import java.util.Objects;
 /**
  * HTTP Request Body {@link DubboGenericServiceParameterResolver}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class RequestBodyServiceParameterResolver extends AbstractDubboGenericServiceParameterResolver {
 

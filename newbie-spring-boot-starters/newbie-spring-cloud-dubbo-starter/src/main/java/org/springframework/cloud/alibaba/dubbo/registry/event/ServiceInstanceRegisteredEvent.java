@@ -24,7 +24,7 @@ import java.util.EventObject;
 /**
  * The after-{@link ServiceRegistry#register(Registration) register} event for {@link Registration}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class ServiceInstanceRegisteredEvent extends EventObject {
 

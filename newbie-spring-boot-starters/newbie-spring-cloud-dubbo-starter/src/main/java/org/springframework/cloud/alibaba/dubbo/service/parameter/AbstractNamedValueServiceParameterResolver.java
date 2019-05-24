@@ -31,7 +31,7 @@ import static org.springframework.util.ObjectUtils.isEmpty;
 /**
  * Abstract HTTP Names Value {@link DubboGenericServiceParameterResolver Dubbo GenericService Parameter Resolver}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public abstract class AbstractNamedValueServiceParameterResolver extends AbstractDubboGenericServiceParameterResolver {
 

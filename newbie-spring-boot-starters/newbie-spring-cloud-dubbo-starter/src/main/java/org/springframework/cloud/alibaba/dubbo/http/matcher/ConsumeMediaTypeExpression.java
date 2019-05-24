@@ -39,6 +39,6 @@ class ConsumeMediaTypeExpression extends AbstractMediaTypeExpression {
 
     public final boolean match(MediaType contentType) {
         boolean match = getMediaType().includes(contentType);
-        return (!isNegated() == match);
+        return (!isNegated() ? match : !match);
     }
 }

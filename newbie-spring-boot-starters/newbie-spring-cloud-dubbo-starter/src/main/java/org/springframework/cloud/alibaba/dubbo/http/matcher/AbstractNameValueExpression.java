@@ -27,7 +27,7 @@ import static org.springframework.util.StringUtils.trimWhitespace;
  *
  * @author Rossen Stoyanchev
  * @author Arjen Poutsma
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 abstract class AbstractNameValueExpression<T> implements NameValueExpression<T> {
 
@@ -90,7 +90,7 @@ abstract class AbstractNameValueExpression<T> implements NameValueExpression<T> 
         } else {
             isMatch = matchName(request);
         }
-        return (this.negated != isMatch);
+        return (this.negated ? !isMatch : isMatch);
     }
 
 

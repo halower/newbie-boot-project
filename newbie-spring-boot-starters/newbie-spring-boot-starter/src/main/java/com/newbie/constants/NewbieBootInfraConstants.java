@@ -5,6 +5,7 @@ import com.newbie.core.persistent.common.DateParameterConstructor;
 import com.newbie.core.persistent.common.ParameterConstructor;
 import com.newbie.core.persistent.common.TimeParameterConstructor;
 import com.newbie.core.persistent.common.TimeStampParameterConstructor;
+import org.apache.dubbo.config.annotation.Service;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +14,6 @@ import java.util.Map;
  * NewbieBootInfraConstants
  *
  */
-
 public class NewbieBootInfraConstants {
 
     /***

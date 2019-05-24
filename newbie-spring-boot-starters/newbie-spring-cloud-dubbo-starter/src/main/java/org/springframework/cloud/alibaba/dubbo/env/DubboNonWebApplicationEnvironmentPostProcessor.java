@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.cloud.alibaba.dubbo.registry.env;
+package org.springframework.cloud.alibaba.dubbo.env;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,7 +39,7 @@ import static org.apache.dubbo.config.spring.util.PropertySourcesUtils.getSubPro
 /**
  * Dubbo {@link WebApplicationType#NONE Non-Web Application} {@link EnvironmentPostProcessor}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboNonWebApplicationEnvironmentPostProcessor implements EnvironmentPostProcessor, Ordered {
 

@@ -29,7 +29,7 @@ import java.net.URI;
  * Dubbo Metadata {@link ClientHttpRequestInterceptor} Initializing Interceptor executes intercept before
  * {@link DubboTransporterInterceptor}
  *
- *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboMetadataInitializerInterceptor implements ClientHttpRequestInterceptor {
 
