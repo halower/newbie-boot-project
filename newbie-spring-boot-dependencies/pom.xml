@@ -6,17 +6,17 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-dependencies</artifactId>
-    <version>alpha.1.0.5</version>
+    <version>alpha.2.0.1</version>
 
     <properties>
         <spring_boot_version>2.1.2.RELEASE</spring_boot_version>
         <query_dsljpa_version>4.2.1</query_dsljpa_version>
         <query_dslsql_version>4.2.1</query_dslsql_version>
-        <lombok_version>1.16.22</lombok_version>
+        <lombok_version>1.18.4</lombok_version>
         <dubbo_version>2.7.1</dubbo_version>
         <modelmapper_version>2.1.0</modelmapper_version>
         <fastjson_version>1.2.49</fastjson_version>
-        <spring4all_version>1.8.0.RELEASE</spring4all_version>
+        <spring4all_version>1.9.0.RELEASE</spring4all_version>
         <jpa_extra_version>2.1.1.RELEASE</jpa_extra_version>
         <redis_version>2.0.5.RELEASE</redis_version>
         <jackson_version>2.9.5</jackson_version>

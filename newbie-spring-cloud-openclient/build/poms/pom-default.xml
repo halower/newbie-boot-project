@@ -3,22 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-cloud-openclient</artifactId>
-  <version>alpha.1.1.0</version>
+  <version>alpha.2.0.1</version>
   <dependencies>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
-      <scope>runtime</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>annotations</artifactId>
-          <groupId>com.google.code.findbugs</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
     <dependency>
       <groupId>org.apache.dubbo</groupId>
       <artifactId>dubbo-spring-boot-starter</artifactId>
+      <version>2.7.1</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -28,8 +18,45 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.dubbo</groupId>
-      <artifactId>dubbo-registry-nacos</artifactId>
+      <groupId>com.alibaba.edas</groupId>
+      <artifactId>edas-dubbo-extension</artifactId>
+      <version>2.0.2</version>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>annotations</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-alicloud-ans</artifactId>
+      <version>0.9.0.RELEASE</version>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>annotations</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-acm</artifactId>
+      <version>1.0.9</version>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>annotations</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.tfswx.tyyw.log-service</groupId>
+      <artifactId>collector</artifactId>
+      <version>0.7.12-ALPHA</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -44,7 +71,7 @@
       <dependency>
         <groupId>com.github.halower</groupId>
         <artifactId>newbie-spring-boot-dependencies</artifactId>
-        <version>alpha.1.0.5</version>
+        <version>alpha.2.0.1</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

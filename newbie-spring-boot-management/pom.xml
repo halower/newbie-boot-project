@@ -6,20 +6,22 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>alpha.1.1.1</version>
+    <version>alpha.2.0.3</version>
 
     <properties>
-        <newbie_openclient_version>alpha.1.1.0</newbie_openclient_version>
-        <newbie_apidto_version>alpha.1.1.0</newbie_apidto_version>
-        <newbie_boot_stater_version>alpha.1.1.0</newbie_boot_stater_version>
+        <newbie_apidto_version>alpha.2.0.0</newbie_apidto_version>
+        <newbie_boot_stater_version>alpha.2.0.2</newbie_boot_stater_version>
+        <newbie_boot_stater_light_version>alpha.2.0.2</newbie_boot_stater_light_version>
         <newbie_boot_redis_version>alpha.1.0.0</newbie_boot_redis_version>
+        <newbie_openclient_version>alpha.2.0.1</newbie_openclient_version>
+        <newbie_openclient_nacos_version>alpha.2.0.1</newbie_openclient_nacos_version>
         <consul_discovery_version>2.1.1.RELEASE</consul_discovery_version>
         <open_feign_version>2.1.0.RELEASE</open_feign_version>
         <logstash_version>5.2</logstash_version>
         <h2_version>1.4.197</h2_version>
         <dm_version>18</dm_version>
         <oracle_ojdbc_version>11.2.0.3</oracle_ojdbc_version>
-        <lombok_version>1.16.22</lombok_version>
+        <lombok_version>1.18.4</lombok_version>
         <swagger_annotations_version>1.5.22</swagger_annotations_version>
         <validation_api_version>2.0.1.Final</validation_api_version>
         <poi_version>4.0.1</poi_version>
@@ -42,6 +44,11 @@
                 <groupId>com.github.halower</groupId>
                 <artifactId>newbie-spring-cloud-openclient</artifactId>
                 <version>${newbie_openclient_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.halower</groupId>
+                <artifactId>newbie-spring-cloud-openclient-nacos</artifactId>
+                <version>${newbie_openclient_nacos_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -148,6 +155,11 @@
                 <groupId>com.github.halower</groupId>
                 <artifactId>newbie-spring-boot-starter</artifactId>
                 <version>${newbie_boot_stater_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.halower</groupId>
+                <artifactId>newbie-spring-boot-light-starter</artifactId>
+                <version>${newbie_boot_stater_light_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>

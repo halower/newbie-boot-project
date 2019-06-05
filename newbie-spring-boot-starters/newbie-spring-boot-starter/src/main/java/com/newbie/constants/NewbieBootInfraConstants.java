@@ -5,9 +5,7 @@ import com.newbie.core.persistent.common.DateParameterConstructor;
 import com.newbie.core.persistent.common.ParameterConstructor;
 import com.newbie.core.persistent.common.TimeParameterConstructor;
 import com.newbie.core.persistent.common.TimeStampParameterConstructor;
-import org.apache.dubbo.config.annotation.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -37,8 +35,12 @@ public class NewbieBootInfraConstants {
      * Default {@literal management.endpoints.web.exposure.include} value
      */
     public static final String ENDPOINTS_WEB_EXPOSURE_INCLUDE_CONFIG     = "management.endpoints.web.exposure.include";
+    /**
+     * 待开放
+     */
     public static final String NEWBIE_DEFAULT_ENDPOINTS_WEB_EXPOSURE_VALUE = "info, health, versions, readiness";
 
+    public static final String CURRENT_USER_INFO = "CURRENT_USER_INFO";
 
     public static final Map<String, ParameterConstructor> DATE_PARAMETER_PROCESSOR = ImmutableMap.<String, ParameterConstructor>builder()
             .put("DATE", new DateParameterConstructor())

@@ -13,10 +13,12 @@
             <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-management" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters" />
+            <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter" />
             <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+            <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos" />
           </set>
         </option>
       </GradleProjectSettings>

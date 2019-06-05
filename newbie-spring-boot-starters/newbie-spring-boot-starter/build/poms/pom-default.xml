@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-starter</artifactId>
-  <version>alpha.1.1.1</version>
+  <version>alpha.2.0.2</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -323,7 +323,7 @@
     <dependency>
       <groupId>com.github.halower</groupId>
       <artifactId>newbie-spring-boot-api-dto</artifactId>
-      <version>alpha.1.1.0</version>
+      <version>alpha.2.0.0</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -383,7 +383,7 @@
       <dependency>
         <groupId>com.github.halower</groupId>
         <artifactId>newbie-spring-boot-dependencies</artifactId>
-        <version>alpha.1.0.1</version>
+        <version>alpha.1.1.8</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
