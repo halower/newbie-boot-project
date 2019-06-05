@@ -22,6 +22,8 @@
       <module name="newbie-spring-boot-jwt_main~1" target="1.8" />
       <module name="newbie-spring-boot-jwt_test" target="1.8" />
       <module name="newbie-spring-boot-jwt_test~1" target="1.8" />
+      <module name="newbie-spring-boot-light-stater_main" target="1.8" />
+      <module name="newbie-spring-boot-light-stater_test" target="1.8" />
       <module name="newbie-spring-boot-management~1" target="1.5" />
       <module name="newbie-spring-boot-oauth_main" target="1.8" />
       <module name="newbie-spring-boot-oauth_test" target="1.8" />

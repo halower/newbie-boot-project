@@ -6,7 +6,7 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>alpha.2.0.3</version>
+    <version>alpha.2.0.5</version>
 
     <properties>
         <newbie_apidto_version>alpha.2.0.0</newbie_apidto_version>

@@ -5,132 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8bc808c-950f-474b-8feb-8f58e7687d1e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieApplicationConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieBootInfraAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/ServiceVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/ApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DeletedId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DeletedIds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainValueObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/UpdatedId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/ErrorControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/MvcConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/config/WebFilterConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/audit/CurrentUserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/audit/ISoftDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/conventions/ApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/conventions/DomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/AggregateRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/BaseDomainEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/SelfRef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventBus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/spring/SpringBaseEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/AmountUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/BeanUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/DateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/DependencyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/FieldUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/IdcardUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/MimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/env/NewBieBootEnvUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/env/UserInfoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/page/Pagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/endpoint/NewbieBootVersionEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/endpoint/VersionEndpointConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/env/AppContextProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/env/EnvironmentCustomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/initializer/NewBieBootInfrastructureSpringContextInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/launcher/StartEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/app-config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/newbie.versions.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_spring4all_swagger_spring_boot_starter_1_8_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_core_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_core_2_0_16_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_servlet_2_0_16_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_undertow_undertow_websockets_jsr_2_0_16_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_8_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_javax_el_3_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_3_7_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_websocket_jboss_websocket_api_1_1_spec_1_1_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_xnio_xnio_api_3_3_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_xnio_xnio_nio_3_3_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_cache_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_undertow_2_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_5_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_4_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/ivy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/poms/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieApplicationConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieBootInfraAutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/ServiceVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/ApplicationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DeletedId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DeletedIds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainSpecification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/DomainValueObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/annotations/UpdatedId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/ErrorControllerAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/MvcConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/aop/config/WebFilterConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/audit/CurrentUserContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/audit/ISoftDelete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/conventions/ApplicationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/conventions/DomainService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/AggregateRoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/BaseDomainEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/entity/SelfRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventBus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/event/spring/SpringBaseEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/exception/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/AmountUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/BeanUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/DateTimeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/DependencyUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/FieldUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/IdcardUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/MimeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/env/NewBieBootEnvUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/env/UserInfoManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/page/Pagination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/endpoint/NewbieBootVersionEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/endpoint/VersionEndpointConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/env/AppContextProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/env/EnvironmentCustomizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/initializer/NewBieBootInfrastructureSpringContextInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/launcher/StartEventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/app-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/newbie.versions.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/banner.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/dubbo/app-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/newbie.versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/newbie.versions.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/newbie.versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/newbie.versions.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/ivy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/poms/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/src/main/java/com/newbie/openclient/OpenClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient/src/main/java/com/newbie/openclient/OpenClientConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -193,6 +136,9 @@
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/.gradle/" />
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/build/" />
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/out/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/.gradle/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,6 +213,9 @@
         <task path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -277,36 +226,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-stater" type="2d1252cf:ModuleNode" />
+                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-starter" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-stater" type="2d1252cf:ModuleNode" />
+                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-starter" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-stater" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="upload" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-starter" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-starter" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name=":newbie-spring-boot-starters:newbie-spring-boot-starter" type="2d1252cf:ModuleNode" />
+                <item name=":newbie-spring-boot-starters:newbie-spring-boot-light-starter" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="upload" type="c8890929:TasksNode$1" />
               </path>
@@ -349,17 +280,26 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newbie-spring-boot-management/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="57">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/build.gradle">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -369,42 +309,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewBieApplicationConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieApplicationConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewbieBootInfraConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentUserContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/audit/CurrentUserContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pagination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/core/utils/page/Pagination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -424,7 +328,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>springframework</find>
       <find>ADN_VERSION</find>
       <find>NEWBIE_VERSION</find>
       <find>1.0.1</find>
@@ -454,6 +357,7 @@
       <find>openclient</find>
       <find>newbie-spring-boot-light-starter</find>
       <find>newbie_boot_stater_light_version</find>
+      <find>starter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -513,8 +417,8 @@
                 <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":newbie-spring-boot-starters:newbie-spring-boot-light-stater" />
-                <option name="path" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
+                <option name="name" value=":newbie-spring-boot-starters:newbie-spring-boot-light-starter" />
+                <option name="path" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":newbie-spring-boot-starters:newbie-spring-boot-starter" />
@@ -1018,7 +922,7 @@
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
+                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters" />
                 <option name="name" value="dependencyManagement" />
               </ExternalTaskPojo>
@@ -1083,13 +987,159 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-boot-starters:newbie-spring-boot-light-stater:archives'" />
+                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-boot-starters:newbie-spring-boot-light-starter:archives'" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters" />
                 <option name="name" value="uploadArchives" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':newbie-spring-boot-starters'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-boot-starters:newbie-spring-boot-light-starter:archives'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                <option name="name" value="uploadArchives" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':newbie-spring-boot-starters:newbie-spring-boot-light-starter'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
@@ -1104,19 +1154,9 @@
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
                 <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'. [incubating]" />
@@ -1129,74 +1169,9 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="dependencyManagement" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
                 <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
@@ -1204,39 +1179,24 @@
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
+                <option name="description" value="Displays the configuration model of project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="install" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-boot-starters:newbie-spring-boot-light-stater:archives'" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-                <option name="name" value="uploadArchives" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
                 <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':newbie-spring-boot-starters:newbie-spring-boot-light-stater'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1975,7 +1935,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="15583389395094" />
+        <entry key="$PROJECT_DIR$" value="15583393043338" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" value="4269452577" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-auth/build.gradle" value="157140533" />
@@ -1983,6 +1943,7 @@
         <entry key="$PROJECT_DIR$/newbie-spring-boot-jwt/build.gradle" value="1800900429" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-jwt/build.gradle" value="1800900429" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle" value="80820913" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/build.gradle" value="80820913" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-oauth/build.gradle" value="1800900429" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" value="458584518" />
@@ -1993,7 +1954,7 @@
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-provider-sample/build.gradle" value="1343761702" />
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" value="2570398447" />
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" value="746537179" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="2735581078" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="861493098" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2090,7 +2051,7 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
-                  <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater">
+                  <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
@@ -2099,6 +2060,13 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
                           </list>
                         </option>
+                        <option name="path" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -2331,7 +2299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/AmountUtil.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/BeanUtil.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/initializer/NewBieBootInfrastructureSpringContextInitializer.java" />
         <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient/src/main/resources/META-INF/spring.factories" />
@@ -2381,6 +2348,7 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/autoconfigure/NewBieApplicationConfiguration.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" />
       </list>
     </option>
@@ -2444,76 +2412,6 @@
               <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
               <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="newbie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-starters" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-light-stater" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
@@ -2990,14 +2888,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [uploadArchives]">
+  <component name="RunManager" selected="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-api-dto" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -3141,19 +3039,19 @@
     <list>
       <item itemvalue="Spring Boot.SpringCloudDubboProviderApplication" />
       <item itemvalue="Spring Boot.SpringCloudDubboConsumerApplication" />
-      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" />
       <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-cloud-openclient-nacos [uploadArchives]" />
       <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [build]" />
       <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [uploadArchives]" />
       <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-starter [uploadArchives]" />
+      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" />
         <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-starter [uploadArchives]" />
         <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [uploadArchives]" />
         <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [build]" />
         <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-cloud-openclient-nacos [uploadArchives]" />
-        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" />
       </list>
     </recent_temporary>
   </component>
@@ -3215,7 +3113,7 @@
       <workItem from="1559547673926" duration="4963000" />
       <workItem from="1559553234275" duration="11278000" />
       <workItem from="1559614863220" duration="824000" />
-      <workItem from="1559651382848" duration="6976000" />
+      <workItem from="1559651382848" duration="8290000" />
     </task>
     <task id="LOCAL-00001" summary="代码抽离">
       <created>1553837261805</created>
@@ -3231,11 +3129,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558532647838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1、区分支持EDAS &amp; NACOS&#10;2、添加剔除JPA的基础版本">
+      <created>1559703360567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559703360567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531367000" />
+    <option name="totallyTimeSpent" value="532681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -3333,7 +3238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="代码抽离" />
     <MESSAGE value="HTTP-&gt;RPC 上下文隐式传递" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTTP-&gt;RPC 上下文隐式传递" />
+    <MESSAGE value="1、区分支持EDAS &amp; NACOS&#10;2、添加剔除JPA的基础版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、区分支持EDAS &amp; NACOS&#10;2、添加剔除JPA的基础版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3345,13 +3251,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/entity/BaseDomainEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/49a9da44db6e6b5f44ce15ddfcfe2b6666151b25/javax.servlet-api-4.0.1-sources.jar!/javax/servlet/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -3555,13 +3454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="32" column="23" selection-start-line="32" selection-end-line="32" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -3726,10 +3618,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-management/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="57">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -3810,7 +3716,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -8,6 +8,5 @@ include "newbie-spring-boot-starters:newbie-spring-boot-starter-redis"
 include 'newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter'
 include 'newbie-spring-cloud-openclient'
 include 'newbie-spring-cloud-openclient-nacos'
-include 'newbie-spring-boot-starters:newbie-spring-boot-light-stater'
-findProject(':newbie-spring-boot-starters:newbie-spring-boot-light-stater')?.name = 'newbie-spring-boot-light-stater'
+include 'newbie-spring-boot-starters:newbie-spring-boot-light-starter'
 
