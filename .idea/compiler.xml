@@ -13,11 +13,15 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="deployplugin_main" target="1.8" />
+      <module name="deployplugin_test" target="1.8" />
       <module name="newbie-spring-boot-auth_main" target="1.8" />
       <module name="newbie-spring-boot-auth_test" target="1.8" />
       <module name="newbie-spring-boot-commons_main" target="1.8" />
       <module name="newbie-spring-boot-commons_test" target="1.8" />
       <module name="newbie-spring-boot-dependencies~1" target="1.5" />
+      <module name="newbie-spring-boot-deploy-plugin_main" target="1.8" />
+      <module name="newbie-spring-boot-deploy-plugin_test" target="1.8" />
       <module name="newbie-spring-boot-jwt_main" target="1.8" />
       <module name="newbie-spring-boot-jwt_main~1" target="1.8" />
       <module name="newbie-spring-boot-jwt_test" target="1.8" />
@@ -30,7 +34,11 @@
       <module name="newbie-spring-boot-parent" target="1.5" />
       <module name="newbie-spring-boot-starter-dubbo_main" target="1.8" />
       <module name="newbie-spring-boot-starter-dubbo_test" target="1.8" />
+      <module name="newbie-spring-boot-starter-redis_main" target="1.8" />
+      <module name="newbie-spring-boot-starter-redis_test" target="1.8" />
       <module name="newbie-spring-boot-starter_generated" target="1.8" />
+      <module name="newbie-spring-boot-starter_main" target="1.8" />
+      <module name="newbie-spring-boot-starter_test" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_main" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-boot-stater-jpa_test" target="1.8" />
       <module name="newbie-spring-boot-starters-newbie-spring-cloud-dubbo-starter_main" target="1.8" />

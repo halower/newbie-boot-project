@@ -1,9 +1,24 @@
 {
   "groups": [
     {
-      "name": "app",
+      "name": "application",
       "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
+      "name": "application.dubbo",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
+      "name": "application.dubbo.consumer",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ConsumerConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig"
+    },
+    {
+      "name": "application.dubbo.provider",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ProviderConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig"
     },
     {
       "name": "management.endpoint.versions",
@@ -13,19 +28,31 @@
   ],
   "properties": [
     {
-      "name": "app.auth-secret-key",
+      "name": "application.auth-secret-key",
       "type": "java.lang.String",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": "1b6ba62cff8629865a6b9dffa1586d74"
     },
     {
-      "name": "app.env",
+      "name": "application.dubbo.consumer.version",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ConsumerConfig",
+      "defaultValue": "1.0.0"
+    },
+    {
+      "name": "application.dubbo.provider.version",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ProviderConfig",
+      "defaultValue": "1.0.0"
+    },
+    {
+      "name": "application.env",
       "type": "java.lang.String",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": "dev"
     },
     {
-      "name": "app.exclude-filter-path",
+      "name": "application.exclude-filter-path",
       "type": "java.util.List<java.lang.String>",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
     },
@@ -44,7 +71,7 @@
       "defaultValue": true
     },
     {
-      "name": "app.auto-record-request-details",
+      "name": "application.auto-record-request-details",
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": false,
@@ -52,7 +79,7 @@
       "deprecation": {}
     },
     {
-      "name": "app.receive-request-event",
+      "name": "application.receive-request-event",
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": false,

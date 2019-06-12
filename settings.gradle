@@ -9,4 +9,5 @@ include 'newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter'
 include 'newbie-spring-cloud-openclient'
 include 'newbie-spring-cloud-openclient-nacos'
 include 'newbie-spring-boot-starters:newbie-spring-boot-light-starter'
+include 'newbie-spring-boot-environment-plugin'
 

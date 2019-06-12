@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 public class UserInfoForDubboFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-        Result result = null;
+        Result result;
        try{
            String userInfo = RpcContext.getContext().getAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO);
            if (StringUtils.isNotBlank(userInfo)) {
@@ -31,12 +31,10 @@ public class UserInfoForDubboFilter implements Filter {
            }
             result = invoker.invoke(invocation);
             return result;
-       }catch (RpcException ex) {
-           ex.printStackTrace();
-       }finally {
+       }
+       finally {
            UserInfoManager.getInstance().remove();
        }
-        return result;
     }
 }
 
