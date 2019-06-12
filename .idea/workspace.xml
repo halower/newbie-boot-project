@@ -5,37 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8bc808c-950f-474b-8feb-8f58e7687d1e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starters-newbie-spring-boot-starter-redis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starters-newbie-spring-boot-starter-redis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starters.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starters.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/resources/META-INF/gradle-plugins/spring-environment-management.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -208,7 +182,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app-config.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app-config.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -222,7 +196,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org.apache.dubbo.rpc.Filter" pinned="false" current-in-tab="true">
+      <file leaf-file-name="org.apache.dubbo.rpc.Filter" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/org.apache.dubbo.rpc.Filter">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -235,7 +209,7 @@
         <entry file="file://$USER_HOME$/Documents/WeChat Files/ChinaHalower/FileStorage/File/2019-06/org.apache.dubbo.rpc.Filter">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="2" lean-forward="true" selection-end-line="2" />
+              <caret line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -2447,7 +2421,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-26" />
+    <option name="x" value="71" />
+    <option name="y" value="3" />
     <option name="width" value="1918" />
     <option name="height" value="1038" />
   </component>
@@ -2919,7 +2894,7 @@
       <workItem from="1560261743986" duration="554000" />
       <workItem from="1560262425308" duration="3211000" />
       <workItem from="1560303817322" duration="608000" />
-      <workItem from="1560305602432" duration="7094000" />
+      <workItem from="1560305602432" duration="8586000" />
     </task>
     <task id="LOCAL-00001" summary="代码抽离">
       <created>1553837261805</created>
@@ -2949,15 +2924,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559704658481</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加部署环境切换插件">
+      <created>1560346625279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560346625279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="561030000" />
+    <option name="totallyTimeSpent" value="562522000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-26" y="0" width="1918" height="1038" extended-state="1" />
-    <editor active="true" />
+    <frame x="71" y="3" width="1918" height="1038" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -3006,7 +2987,8 @@
     <MESSAGE value="HTTP-&gt;RPC 上下文隐式传递" />
     <MESSAGE value="1、区分支持EDAS &amp; NACOS&#10;2、添加剔除JPA的基础版本" />
     <MESSAGE value="统一版本号，调整命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="统一版本号，调整命名" />
+    <MESSAGE value="添加部署环境切换插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部署环境切换插件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3251,13 +3233,10 @@
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/org.apache.dubbo.rpc.Filter">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Documents/WeChat Files/ChinaHalower/FileStorage/File/2019-06/org.apache.dubbo.rpc.Filter">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-end-line="2" />
+          <caret line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -3274,6 +3253,9 @@
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

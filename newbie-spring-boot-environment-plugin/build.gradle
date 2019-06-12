@@ -1,0 +1,37 @@
+group 'com.github.halower'
+version '0.0.2'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+//    mavenCentral()
+    maven { url 'http://192.168.2.119:8081/repository/maven-public/' }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile gradleApi()
+    compile localGroovy()
+}
+
+ext {
+    NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
+    NEXUS_USERNAME = "admin"
+    NEXUS_PASSWORD = "admin123"
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = "io.spring.tool"
+            pom.artifactId = "spring-environment-management-plugin"
+            repository(url: "${NEXUS_HOST}") {
+                authentication(userName: "${NEXUS_USERNAME}", password: "${NEXUS_PASSWORD}")
+            }
+        }
+    }
+}
+
+
