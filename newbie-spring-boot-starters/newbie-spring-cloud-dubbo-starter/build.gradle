@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.1.0.0"
+version = "alpha.2.1.0"
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -13,7 +13,7 @@ buildscript {
         SPRING_IO_VERSION = '1.0.6.RELEASE'
     }
     repositories {
-        maven { url "https://plugins.gradle.org/m2/" }
+//        maven { url "https://plugins.gradle.org/m2/" }
         maven { url 'http://192.168.2.119:8081/repository/maven-public/' }
     }
     dependencies {
@@ -24,8 +24,7 @@ buildscript {
 
 
 repositories {
-    maven { url 'https://repo.spring.io/snapshot' }
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+//    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
     maven { url 'http://192.168.2.119:8081/repository/maven-public/' }
 }
 
@@ -66,7 +65,7 @@ dependencies {
 }
 
 ext {
-    NEWBIE_VERSION="alpha.qcs.1.1"
+    NEWBIE_VERSION="alpha.2.1.0"
     NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
     NEXUS_USERNAME = "admin"
     NEXUS_PASSWORD = "admin123"

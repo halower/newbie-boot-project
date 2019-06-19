@@ -59,6 +59,8 @@
       <module name="newbie-spring-cloud-dubbo-samples-newbie-spring-cloud-dubbo-provider-sample_test" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_main" target="1.8" />
       <module name="newbie-spring-cloud-dubbo-samples_test" target="1.8" />
+      <module name="newbie-spring-cloud-openclient_main" target="1.8" />
+      <module name="newbie-spring-cloud-openclient_test" target="1.8" />
       <module name="newbiespringbootmanagement" target="1.5" />
       <module name="spring-cloud-alibaba-nacos-discovery_main" target="1.8" />
       <module name="spring-cloud-alibaba-nacos-discovery_test" target="1.8" />

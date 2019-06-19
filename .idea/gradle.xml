@@ -18,7 +18,7 @@
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter" />
-            <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+            <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
             <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos" />
           </set>
         </option>

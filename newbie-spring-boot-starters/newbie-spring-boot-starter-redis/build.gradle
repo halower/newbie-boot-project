@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.1.0.0"
+version = "alpha.2.1.0"
 
 
 apply plugin: 'java'
@@ -37,7 +37,7 @@ dependencies {
 }
 
 ext {
-    NEWBIE_VERSION="alpha.qcs.1.1"
+    NEWBIE_VERSION="alpha.2.1.0"
     NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
     NEXUS_USERNAME = "admin"
     NEXUS_PASSWORD = "admin123"

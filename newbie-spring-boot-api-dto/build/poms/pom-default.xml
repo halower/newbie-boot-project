@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-api-dto</artifactId>
-  <version>alpha.2.0.0</version>
+  <version>alpha.2.1.0</version>
   <dependencies>
     <dependency>
       <groupId>org.modelmapper</groupId>
@@ -21,7 +21,7 @@
       <dependency>
         <groupId>com.github.halower</groupId>
         <artifactId>newbie-spring-boot-dependencies</artifactId>
-        <version>alpha.qcs.1.3.6</version>
+        <version>alpha.2.1.0</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

@@ -6,7 +6,7 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-dependencies</artifactId>
-    <version>alpha.2.0.1</version>
+    <version>alpha.2.1.0</version>
 
     <properties>
         <spring_boot_version>2.1.2.RELEASE</spring_boot_version>

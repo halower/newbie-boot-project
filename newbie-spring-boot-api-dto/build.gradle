@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.2.0.0"
+version = "alpha.2.1.0"
 
 
 apply plugin: 'java'
@@ -28,6 +28,7 @@ repositories {
 apply  plugin: "io.spring.dependency-management"
 
 dependencies {
+
     compileOnly("org.projectlombok:lombok")
     implementation("org.modelmapper:modelmapper")
     implementation("com.fasterxml.jackson.core:jackson-annotations")
@@ -41,7 +42,7 @@ ext {
 
 dependencyManagement {
     imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:alpha.qcs.1.3.6"
+        mavenBom "com.github.halower:newbie-spring-boot-dependencies:alpha.2.1.0"
     }
 }
 

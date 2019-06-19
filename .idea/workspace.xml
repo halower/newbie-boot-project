@@ -5,11 +5,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8bc808c-950f-474b-8feb-8f58e7687d1e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/resources/META-INF/gradle-plugins/spring-environment-management.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ecwid_consul_consul_api_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_andrewoma_dexx_dexx_collections_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_vlsi_compactmap_compactmap_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_inject_guice_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_eureka_eureka_client_1_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_eureka_eureka_core_1_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_eureka_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_thoughtworks_xstream_xstream_1_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_jxpath_commons_jxpath_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_form_feign_form_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_form_feign_form_spring_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_3_10_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_all_4_1_31_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jline_jline_0_9_94.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_client_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_framework_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_recipes_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_x_discovery_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_dubbo_dubbo_spring_boot_autoconfigure_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_dubbo_dubbo_spring_boot_autoconfigure_compatible_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_dubbo_dubbo_spring_boot_starter_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_9_0_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_yetus_audience_annotations_0_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_3_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jettison_jettison_1_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_stax2_api_3_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_openfeign_core_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_5_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xpp3_xpp3_min_1_1_4c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter_test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/ivy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-api-dto/build/poms/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build/ivy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build/poms/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/dubbo/org.apache.dubbo.rpc.Filter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/page/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/page/Pager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build/ivy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build/ivy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build/poms/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build/poms/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/ivy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/poms/pom-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newbie-spring-cloud-openclient/src/main/java/com/newbie/openclient/OpenClientConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -83,6 +169,9 @@
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/.gradle/" />
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build/" />
     <ignored path="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/out/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/.gradle/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/build/" />
+    <ignored path="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,6 +255,9 @@
         <task path="$PROJECT_DIR$/newbie-spring-boot-environment-plugin">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -182,34 +274,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app-config.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="org.apache.dubbo.rpc.Filter" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-management/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="420">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org.apache.dubbo.rpc.Filter" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/org.apache.dubbo.rpc.Filter">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="1650">
+              <caret line="136" column="59" lean-forward="true" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="org.apache.dubbo.rpc.Filter" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/WeChat Files/ChinaHalower/FileStorage/File/2019-06/org.apache.dubbo.rpc.Filter">
+      <file leaf-file-name="CustomDeployPlugin.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" selection-end-line="2" />
+            <state relative-caret-position="150">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#27#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="58" column="18" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -229,12 +373,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>NEWBIE_VERSION</find>
-      <find>1.0.1</find>
-      <find>alpha.qcs.1.0.2</find>
-      <find>NEWBIE_BOOT_DUBBO_VERSION</find>
-      <find>OPENC</find>
-      <find>config</find>
       <find>ALIBABA_VERSION</find>
       <find>spring-cloud-starter-openfeign</find>
       <find>update</find>
@@ -247,18 +385,24 @@
       <find>UserInfoForDubboFilter</find>
       <find>dubbo_version</find>
       <find>adn</find>
-      <find>dto</find>
       <find>newbie-spring-boot-api-dto</find>
-      <find>dubbo</find>
       <find>APP_NAME_KEY</find>
       <find>Filter</find>
       <find>spring4all_version</find>
       <find>2.1.5</find>
-      <find>openclient</find>
       <find>newbie-spring-boot-light-starter</find>
       <find>newbie_boot_stater_light_version</find>
       <find>starter</find>
       <find>greetingExtension</find>
+      <find>openclient</find>
+      <find>alpha.1.1.8</find>
+      <find>newbie_openclient_edas_version</find>
+      <find>newbie</find>
+      <find>dubbo</find>
+      <find>http://maven.aliyun.com/nexus/content/groups/public</find>
+      <find>alpha.2.1.0</find>
+      <find>dto</find>
+      <find>newbie_boot_dubbo_version</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -314,8 +458,8 @@
                 <option name="path" value="$PROJECT_DIR$/newbie-spring-boot-starters" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":newbie-spring-cloud-openclient" />
-                <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="name" value=":newbie-spring-cloud-openclient-edas" />
+                <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":newbie-spring-cloud-openclient-nacos" />
@@ -1659,147 +1803,147 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient">
+        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas">
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':newbie-spring-cloud-openclient'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the components produced by project ':newbie-spring-cloud-openclient-edas'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the sub-projects of project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':newbie-spring-cloud-openclient'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the dependent components of components in project ':newbie-spring-cloud-openclient-edas'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':newbie-spring-cloud-openclient'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the configuration model of project ':newbie-spring-cloud-openclient-edas'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the tasks runnable from project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the dependency management declared in project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="dependencyManagement" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the insight into a specific dependency in project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays all dependencies declared in project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="install" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-cloud-openclient:archives'" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Uploads all artifacts belonging to configuration ':newbie-spring-cloud-openclient-edas:archives'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="uploadArchives" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':newbie-spring-cloud-openclient'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                <option name="description" value="Displays the properties of project ':newbie-spring-cloud-openclient-edas'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
@@ -1955,29 +2099,30 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="17144637811943" />
+        <entry key="$PROJECT_DIR$" value="17154977948781" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/deployplugin/build.gradle" value="1971620415" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" value="4269452577" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" value="41632143" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-auth/build.gradle" value="157140533" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-commons/build.gradle" value="1131997942" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/build.gradle" value="3957457626" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" value="1461437775" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" value="1554137733" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-jwt/build.gradle" value="1800900429" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-jwt/build.gradle" value="1800900429" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle" value="1735830596" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle" value="2834797818" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/build.gradle" value="80820913" />
         <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-oauth/build.gradle" value="1800900429" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" value="458584518" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" value="3780332312" />
-        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" value="1207842237" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" value="3609142083" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" value="2834797818" />
+        <entry key="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" value="3980614329" />
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-api-sample/build.gradle" value="2302649738" />
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-consumer-sample/build.gradle" value="2461451716" />
         <entry key="$PROJECT_DIR$/newbie-spring-cloud-dubbo-samples/newbie-spring-cloud-dubbo-provider-sample/build.gradle" value="1343761702" />
-        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" value="2570398447" />
-        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" value="746537179" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="2956741644" />
+        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/build.gradle" value="1221099891" />
+        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" value="3864472060" />
+        <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" value="2415513450" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="4161258273" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2157,14 +2302,14 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-extra-configurations-plugin/5.0.0/dc0d73f4cdd13e8974b3f7b04e86dff5459eb8c5/gradle-extra-configurations-plugin-5.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/1.0.7/f0c3f0a53ef4eb87e8dbd3107a12abd5cfaefe3a/nebula-gradle-interop-1.0.7-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/1.0.7/eb9495cf30e3bcb707a5cba16d8a451b9b55033b/nebula-gradle-interop-1.0.7.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.11/60c4910ffd5d3c522e8876d19b9e12d43972c4f4/kotlin-stdlib-jdk7-1.3.11-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.11/4839661cf6ce3c14b65ed7dcf5b9249b44ecca16/kotlin-stdlib-jdk7-1.3.11.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.11/d46e00faac79f8ec6bb956154ecde4282871a6bf/kotlin-stdlib-1.3.11-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.11/4cbc5922a54376018307a731162ccaf3ef851a39/kotlin-stdlib-1.3.11.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/e49742d3259938ea3539346c8ca3babb54a5140f/kotlin-stdlib-common-1.3.11-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/d8b8e746e279f1c4f5e08bc14a96b82e6bb1de02/kotlin-stdlib-common-1.3.11.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/1.0.2/4e6054f293a45a3cd6d70d4f045f2e7913e921eb/nebula-gradle-interop-1.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-gradle-interop/1.0.2/ac2c2ce633740fea023d7bbb3b5b213cf566a500/nebula-gradle-interop-1.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.70/caa8f5bbe18bc23189c5113e6837917c79d832c0/kotlin-stdlib-jdk7-1.2.70-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.70/9318bb9dadaa56534ac8b0728a1ffa2bd0e48b28/kotlin-stdlib-jdk7-1.2.70.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.70/645811a161689d7b2d4362eaee1e30abf22a27d7/kotlin-stdlib-1.2.70-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.70/b5b9449f73ce7bf312e89a7560cb3c209a0fa13e/kotlin-stdlib-1.2.70.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.70/8825e81f0a47a12aacdf0b84885353053dc5a8dd/kotlin-stdlib-common-1.2.70-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.70/6ea722d7d0b9451293e739076ddb6a4108d57b6b/kotlin-stdlib-common-1.2.70.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                           </list>
@@ -2222,13 +2367,20 @@
                   <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
                           </list>
                         </option>
-                        <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient" />
+                        <option name="path" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2343,13 +2495,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/audit/CurrentUserContext.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/ErrorControllerAdvice.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/dubbo-config.properties" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/querydsl/extend/DefaultExtendedQueryDslJpaRepository.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/env/EnvironmentCustomizer.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/ServiceVersion.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/env/UserInfoManager.java" />
@@ -2358,10 +2503,6 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/constants/NewbieBootInfraConstants.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java" />
         <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient/src/main/java/com/newbie/openclient/OpenClientConfiguration.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" />
-        <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater/src/main/resources/META-INF/app-config.properties" />
@@ -2376,24 +2517,35 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/src/main/resources/META-INF/app-config.properties" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/dubbo/ProviderConfig.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/dubbo/ConsumerConfig.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/dubbo/DubboConfig.java" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/config/NewBieBasicConfiguration.java" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" />
         <option value="$PROJECT_DIR$/deployplugin/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/src/main/groovy/com/newbie/deploy/DeployPlugin.Groovy" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/src/main/resources/META-INF/gradle-plugins/com.newbie.deploy.properties" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/src/main/groovy/com/newbie/deploy/DeployPlugin.groovy" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" />
-        <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/org.apache.dubbo.rpc.Filter" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" />
+        <option value="$USER_HOME$/Desktop/org.apache.dubbo.rpc.Filter" />
+        <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepository.java" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/page/Pager.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-management/pom.xml" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" />
+        <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" />
       </list>
     </option>
   </component>
@@ -2420,7 +2572,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="71" />
     <option name="y" value="3" />
     <option name="width" value="1918" />
@@ -2433,6 +2585,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2444,9 +2597,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2660,27 +2812,10 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="newbie-spring-boot:newbie-spring-boot-deploy-plugin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="newbie-spring-boot:newbie-spring-boot-deploy-plugin [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-deploy-plugin" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-api-dto" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -2711,27 +2846,10 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-stater" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="newbie-spring-boot:newbie-spring-cloud-openclient-nacos [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -2740,6 +2858,40 @@
         <option name="taskNames">
           <list>
             <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-starter [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -2802,27 +2954,24 @@
       <listeners />
     </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SHOW_IN_DASHBOARD" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <list>
       <item itemvalue="Spring Boot.SpringCloudDubboProviderApplication" />
       <item itemvalue="Spring Boot.SpringCloudDubboConsumerApplication" />
-      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-cloud-openclient-nacos [uploadArchives]" />
-      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [build]" />
-      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-deploy-plugin [build]" />
-      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-deploy-plugin [uploadArchives]" />
+      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter [build]" />
+      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" />
+      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-starter [uploadArchives]" />
+      <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" />
       <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-environment-plugin [uploadArchives]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-environment-plugin [uploadArchives]" />
-        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-deploy-plugin [uploadArchives]" />
-        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-deploy-plugin [build]" />
-        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-stater [build]" />
-        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-cloud-openclient-nacos [uploadArchives]" />
+        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-light-starter [uploadArchives]" />
+        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-boot-starter [uploadArchives]" />
+        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-api-dto [uploadArchives]" />
+        <item itemvalue="Gradle.newbie-spring-boot:newbie-spring-boot-starters:newbie-spring-cloud-dubbo-starter [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -2894,7 +3043,11 @@
       <workItem from="1560261743986" duration="554000" />
       <workItem from="1560262425308" duration="3211000" />
       <workItem from="1560303817322" duration="608000" />
-      <workItem from="1560305602432" duration="8586000" />
+      <workItem from="1560305602432" duration="14983000" />
+      <workItem from="1560687328853" duration="9869000" />
+      <workItem from="1560736116789" duration="4539000" />
+      <workItem from="1560741440792" duration="6693000" />
+      <workItem from="1560845412939" duration="2506000" />
     </task>
     <task id="LOCAL-00001" summary="代码抽离">
       <created>1553837261805</created>
@@ -2931,23 +3084,30 @@
       <option name="project" value="LOCAL" />
       <updated>1560346625279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加部署环境切换插件">
+      <created>1560348399981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560348399982</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562522000" />
+    <option name="totallyTimeSpent" value="592526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="3" width="1918" height="1038" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31769723" side_tool="true" weight="0.32936078" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.6823028" weight="0.32936078" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2959,13 +3119,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25080732" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.22441365" />
+      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.21695095" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -3000,109 +3160,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/resources/META-INF/gradle-plugins/spring-environment-management.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="90" selection-start-line="67" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/resources/META-INF/gradle-plugins/spring-environment-management.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="90" selection-start-line="67" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-deploy-plugin/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="90" selection-start-line="67" selection-end-line="90" />
+        <state relative-caret-position="1140">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -3188,50 +3249,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy">
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+        <state relative-caret-position="60">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle">
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$USER_HOME$/Desktop/org.apache.dubbo.rpc.Filter">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="90">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="90" selection-start-line="67" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/org.apache.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Documents/WeChat Files/ChinaHalower/FileStorage/File/2019-06/org.apache.dubbo.rpc.Filter">
       <provider selected="true" editor-type-id="text-editor">
@@ -3240,22 +3277,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter">
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForDubboFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="196">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/org.apache.dubbo.rpc.Filter">
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/UserInfoForWebFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="196">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/resources/META-INF/app-config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/aop/ErrorControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/querydsl/extend/DefaultExtendedQueryDslJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/querydsl/extend/ExtendedQueryDslJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/config/EnableJPQLRepositories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/config/EnableJpaAuditingRepositories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/persistent/simple/CustomizedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3240">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/src/main/java/com/newbie/core/utils/page/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-634">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-edas/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-cloud-openclient-nacos/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-api-dto/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#27#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newbie-spring-boot-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="136" column="59" lean-forward="true" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

@@ -6,15 +6,15 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>alpha.2.0.6</version>
+    <version>alpha.2.1.0</version>
 
     <properties>
-        <newbie_apidto_version>alpha.2.0.0</newbie_apidto_version>
-        <newbie_boot_stater_version>alpha.2.0.6</newbie_boot_stater_version>
-        <newbie_boot_stater_light_version>alpha.2.0.6</newbie_boot_stater_light_version>
-        <newbie_boot_redis_version>alpha.1.0.0</newbie_boot_redis_version>
-        <newbie_openclient_version>alpha.2.0.1</newbie_openclient_version>
-        <newbie_openclient_nacos_version>alpha.2.0.1</newbie_openclient_nacos_version>
+        <newbie_apidto_version>alpha.2.1.0</newbie_apidto_version>
+        <newbie_boot_stater_version>alpha.2.1.0</newbie_boot_stater_version>
+        <newbie_boot_stater_light_version>alpha.2.1.0</newbie_boot_stater_light_version>
+        <newbie_boot_redis_version>alpha.2.1.0</newbie_boot_redis_version>
+        <newbie_openclient_edas_version>alpha.2.1.0</newbie_openclient_edas_version>
+        <newbie_openclient_nacos_version>alpha.2.1.0</newbie_openclient_nacos_version>
         <consul_discovery_version>2.1.1.RELEASE</consul_discovery_version>
         <open_feign_version>2.1.0.RELEASE</open_feign_version>
         <logstash_version>5.2</logstash_version>
@@ -42,8 +42,8 @@
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>
-                <artifactId>newbie-spring-cloud-openclient</artifactId>
-                <version>${newbie_openclient_version}</version>
+                <artifactId>newbie-spring-cloud-openclient-edas</artifactId>
+                <version>${newbie_openclient_edas_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.halower</groupId>
