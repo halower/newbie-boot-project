@@ -6,15 +6,16 @@
 
     <groupId>com.github.halower</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>alpha.2.1.0</version>
+    <version>alpha.2.1.1</version>
 
     <properties>
         <newbie_apidto_version>alpha.2.1.0</newbie_apidto_version>
-        <newbie_boot_stater_version>alpha.2.1.0</newbie_boot_stater_version>
-        <newbie_boot_stater_light_version>alpha.2.1.0</newbie_boot_stater_light_version>
+        <newbie_boot_stater_version>alpha.2.1.1</newbie_boot_stater_version>
+        <newbie_boot_stater_light_version>alpha.2.1.1</newbie_boot_stater_light_version>
         <newbie_boot_redis_version>alpha.2.1.0</newbie_boot_redis_version>
         <newbie_openclient_edas_version>alpha.2.1.0</newbie_openclient_edas_version>
         <newbie_openclient_nacos_version>alpha.2.1.0</newbie_openclient_nacos_version>
+        <newbie-spring-boot-starter-querydsl>alpha.2.1.1</newbie-spring-boot-starter-querydsl>
         <consul_discovery_version>2.1.1.RELEASE</consul_discovery_version>
         <open_feign_version>2.1.0.RELEASE</open_feign_version>
         <logstash_version>5.2</logstash_version>

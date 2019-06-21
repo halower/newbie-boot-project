@@ -2,7 +2,7 @@
 package com.newbie.initializer;
 
 
-import com.newbie.core.utils.env.NewBieBootEnvUtils;
+import com.newbie.context.NewBieBootEnvUtils;
 import lombok.extern.java.Log;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;

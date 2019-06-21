@@ -5,8 +5,8 @@ import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.audit.CurrentUserContext;
 import com.newbie.core.exception.BusinessException;
-import com.newbie.core.utils.env.UserInfoManager;
-import com.newbie.core.utils.env.NewBieBootEnvUtils;
+import com.newbie.context.UserInfoManager;
+import com.newbie.context.NewBieBootEnvUtils;
 import com.newbie.dto.ResponseTypes;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
@@ -23,7 +23,6 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.*;
 
 /**
  * @Author: 谢海龙

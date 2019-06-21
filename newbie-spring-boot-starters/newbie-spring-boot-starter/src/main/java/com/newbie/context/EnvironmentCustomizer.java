@@ -1,9 +1,8 @@
-package com.newbie.env;
+package com.newbie.context;
 
 
 import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration;
-import com.newbie.core.utils.env.NewBieBootEnvUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
 import org.springframework.core.env.ConfigurableEnvironment;

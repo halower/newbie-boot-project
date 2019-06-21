@@ -3,12 +3,14 @@ package com.newbie.core.utils.page;
 import java.io.Serializable;
 import java.util.List;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
  * 分页对象
  */
 @Data
+@Builder
 public class Pagination<T> implements Serializable {
 	private List<T> content;
 	private int current;

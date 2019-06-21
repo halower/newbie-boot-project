@@ -1,9 +1,10 @@
 package com.newbie.autoconfigure;
 
-import com.newbie.core.aop.ErrorControllerAdvice;
 import com.newbie.core.aop.MvcConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.audit.CustomAuditorAware;
+import com.newbie.core.exception.handler.GlobalExceptionHandler;
+import com.newbie.core.persistent.config.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
 import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -20,8 +21,9 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @Import({
         StartEventListener.class,
         CustomAuditorAware.class,
-        ErrorControllerAdvice.class,
-        MvcConfigurer.class
+        GlobalExceptionHandler.class,
+        MvcConfigurer.class,
+        MybatisConfig.class
 })
 @Configuration
 @EnableSwagger2Doc

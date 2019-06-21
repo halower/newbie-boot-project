@@ -3,7 +3,7 @@ package com.newbie.core.aop;
 import com.alibaba.fastjson.JSON;
 import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.core.audit.CurrentUserContext;
-import com.newbie.core.utils.env.UserInfoManager;
+import com.newbie.context.UserInfoManager;
 import lombok.extern.java.Log;
 import lombok.var;
 import org.apache.commons.lang3.StringUtils;
@@ -18,7 +18,6 @@ import org.springframework.stereotype.Component;
  */
 @Configuration
 @Component
-@Log
 public class UserInfoForDubboFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {

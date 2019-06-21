@@ -1,6 +1,5 @@
-package com.newbie.env;
+package com.newbie.context;
 
-import com.newbie.core.utils.env.NewBieBootEnvUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

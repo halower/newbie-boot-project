@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":newbie-spring-boot-starters:newbie-spring-boot-starter-redis:main" external.linked.project.path="$MODULE_DIR$/../../../../newbie-spring-boot-starters/newbie-spring-boot-starter-redis" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="com.github.halower" external.system.module.type="sourceSet" external.system.module.version="alpha.1.0.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":newbie-spring-boot-starters:newbie-spring-boot-starter-redis:main" external.linked.project.path="$MODULE_DIR$/../../../../newbie-spring-boot-starters/newbie-spring-boot-starter-redis" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="com.github.halower" external.system.module.type="sourceSet" external.system.module.version="alpha.2.1.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration />
@@ -15,7 +15,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-redis:2.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.16.22" level="project" />
+    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.18.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-configuration-processor:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.5" level="project" />
@@ -24,7 +24,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-redis:2.0.10.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: io.lettuce:lettuce-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.1.2.RELEASE" level="project" />

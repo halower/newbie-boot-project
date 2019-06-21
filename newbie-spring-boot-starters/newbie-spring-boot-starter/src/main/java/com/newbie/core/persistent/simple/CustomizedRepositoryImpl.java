@@ -44,7 +44,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         this.em = entityManager;
     }
 
-    public CustomizedRepositoryImpl(Class<T> domainClass, EntityManager entityManager) {
+    public    CustomizedRepositoryImpl(Class<T> domainClass, EntityManager entityManager) {
         super(domainClass, entityManager);
         this.em = entityManager;
     }

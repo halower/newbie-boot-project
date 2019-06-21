@@ -18,4 +18,13 @@ public class BusinessException extends RuntimeException {
         super(msg);
         this.exceptionType = ResponseTypes.BUSSINESS_FAIL;
     }
+
+    /**
+     * 提高性能
+     * @return Throwable
+     */
+    @Override
+    public synchronized Throwable fillInStackTrace() {
+        return this;
+    }
 }

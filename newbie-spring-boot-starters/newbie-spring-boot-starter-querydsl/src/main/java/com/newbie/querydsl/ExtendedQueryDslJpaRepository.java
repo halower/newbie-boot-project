@@ -1,4 +1,4 @@
-package com.newbie.core.persistent.querydsl.extend;
+package com.newbie.querydsl;
 
 import com.querydsl.core.types.EntityPath;
 import com.querydsl.core.types.OrderSpecifier;

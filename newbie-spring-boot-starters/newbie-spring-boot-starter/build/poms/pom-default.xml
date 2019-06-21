@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.halower</groupId>
   <artifactId>newbie-spring-boot-starter</artifactId>
-  <version>alpha.2.1.0</version>
+  <version>alpha.2.1.1</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -11,12 +11,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -26,27 +22,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-undertow</artifactId>
-      <scope>runtime</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -56,12 +33,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -71,12 +44,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -86,12 +55,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -101,12 +66,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -116,12 +77,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -131,12 +88,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -146,12 +99,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -161,57 +110,20 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.querydsl</groupId>
-      <artifactId>querydsl-jpa</artifactId>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.1.1</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.querydsl</groupId>
-      <artifactId>querydsl-apt</artifactId>
-      <scope>runtime</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.querydsl</groupId>
-      <artifactId>querydsl-sql</artifactId>
-      <scope>runtime</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -221,12 +133,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -236,12 +144,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -251,12 +155,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -266,12 +166,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -281,12 +177,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -296,12 +188,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -312,12 +200,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -327,12 +211,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -342,12 +222,8 @@
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jboss-servlet-api_4.0_spec</artifactId>
-          <groupId>org.jboss.spec.javax.servlet</groupId>
+          <artifactId>tomcat-annotations-api</artifactId>
+          <groupId>org.apache.tomcat</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -355,12 +231,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
   <dependencyManagement>

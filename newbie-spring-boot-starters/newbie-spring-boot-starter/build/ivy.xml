@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="alpha.2.1.0" status="integration" publication="20190617143031"/>
+  <info organisation="com.github.halower" module="newbie-spring-boot-starter" revision="alpha.2.1.1" status="integration" publication="20190621153642"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -28,95 +28,65 @@
   </publications>
   <dependencies>
     <dependency org="org.springframework.boot" name="spring-boot-starter" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-web" rev="" conf="implementation-&gt;default">
-      <exclude org="*" module="spring-boot-starter-tomcat"/>
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
-    <dependency org="org.springframework.boot" name="spring-boot-starter-undertow" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-actuator" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-cache" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-autoconfigure" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-configuration-processor" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-data-jpa" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.projectlombok" name="lombok" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="com.alibaba" name="fastjson" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.apache.dubbo" name="dubbo" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
-    <dependency org="com.querydsl" name="querydsl-jpa" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
-    <dependency org="com.querydsl" name="querydsl-apt" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
-    </dependency>
-    <dependency org="com.querydsl" name="querydsl-sql" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+    <dependency org="com.baomidou" name="mybatis-plus-boot-starter" rev="3.1.1" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="joda-time" name="joda-time" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="commons-io" name="commons-io" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.freemarker" name="freemarker" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="commons-beanutils" name="commons-beanutils" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.apache.commons" name="commons-lang3" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.apache.httpcomponents" name="httpclient" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="com.github.halower" name="newbie-spring-boot-api-dto" rev="alpha.2.1.0" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="com.spring4all" name="swagger-spring-boot-starter" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="io.jsonwebtoken" name="jjwt" rev="" conf="implementation-&gt;default">
-      <exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_4.0_spec"/>
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="" conf="testImplementation-&gt;default"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="annotationProcessor"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="apiElements"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="archives"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="compile"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="compileClasspath"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="compileOnly"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="default"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="implementation"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="runtime"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="runtimeClasspath"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="runtimeElements"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="runtimeOnly"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testAnnotationProcessor"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testCompile"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testCompileClasspath"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testCompileOnly"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testImplementation"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testRuntime"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testRuntimeClasspath"/>
-    <exclude org="*" module="spring-boot-starter-tomcat" conf="testRuntimeOnly"/>
   </dependencies>
 </ivy-module>
