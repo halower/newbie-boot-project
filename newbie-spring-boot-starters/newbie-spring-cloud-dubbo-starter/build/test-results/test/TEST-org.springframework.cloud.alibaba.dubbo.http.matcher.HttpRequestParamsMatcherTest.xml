@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.springframework.cloud.alibaba.dubbo.http.matcher.HttpRequestParamsMatcherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-23T12:35:08" hostname="DESKTOP-4DO1SUF" time="0.011">
-  <properties/>
-  <testcase name="testEquals" classname="org.springframework.cloud.alibaba.dubbo.http.matcher.HttpRequestParamsMatcherTest" time="0.011"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Build-date: Fri Jun 21 15:36:31 CST 2019
-Implementation-Version: alpha.2.1.1
-
