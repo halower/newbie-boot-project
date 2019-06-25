@@ -3,7 +3,7 @@ package com.newbie.core.aop;
 import com.alibaba.fastjson.JSON;
 import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
-import com.newbie.core.audit.CurrentUserContext;
+import com.newbie.context.CurrentUserContext;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.context.UserInfoManager;
 import com.newbie.context.NewBieBootEnvUtil;

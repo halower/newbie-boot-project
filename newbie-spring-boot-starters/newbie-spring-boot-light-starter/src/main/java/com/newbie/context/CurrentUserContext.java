@@ -1,4 +1,4 @@
-package com.newbie.core.audit;
+package com.newbie.context;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

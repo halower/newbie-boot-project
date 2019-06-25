@@ -1,6 +1,6 @@
 package com.newbie.core.conventions;
 
-import com.newbie.core.audit.CurrentUserContext;
+import com.newbie.context.CurrentUserContext;
 import com.newbie.context.UserInfoManager;
 
 public interface ApplicationService {

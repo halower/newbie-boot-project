@@ -1,28 +1,7 @@
 group = 'com.github.halower'
 version = "alpha.2.1.0"
 
-apply plugin: 'java'
-apply plugin: 'maven'
 
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-buildscript {
-    ext {
-        SPRING_IO_VERSION = '1.0.6.RELEASE'
-    }
-    repositories {
-        maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
-    }
-    dependencies {
-        classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
-    }
-}
-
-repositories {
-    maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
-}
 
 apply  plugin: "io.spring.dependency-management"
 
@@ -33,27 +12,8 @@ dependencies {
     implementation ("com.alibaba.cloud:spring-cloud-starter-acm:1.0.9")
 }
 
-ext {
-    NEXUS_HOST = "http://192.168.2.119:8081/repository/maven-releases/"
-    NEXUS_USERNAME = "admin"
-    NEXUS_PASSWORD = "admin123"
-}
-
 dependencyManagement {
     imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:alpha.2.1.0"
+        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
     }
 }
-
-
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "${NEXUS_HOST}") {
-                authentication(userName: "${NEXUS_USERNAME}", password: "${NEXUS_PASSWORD}")
-            }
-        }
-    }
-}
-

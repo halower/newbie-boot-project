@@ -1,7 +1,5 @@
 package com.newbie.context;
 
-import com.newbie.core.audit.CurrentUserContext;
-
 /**
  * @Author: 谢海龙
  * @Date: 2019/5/22 13:45

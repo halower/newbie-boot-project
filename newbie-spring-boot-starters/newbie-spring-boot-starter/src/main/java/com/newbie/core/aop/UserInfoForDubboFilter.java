@@ -2,9 +2,8 @@ package com.newbie.core.aop;
 
 import com.alibaba.fastjson.JSON;
 import com.newbie.constants.NewbieBootInfraConstants;
-import com.newbie.core.audit.CurrentUserContext;
+import com.newbie.context.CurrentUserContext;
 import com.newbie.context.UserInfoManager;
-import lombok.extern.java.Log;
 import lombok.var;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.rpc.*;

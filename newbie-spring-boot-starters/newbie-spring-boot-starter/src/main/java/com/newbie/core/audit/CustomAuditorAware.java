@@ -1,6 +1,7 @@
 package com.newbie.core.audit;
 
 import com.alibaba.fastjson.JSON;
+import com.newbie.context.CurrentUserContext;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.dto.ResponseTypes;

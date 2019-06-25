@@ -1,0 +1,100 @@
+import java.text.SimpleDateFormat
+
+buildscript {
+    ext {
+        SPRING_IO_VERSION = '1.0.6.RELEASE'
+    }
+    repositories {
+        maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
+    }
+}
+ext {
+    configuration = [
+            javaVersion = JavaVersion.VERSION_1_8,
+            newbie_dependencies_version ="alpha.2.1.0",
+            repository_home = "http://192.168.2.119:8081"
+    ]
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+    apply  plugin: "io.spring.dependency-management"
+
+    sourceCompatibility = "${javaVersion}"
+    targetCompatibility = "${javaVersion}"
+
+    repositories {
+        maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
+    }
+
+    jar {
+        afterEvaluate {
+            manifest {
+                attributes 'Build-date': new Date();
+                attributes 'Application-Version': project.version
+                attributes 'Built-Gradle': gradle.gradleVersion
+                attributes 'Build-OS': System.getProperty("os.name")
+                attributes 'Built-By': System.getProperty("user.name")
+                attributes 'Build-Jdk': System.getProperty("java.version")
+                attributes 'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
+            }
+        }
+    }
+
+    javadoc {
+        afterEvaluate {
+            configure(options) {
+                encoding "UTF-8"
+                charSet 'UTF-8'
+                author true
+                version true
+                failOnError false
+                links "http://docs.oracle.com/javase/8/docs/api"
+            }
+        }
+    }
+
+    task sourcesJar(type: Jar) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+
+    task javadocJar(type: Jar, dependsOn: javadoc) {
+        classifier = 'javadoc'
+        from javadoc.destinationDir
+    }
+
+    artifacts {
+        archives jar
+        archives sourcesJar
+        archives javadocJar
+    }
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+
+                artifact sourcesJar
+                artifact javadocJar
+            }
+        }
+        repositories {
+            maven {
+                def releasesRepoUrl = "${repository_home}/repository/maven-releases/"
+                def snapshotsRepoUrl = "${repository_home}/repository/maven-snapshots/"
+                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+                credentials {
+                    username  'admin'
+                    password  'admin123'
+                }
+            }
+        }
+    }
+}
