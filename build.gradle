@@ -29,6 +29,17 @@ subprojects {
     sourceCompatibility = "${javaVersion}"
     targetCompatibility = "${javaVersion}"
 
+    dependencyManagement {
+        imports {
+            mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
+        }
+    }
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+        options.deprecation = true
+        options.compilerArgs += ["-parameters"]
+    }
+
     repositories {
         maven { url 'http://192.168.2.119:8081/repository/maven-public/'}
     }
@@ -72,7 +83,7 @@ subprojects {
 
     artifacts {
         archives jar
-        archives sourcesJar
+//        archives sourcesJar
         archives javadocJar
     }
 

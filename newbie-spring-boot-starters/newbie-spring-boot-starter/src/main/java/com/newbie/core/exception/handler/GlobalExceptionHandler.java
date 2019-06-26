@@ -1,10 +1,12 @@
 package com.newbie.core.exception.handler;
 
+import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.FileDownloadException;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
@@ -26,16 +28,24 @@ import java.util.List;
 @RestControllerAdvice
 @Order(value = Ordered.HIGHEST_PRECEDENCE)
 public class GlobalExceptionHandler {
+    @Autowired
+    NewBieBasicConfiguration  configuration;
     @ExceptionHandler(value = Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseResult handleException(Exception e) {
-        log.error("系统内部异常，异常信息", e);
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("系统内部异常，异常信息", e.getMessage());
         return new ResponseResult(ResponseTypes.UNKNOW,"系统内部异常");
     }
 
     @ExceptionHandler(value = BusinessException.class)
     public ResponseResult handleParamsInvalidException(BusinessException e) {
-        log.error("业务服务执行异常", e);
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("业务服务执行异常",  e);
         return new ResponseResult(e.getExceptionType(),e.getMessage());
     }
 
@@ -50,6 +60,10 @@ public class GlobalExceptionHandler {
         for (FieldError error : fieldErrors) {
             message.append(error.getField()).append(error.getDefaultMessage()).append(",");
         }
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("请求参数校验异常",  e.getMessage());
         message = new StringBuilder(message.substring(0, message.length() - 1));
         return new ResponseResult(ResponseTypes.PARAMETER_UNVALID,message.toString());
     }
@@ -57,12 +71,18 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = FileDownloadException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public void handleFileDownloadException(FileDownloadException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
         log.error("FileDownloadException", e);
     }
 
     @ExceptionHandler(ResponseStatusException.class)
     public ResponseResult handleError(ResponseStatusException e) {
-        log.error("响应状态异常:{}", e.getMessage());
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("响应状态异常:{}", e);
         return new ResponseResult(ResponseTypes.UNKNOW,"响应状态异常");
     }
 }

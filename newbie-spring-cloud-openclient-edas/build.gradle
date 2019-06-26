@@ -1,18 +1,9 @@
 group = 'com.github.halower'
 version = "alpha.2.1.0"
 
-apply  plugin: "io.spring.dependency-management"
-
 dependencies {
     implementation group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: '2.7.1'
     implementation 'com.alibaba.edas:edas-dubbo-extension:2.0.2'
     implementation 'org.springframework.cloud:spring-cloud-starter-alicloud-ans:0.9.0.RELEASE'
     implementation 'com.alibaba.cloud:spring-cloud-starter-acm:1.0.9'
-}
-
-
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
 }

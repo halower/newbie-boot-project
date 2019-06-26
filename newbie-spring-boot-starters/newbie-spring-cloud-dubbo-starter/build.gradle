@@ -15,7 +15,6 @@ buildscript {
 }
 
 
-apply plugin: "io.spring.dependency-management"
 apply plugin: 'nebula.optional-base'
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-actuator', version:'2.1.2.RELEASE',optional
@@ -49,11 +48,3 @@ dependencies {
     testCompile group: 'org.springframework.boot', name: 'spring-boot-test', version:'2.1.2.RELEASE'
     compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version:'4.0.1'
 }
-
-
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
-}
-

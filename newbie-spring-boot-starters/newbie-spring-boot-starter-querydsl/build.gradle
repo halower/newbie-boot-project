@@ -9,12 +9,3 @@ dependencies {
     implementation("com.querydsl:querydsl-sql")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 }
-
-
-
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
-}
-

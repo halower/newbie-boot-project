@@ -24,8 +24,4 @@ dependencies {
     implementation("io.jsonwebtoken:jjwt")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
-}
+

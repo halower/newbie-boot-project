@@ -11,10 +11,3 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-parameter-names")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
 }
-
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
-}
-

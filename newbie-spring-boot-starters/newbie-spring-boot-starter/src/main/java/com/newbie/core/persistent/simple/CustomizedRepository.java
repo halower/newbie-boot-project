@@ -1,12 +1,9 @@
 package com.newbie.core.persistent.simple;
-import com.newbie.core.persistent.criteria.QueryBuilder;
 import com.newbie.core.utils.page.Pagination;
-import lombok.var;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import javax.persistence.Query;
 import java.util.List;
 import java.util.function.Function;
 

@@ -1,19 +1,9 @@
 group = 'com.github.halower'
 version = "alpha.2.1.0"
 
-
-
-apply  plugin: "io.spring.dependency-management"
-
 dependencies {
     implementation ("org.springframework.cloud:spring-cloud-alibaba-nacos-discovery")
     implementation("org.apache.dubbo:dubbo-spring-boot-starter:2.7.1")
     implementation ("org.apache.dubbo:dubbo-registry-nacos")
     implementation ("com.alibaba.cloud:spring-cloud-starter-acm:1.0.9")
-}
-
-dependencyManagement {
-    imports {
-        mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
-    }
 }
