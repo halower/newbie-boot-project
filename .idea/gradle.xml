@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/newbie-spring-boot-dependencies" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-management" />
+            <option value="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter" />
             <option value="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter" />

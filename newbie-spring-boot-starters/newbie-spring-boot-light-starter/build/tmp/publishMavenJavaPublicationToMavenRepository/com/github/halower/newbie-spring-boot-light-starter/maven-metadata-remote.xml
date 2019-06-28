@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.halower</groupId>
+  <artifactId>newbie-spring-boot-light-starter</artifactId>
+  <versioning>
+    <release>alpha.2.1.1</release>
+    <versions>
+      <version>alpha.2.1.1</version>
+    </versions>
+    <lastUpdated>20190625140207</lastUpdated>
+  </versioning>
+</metadata>

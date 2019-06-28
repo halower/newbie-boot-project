@@ -1,0 +1,17 @@
+com.newbie.autoconfigure
+com.newbie.constants
+com.newbie.context
+com.newbie.core.annotations
+com.newbie.core.aop
+com.newbie.core.aop.config
+com.newbie.core.conventions
+com.newbie.core.entity
+com.newbie.core.event
+com.newbie.core.event.spring
+com.newbie.core.exception
+com.newbie.core.exception.handler
+com.newbie.core.persistent
+com.newbie.core.utils
+com.newbie.endpoint
+com.newbie.initializer
+com.newbie.launcher

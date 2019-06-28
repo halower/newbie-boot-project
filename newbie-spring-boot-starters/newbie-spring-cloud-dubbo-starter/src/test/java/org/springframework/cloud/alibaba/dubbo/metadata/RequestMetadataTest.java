@@ -62,8 +62,8 @@ public class RequestMetadataTest {
 //
 //        NavigableMap<RequestMetadata, RequestMetadata> requestMetadataMap = new TreeMap<>();
 //
-//        RequestMetadata metadata = new RequestMetadata();
-//        metadata.setMethod(method);
+//        RequestMetadata config = new RequestMetadata();
+//        config.setMethod(method);
 //
 //        RequestMetadata metadata1 = new RequestMetadata();
 //        metadata1.setMethod(method);
@@ -80,13 +80,13 @@ public class RequestMetadataTest {
 //        metadata3.setParams(paramNames);
 //        metadata3.setHeaders(headerNames);
 //
-//        requestMetadataMap.put(metadata, metadata);
+//        requestMetadataMap.put(config, config);
 //        requestMetadataMap.put(metadata1, metadata1);
 //        requestMetadataMap.put(metadata2, metadata2);
 //        requestMetadataMap.put(metadata3, metadata3);
 //
-//        RequestMetadata result = getBestMatch(requestMetadataMap, metadata);
-//        Assert.assertEquals(result, metadata);
+//        RequestMetadata result = getBestMatch(requestMetadataMap, config);
+//        Assert.assertEquals(result, config);
 //
 //        result = getBestMatch(requestMetadataMap, metadata1);
 //        Assert.assertEquals(result, metadata1);
@@ -113,7 +113,7 @@ public class RequestMetadataTest {
 //        result = getBestMatch(requestMetadataMap, new RequestMetadata());
 //        Assert.assertNull(result);
 //
-//        result = getBestMatch(requestMetadataMap, metadata);
+//        result = getBestMatch(requestMetadataMap, config);
 //        Assert.assertNull(result);
 //
 //    }

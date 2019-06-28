@@ -11,3 +11,5 @@ include 'newbie-spring-cloud-openclient-nacos'
 include 'newbie-spring-boot-starters:newbie-spring-boot-light-starter'
 include 'newbie-spring-boot-environment-plugin'
 include 'newbie-spring-boot-starters:newbie-spring-boot-starter-querydsl'
+include 'newbie-spring-boot-mybatis-codegen-plugin'
+

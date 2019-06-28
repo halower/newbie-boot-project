@@ -16,8 +16,9 @@ class CustomDeployPlugin implements Plugin<Project> {
     def application = new File('src/main/resources/application.properties')
     @Override
     void apply(Project project) {
-        project.task('联调模式') {
-            doLast {
+        def task = project.tasks.create("联调模式")
+        task.group = 'toolkit'
+        task.doLast {
                 def updatedBootstrap = []
                 bootstrap.readLines().each {
                     def line ->
@@ -39,5 +40,4 @@ class CustomDeployPlugin implements Plugin<Project> {
                 }
             }
         }
-    }
 }

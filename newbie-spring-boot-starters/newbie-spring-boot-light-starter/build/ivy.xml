@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="com.github.halower" module="newbie-spring-boot-light-starter" revision="alpha.2.1.1" status="integration" publication="20190625152108"/>
+  <configurations>
+    <conf name="annotationProcessor" visibility="private"/>
+    <conf name="apiElements" visibility="private" extends="runtime"/>
+    <conf name="archives" visibility="public"/>
+    <conf name="compile" visibility="private"/>
+    <conf name="compileClasspath" visibility="private" extends="compileOnly,implementation"/>
+    <conf name="compileOnly" visibility="private"/>
+    <conf name="default" visibility="public" extends="runtimeElements"/>
+    <conf name="implementation" visibility="private" extends="compile"/>
+    <conf name="runtime" visibility="private" extends="compile"/>
+    <conf name="runtimeClasspath" visibility="private" extends="implementation,runtime,runtimeOnly"/>
+    <conf name="runtimeElements" visibility="private" extends="implementation,runtime,runtimeOnly"/>
+    <conf name="runtimeOnly" visibility="private"/>
+    <conf name="testAnnotationProcessor" visibility="private"/>
+    <conf name="testCompile" visibility="private" extends="compile"/>
+    <conf name="testCompileClasspath" visibility="private" extends="testCompileOnly,testImplementation"/>
+    <conf name="testCompileOnly" visibility="private"/>
+    <conf name="testImplementation" visibility="private" extends="implementation,testCompile"/>
+    <conf name="testRuntime" visibility="private" extends="runtime,testCompile"/>
+    <conf name="testRuntimeClasspath" visibility="private" extends="testImplementation,testRuntime,testRuntimeOnly"/>
+    <conf name="testRuntimeOnly" visibility="private" extends="runtimeOnly"/>
+  </configurations>
+  <publications>
+    <artifact name="newbie-spring-boot-light-starter" type="jar" ext="jar" conf="apiElements,archives,archives,runtime,runtimeElements"/>
+    <artifact name="newbie-spring-boot-light-starter" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
+    <artifact name="newbie-spring-boot-light-starter" type="jar" ext="jar" conf="archives" m:classifier="javadoc"/>
+  </publications>
+  <dependencies>
+    <dependency org="org.springframework.boot" name="spring-boot-starter" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="com.baomidou" name="mybatis-plus-boot-starter" rev="3.1.1" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-starter-web" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-starter-actuator" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-starter-cache" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-autoconfigure" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-configuration-processor" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.projectlombok" name="lombok" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="com.alibaba" name="fastjson" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.apache.dubbo" name="dubbo" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="joda-time" name="joda-time" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="commons-io" name="commons-io" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="commons-beanutils" name="commons-beanutils" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.apache.commons" name="commons-lang3" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.apache.httpcomponents" name="httpclient" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="com.github.halower" name="newbie-spring-boot-api-dto" rev="alpha.2.1.0" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="com.spring4all" name="swagger-spring-boot-starter" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="io.jsonwebtoken" name="jjwt" rev="" conf="implementation-&gt;default">
+      <exclude org="org.apache.tomcat" module="tomcat-annotations-api"/>
+    </dependency>
+    <dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="" conf="testImplementation-&gt;default"/>
+  </dependencies>
+</ivy-module>

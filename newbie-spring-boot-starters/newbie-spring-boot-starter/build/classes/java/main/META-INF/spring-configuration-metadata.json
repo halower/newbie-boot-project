@@ -1,0 +1,91 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
+      "name": "application.dubbo",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
+      "name": "application.dubbo.consumer",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ConsumerConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig"
+    },
+    {
+      "name": "application.dubbo.provider",
+      "type": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ProviderConfig",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig"
+    },
+    {
+      "name": "management.endpoint.versions",
+      "type": "com.newbie.endpoint.NewbieBootVersionEndpoint",
+      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.auth-secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "1b6ba62cff8629865a6b9dffa1586d74"
+    },
+    {
+      "name": "application.dubbo.consumer.version",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ConsumerConfig",
+      "defaultValue": "1.0.0"
+    },
+    {
+      "name": "application.dubbo.provider.version",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration$DubboConfig$ProviderConfig",
+      "defaultValue": "1.0.0"
+    },
+    {
+      "name": "application.env",
+      "type": "java.lang.String",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": "dev"
+    },
+    {
+      "name": "application.exclude-filter-path",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
+    },
+    {
+      "name": "management.endpoint.versions.cache.time-to-live",
+      "type": "java.time.Duration",
+      "description": "Maximum time that a response can be cached.",
+      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
+      "defaultValue": "0ms"
+    },
+    {
+      "name": "management.endpoint.versions.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable the versions endpoint.",
+      "sourceType": "com.newbie.endpoint.NewbieBootVersionEndpoint",
+      "defaultValue": true
+    },
+    {
+      "name": "application.auto-record-request-details",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": false,
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "application.receive-request-event",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": false,
+      "deprecated": true,
+      "deprecation": {}
+    }
+  ],
+  "hints": []
+}

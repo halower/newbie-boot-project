@@ -239,7 +239,7 @@ public class RequestMetadata {
 
     @Override
     public int hashCode() {
-        // The values of metadata should not use for the hashCode() method
+        // The values of config should not use for the hashCode() method
         return Objects.hash(method, path, consumes, produces, getParamNames(), getHeaderNames());
     }
 

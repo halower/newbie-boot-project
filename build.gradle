@@ -29,6 +29,9 @@ subprojects {
     sourceCompatibility = "${javaVersion}"
     targetCompatibility = "${javaVersion}"
 
+
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
     dependencyManagement {
         imports {
             mavenBom "com.github.halower:newbie-spring-boot-dependencies:${newbie_dependencies_version}"
@@ -71,10 +74,10 @@ subprojects {
         }
     }
 
-    task sourcesJar(type: Jar) {
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
+//    task sourcesJar(type: Jar) {
+//        classifier = 'sources'
+//        from sourceSets.main.allSource
+//    }
 
     task javadocJar(type: Jar, dependsOn: javadoc) {
         classifier = 'javadoc'
@@ -92,7 +95,7 @@ subprojects {
             mavenJava(MavenPublication) {
                 from components.java
 
-                artifact sourcesJar
+//                artifact sourcesJar
                 artifact javadocJar
             }
         }

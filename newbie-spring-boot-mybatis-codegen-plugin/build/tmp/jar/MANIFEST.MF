@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Application-Version: 0.5.4
+Build-date: Thu Jun 27 14:34:39 CST 2019
+Build-Timestamp: 2019-06-27 14:34:39
+Built-By: windows
+Build-OS: Windows 10
+Built-Gradle: 4.7
+Build-Jdk: 1.8.0_131
+

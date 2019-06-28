@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * The metadata resolver for {@link Feign} for {@link ServiceBean Dubbo Service Bean} in the provider side.
+ * The config resolver for {@link Feign} for {@link ServiceBean Dubbo Service Bean} in the provider side.
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */

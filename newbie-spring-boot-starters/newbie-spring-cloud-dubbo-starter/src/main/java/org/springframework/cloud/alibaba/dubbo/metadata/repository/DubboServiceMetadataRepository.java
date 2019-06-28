@@ -62,12 +62,12 @@ import static org.springframework.util.StringUtils.hasText;
 public class DubboServiceMetadataRepository {
 
     /**
-     * The prefix of {@link DubboMetadataService} : "dubbo.metadata-service."
+     * The prefix of {@link DubboMetadataService} : "dubbo.config-service."
      */
-    public static final String DUBBO_METADATA_SERVICE_PREFIX = "dubbo.metadata-service.";
+    public static final String DUBBO_METADATA_SERVICE_PREFIX = "dubbo.config-service.";
 
     /**
-     * The {@link URL URLs} property name of {@link DubboMetadataService} : "dubbo.metadata-service.urls"
+     * The {@link URL URLs} property name of {@link DubboMetadataService} : "dubbo.config-service.urls"
      */
     public static final String DUBBO_METADATA_SERVICE_URLS_PROPERTY_NAME = DUBBO_METADATA_SERVICE_PREFIX + "urls";
 
@@ -108,8 +108,8 @@ public class DubboServiceMetadataRepository {
     // =================================== REST Metadata ================================== //
 
     /**
-     * A Map to store REST metadata temporary, its' key is the special service name for a Dubbo service,
-     * the value is a JSON content of JAX-RS or Spring MVC REST metadata from the annotated methods.
+     * A Map to store REST config temporary, its' key is the special service name for a Dubbo service,
+     * the value is a JSON content of JAX-RS or Spring MVC REST config from the annotated methods.
      */
     private final Set<ServiceRestMetadata> serviceRestMetadata = new LinkedHashSet<>();
 
@@ -157,7 +157,7 @@ public class DubboServiceMetadataRepository {
     }
 
     /**
-     * Get the metadata {@link Map} of {@link DubboMetadataService}
+     * Get the config {@link Map} of {@link DubboMetadataService}
      *
      * @return non-null read-only {@link Map}
      */
@@ -343,7 +343,7 @@ public class DubboServiceMetadataRepository {
 
         if (isEmpty(serviceRestMetadataSet)) {
             if (logger.isWarnEnabled()) {
-                logger.warn("The Spring application[name : {}] does not expose The REST metadata in the Dubbo services."
+                logger.warn("The Spring application[name : {}] does not expose The REST config in the Dubbo services."
                         , serviceName);
             }
             return;
@@ -362,7 +362,7 @@ public class DubboServiceMetadataRepository {
         }
 
         if (logger.isInfoEnabled()) {
-            logger.info("The REST metadata in the dubbo services has been loaded in the Spring application[name : {}]", serviceName);
+            logger.info("The REST config in the dubbo services has been loaded in the Spring application[name : {}]", serviceName);
         }
     }
 
