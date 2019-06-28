@@ -8,7 +8,7 @@ import org.springframework.cloud.alibaba.dubbo.metadata.ServiceRestMetadata;
 import java.util.Set;
 
 /**
- * The REST metadata resolver
+ * The REST config resolver
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
