@@ -9,407 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8bc808c-950f-474b-8feb-8f58e7687d1e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-dependencies/newbie-spring-boot-dependencies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-dependencies/newbie-spring-boot-dependencies.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-management/newbie-spring-boot-management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-management/newbie-spring-boot-management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter-redis/newbie-spring-boot-starter-redis_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starter/newbie-spring-boot-starter_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starters.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-boot-starters.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/newbie-spring-cloud-dubbo-starter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/ivy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/poms/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/publications/mavenJava/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/publications/mavenJava/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/2.1.1-SNAPSHOT/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/2.1.1-SNAPSHOT/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/maven-metadata-remote.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-mybatis-codegen-plugin/resolver-status.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/src/main/groovy/com/newbie/mybatisplus/MPCodeGenPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/src/main/groovy/com/newbie/mybatisplus/MPCodeGenPlugin.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/build/ivy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/newbie-spring-boot-starters/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/build/tmp/publishMavenJavaPublicationToMavenRepository/newbie-spring-boot/newbie-spring-boot-starters/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/build/tmp/publishMavenJavaPublicationToMavenRepository/newbie-spring-boot/newbie-spring-boot-starters/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/autoconfigure/NewBieApplicationConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/autoconfigure/NewBieBootInfraAutoConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/autoconfigure/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/autoconfigure/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/autoconfigure/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/constants/NewbieBootInfraConstants.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/constants/ServiceVersion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/constants/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/constants/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/constants/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/AppContextProvider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/CurrentUserContext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/EnvironmentCustomizer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/NewBieBootEnvUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/UserInfoManager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/context/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/ApplicationService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainAggregate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainFactory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainSpecification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/DomainValueObject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/annotations/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/MvcConfigurer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/UserInfoForDubboFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/UserInfoForWebFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/config/NewBieBasicConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/config/WebFilterConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/config/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/config/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/config/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/aop/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/audit/CurrentUserContext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/audit/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/audit/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/audit/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/conventions/ApplicationService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/conventions/DomainService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/conventions/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/conventions/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/conventions/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/AggregateRoot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/BaseDomainEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/SelfRef.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/entity/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/EventBus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/EventData.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/EventHandler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/spring/SpringBaseEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/spring/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/spring/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/event/spring/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/BusinessException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/FileDownloadException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/handler/GlobalExceptionHandler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/exception/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/persistent/MybatisConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/persistent/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/persistent/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/persistent/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/AmountUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.FieldInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.MethodInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/DateTimeUtil.Pattern.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/DateTimeUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/DependencyUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/FieldUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/FileUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/IdcardUtils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/JsonUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/MimeUtil.Mime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/MimeUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/Pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/Utils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/core/utils/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/NewbieBootVersionEndpoint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/VersionEndpointConfiguration.ConditionVersionEndpointConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/VersionEndpointConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/endpoint/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/initializer/NewBieBootInfrastructureSpringContextInitializer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/initializer/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/initializer/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/initializer/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/launcher/StartEventListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/launcher/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/launcher/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/com/newbie/launcher/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/serialized-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/docs/javadoc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/ivy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/poms/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/publications/mavenJava/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/resources/main/META-INF/app-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/resources/main/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/resources/main/META-INF/newbie.versions.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/resources/main/META-INF/spring.factories" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/resources/main/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/javadoc/javadoc.options" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/javadocJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-light-starter/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-light-starter/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-light-starter/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/DefaultExtendedQueryDslJpaRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/EnableQueryDSLRepositories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/ExtendedQueryDslJpaRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/com/newbie/querydsl/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/docs/javadoc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/publications/mavenJava/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/javadoc/javadoc.options" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/javadocJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter-querydsl/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter-querydsl/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter-querydsl/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/autoconfigure/NewBieApplicationConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/autoconfigure/NewBieBootInfraAutoConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/autoconfigure/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/autoconfigure/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/autoconfigure/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/constants/NewbieBootInfraConstants.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/constants/ServiceVersion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/constants/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/constants/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/constants/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/AppContextProvider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/CurrentUserContext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/EnvironmentCustomizer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/NewBieBootEnvUtils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/UserInfoManager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/context/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/ApplicationService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DeletedId.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DeletedIds.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainAggregate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainFactory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainSpecification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/DomainValueObject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/UpdatedId.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/annotations/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/ErrorControllerAdvice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/MvcConfigurer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/UserInfoForDubboFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/UserInfoForWebFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/NewBieBasicConfiguration.DubboConfig.ConsumerConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/NewBieBasicConfiguration.DubboConfig.ProviderConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/NewBieBasicConfiguration.DubboConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/NewBieBasicConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/WebFilterConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/config/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/aop/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/BaseEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/CurrentUserContext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/CustomAuditorAware.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/ISoftDelete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/audit/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/conventions/ApplicationService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/conventions/DomainService.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/conventions/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/conventions/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/conventions/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/AggregateRoot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/BaseDomainEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/SelfRef.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/entity/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/EventBus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/EventData.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/EventHandler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/spring/SpringBaseEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/spring/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/spring/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/event/spring/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/BusinessException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/FileDownloadException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/handler/GlobalExceptionHandler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/handler/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/exception/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/DateParameterConstructor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/ParameterConstructor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/QueryFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/TimeParameterConstructor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/TimeStampParameterConstructor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/common/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/EnableJpaAuditingRepositories.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/FieldInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/MybatisConfig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/config/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/AnnotationReader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/FilterDefinition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/QueryBuilder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/QueryMetaBuilder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/Filter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/FilterEntity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/Filters.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/annotation/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/enums/JoinType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/enums/Operator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/enums/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/enums/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/enums/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/criteria/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/simple/CustomizedRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/simple/CustomizedRepositoryImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/simple/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/simple/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/simple/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/QueryExecutor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/SQLTemplateResolver.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/SftlTemplateResolver.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/TemplateCallback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/TemplateResolver.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/persistent/tpl/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/AmountUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.FieldInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.MethodInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/BeanUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/DateTimeUtil.Pattern.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/DateTimeUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/DependencyUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/FieldUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/FileUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/IdcardUtils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/JsonUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/MimeUtil.Mime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/MimeUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/Utils.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/page/Pager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/page/Pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/page/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/page/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/core/utils/page/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/NewbieBootVersionEndpoint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/VersionEndpointConfiguration.ConditionVersionEndpointConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/VersionEndpointConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/endpoint/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/initializer/NewBieBootInfrastructureSpringContextInitializer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/initializer/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/initializer/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/initializer/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/launcher/StartEventListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/launcher/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/launcher/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/com/newbie/launcher/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/serialized-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/docs/javadoc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/ivy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/poms/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/publications/mavenJava/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/app-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/dubbo/org.apache.dubbo.rpc.Filter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/newbie.versions.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/META-INF/spring.factories" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/resources/main/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/javadoc/javadoc.options" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/javadocJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter/alpha.2.1.1-SNAPSHOT/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter/alpha.2.1.1-SNAPSHOT/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter/maven-metadata-remote.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/publishMavenJavaPublicationToMavenRepository/com/github/halower/newbie-spring-boot-starter/resolver-status.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-boot-starter/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newbie-spring-boot-starters/newbie-spring-cloud-dubbo-starter/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -601,24 +201,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name="newbie-spring-boot-mybatis-codegen-plugin" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name="newbie-spring-boot-mybatis-codegen-plugin" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="newbie-spring-boot" type="f1a62948:ProjectNode" />
-                <item name="newbie-spring-boot-mybatis-codegen-plugin" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -631,7 +213,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
+            <state relative-caret-position="30">
               <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
@@ -659,7 +241,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.halower/mybatis-plus-generator/alpha.2.1.0/38eb3d339d9a992fd2d406813f961f1e77db1521/mybatis-plus-generator-alpha.2.1.0.jar!/com/baomidou/mybatisplus/generator/config/DataSourceConfig.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
+            <state relative-caret-position="240">
               <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
             </state>
           </provider>
@@ -677,7 +259,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="720">
               <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="59" />
             </state>
           </provider>
@@ -692,14 +274,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/src/main/groovy/com/newbie/mybatisplus/MPCodeGenPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+            <state relative-caret-position="270">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
               <folding>
                 <element signature="e#32#81#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -807,11 +398,11 @@
         <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/src/main/groovy/com/newbie/deploy/CustomDeployPlugin.groovy" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-environment-plugin/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build.gradle" />
         <option value="$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/src/main/groovy/com/newbie/mybatisplus/MPCodeGenPlugin.groovy" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -847,73 +438,6 @@
             <path>
               <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
               <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="newbie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-boot-mybatis-codegen-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="newbie" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newbie-spring-boot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newbie-spring-boot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="newbie-spring-cloud-openclient-edas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1494,13 +1018,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="686465000" />
+    <option name="totallyTimeSpent" value="686609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1508,7 +1032,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69616205" visible="true" weight="0.27114967" />
@@ -1525,6 +1048,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1775,13 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2082">
-          <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1821,7 +1338,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="720">
           <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="59" />
         </state>
       </provider>
@@ -1845,25 +1362,32 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.halower/mybatis-plus-generator/alpha.2.1.0/38eb3d339d9a992fd2d406813f961f1e77db1521/mybatis-plus-generator-alpha.2.1.0.jar!/com/baomidou/mybatisplus/generator/config/DataSourceConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
+        <state relative-caret-position="240">
           <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
+        <state relative-caret-position="30">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newbie-spring-boot-mybatis-codegen-plugin/src/main/groovy/com/newbie/mybatisplus/MPCodeGenPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="270">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
           <folding>
             <element signature="e#32#81#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
