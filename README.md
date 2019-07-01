@@ -34,7 +34,7 @@
 -   支持代码生成：采用代码或者 Maven 插件可快速生成Mybatis代码
 -   支持DUBBO/REST全局异常处理
 -   开发联调环境支持
--   EDAS /NACOS 集成依赖一句命令导入
+-   EDAS /NACOS 集成依赖一句依赖导入
 -   REDIS二级缓存支持
 -   日常开发工具类
 -   SAGA/TCC/可靠事务MQ 分布式事务支持
