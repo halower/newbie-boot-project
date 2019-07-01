@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-   为简化团队开发微服务而生
+   为简化团队微服务开发而生
 </p>
 
 <p align="center">
