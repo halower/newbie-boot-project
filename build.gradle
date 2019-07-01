@@ -11,6 +11,12 @@ buildscript {
         classpath "io.spring.gradle:dependency-management-plugin:${SPRING_IO_VERSION}"
     }
 }
+
+
+plugins {
+    id "com.github.hierynomus.license" version "0.15.0"
+}
+
 ext {
     configuration = [
             javaVersion = JavaVersion.VERSION_1_8,
@@ -28,17 +34,15 @@ ext {
             "sqlite"                : "org.xerial:sqlite-jdbc:3.27.2.1",
     ]
 }
-
 subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'java-library'
     apply plugin: 'maven-publish'
     apply  plugin: "io.spring.dependency-management"
-
+    apply plugin: "com.github.hierynomus.license"
     sourceCompatibility = "${javaVersion}"
     targetCompatibility = "${javaVersion}"
-
 
     [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
@@ -70,6 +74,17 @@ subprojects {
             }
         }
     }
+
+    license {
+        encoding = "UTF-8"
+        header = rootProject.file("LICENSE_996.txt")
+        includes(["**/*.java", "**/*.kt"])
+        exclude "**/*Test.java"
+        exclude "**/TableNameParser.java"
+        mapping "java", "SLASHSTAR_STYLE"
+        mapping "kt", "SLASHSTAR_STYLE"
+    }
+
 
     javadoc {
         afterEvaluate {
