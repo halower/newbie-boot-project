@@ -37,6 +37,8 @@
 -   EDAS /NACOS 集成依赖一句依赖导入
 -   REDIS二级缓存支持
 -   日常开发工具类
+-   在线接口文档集成
+-   隐式自动依赖装配
 -   SAGA/TCC/可靠事务MQ 分布式事务支持
 -   基于`Springboot`只做增强不做改变,无缝兼容`SPRING-CLPUD/DUBBO`
 
