@@ -22,7 +22,7 @@
 
 ## 什么是NEWBIE-BOOT?
 
-相当于springboot的增强版本,无缝适配Duubo和SpringCloud的微服务体系
+寓意为小菜的Springboot,相当于springboot的增强版本,无缝适配Duubo和SpringCloud的微服务体系,也是我刚接触java开发的第一个java项目
 
 
 ## 特性
