@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="newbie-spring-boot" module="newbie-spring-boot-starters" revision="2.0.7.100" status="integration" publication="20190122153336"/>
-  <configurations>
-    <conf name="archives" visibility="public"/>
-    <conf name="default" visibility="public"/>
-  </configurations>
-  <publications/>
-</ivy-module>

@@ -94,7 +94,6 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 ### Gradle template
-.gradle
 /build/
 
 # Ignore Gradle GUI config

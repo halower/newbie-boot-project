@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Application-Version: unspecified
-Build-date: Thu Jun 27 09:37:11 CST 2019
-Build-Timestamp: 2019-06-27 09:37:11
+Build-date: Mon Jul 01 14:32:31 CST 2019
+Build-Timestamp: 2019-07-01 14:32:31
 Built-By: windows
 Build-OS: Windows 10
 Built-Gradle: 4.7

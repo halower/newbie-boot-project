@@ -1,5 +1,6 @@
 package com.newbie.mybatisplus
 
+import com.baomidou.mybatisplus.annotation.DbType
 import com.baomidou.mybatisplus.core.toolkit.StringUtils
 import com.baomidou.mybatisplus.generator.AutoGenerator
 import com.baomidou.mybatisplus.generator.InjectionConfig
@@ -17,7 +18,6 @@ import org.gradle.api.Project
  * @Description
  */
 class MPCodeGenPlugin implements Plugin<Project> {
-    def mockTestUrl = "jdbc:mysql://192.168.2.169:3306/newbie?serverTimezone=GMT%2B8&useSSL=false"
     @Override
     void apply(Project project) {
         MPCodeGenConfig mpCodeGenConfig =  project.extensions.create('mybatis', MPCodeGenConfig, project.objects)
@@ -45,10 +45,11 @@ class MPCodeGenPlugin implements Plugin<Project> {
             mpg.setGlobalConfig(gc)
             // 数据源配置
             DataSourceConfig dsc = config.dataSourceConfig
-            if(dsc.getDriverName()==null)dsc.setDriverName("com.mysql.cj.jdbc.Driver")
-            if(dsc.getUrl()==null)dsc.setUrl(mockTestUrl)
-            if(dsc.getUsername()==null)dsc.setUsername("root")
-            if(dsc.getPassword()==null)dsc.setPassword("123456")
+            if(dsc.getDriverName()==null)dsc.setDbType(DbType.DM)
+            if(dsc.getDriverName()==null)dsc.setDriverName("dm.jdbc.driver.DmDriver")
+            if(dsc.getUrl()==null)dsc.setUrl("jdbc:dm://192.168.2.226:5236")
+            if(dsc.getUsername()==null)dsc.setUsername("TYYW2_LCBA")
+            if(dsc.getPassword()==null)dsc.setPassword("tyyw2_lcba")
             mpg.setDataSource(dsc);
             // 包配置
             PackageConfig pc = config.packageConfig
