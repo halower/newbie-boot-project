@@ -1,5 +1,5 @@
 group 'com.github.halower'
-version '1.1.0'
+version '1.1.2'
 
 apply plugin: 'groovy'
 
@@ -19,7 +19,7 @@ dependencies {
     implementation "${lib.mysql}"
     implementation "${lib.sqlite}"
     implementation("com.dm:jdbcDriver:18")
-    implementation "com.github.halower:mybatis-plus-generator:alpha.2.1.0"
+    implementation "com.github.halower:mybatis-plus-generator:alpha.2.1.3"
     implementation "org.freemarker:freemarker:2.3.28"
     implementation "org.slf4j:slf4j-api:1.7.25"
     testImplementation "junit:junit:4.12"

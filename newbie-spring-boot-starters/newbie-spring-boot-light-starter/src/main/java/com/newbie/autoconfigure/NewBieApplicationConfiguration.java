@@ -30,6 +30,7 @@ package com.newbie.autoconfigure;
 import com.newbie.core.aop.MvcConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.handler.GlobalExceptionHandler;
+import com.newbie.core.persistent.MyMetaObjectHandler;
 import com.newbie.core.persistent.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
 import com.spring4all.swagger.EnableSwagger2Doc;
@@ -39,6 +40,9 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableAsync;
 
+/**
+ * @author halower
+ */
 @EnableAsync
 @EnableConfigurationProperties({
         NewBieBasicConfiguration.class
@@ -48,7 +52,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
         StartEventListener.class,
         GlobalExceptionHandler.class,
         MvcConfigurer.class,
-        MybatisConfig.class
+        MybatisConfig.class,
+        MyMetaObjectHandler.class
 })
 @Configuration
 @EnableSwagger2Doc

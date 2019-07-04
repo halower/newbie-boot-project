@@ -25,40 +25,46 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.autoconfigure;
+package com.newbie.core.persistent.mybaits;
 
-import com.newbie.core.aop.MvcConfigurer;
-import com.newbie.core.aop.config.NewBieBasicConfiguration;
-import com.newbie.core.audit.CustomAuditorAware;
-import com.newbie.core.exception.handler.GlobalExceptionHandler;
-import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
-import com.newbie.core.persistent.mybaits.MybatisConfig;
-import com.newbie.launcher.StartEventListener;
-import com.spring4all.swagger.EnableSwagger2Doc;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import com.baomidou.mybatisplus.core.parser.ISqlParser;
+import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
+import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.context.annotation.Profile;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * @author halower
+ * @Author: 谢海龙
+ * @Date: 2019/6/20 20:56
+ * @Description
  */
-@EnableAsync
-@EnableConfigurationProperties({
-        NewBieBasicConfiguration.class
-  }
-)
-@Import({
-        StartEventListener.class,
-        CustomAuditorAware.class,
-        GlobalExceptionHandler.class,
-        MvcConfigurer.class,
-        MybatisConfig.class,
-        MyMetaObjectHandler.class
-})
 @Configuration
-@EnableSwagger2Doc
-@PropertySource("classpath:/META-INF/app-config.properties")
-public class NewBieApplicationConfiguration {
+@EnableTransactionManagement
+public class MybatisConfig {
+    @Bean
+    public PaginationInterceptor paginationInterceptor() {
+        PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
+        List<ISqlParser> sqlParserList = new ArrayList<>();
+        sqlParserList.add(new BlockAttackSqlParser());
+        paginationInterceptor.setSqlParserList(sqlParserList);
+        return paginationInterceptor;
+    }
+
+    @Bean
+    public OptimisticLockerInterceptor optimisticLockerInterceptor() {
+        return new OptimisticLockerInterceptor();
+    }
+
+    @Bean
+    @Profile("${app.env:dev}")
+    public PerformanceInterceptor performanceInterceptor() {
+        return new PerformanceInterceptor();
+    }
 }

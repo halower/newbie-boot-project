@@ -9,5 +9,5 @@ ${AnsiColor.GREEN}
                           欢迎使用NEWBIWE(新手)辅助你的开发进程
 ${AnsiColor.BLUE}
 Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
-NewBieBoot(alpha.2.1.1)基于 Spring Boot 的基础上进行构建，并且完全兼容 Spring Boot。
+NewBieBoot(alpha.2.1.2)基于 Spring Boot 的基础上进行构建，并且完全兼容 Spring Boot。
 ${AnsiColor.BLACK}

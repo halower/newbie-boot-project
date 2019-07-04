@@ -34,6 +34,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Arrays;
 import java.util.List;
 
+
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "app")
@@ -49,4 +50,22 @@ public class NewBieBasicConfiguration {
     private boolean autoRecordRequestDetails = false;
     @Deprecated
     private boolean receiveRequestEvent = false;
+
+    private DubboConfig dubbo;
+
+    @Data
+    public static class DubboConfig {
+        private ConsumerConfig consumer;
+        private ProviderConfig provider;
+
+        @Data
+        public static class ProviderConfig {
+            private String version ="1.0.0";
+        }
+
+        @Data
+        public static class ConsumerConfig {
+            private String version ="1.0.0";
+        }
+    }
 }

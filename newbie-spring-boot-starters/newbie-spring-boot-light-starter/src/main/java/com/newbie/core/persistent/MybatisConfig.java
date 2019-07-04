@@ -29,9 +29,13 @@ package com.newbie.core.persistent;
 
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
 import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
+import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +46,7 @@ import java.util.List;
  * @Description
  */
 @Configuration
+@EnableTransactionManagement
 public class MybatisConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {
@@ -50,5 +55,16 @@ public class MybatisConfig {
         sqlParserList.add(new BlockAttackSqlParser());
         paginationInterceptor.setSqlParserList(sqlParserList);
         return paginationInterceptor;
+    }
+
+    @Bean
+    public OptimisticLockerInterceptor optimisticLockerInterceptor() {
+        return new OptimisticLockerInterceptor();
+    }
+
+    @Bean
+    @Profile("${app.env:dev}")
+    public PerformanceInterceptor performanceInterceptor() {
+        return new PerformanceInterceptor();
     }
 }

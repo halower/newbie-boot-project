@@ -34,6 +34,10 @@ import com.newbie.endpoint.VersionEndpointConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
+/**
+ * @author halower
+ */
+
 @Import({
         VersionEndpointConfiguration.class,
         UserInfoForWebFilter.class,

@@ -82,8 +82,7 @@ public class NewbieBootVersionEndpoint {
         try {
             PropertiesLoaderUtils.fillProperties(result, new EncodedResource(resourceLocation));
         } catch (IOException ex) {
-            log.warn("加载 properties文件失败{}: 原因{}", resourceLocation,
-                ex.getMessage());
+            log.warn("加载 properties文件失败{}: 原因{}", resourceLocation, ex.getMessage());
         }
         return result;
     }

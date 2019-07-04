@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.2.1.1"
+version = "alpha.2.1.2"
 
 
 dependencies {

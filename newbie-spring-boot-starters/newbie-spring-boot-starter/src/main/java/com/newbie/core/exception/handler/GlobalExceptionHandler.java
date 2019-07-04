@@ -30,15 +30,18 @@ package com.newbie.core.exception.handler;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.FileDownloadException;
+import com.newbie.core.exception.ResourceNotFoundException;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.slf4j.Slf4j;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -54,20 +57,60 @@ import java.util.List;
 @Slf4j
 @RestControllerAdvice
 @Order(value = Ordered.HIGHEST_PRECEDENCE)
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler  {
     @Autowired
     NewBieBasicConfiguration  configuration;
-    @ExceptionHandler(value = Exception.class)
+
+    /**
+     *  请求参数校验
+     */
+    @ExceptionHandler(BindException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseResult bindExceptionHandler(BindException e) {
+        var message = getErrorMessages(e);
+        return new ResponseResult(ResponseTypes.PARAMETER_UNVALID, message);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseResult methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
+        var message = getErrorMessages(e);
+        return new ResponseResult(ResponseTypes.PARAMETER_UNVALID, message);
+    }
+
+
+    @ExceptionHandler(value = FileDownloadException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ResponseResult handleException(Exception e) {
+    public ResponseResult handleFileDownloadHandler(FileDownloadException e) {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
         }
-        log.error("系统内部异常，异常信息", e.getMessage());
-        return new ResponseResult(ResponseTypes.UNKNOW,"系统内部异常");
+        log.error("FileDownloadException", e);
+        return new ResponseResult(ResponseTypes.FILE_DOWN_FAIL,e.getMessage());
+    }
+
+    @ExceptionHandler(ResponseStatusException.class)
+    @ResponseStatus(HttpStatus.REQUEST_TIMEOUT)
+    public ResponseResult responseStatusHandler(ResponseStatusException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("响应状态异常:{}", e);
+        return new ResponseResult(ResponseTypes.UNKNOW,e.getMessage());
+    }
+
+    @ExceptionHandler(ResourceNotFoundException.class)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public ResponseResult resourceNotFoundExceptionHandler(ResourceNotFoundException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("未找到资源异常:{}", e);
+        return new ResponseResult(ResponseTypes.FILE_DELETE_FAIL,e.getMessage());
     }
 
     @ExceptionHandler(value = BusinessException.class)
+    @ResponseStatus(HttpStatus.OK)
     public ResponseResult handleParamsInvalidException(BusinessException e) {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
@@ -76,40 +119,34 @@ public class GlobalExceptionHandler {
         return new ResponseResult(e.getExceptionType(),e.getMessage());
     }
 
-    /**
-     *  请求参数校验
-     */
-    @ExceptionHandler(BindException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseResult validExceptionHandler(BindException e) {
-        StringBuilder message = new StringBuilder();
-        List<FieldError> fieldErrors = e.getBindingResult().getFieldErrors();
-        for (FieldError error : fieldErrors) {
-            message.append(error.getField()).append(error.getDefaultMessage()).append(",");
-        }
-        if(configuration.getEnv().equals("dev")){
-            e.printStackTrace();
-        }
-        log.error("请求参数校验异常",  e.getMessage());
-        message = new StringBuilder(message.substring(0, message.length() - 1));
-        return new ResponseResult(ResponseTypes.PARAMETER_UNVALID,message.toString());
-    }
-
-    @ExceptionHandler(value = FileDownloadException.class)
+    @ExceptionHandler(value = Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public void handleFileDownloadException(FileDownloadException e) {
+    public ResponseResult handleException(Exception e) {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
         }
-        log.error("FileDownloadException", e);
+        log.error("系统内部异常，异常信息", e);
+        return new ResponseResult(ResponseTypes.UNKNOW,e.getMessage());
     }
 
-    @ExceptionHandler(ResponseStatusException.class)
-    public ResponseResult handleError(ResponseStatusException e) {
+
+    private String getErrorMessages(Exception e) {
+        StringBuilder msg = new StringBuilder();
+        List<FieldError> fieldErrors = null;
+        if(e instanceof MethodArgumentNotValidException) {
+            fieldErrors = ((MethodArgumentNotValidException)e).getBindingResult().getFieldErrors();
+        }
+        if(e instanceof BindException) {
+            fieldErrors = ((BindException)e).getBindingResult().getFieldErrors();
+        }
+        for (FieldError error : fieldErrors) {
+            msg.append(String.join(" - ",error.getDefaultMessage(), error.getField()));
+        }
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
         }
-        log.error("响应状态异常:{}", e);
-        return new ResponseResult(ResponseTypes.UNKNOW,"响应状态异常");
+        log.error("参数校验异常",  e.getMessage());
+        return msg.toString();
     }
+
 }

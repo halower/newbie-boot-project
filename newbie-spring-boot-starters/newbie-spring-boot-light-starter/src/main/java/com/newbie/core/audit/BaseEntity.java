@@ -25,30 +25,43 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.core.persistent.config;
+package com.newbie.core.audit;
 
-import com.baomidou.mybatisplus.core.parser.ISqlParser;
-import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
-import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.UUID;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/20 20:56
- * @Description
+ * 注意： 这里是按照项目的特殊情况进行定制的,后期可能做进一步调整
  */
-@Configuration
-public class MybatisConfig {
-    @Bean
-    public PaginationInterceptor paginationInterceptor() {
-        PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
-        List<ISqlParser> sqlParserList = new ArrayList<>();
-        sqlParserList.add(new BlockAttackSqlParser());
-        paginationInterceptor.setSqlParserList(sqlParserList);
-        return paginationInterceptor;
-    }
+@Data
+@EqualsAndHashCode(callSuper = false)
+public abstract class BaseEntity implements Serializable {
+    /**
+     * 创建时间
+     */
+    @TableField(value = "CJSJ",fill = FieldFill.INSERT)
+    private Date cjsj;
+
+    /**
+     * 最后修改时间
+     */
+    @TableField(value = "ZHXGSJ",fill = FieldFill.UPDATE)
+    private Date zhxgsj;
+
+    /**
+     * 数据标识编号
+     */
+    @TableField(value = "SJBSBH",fill = FieldFill.INSERT)
+    private String sjbsbh = UUID.randomUUID().toString();
+
+    /**
+     * 是否删除
+     */
+    @TableField(value = "SFSC",fill = FieldFill.INSERT)
+    private String sfsc ="N";
 }

@@ -32,7 +32,7 @@ package com.newbie.core.exception;
  * @Date: 2019/6/21 10:03
  * @Description
  */
-public class FileDownloadException extends Exception {
+public class FileDownloadException extends RuntimeException {
     public FileDownloadException(String message) {
         super(message);
     }

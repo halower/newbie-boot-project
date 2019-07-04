@@ -34,9 +34,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Arrays;
 import java.util.List;
 
+
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "application")
+@ConfigurationProperties(prefix = "app")
 public class NewBieBasicConfiguration {
     private String env = "dev";
 
