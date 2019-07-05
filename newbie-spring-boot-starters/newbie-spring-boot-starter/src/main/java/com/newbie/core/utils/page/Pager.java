@@ -33,9 +33,9 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/13 15:00
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/13 15:00
+ *
  */    //new Pager<UserDeptRole>()
 public class Pager<T> {
     /**

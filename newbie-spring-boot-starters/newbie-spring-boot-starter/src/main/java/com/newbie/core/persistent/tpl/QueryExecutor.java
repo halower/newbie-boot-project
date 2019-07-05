@@ -42,9 +42,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/24 14:42
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/24 14:42
+ *
  */
 public class QueryExecutor<T> {
     @SneakyThrows

@@ -33,9 +33,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/11 20:09
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/11 20:09
+ *
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})

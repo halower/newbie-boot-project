@@ -28,9 +28,9 @@
 package com.newbie.core.exception;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/21 10:03
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/21 10:03
+ *
  */
 public class FileDownloadException extends Exception {
     public FileDownloadException(String message) {

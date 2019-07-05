@@ -28,36 +28,44 @@
 package com.newbie.core.aop;
 
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
-import com.newbie.core.exception.BusinessException;
-import com.newbie.dto.ResponseResult;
-import com.newbie.dto.ResponseTypes;
-import lombok.extern.java.Log;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.MethodParameter;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.server.ServerHttpRequest;
+import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-import javax.servlet.http.HttpServletRequest;
-
-
-
-@Log
+/**
+ * @author: 谢海龙
+ * @date: 2019/7/5 14:01
+ *
+ */
+@Configuration
 @ControllerAdvice
-public class ErrorControllerAdvice  {
-    private final static String DEV= "dev";
+public class RestControllerAdvice implements ResponseBodyAdvice<String> {
+
     @Autowired
     private NewBieBasicConfiguration basicConfig;
 
-    @ExceptionHandler(value=Exception.class)
-    @ResponseBody
-    public ResponseResult allExceptionHandler(HttpServletRequest request, Exception exception) {
-       var isDev = basicConfig.getEnv().equals(DEV);
-       if(isDev) { exception.printStackTrace(); }
-        if(exception instanceof BusinessException){
-            var exceptionType = ((BusinessException) exception).getExceptionType();
-            return new ResponseResult(exceptionType,exception.getMessage());
+    @Override
+    public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
+        return true;
+    }
+
+    @Override
+    public String beforeBodyWrite(String body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
+        var  apmProperties = basicConfig.getApmProperties().iterator();
+        while (apmProperties.hasNext()) {
+            var willReturnKey =   apmProperties.next();
+            var willReturnValue = request.getHeaders().get(willReturnKey);
+            if(willReturnValue!=null) {
+                response.getHeaders().set(willReturnKey, willReturnValue.get(0));
+            }
         }
-        return new ResponseResult(ResponseTypes.UNKNOW,exception.getMessage());
+        return body;
     }
 }

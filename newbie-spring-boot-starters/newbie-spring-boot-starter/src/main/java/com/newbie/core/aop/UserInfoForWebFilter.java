@@ -52,9 +52,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/22 13:40
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/22 13:40
+ *
  */
 @Configuration
 @Component

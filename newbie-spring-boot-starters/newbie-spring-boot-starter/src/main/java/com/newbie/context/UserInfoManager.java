@@ -28,9 +28,9 @@
 package com.newbie.context;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/22 13:45
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/22 13:45
+ *
  */
 public class UserInfoManager {
 

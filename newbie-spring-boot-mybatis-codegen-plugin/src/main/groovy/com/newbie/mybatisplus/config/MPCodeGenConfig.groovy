@@ -10,9 +10,9 @@ import org.gradle.api.model.ObjectFactory
 import javax.inject.Inject
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/26 14:09
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/26 14:09
+ *
  */
 class MPCodeGenConfig {
     GlobalConfig globalConfig

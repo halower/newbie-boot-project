@@ -36,9 +36,9 @@ import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/22 14:56
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/22 14:56
+ *
  */
 @Configuration
 @Component

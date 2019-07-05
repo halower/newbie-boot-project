@@ -37,9 +37,9 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/17 13:35
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/17 13:35
+ *
  */
 public class SftlTemplateResolver implements TemplateResolver {
 

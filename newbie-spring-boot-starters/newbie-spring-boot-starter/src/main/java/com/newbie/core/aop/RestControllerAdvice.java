@@ -25,41 +25,47 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.core.persistent.mybaits;
+package com.newbie.core.aop;
 
-import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import lombok.extern.java.Log;
-import org.apache.ibatis.reflection.MetaObject;
-import org.springframework.stereotype.Component;
-
-import java.util.Date;
+import com.newbie.core.aop.config.NewBieBasicConfiguration;
+import lombok.var;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.MethodParameter;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.server.ServerHttpRequest;
+import org.springframework.http.server.ServerHttpResponse;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
  * @author: 谢海龙
- * @date: 2019/7/4 10:45
+ * @date: 2019/7/5 14:01
+ *
  */
-@Component
-@Log
-public class MyMetaObjectHandler implements MetaObjectHandler {
-    final static String createDateField = "cjsj";
-    final static String updateDateField = "zhxgsj";
-    @Override
-    public void insertFill(MetaObject metaObject) {
-        log.info("新增自动填充属性值");
-        Object createDate = metaObject.getValue(createDateField);
-        Object updateDate = metaObject.getValue(updateDateField);
+@Configuration
+@ControllerAdvice
+public class RestControllerAdvice  implements ResponseBodyAdvice<String> {
 
-        if (null == createDate) {
-            metaObject.setValue(createDateField, new Date());
-        }
-        if (null == updateDate) {
-            metaObject.setValue(updateDateField, new Date());
-        }
+    @Autowired
+    private NewBieBasicConfiguration basicConfig;
+
+    @Override
+    public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
+        return true;
     }
 
     @Override
-    public void updateFill(MetaObject metaObject) {
-        log.info("更新时自动填充属性值");
-        metaObject.setValue(updateDateField, new Date());
+    public String beforeBodyWrite(String body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
+        var  apmProperties = basicConfig.getApmProperties().iterator();
+        while (apmProperties.hasNext()) {
+            var willReturnKey =   apmProperties.next();
+            var willReturnValue = request.getHeaders().get(willReturnKey);
+            if(willReturnValue!=null) {
+                response.getHeaders().set(willReturnKey, willReturnValue.get(0));
+            }
+        }
+        return body;
     }
 }

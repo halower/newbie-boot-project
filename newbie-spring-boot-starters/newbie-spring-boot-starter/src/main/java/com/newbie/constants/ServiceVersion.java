@@ -28,9 +28,8 @@
 package com.newbie.constants;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/22 14:18
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/22 14:18
  */
 public class ServiceVersion {
     public final static String LOCAL = "0.0.1";

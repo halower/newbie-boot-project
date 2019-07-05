@@ -13,9 +13,9 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/26 14:21
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/26 14:21
+ *
  */
 class MPCodeGenPlugin implements Plugin<Project> {
     @Override

@@ -37,7 +37,7 @@ import java.util.List;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "app")
+@ConfigurationProperties(prefix = "application")
 public class NewBieBasicConfiguration {
     private String env = "dev";
 
@@ -50,6 +50,9 @@ public class NewBieBasicConfiguration {
     private boolean autoRecordRequestDetails = false;
     @Deprecated
     private boolean receiveRequestEvent = false;
+
+    private List<String> apmProperties = Arrays.asList(
+            "trxid", "spanid", "pspanid", "start");
 
     private DubboConfig dubbo;
 

@@ -33,9 +33,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/16 9:34
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/16 9:34
+ *
  */
 @EnableDiscoveryClient
 @Component

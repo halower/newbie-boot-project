@@ -31,9 +31,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/7/4 17:41
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/7/4 17:41
+ *
  */
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException() {

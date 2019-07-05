@@ -32,9 +32,9 @@ import org.springframework.core.io.Resource;
 import java.util.Iterator;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/17 13:35
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/17 13:35
+ *
  */
 public interface TemplateResolver {
     Iterator<Void> doInTemplateResource(Resource resource, final TemplateCallback callback) throws Exception;

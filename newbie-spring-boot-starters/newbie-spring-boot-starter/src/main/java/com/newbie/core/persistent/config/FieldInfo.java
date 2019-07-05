@@ -31,9 +31,9 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/17 19:50
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/17 19:50
+ *
  */
 @Data
 @Builder

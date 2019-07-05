@@ -36,9 +36,9 @@ import java.util.function.Function;
 
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/12 10:02
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/12 10:02
+ *
  */
 
 @NoRepositoryBean

@@ -41,9 +41,9 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/21 9:27
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/21 9:27
+ *
  */
 @Configuration
 public class StartEventListener {

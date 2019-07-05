@@ -42,9 +42,9 @@ import java.util.List;
 import java.util.function.Function;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/22 8:43
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/22 8:43
+ *
  */
 public class QueryBuilder<E> {
     public List<E> execute(EntityManager em, E filterEntity,Function<E,String> func) {

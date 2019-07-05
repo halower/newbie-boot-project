@@ -41,9 +41,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/20 20:56
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/20 20:56
+ *
  */
 @Configuration
 @EnableTransactionManagement
@@ -63,7 +63,7 @@ public class MybatisConfig {
     }
 
     @Bean
-    @Profile("${app.env:dev}")
+    @Profile("${application.env:dev}")
     public PerformanceInterceptor performanceInterceptor() {
         return new PerformanceInterceptor();
     }

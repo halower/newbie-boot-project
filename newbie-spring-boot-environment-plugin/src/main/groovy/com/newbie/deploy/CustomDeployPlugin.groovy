@@ -4,9 +4,9 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/11 20:32
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/11 20:32
+ *
  */
 class CustomDeployPlugin implements Plugin<Project> {
     def devSuffix = "-dev"

@@ -50,9 +50,9 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/21 9:54
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/21 9:54
+ *
  */
 @Slf4j
 @RestControllerAdvice

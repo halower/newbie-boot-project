@@ -32,9 +32,9 @@ import javax.persistence.TemporalType;
 import java.util.Date;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/24 15:48
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/24 15:48
+ *
  */
 public interface ParameterConstructor {
     void drive(Query query, String key, Date value);

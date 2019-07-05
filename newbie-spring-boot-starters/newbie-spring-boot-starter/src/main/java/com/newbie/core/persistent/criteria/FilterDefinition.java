@@ -32,9 +32,9 @@ import com.newbie.core.persistent.criteria.enums.Operator;
 import lombok.Data;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/24 11:43
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/24 11:43
+ *
  */
 @Data
 public class FilterDefinition {

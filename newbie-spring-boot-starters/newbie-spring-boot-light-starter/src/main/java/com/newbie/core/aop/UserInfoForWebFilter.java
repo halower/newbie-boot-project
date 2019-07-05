@@ -52,9 +52,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/5/22 13:40
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/5/22 13:40
+ *
  */
 @Configuration
 @Component
@@ -134,11 +134,11 @@ public class UserInfoForWebFilter implements Filter {
     private CurrentUserContext defaultUserInfo(String _bmsah) {
         CurrentUserContext currentUserContext;
         currentUserContext = CurrentUserContext.builder()
-                 .dlbm("测试开发者")
-                 .rybm("5101001001")
-                 .dwmc("测试单位")
+                 .dlbm("第三方")
+                 .rybm("C000000001")
+                 .dwmc("第三方单位")
                  .bmsah(_bmsah)
-                 .dwbm("510100").build();
+                 .dwbm("C00001").build();
         currentUserContext.setBmsah(_bmsah);
         return currentUserContext;
     }

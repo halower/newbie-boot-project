@@ -57,9 +57,9 @@ import java.util.*;
 import java.util.function.Function;
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/4/12 10:04
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/4/12 10:04
+ *
  */
 @Repository
 @Transactional(readOnly = true)

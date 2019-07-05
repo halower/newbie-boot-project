@@ -1,9 +1,9 @@
 package com.newbie.mybatisplus.config
 
 /**
- * @Author: 谢海龙
- * @Date: 2019/6/26 13:58
- * @Description
+ * @author: 谢海龙
+ * @date: 2019/6/26 13:58
+ *
  */
 class XmlMapperConfig {
     String path
