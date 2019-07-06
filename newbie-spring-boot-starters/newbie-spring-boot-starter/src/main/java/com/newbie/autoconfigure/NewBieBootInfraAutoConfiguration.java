@@ -27,7 +27,7 @@
  */
 package com.newbie.autoconfigure;
 
-import com.newbie.core.aop.RestControllerAdvice;
+import com.newbie.core.aop.ResponseHeaderHandler;
 import com.newbie.core.aop.UserInfoForDubboFilter;
 import com.newbie.core.aop.UserInfoForWebFilter;
 import com.newbie.core.aop.config.WebFilterConfiguration;
@@ -44,7 +44,7 @@ import org.springframework.context.annotation.Import;
         UserInfoForWebFilter.class,
         UserInfoForDubboFilter.class,
         WebFilterConfiguration.class,
-        RestControllerAdvice.class
+        ResponseHeaderHandler.class
 })
 @Configuration
 public class NewBieBootInfraAutoConfiguration {

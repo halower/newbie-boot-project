@@ -36,7 +36,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
-import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
@@ -45,15 +45,16 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  *
  */
 @Configuration
-@ControllerAdvice
-public class RestControllerAdvice  implements ResponseBodyAdvice<String> {
+@RestControllerAdvice
+public class ResponseHeaderHandler implements ResponseBodyAdvice<String> {
 
     @Autowired
     private NewBieBasicConfiguration basicConfig;
 
     @Override
-    public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
-        return true;
+    public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> converterType) {
+        String methodName=methodParameter.getMethod().getName();
+        return !basicConfig.getApmExcludeMethods().contains(methodName) && !methodName.endsWith("Exception");
     }
 
     @Override

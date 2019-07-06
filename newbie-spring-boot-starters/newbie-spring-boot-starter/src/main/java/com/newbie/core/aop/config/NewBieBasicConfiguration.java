@@ -54,6 +54,9 @@ public class NewBieBasicConfiguration {
     private List<String> apmProperties = Arrays.asList(
             "trxid", "spanid", "pspanid", "start");
 
+
+    private List<String> apmExcludeMethods = Arrays.asList(
+            "handleException", "error","uiConfiguration","securityConfiguration","swaggerResources","getDocumentation");
     private DubboConfig dubbo;
 
     @Data
