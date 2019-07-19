@@ -25,66 +25,46 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.core.utils;
+package com.newbie.context;
 
-public class Utils {
+import com.newbie.constants.NewbieBootInfraConstants;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.env.Environment;
+import org.springframework.util.ClassUtils;
 
-    /**
-     * Json与Java对象互转
-     */
-    public static JsonUtil json = JsonUtil.pick("");
+public class NewBieBootEnvUtil {
 
-    /**
-     * Json与Java对象互转
-     * <p>
-     * 使用自定义实例ID（用于支持不同Json配置）
-     */
-    public static JsonUtil json(String instanceId) {
-        assert instanceId != null && !instanceId.trim().equals("");
-        return JsonUtil.pick(instanceId);
+    private final static String SPRING_CLOUD_MARK_NAME = "org.springframework.cloud.bootstrap.BootstrapConfiguration";
+
+    private static ApplicationContext context ;
+    public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
+        if (environment instanceof ConfigurableEnvironment) {
+            return !((ConfigurableEnvironment) environment).getPropertySources().contains(
+                    NewbieBootInfraConstants.NEWBIE_BOOTSTRAP)
+                    && isSpringCloud();
+        }
+        return false;
     }
 
-    /**
-     * Java Bean操作
-     */
-    public static BeanUtil bean = new BeanUtil();
-
-    /**
-     * Java Bean操作
-     *
-     * @param useCache 是否启用缓存，启用后会缓存获取过的字段和方法列表，默认启用
-     */
-    public static BeanUtil bean(boolean useCache) {
-        return new BeanUtil(useCache);
+    public static boolean isSpringCloud() {
+        return ClassUtils.isPresent(SPRING_CLOUD_MARK_NAME, null);
     }
 
-    /**
-     * 常用字段操作
-     */
-    public static FieldUtil field = new FieldUtil();
+    public static void setApplicationContext(ApplicationContext applicationContext){
+        context = applicationContext;
+    }
 
-    /**
-     * 常用文件操作
-     */
-    public static FileUtil file = new FileUtil();
+    public static ApplicationContext getContext(){
+        return context;
+    }
 
-    /**
-     * MIME信息操作
-     */
-    public static MimeUtil mime = new MimeUtil();
+    public static Object getBean(String beanName){
+        return context.getBean(beanName);
+    }
 
-    /**
-     * 时间操作
-     */
-    public static DateTimeUtil datetime = new DateTimeUtil();
+    public static <T> T getBean(Class<T> t){
+        return context.getBean(t);
+    }
 
-    /**
-     * 金额操作
-     */
-    public static AmountUtil amount = new AmountUtil();
-
-    /**
-     * 网络操作
-     */
-    public static NetworkUtil network = new NetworkUtil();
 }

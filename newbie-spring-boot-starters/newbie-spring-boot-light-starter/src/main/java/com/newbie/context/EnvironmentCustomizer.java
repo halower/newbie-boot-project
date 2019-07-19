@@ -32,6 +32,7 @@ import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MissingRequiredPropertiesException;
 import org.springframework.core.env.PropertiesPropertySource;
@@ -39,7 +40,7 @@ import org.springframework.util.StringUtils;
 
 import java.util.Properties;
 
-
+@Configuration
 public class EnvironmentCustomizer implements EnvironmentPostProcessor {
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment,

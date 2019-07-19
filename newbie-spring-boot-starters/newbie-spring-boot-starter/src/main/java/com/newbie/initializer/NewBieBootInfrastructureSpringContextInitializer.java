@@ -28,7 +28,7 @@
 package com.newbie.initializer;
 
 
-import com.newbie.context.NewBieBootEnvUtils;
+import com.newbie.context.NewBieBootEnvUtil;
 import lombok.extern.java.Log;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -42,7 +42,7 @@ public class NewBieBootInfrastructureSpringContextInitializer implements
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
         Environment environment = applicationContext.getEnvironment();
-        if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
+        if (NewBieBootEnvUtil.isSpringCloudBootstrapEnvironment(environment)) {
             log.info("\n当前接入SpringCloud环境");
         }
 

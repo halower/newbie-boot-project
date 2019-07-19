@@ -33,7 +33,7 @@ import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.context.CurrentUserContext;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.context.UserInfoManager;
-import com.newbie.context.NewBieBootEnvUtils;
+import com.newbie.context.NewBieBootEnvUtil;
 import com.newbie.dto.ResponseTypes;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
@@ -76,7 +76,7 @@ public class UserInfoForWebFilter implements Filter {
                 final String dev = "dev";
                 final String authHeader = "Authorization";
                 final String bmsahHeader = "X-BMSAH";
-                var basicConfiguration = NewBieBootEnvUtils.getBean(NewBieBasicConfiguration.class);
+                var basicConfiguration = NewBieBootEnvUtil.getBean(NewBieBasicConfiguration.class);
                 String authorization = httpRequest.getHeader(authHeader);
                 String bmsah = httpRequest.getHeader(bmsahHeader);
                 if(basicConfiguration.getEnv().equals(dev)) {

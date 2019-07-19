@@ -28,7 +28,6 @@
 package com.newbie.core.utils;
 
 import org.apache.commons.beanutils.BeanUtilsBean;
-
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

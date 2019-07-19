@@ -33,7 +33,6 @@ import java.util.regex.Pattern;
 /**
  * 金额操作
  *
- * @author Based By https://gist.github.com/binjoo/6028263
  */
 public class AmountUtil {
 

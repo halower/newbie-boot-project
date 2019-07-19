@@ -29,9 +29,9 @@ package com.newbie.context;
 
 
 import com.newbie.constants.NewbieBootInfraConstants;
-import com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MissingRequiredPropertiesException;
 import org.springframework.core.env.PropertiesPropertySource;
@@ -39,7 +39,7 @@ import org.springframework.util.StringUtils;
 
 import java.util.Properties;
 
-
+@Configuration
 public class EnvironmentCustomizer implements EnvironmentPostProcessor {
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment,
@@ -62,7 +62,7 @@ public class EnvironmentCustomizer implements EnvironmentPostProcessor {
         /**
          * set required properties, {@link MissingRequiredPropertiesException}
          **/
-        if (NewBieBootEnvUtils.isSpringCloudBootstrapEnvironment(environment)) {
+        if (NewBieBootEnvUtil.isSpringCloudBootstrapEnvironment(environment)) {
             environment.setRequiredProperties(NewbieBootInfraConstants.APP_NAME_KEY);
         }
     }
@@ -72,7 +72,7 @@ public class EnvironmentCustomizer implements EnvironmentPostProcessor {
      */
     private Properties getNewbieBootVersionProperties() {
         Properties properties = new Properties();
-        String newbieBootVersion = NewBieBootInfraAutoConfiguration.class.getPackage().getImplementationVersion();
+        String newbieBootVersion = EnvironmentCustomizer.class.getPackage().getImplementationVersion();
         newbieBootVersion = StringUtils.isEmpty(newbieBootVersion) ? "" : newbieBootVersion;
         String newbieBootFormattedVersion = newbieBootVersion.isEmpty() ? "" : String.format(" (v%s)", newbieBootVersion);
         properties.setProperty(NewbieBootInfraConstants.NEWBIE_BOOT_VERSION, newbieBootVersion);

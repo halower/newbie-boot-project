@@ -41,6 +41,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppContextProvider implements ApplicationContextAware {
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        NewBieBootEnvUtils.setApplicationContext(applicationContext);
+        NewBieBootEnvUtil.setApplicationContext(applicationContext);
     }
 }

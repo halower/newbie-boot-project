@@ -82,4 +82,9 @@ public class Utils {
      * 金额操作
      */
     public static AmountUtil amount = new AmountUtil();
+
+    /**
+     * 网络操作
+     */
+    public static NetworkUtil network = new NetworkUtil();
 }

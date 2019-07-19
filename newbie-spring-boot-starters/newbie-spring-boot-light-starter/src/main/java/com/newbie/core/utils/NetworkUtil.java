@@ -25,46 +25,38 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.context;
+package com.newbie.core.utils;
 
-import com.newbie.constants.NewbieBootInfraConstants;
-import org.springframework.context.ApplicationContext;
-import org.springframework.core.env.ConfigurableEnvironment;
-import org.springframework.core.env.Environment;
-import org.springframework.util.ClassUtils;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Enumeration;
 
-public class NewBieBootEnvUtils {
-
-    private final static String SPRING_CLOUD_MARK_NAME = "org.springframework.cloud.bootstrap.BootstrapConfiguration";
-
-    private static ApplicationContext context ;
-    public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
-        if (environment instanceof ConfigurableEnvironment) {
-            return !((ConfigurableEnvironment) environment).getPropertySources().contains(
-                    NewbieBootInfraConstants.NEWBIE_BOOTSTRAP)
-                    && isSpringCloud();
+/**
+ * @Author: 谢海龙
+ * @Date: 2019/7/19 17:14
+ * @Description
+ */
+public class NetworkUtil {
+    public String getHostIp(){
+        try{
+            Enumeration<NetworkInterface> allNetInterfaces = NetworkInterface.getNetworkInterfaces();
+            while (allNetInterfaces.hasMoreElements()){
+                NetworkInterface netInterface = allNetInterfaces.nextElement();
+                Enumeration<InetAddress> addresses = netInterface.getInetAddresses();
+                while (addresses.hasMoreElements()){
+                    InetAddress ip = addresses.nextElement();
+                    if (ip != null
+                            && ip instanceof Inet4Address
+                            && !ip.isLoopbackAddress()
+                            && ip.getHostAddress().indexOf(":")==-1){
+                        return ip.getHostAddress();
+                    }
+                }
+            }
+        }catch(Exception e){
+            e.printStackTrace();
         }
-        return false;
+        return "127.0.0.1";
     }
-
-    public static boolean isSpringCloud() {
-        return ClassUtils.isPresent(SPRING_CLOUD_MARK_NAME, null);
-    }
-
-    public static void setApplicationContext(ApplicationContext applicationContext){
-        context = applicationContext;
-    }
-
-    public static ApplicationContext getContext(){
-        return context;
-    }
-
-    public static Object getBean(String beanName){
-        return context.getBean(beanName);
-    }
-
-    public static <T> T getBean(Class<T> t){
-        return context.getBean(t);
-    }
-
 }

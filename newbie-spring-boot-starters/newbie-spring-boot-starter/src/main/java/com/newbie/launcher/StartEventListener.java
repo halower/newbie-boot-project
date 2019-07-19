@@ -27,7 +27,8 @@
  */
 package com.newbie.launcher;
 
-import com.newbie.context.NewBieBootEnvUtils;
+import com.newbie.context.NewBieBootEnvUtil;
+import com.newbie.core.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.context.WebServerInitializedEvent;
 import org.springframework.context.ApplicationContext;
@@ -58,9 +59,10 @@ public class StartEventListener {
         String appName = environment.getProperty("spring.application.name");
         int localPort = event.getWebServer().getPort();
         String profile = StringUtils.arrayToCommaDelimitedString(environment.getActiveProfiles());
-        NewBieBootEnvUtils.setApplicationContext(context);
+        NewBieBootEnvUtil.setApplicationContext(context);
         if (ClassUtils.isPresent("springfox.documentation.spring.web.plugins.Docket", null)) {
-            System.out.println(String.format("API文档地址:http://localhost:%s/swagger-ui.html", localPort));
+            System.out.println(String.format("-本地 API文档地址:http://localhost:%s/swagger-ui.html", localPort));
+            System.out.println(String.format("-局域网 API文档地址:http://%s:%s/swagger-ui.html", Utils.network.getHostIp(),localPort));
         }
         System.out.println(String.format("服务[%s]启动完成，当前使用的端口:[%s]，环境变量:[%s]", appName, localPort, profile));
     }

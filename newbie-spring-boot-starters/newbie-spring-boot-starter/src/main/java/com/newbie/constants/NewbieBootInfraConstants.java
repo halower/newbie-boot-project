@@ -50,7 +50,7 @@ public class NewbieBootInfraConstants {
     public static final String NEWBIE_BOOTSTRAP                            = "newbieBootstrap";
 
     /**
-     * {@link org.springframework.boot.ResourceBanner#getVersionsMap}
+     * {@link org.springframework.boot.ResourceBanner#getVersionsMap(Class)}
      */
     public static final String NEWBIE_BOOT_VERSION                         = "newbie-boot.version";
     public static final String NEWBIE_BOOT_FORMATTED_VERSION               = "newbie-boot.formatted-version";
