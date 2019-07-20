@@ -29,6 +29,8 @@ package com.newbie.core.audit;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.newbie.core.utils.Utils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.annotation.CreatedDate;
@@ -40,7 +42,6 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * 注意： 这里是按照项目的特殊情况进行定制的,后期可能做进一步调整
@@ -63,7 +64,7 @@ public abstract class BaseEntity implements Serializable {
      */
     @LastModifiedDate
     @Column(name = "ZHXGSJ")
-    @TableField(value = "ZHXGSJ",fill = FieldFill.UPDATE)
+    @TableField(value = "ZHXGSJ",fill = FieldFill.INSERT_UPDATE)
     private Date zhxgsj;
 
     /**
@@ -71,12 +72,13 @@ public abstract class BaseEntity implements Serializable {
      */
     @Column(name = "SJBSBH")
     @TableField(value = "SJBSBH",fill = FieldFill.INSERT)
-    private String sjbsbh = UUID.randomUUID().toString();
+    private String sjbsbh = Utils.random.getUUID();
 
     /**
      * 是否删除
      */
     @Column(name = "SFSC")
+    @TableLogic
     @TableField(value = "SFSC",fill = FieldFill.INSERT)
     private String sfsc ="N";
 }

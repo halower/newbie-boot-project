@@ -29,6 +29,8 @@ package com.newbie.core.audit;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.newbie.core.utils.Utils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import java.io.Serializable;
@@ -50,18 +52,19 @@ public abstract class BaseEntity implements Serializable {
     /**
      * 最后修改时间
      */
-    @TableField(value = "ZHXGSJ",fill = FieldFill.UPDATE)
+    @TableField(value = "ZHXGSJ",fill = FieldFill.INSERT_UPDATE)
     private Date zhxgsj;
 
     /**
      * 数据标识编号
      */
     @TableField(value = "SJBSBH",fill = FieldFill.INSERT)
-    private String sjbsbh = UUID.randomUUID().toString();
+    private String sjbsbh;
 
     /**
      * 是否删除
      */
+    @TableLogic
     @TableField(value = "SFSC",fill = FieldFill.INSERT)
-    private String sfsc ="N";
+    private String sfsc;
 }

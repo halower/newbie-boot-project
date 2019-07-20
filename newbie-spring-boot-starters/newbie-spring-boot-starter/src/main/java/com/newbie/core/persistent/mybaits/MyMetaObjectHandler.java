@@ -28,8 +28,11 @@
 package com.newbie.core.persistent.mybaits;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import com.newbie.core.utils.Utils;
 import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j2;
 import org.apache.ibatis.reflection.MetaObject;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -38,28 +41,22 @@ import java.util.Date;
  * @author: 谢海龙
  * @date: 2019/7/4 10:45
  */
-@Component
-@Log
+
+@Log4j2
+@Configuration
 public class MyMetaObjectHandler implements MetaObjectHandler {
-    final static String createDateField = "cjsj";
-    final static String updateDateField = "zhxgsj";
     @Override
     public void insertFill(MetaObject metaObject) {
         log.info("新增自动填充属性值");
-        Object createDate = metaObject.getValue(createDateField);
-        Object updateDate = metaObject.getValue(updateDateField);
-
-        if (null == createDate) {
-            metaObject.setValue(createDateField, new Date());
-        }
-        if (null == updateDate) {
-            metaObject.setValue(updateDateField, new Date());
-        }
+        this.setFieldValByName("cjsj", new Date(), metaObject);
+        this.setFieldValByName("zhxgsj", new Date(), metaObject);
+        this.setFieldValByName("sfsc", "N", metaObject);
+        this.setFieldValByName("sjbsbh", Utils.random.getUUID(), metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
         log.info("更新时自动填充属性值");
-        metaObject.setValue(updateDateField, new Date());
+        this.setFieldValByName("zhxgsj", new Date(), metaObject);
     }
 }

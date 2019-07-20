@@ -87,4 +87,9 @@ public class Utils {
      * 网络操作
      */
     public static NetworkUtil network = new NetworkUtil();
+
+    /**
+     * 随机数
+     */
+    public static RandomUtil random = new RandomUtil();
 }

@@ -57,14 +57,12 @@ public class MybatisConfig {
         return paginationInterceptor;
     }
 
+    /**
+     * 乐观锁插件
+     * @return
+     */
     @Bean
     public OptimisticLockerInterceptor optimisticLockerInterceptor() {
         return new OptimisticLockerInterceptor();
-    }
-
-    @Bean
-    @Profile("${application.env:dev}")
-    public PerformanceInterceptor performanceInterceptor() {
-        return new PerformanceInterceptor();
     }
 }
