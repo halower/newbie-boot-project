@@ -28,7 +28,7 @@
 package com.newbie.constants;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/5/22 14:18
  *
  */

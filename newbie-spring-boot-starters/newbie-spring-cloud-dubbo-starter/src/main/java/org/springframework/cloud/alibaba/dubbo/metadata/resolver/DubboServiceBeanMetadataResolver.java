@@ -53,7 +53,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * The config resolver for {@link Feign} for {@link ServiceBean Dubbo Service Bean} in the provider side.
+ * The aop resolver for {@link Feign} for {@link ServiceBean Dubbo Service Bean} in the provider side.
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */

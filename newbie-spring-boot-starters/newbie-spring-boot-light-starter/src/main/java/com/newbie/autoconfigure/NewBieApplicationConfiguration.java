@@ -27,7 +27,7 @@
  */
 package com.newbie.autoconfigure;
 
-import com.newbie.core.aop.MvcConfigurer;
+import com.newbie.core.aop.config.ApplicationWebConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.handler.GlobalExceptionHandler;
 import com.newbie.core.persistent.MyMetaObjectHandler;
@@ -51,7 +51,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @Import({
         StartEventListener.class,
         GlobalExceptionHandler.class,
-        MvcConfigurer.class,
+        ApplicationWebConfigurer.class,
         MybatisConfig.class,
         MyMetaObjectHandler.class
 })

@@ -33,7 +33,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/4/25 19:57
  *
  */

@@ -1,7 +1,7 @@
 package com.newbie.mybatisplus.config
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/6/26 13:58
  *
  */

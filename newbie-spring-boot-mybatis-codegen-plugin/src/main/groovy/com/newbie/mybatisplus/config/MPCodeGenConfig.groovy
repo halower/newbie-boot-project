@@ -10,7 +10,7 @@ import org.gradle.api.model.ObjectFactory
 import javax.inject.Inject
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/6/26 14:09
  *
  */

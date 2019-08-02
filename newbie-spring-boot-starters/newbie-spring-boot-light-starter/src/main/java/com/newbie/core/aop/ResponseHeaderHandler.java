@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/7/5 14:01
  *
  */

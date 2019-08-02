@@ -28,7 +28,7 @@
 package com.newbie.core.persistent.tpl;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/4/17 13:36
  *
  */

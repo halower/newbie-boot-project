@@ -47,8 +47,6 @@ import static com.newbie.constants.NewbieBootInfraConstants.NEWBIE_BOOT_VERSION_
 
 /**
  * NEWBIEBootVersionEndpoint
- *
- * {@link org.springframework.core.io.support.PropertiesLoaderSupport#loadProperties(Properties)}
  */
 @Log4j2
 @Endpoint(id = "versions")

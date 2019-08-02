@@ -13,7 +13,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/6/26 14:21
  *
  */

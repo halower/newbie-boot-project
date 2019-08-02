@@ -34,7 +34,7 @@ import org.springframework.cloud.alibaba.dubbo.metadata.ServiceRestMetadata;
 import java.util.Set;
 
 /**
- * The REST config resolver
+ * The REST aop resolver
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */

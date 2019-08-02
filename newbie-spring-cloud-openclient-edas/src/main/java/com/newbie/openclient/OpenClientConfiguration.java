@@ -33,7 +33,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/5/16 9:34
  *
  */

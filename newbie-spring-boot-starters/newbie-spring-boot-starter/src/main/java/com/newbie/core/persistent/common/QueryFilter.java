@@ -28,7 +28,7 @@
 package com.newbie.core.persistent.common;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/4/22 14:27
  *
  */

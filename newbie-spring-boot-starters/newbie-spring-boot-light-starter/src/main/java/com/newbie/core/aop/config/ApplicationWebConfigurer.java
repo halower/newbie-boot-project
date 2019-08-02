@@ -25,28 +25,41 @@
  * 权性的保证。在任何情况下，无论是在合同诉讼、侵权诉讼或其他诉讼中，版权持有人均不承担因本软件或
  * 本软件的使用或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任。
  */
-package com.newbie.core.aop;
+package com.newbie.core.aop.config;
 
+import com.newbie.core.datasource.aop.DataSourceInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.format.datetime.DateFormatter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ *  支持跨域规则
+ */
 @Configuration
-public class MvcConfigurer implements WebMvcConfigurer {
-    // 支持跨域规则
+public class ApplicationWebConfigurer implements WebMvcConfigurer {
+
+    @Autowired
+    private DataSourceInterceptor dataSourceInterceptor;
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
                 .allowedOrigins("*")
                 .allowedMethods("GET","POST","PUT","UPDATE","DELETE","PATCH");
     }
-    // 格式化
+
     @Override
     public void addFormatters(FormatterRegistry registry) {
         //转换成对应的日期格式
         registry.addFormatter(new DateFormatter("yyyy-MM-dd HH:mm:ss"));
     }
 
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(dataSourceInterceptor);
+    }
 }

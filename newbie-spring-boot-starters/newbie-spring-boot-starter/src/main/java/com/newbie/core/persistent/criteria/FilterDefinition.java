@@ -32,7 +32,7 @@ import com.newbie.core.persistent.criteria.enums.Operator;
 import lombok.Data;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/4/24 11:43
  *
  */

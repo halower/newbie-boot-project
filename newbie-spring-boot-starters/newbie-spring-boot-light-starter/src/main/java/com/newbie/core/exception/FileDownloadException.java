@@ -28,7 +28,7 @@
 package com.newbie.core.exception;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/6/21 10:03
  *
  */

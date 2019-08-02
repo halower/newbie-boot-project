@@ -31,6 +31,8 @@ import com.newbie.core.aop.ResponseHeaderHandler;
 import com.newbie.core.aop.UserInfoForDubboFilter;
 import com.newbie.core.aop.UserInfoForWebFilter;
 import com.newbie.core.aop.config.WebFilterConfiguration;
+import com.newbie.core.datasource.DynamicDataSourceRegister;
+import com.newbie.core.datasource.aop.DataSourceInterceptor;
 import com.newbie.endpoint.VersionEndpointConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -44,7 +46,9 @@ import org.springframework.context.annotation.Import;
         UserInfoForWebFilter.class,
         UserInfoForDubboFilter.class,
         WebFilterConfiguration.class,
-        ResponseHeaderHandler.class
+        ResponseHeaderHandler.class,
+        DataSourceInterceptor.class,
+        DynamicDataSourceRegister.class
 })
 @Configuration
 public class NewBieBootInfraAutoConfiguration {

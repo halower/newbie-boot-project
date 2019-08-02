@@ -36,13 +36,14 @@ import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: 谢海龙
+ * @author: halower
  * @date: 2019/5/22 14:56
  *
  */
-@Configuration
 @Component
+@Configuration
 public class WebFilterConfiguration {
+
     @Autowired
     UserInfoForWebFilter userInfoForWebFilter;
 
