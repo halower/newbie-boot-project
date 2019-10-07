@@ -78,7 +78,7 @@ subprojects {
 
     license {
         encoding = "UTF-8"
-        header = rootProject.file("LICENSE_996.txt")
+        header = rootProject.file("LICENSE.txt")
         includes(["**/*.java", "**/*.kt"])
         exclude "**/*Test.java"
         exclude "**/TableNameParser.java"

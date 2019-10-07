@@ -1,4 +1,22 @@
 /*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+/*
  * 版权所有 (c) 2019-2029, halower (halower@foxmail.com).
  *
  * Apache 2.0 License 同时该协议为补充协议，不允许 996 工作制度企业使用该开源软件
@@ -39,16 +57,18 @@ public class ResponseResult<T> implements DTO {
      * @param data 返回值
      */
     public ResponseResult(T data){
-        if(!(data instanceof ResponseTypes)) {
-            this.success = true;
-            this.code = ResponseTypes.SUCCESS.getCode();
-            this.message =ResponseTypes.SUCCESS.getDesc();
-            this.data = data;
-        } else {
+        if(data instanceof ResponseTypes) {
             boolean success = data == ResponseTypes.SUCCESS;
             this.success = success;
             this.code = success? ResponseTypes.SUCCESS.getCode(): ((ResponseTypes) data).getCode();
             this.message =success? ResponseTypes.SUCCESS.getDesc(): ((ResponseTypes) data).getDesc();
+        }
+
+        else  {
+            this.success = true;
+            this.code = ResponseTypes.SUCCESS.getCode();
+            this.message =ResponseTypes.SUCCESS.getDesc();
+            this.data = data;
         }
     }
 
@@ -134,5 +154,21 @@ public class ResponseResult<T> implements DTO {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public static ResponseResult builder() {
+        return new ResponseResult();
+    }
+
+    public ResponseResult success(T data) {
+        this.success = true;
+        this.code = ResponseTypes.SUCCESS.getCode();
+        this.data = data;
+        return this;
+    }
+
+    public ResponseResult message(String message) {
+        this.message = message;
+        return this;
     }
 }

@@ -1,4 +1,22 @@
 /*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+/*
  * 版权所有 (c) 2019-2029, halower (halower@foxmail.com).
  *
  * Apache 2.0 License 同时该协议为补充协议，不允许 996 工作制度企业使用该开源软件
@@ -107,9 +125,9 @@ public class UserInfoForWebFilter implements Filter {
         }
     }
 
-    private void bindFormDefaultValue(String _bmsah) {
+    private void bindFormDefaultValue(String bmsah) {
         CurrentUserContext currentUserContext;
-        currentUserContext = defaultUserInfo(_bmsah);
+        currentUserContext = defaultUserInfo(bmsah);
         UserInfoManager.getInstance().bind(currentUserContext);
         RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO,JSON.toJSONString(currentUserContext));
     }
@@ -131,15 +149,16 @@ public class UserInfoForWebFilter implements Filter {
         UserInfoManager.getInstance().bind(currentUserContext);
         RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO,JSON.toJSONString(currentUserContext));
     }
-    private CurrentUserContext defaultUserInfo(String _bmsah) {
+
+    private CurrentUserContext defaultUserInfo(String bmsah) {
         CurrentUserContext currentUserContext;
         currentUserContext = CurrentUserContext.builder()
                  .dlbm("测试开发者")
                  .rybm("5101001001")
                  .dwmc("测试单位")
-                 .bmsah(_bmsah)
+                 .bmsah(bmsah)
                  .dwbm("510100").build();
-        currentUserContext.setBmsah(_bmsah);
+        currentUserContext.setBmsah(bmsah);
         return currentUserContext;
     }
 }

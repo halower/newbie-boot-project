@@ -1,4 +1,22 @@
 /*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+/*
  * 版权所有 (c) 2019-2029, halower (halower@foxmail.com).
  *
  * Apache 2.0 License 同时该协议为补充协议，不允许 996 工作制度企业使用该开源软件
@@ -27,6 +45,7 @@
  */
 package com.newbie.core.exception.handler;
 
+import com.alibaba.fastjson.JSON;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.FileDownloadException;
@@ -48,6 +67,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author: halower
@@ -126,6 +147,15 @@ public class GlobalExceptionHandler  {
             e.printStackTrace();
         }
         log.error("系统内部异常，异常信息", e);
+        final String clazzName = "com.newbie.core.exception.BusinessException";
+        if(e.getMessage().startsWith(clazzName)) {
+            Matcher matcher = Pattern.compile("("+clazzName+"\\{.*\\})").matcher(e.getMessage());
+            if(matcher.find()){
+                var exStr = matcher.group(0).replace("\\","").substring(clazzName.length());
+                var exception = JSON.parseObject(exStr, BusinessException.class);
+                return new ResponseResult(exception.getExceptionType(),exception.getMessage());
+            }
+        }
         return new ResponseResult(ResponseTypes.UNKNOW,e.getMessage());
     }
 

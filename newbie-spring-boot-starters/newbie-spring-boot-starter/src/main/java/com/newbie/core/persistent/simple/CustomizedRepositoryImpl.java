@@ -1,4 +1,22 @@
 /*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+/*
  * 版权所有 (c) 2019-2029, halower (halower@foxmail.com).
  *
  * Apache 2.0 License 同时该协议为补充协议，不允许 996 工作制度企业使用该开源软件
@@ -190,7 +208,10 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, false);
-        kvs.forEach((k, v) -> criteria.set(root.get(k), v));
+        kvs.forEach((k, v) -> {
+            criteria.set(root.get(k), v);
+            criteria.set(root.get("zhxgsj"), new Date());
+        });
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -215,7 +236,11 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, true);
-        kvs.forEach((k, v) -> criteria.set(root.get(k), v));
+        kvs.forEach((k, v) -> {
+            criteria.set(root.get(k), v);
+            criteria.set(root.get("zhxgsj"), new Date());
+        });
+
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -254,6 +279,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = builder.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"), "Y");
+        criteria.set(root.get("zhxgsj"), new Date());
         criteria.where(builder.equal(root.get(idPropName), idValue));
         return em.createQuery(criteria).executeUpdate();
     }
@@ -271,6 +297,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"), "Y");
+        criteria.set(root.get("zhxgsj"), new Date());
         var deletedIds = getDeletedIds(entity);
         var deletedIdss = getDeletedIdss(entity);
         List<Predicate> listWhere = new ArrayList<>();
@@ -300,6 +327,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         criteria.set(root.get("sfsc"), "Y");
+        criteria.set(root.get("zhxgsj"), new Date());
         var deletedIds = getDeletedIds(entity);
         var deletedIdss = getDeletedIdss(entity);
         List<Predicate> listWhere = new ArrayList<>();

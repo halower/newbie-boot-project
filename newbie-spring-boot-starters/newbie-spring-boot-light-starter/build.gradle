@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.2.1.5"
+version = "alpha.2.1.6"
 
 dependencies {
     implementation ("org.springframework.boot:spring-boot-starter")
@@ -17,7 +17,7 @@ dependencies {
     implementation("commons-beanutils:commons-beanutils")
     implementation("org.apache.commons:commons-lang3")
     implementation("org.apache.httpcomponents:httpclient")
-    implementation("com.github.halower:newbie-spring-boot-api-dto:alpha.2.1.0")
+    implementation("com.github.halower:newbie-spring-boot-api-dto:alpha.2.1.1")
     implementation("com.spring4all:swagger-spring-boot-starter")
     implementation("io.jsonwebtoken:jjwt")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
