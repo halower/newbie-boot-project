@@ -19,6 +19,7 @@
 package com.newbie.core.aop.config;
 
 import com.newbie.dto.ResponseResult;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -29,20 +30,25 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 @Configuration
-public class GlobalReturnConfiguration {
-    @RestControllerAdvice
-    static class ResultResponseAdvice implements ResponseBodyAdvice<Object> {
-        @Override
-        public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
-            return true;
-        }
+@RestControllerAdvice
+public class GlobalReturnConfiguration  implements ResponseBodyAdvice<Object> {
+    @Autowired
+    private NewBieBasicConfiguration configuration;
+   @Override
+   public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
+       return true;
+   }
 
-        @Override
-        public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
+    @Override
+    public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
+
+        if (configuration.getAutoPackageReturnClass())  {
             if (body instanceof ResponseResult) {
                 return body;
             }
             return new ResponseResult(body);
+        } else {
+            return body;
         }
     }
 }

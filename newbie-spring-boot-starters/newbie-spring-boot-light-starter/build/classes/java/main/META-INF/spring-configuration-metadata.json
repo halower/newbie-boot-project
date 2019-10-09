@@ -28,20 +28,16 @@
   ],
   "properties": [
     {
-      "name": "application.apm-exclude-methods",
-      "type": "java.util.List<java.lang.String>",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
-    },
-    {
-      "name": "application.apm-properties",
-      "type": "java.util.List<java.lang.String>",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
-    },
-    {
       "name": "application.auth-secret-key",
       "type": "java.lang.String",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": "1b6ba62cff8629865a6b9dffa1586d74"
+    },
+    {
+      "name": "application.auto-package-return-class",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "defaultValue": false
     },
     {
       "name": "application.dubbo.consumer.version",
@@ -62,15 +58,10 @@
       "defaultValue": "dev"
     },
     {
-      "name": "application.exclude-filter-path",
-      "type": "java.util.List<java.lang.String>",
-      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration"
-    },
-    {
-      "name": "application.network-flag",
+      "name": "application.net-i-d",
       "type": "java.lang.String",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
-      "defaultValue": ""
+      "defaultValue": "1"
     },
     {
       "name": "management.endpoint.versions.cache.time-to-live",
@@ -87,10 +78,31 @@
       "defaultValue": true
     },
     {
+      "name": "application.apm-exclude-methods",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "application.apm-properties",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
       "name": "application.auto-record-request-details",
       "type": "java.lang.Boolean",
       "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "defaultValue": false,
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "application.exclude-filter-path",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.newbie.core.aop.config.NewBieBasicConfiguration",
       "deprecated": true,
       "deprecation": {}
     },

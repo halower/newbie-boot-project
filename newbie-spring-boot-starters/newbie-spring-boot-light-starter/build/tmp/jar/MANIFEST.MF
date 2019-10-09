@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
-Application-Version: alpha.2.1.6
-Build-date: Mon Oct 07 21:25:43 CST 2019
+Application-Version: alpha.2.1.7
+Build-date: Tue Oct 08 17:15:06 CST 2019
 Implementation-Version: 2.1.5
-Build-Timestamp: 2019-10-07 21:25:43
+Build-Timestamp: 2019-10-08 17:15:06
 Built-By: windows
 Build-OS: Windows 10
 Built-Gradle: 4.7
