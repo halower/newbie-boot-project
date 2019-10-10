@@ -62,6 +62,10 @@ public class GlobalExceptionHandler  {
     @ExceptionHandler(BindException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseResult bindExceptionHandler(BindException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("参数绑定异常",  e);
         var message = getErrorMessages(e);
         return new ResponseResult(ResponseTypes.PARAMETER_UNVALID, message);
     }
@@ -69,6 +73,10 @@ public class GlobalExceptionHandler  {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseResult methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("参数验证异常", e);
         var message = getErrorMessages(e);
         return new ResponseResult(ResponseTypes.PARAMETER_UNVALID, message);
     }
@@ -80,7 +88,7 @@ public class GlobalExceptionHandler  {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
         }
-        log.error("FileDownloadException", e);
+        log.error("文件下载异常", e);
         return new ResponseResult(ResponseTypes.FILE_DOWN_FAIL,e.getMessage());
     }
 
@@ -146,10 +154,6 @@ public class GlobalExceptionHandler  {
         for (FieldError error : fieldErrors) {
             msg.append(String.join(" - ",error.getDefaultMessage(), error.getField()));
         }
-        if(configuration.getEnv().equals("dev")){
-            e.printStackTrace();
-        }
-        log.error("参数校验异常",  e.getMessage());
         return msg.toString();
     }
 
