@@ -24,7 +24,8 @@ import com.newbie.core.aop.UserInfoForWebFilter;
 import com.newbie.core.aop.config.GlobalReturnConfiguration;
 import com.newbie.core.aop.config.WebFilterConfiguration;
 import com.newbie.core.datasource.DynamicDataSourceRegister;
-import com.newbie.core.datasource.aop.DataSourceInterceptor;
+import com.newbie.core.datasource.aop.DataSourceForDubboFilter;
+import com.newbie.core.datasource.aop.DataSourceForWebFilter;
 import com.newbie.endpoint.VersionEndpointConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -34,12 +35,13 @@ import org.springframework.context.annotation.Import;
  */
 
 @Import({
-        VersionEndpointConfiguration.class,
         UserInfoForWebFilter.class,
         UserInfoForDubboFilter.class,
         WebFilterConfiguration.class,
         GlobalReturnConfiguration.class,
-        DataSourceInterceptor.class,
+        VersionEndpointConfiguration.class,
+        DataSourceForWebFilter.class,
+        DataSourceForDubboFilter.class,
         DynamicDataSourceRegister.class
 })
 @Configuration
