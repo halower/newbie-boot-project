@@ -27,7 +27,7 @@ import org.springframework.http.MediaType;
  * <p>
  * The source code is scratched from org.springframework.web.servlet.mvc.condition.MediaTypeExpression
  *
- * @author Rossen Stoyanchev
+ * @Author Rossen Stoyanchev
  */
 interface MediaTypeExpression {
 

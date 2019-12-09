@@ -32,7 +32,7 @@ import static org.springframework.util.StringUtils.trimAllWhitespace;
 /**
  * Dubbo Cloud {@link ConfigurationProperties Properties}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @ConfigurationProperties(prefix = "dubbo.cloud")
 public class DubboCloudProperties {

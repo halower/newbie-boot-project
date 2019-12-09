@@ -32,7 +32,7 @@ import static org.springframework.util.ClassUtils.resolveClassName;
 /**
  * Abstract {@link DubboGenericServiceParameterResolver} implementation
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public abstract class AbstractDubboGenericServiceParameterResolver implements DubboGenericServiceParameterResolver,
         BeanClassLoaderAware {

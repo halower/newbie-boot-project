@@ -35,7 +35,7 @@ import java.util.Map;
 
 /**
  * 注册动态数据源
- * @author halower
+ * @Author halower
  */
 public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar, EnvironmentAware {
 

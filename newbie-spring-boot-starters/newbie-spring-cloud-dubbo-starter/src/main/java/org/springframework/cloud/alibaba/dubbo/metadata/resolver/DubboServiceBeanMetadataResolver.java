@@ -47,7 +47,7 @@ import java.util.stream.Stream;
 /**
  * The aop resolver for {@link Feign} for {@link ServiceBean Dubbo Service Bean} in the provider side.
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboServiceBeanMetadataResolver implements BeanClassLoaderAware, SmartInitializingSingleton,
         MetadataResolver {

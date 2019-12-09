@@ -39,7 +39,7 @@ import org.springframework.core.env.PropertyResolver;
 /**
  * Spring Boot Auto-Configuration class for Dubbo Service
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @EnableConfigurationProperties(DubboCloudProperties.class)

@@ -10,8 +10,8 @@ import org.gradle.api.model.ObjectFactory
 import javax.inject.Inject
 
 /**
- * @author: halower
- * @date: 2019/6/26 14:09
+ * @Author: halower
+ * @Date: 2019/6/26 14:09
  *
  */
 class MPCodeGenConfig {

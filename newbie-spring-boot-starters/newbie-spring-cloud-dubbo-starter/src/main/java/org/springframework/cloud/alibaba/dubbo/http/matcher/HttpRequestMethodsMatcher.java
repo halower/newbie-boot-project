@@ -32,7 +32,7 @@ import static org.springframework.http.HttpMethod.resolve;
 /**
  * {@link HttpRequest} {@link HttpMethod methods} {@link HttpRequestMatcher matcher}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class HttpRequestMethodsMatcher extends AbstractHttpRequestMatcher {
 

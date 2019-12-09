@@ -33,9 +33,9 @@ import java.util.Set;
 /**
  * {@link HttpRequest} 'Content-Type' header {@link HttpRequestMatcher matcher}
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author Arjen Poutsma
+ * @Author Rossen Stoyanchev
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class HttpRequestConsumersMatcher extends AbstractHttpRequestMatcher {
 

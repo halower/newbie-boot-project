@@ -28,7 +28,7 @@ import org.springframework.core.Ordered;
 /**
  * Dubbo {@link GenericService} Parameter Resolver
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public interface DubboGenericServiceParameterResolver extends Ordered {
 

@@ -25,8 +25,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author: halower
- * @date: 2019/4/11 20:09
+ * @Author: halower
+ * @Date: 2019/4/11 20:09
  *
  */
 @Retention(RetentionPolicy.RUNTIME)

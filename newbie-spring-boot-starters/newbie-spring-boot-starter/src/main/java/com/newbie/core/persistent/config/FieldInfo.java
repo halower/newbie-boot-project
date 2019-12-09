@@ -23,7 +23,7 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * @author: halower
+ * @Author: halower
  * @since : 2019/4/17 19:50
  *
  */

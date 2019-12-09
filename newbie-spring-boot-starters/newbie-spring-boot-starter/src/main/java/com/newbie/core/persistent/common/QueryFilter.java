@@ -20,8 +20,8 @@
 package com.newbie.core.persistent.common;
 
 /**
- * @author: halower
- * @date: 2019/4/22 14:27
+ * @Author: halower
+ * @Date: 2019/4/22 14:27
  *
  */
 public interface QueryFilter {

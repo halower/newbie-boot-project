@@ -140,7 +140,7 @@ public class ResponseResult<T> implements DTO {
         return getInstance();
     }
 
-    public ResponseResult success(T data) {
+    public  ResponseResult success(T data) {
         this.success = true;
         this.code = ResponseTypes.SUCCESS.getCode();
         this.data = data;

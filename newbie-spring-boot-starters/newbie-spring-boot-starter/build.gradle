@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.2.1.7"
+version = "alpha.2.1.8"
 
 dependencies {
     implementation ("org.springframework.boot:spring-boot-starter")

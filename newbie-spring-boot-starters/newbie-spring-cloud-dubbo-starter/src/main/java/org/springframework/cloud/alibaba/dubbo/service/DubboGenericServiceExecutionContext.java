@@ -24,7 +24,7 @@ import org.apache.dubbo.rpc.service.GenericService;
 /**
  * Dubbo {@link GenericService} execution context
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboGenericServiceExecutionContext {
 

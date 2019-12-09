@@ -35,8 +35,8 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
 
 /**
- * @author: halower
- * @date: 2019/6/21 9:27
+ * @Author: halower
+ * @Date: 2019/6/21 9:27
  *
  */
 @Configuration

@@ -24,9 +24,9 @@ import org.springframework.http.MediaType;
 /**
  * The some source code is scratched from org.springframework.web.servlet.mvc.condition.AbstractMediaTypeExpression
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author Arjen Poutsma
+ * @Author Rossen Stoyanchev
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class AbstractMediaTypeExpression implements MediaTypeExpression, Comparable<AbstractMediaTypeExpression> {
 

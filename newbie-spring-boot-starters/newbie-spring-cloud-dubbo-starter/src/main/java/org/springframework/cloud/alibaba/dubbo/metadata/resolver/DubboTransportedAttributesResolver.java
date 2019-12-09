@@ -30,7 +30,7 @@ import static org.springframework.core.annotation.AnnotationUtils.getAnnotationA
 /**
  * {@link DubboTransported} annotation attributes resolver
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboTransportedAttributesResolver {
 

@@ -30,9 +30,9 @@ import static org.springframework.cloud.alibaba.dubbo.http.util.HttpUtils.getPar
  * <p>
  * The some source code is scratched from org.springframework.web.servlet.mvc.condition.ParamsRequestCondition.ParamExpression
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author Arjen Poutsma
+ * @Author Rossen Stoyanchev
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class ParamExpression extends AbstractNameValueExpression<String> {
 

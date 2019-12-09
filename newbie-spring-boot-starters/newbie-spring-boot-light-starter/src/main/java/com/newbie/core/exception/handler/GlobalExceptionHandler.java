@@ -45,8 +45,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author: halower
- * @date: 2019/6/21 9:54
+ * @Author: halower
+ * @Date: 2019/6/21 9:54
  *
  */
 @Slf4j
@@ -123,7 +123,6 @@ public class GlobalExceptionHandler  {
     }
 
     @ExceptionHandler(value = Exception.class)
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseResult handleException(Exception e) {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();

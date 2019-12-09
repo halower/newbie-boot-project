@@ -24,8 +24,8 @@ import javax.persistence.TemporalType;
 import java.util.Date;
 
 /**
- * @author: halower
- * @date: 2019/4/24 15:48
+ * @Author: halower
+ * @Date: 2019/4/24 15:48
  *
  */
 public interface ParameterConstructor {

@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * Dubbo {@link HttpOutputMessage} implementation
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 class DubboHttpOutputMessage implements HttpOutputMessage {
 

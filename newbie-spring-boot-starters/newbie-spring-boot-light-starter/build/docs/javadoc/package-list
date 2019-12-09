@@ -14,6 +14,7 @@ com.newbie.core.event.spring
 com.newbie.core.exception
 com.newbie.core.exception.handler
 com.newbie.core.persistent
+com.newbie.core.persistent.config
 com.newbie.core.utils
 com.newbie.endpoint
 com.newbie.initializer

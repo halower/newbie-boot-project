@@ -34,8 +34,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author: halower
- * @date: 2019/4/24 14:42
+ * @Author: halower
+ * @Date: 2019/4/24 14:42
  *
  */
 public class QueryExecutor<T> {

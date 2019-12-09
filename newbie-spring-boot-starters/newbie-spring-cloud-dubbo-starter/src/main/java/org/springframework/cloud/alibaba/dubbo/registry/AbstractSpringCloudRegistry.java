@@ -56,7 +56,7 @@ import static org.springframework.util.StringUtils.hasText;
 /**
  * Abstract Dubbo {@link RegistryFactory} uses Spring Cloud Service Registration abstraction, whose protocol is "spring-cloud"
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public abstract class AbstractSpringCloudRegistry extends FailbackRegistry {
 

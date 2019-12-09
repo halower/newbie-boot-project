@@ -29,8 +29,8 @@ import java.util.List;
  * The source code is scratched from
  * org.springframework.web.servlet.mvc.condition.ProducesRequestCondition.ProduceMediaTypeExpression
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
+ * @Author Rossen Stoyanchev
+ * @Author Arjen Poutsma
  */
 class ProduceMediaTypeExpression extends AbstractMediaTypeExpression {
 

@@ -49,7 +49,7 @@ import java.util.function.Supplier;
 /**
  * Spring Boot Auto-Configuration class for Dubbo Metadata
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @Import({DubboServiceMetadataRepository.class,

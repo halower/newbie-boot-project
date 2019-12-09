@@ -20,6 +20,7 @@
 package com.newbie.core.persistent.config;
 
 import com.newbie.core.persistent.simple.CustomizedRepositoryImpl;
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -31,6 +32,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @EnableJpaAuditing
+@EnableSwagger2Doc
 @EnableJpaRepositories(repositoryBaseClass = CustomizedRepositoryImpl.class)
 public @interface EnableJpaAuditingRepositories {
 }

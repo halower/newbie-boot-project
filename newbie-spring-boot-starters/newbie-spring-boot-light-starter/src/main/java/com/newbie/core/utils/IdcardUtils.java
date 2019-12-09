@@ -29,7 +29,7 @@ import java.util.Map;
 /**
  * 身份证工具类
  *
- * @author Based By June  http://www.oschina.net/code/snippet_1611_2881
+ * @Author Based By June  http://www.oschina.net/code/snippet_1611_2881
  */
 public class IdcardUtils {
 

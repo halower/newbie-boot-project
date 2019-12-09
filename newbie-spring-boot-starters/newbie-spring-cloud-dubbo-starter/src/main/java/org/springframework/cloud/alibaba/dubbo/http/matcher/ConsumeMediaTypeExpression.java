@@ -27,8 +27,8 @@ import org.springframework.http.MediaType;
  * The source code is scratched from
  * org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition.ConsumeMediaTypeExpression
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
+ * @Author Rossen Stoyanchev
+ * @Author Arjen Poutsma
  */
 class ConsumeMediaTypeExpression extends AbstractMediaTypeExpression {
 

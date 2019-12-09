@@ -35,16 +35,14 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * @author: halower
- * @date: 2019/7/4 10:45
+ * @Author: halower
+ * @Date: 2019/7/4 10:45
  */
-
 @Log4j2
 @Configuration
 public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
-        log.info("新增自动填充属性值");
         this.setFieldValByName("cjsj", new Date(), metaObject);
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
         this.setFieldValByName("sfsc", "N", metaObject);
@@ -54,7 +52,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void updateFill(MetaObject metaObject) {
-        log.info("更新时自动填充属性值");
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
+        this.setFieldValByName("sjbsbh", Utils.random.getUUID(), metaObject);
     }
 }

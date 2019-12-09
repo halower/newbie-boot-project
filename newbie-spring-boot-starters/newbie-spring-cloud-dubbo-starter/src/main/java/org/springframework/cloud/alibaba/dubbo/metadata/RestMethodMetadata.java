@@ -32,7 +32,7 @@ import java.util.Objects;
 /**
  * Method Request Metadata
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class RestMethodMetadata {

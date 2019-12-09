@@ -65,7 +65,7 @@ import static org.springframework.util.ObjectUtils.isEmpty;
 /**
  * Dubbo Service Registration Auto-{@link Configuration}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @Import({DubboServiceRegistrationEventPublishingAspect.class})

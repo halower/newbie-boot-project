@@ -42,7 +42,7 @@ import static org.apache.dubbo.config.spring.util.PropertySourcesUtils.getSubPro
 /**
  * Dubbo {@link WebApplicationType#NONE Non-Web Application} {@link EnvironmentPostProcessor}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboNonWebApplicationEnvironmentPostProcessor implements EnvironmentPostProcessor, Ordered {
 

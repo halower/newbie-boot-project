@@ -25,8 +25,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: halower
- * @date: 2019/5/16 9:34
+ * @Author: halower
+ * @Date: 2019/5/16 9:34
  *
  */
 @EnableDiscoveryClient

@@ -20,8 +20,8 @@
 package com.newbie.core.persistent.tpl;
 
 /**
- * @author: halower
- * @date: 2019/4/17 13:36
+ * @Author: halower
+ * @Date: 2019/4/17 13:36
  *
  */
 public interface TemplateCallback {

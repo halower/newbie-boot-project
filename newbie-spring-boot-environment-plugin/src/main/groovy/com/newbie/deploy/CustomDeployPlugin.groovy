@@ -4,8 +4,8 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 /**
- * @author: halower
- * @date: 2019/6/11 20:32
+ * @Author: halower
+ * @Date: 2019/6/11 20:32
  *
  */
 class CustomDeployPlugin implements Plugin<Project> {

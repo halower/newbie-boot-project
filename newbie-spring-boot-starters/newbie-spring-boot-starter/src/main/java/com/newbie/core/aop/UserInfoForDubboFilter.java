@@ -30,8 +30,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: halower
- * @date: 2019/5/22 14:06
+ * @Author: halower
+ * @Date: 2019/5/22 14:06
  *
  */
 @Configuration

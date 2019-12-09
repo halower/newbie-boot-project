@@ -25,8 +25,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author: halower
- * @date: 2019/5/11 15:43
+ * @Author: halower
+ * @Date: 2019/5/11 15:43
  *
  */
 @Data

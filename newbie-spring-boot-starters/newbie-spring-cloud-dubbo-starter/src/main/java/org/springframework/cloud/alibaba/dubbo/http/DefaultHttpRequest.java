@@ -35,7 +35,7 @@ import static org.springframework.web.util.UriComponentsBuilder.fromPath;
 /**
  * Default {@link HttpRequest} implementation
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DefaultHttpRequest implements HttpRequest {
 

@@ -52,7 +52,7 @@ import static org.springframework.cloud.alibaba.dubbo.autoconfigure.DubboService
 /**
  * Dubbo Service Registration Auto-{@link Configuration} for Non-Web application
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @ConditionalOnNotWebApplication

@@ -1,8 +1,8 @@
 package com.newbie.mybatisplus.config
 
 /**
- * @author: halower
- * @date: 2019/6/26 13:58
+ * @Author: halower
+ * @Date: 2019/6/26 13:58
  *
  */
 class XmlMapperConfig {

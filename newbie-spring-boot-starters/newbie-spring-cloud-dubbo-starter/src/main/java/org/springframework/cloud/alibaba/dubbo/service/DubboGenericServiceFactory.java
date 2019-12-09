@@ -53,7 +53,7 @@ import static org.springframework.util.StringUtils.commaDelimitedListToStringArr
 /**
  * Dubbo {@link GenericService} Factory
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboGenericServiceFactory {
 

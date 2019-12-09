@@ -28,9 +28,9 @@ import static org.springframework.util.StringUtils.trimWhitespace;
 /**
  * The some source code is scratched from org.springframework.web.servlet.mvc.condition.AbstractNameValueExpression
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author Rossen Stoyanchev
+ * @Author Arjen Poutsma
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 abstract class AbstractNameValueExpression<T> implements NameValueExpression<T> {
 

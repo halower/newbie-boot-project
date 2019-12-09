@@ -44,8 +44,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author: halower
- * @date: 2019/5/22 13:40
+ * @Author: halower
+ * @Date: 2019/5/22 13:40
  *
  */
 @Configuration

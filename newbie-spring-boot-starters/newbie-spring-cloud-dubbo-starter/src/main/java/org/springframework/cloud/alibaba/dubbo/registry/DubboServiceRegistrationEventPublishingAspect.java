@@ -32,7 +32,7 @@ import org.springframework.context.ApplicationEventPublisherAware;
 /**
  * Dubbo Service Registration Event-Publishing Aspect
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @see ServiceInstancePreRegisteredEvent
  * @see ServiceInstanceRegisteredEvent
  */

@@ -24,8 +24,8 @@ import org.springframework.core.io.Resource;
 import java.util.Iterator;
 
 /**
- * @author: halower
- * @date: 2019/4/17 13:35
+ * @Author: halower
+ * @Date: 2019/4/17 13:35
  *
  */
 public interface TemplateResolver {

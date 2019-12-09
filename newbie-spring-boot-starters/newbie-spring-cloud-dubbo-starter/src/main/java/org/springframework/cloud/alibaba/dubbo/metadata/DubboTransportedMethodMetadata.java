@@ -29,7 +29,7 @@ import java.util.Objects;
 /**
  * {@link MethodMetadata} annotated {@link DubboTransported @DubboTransported}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboTransportedMethodMetadata {
 

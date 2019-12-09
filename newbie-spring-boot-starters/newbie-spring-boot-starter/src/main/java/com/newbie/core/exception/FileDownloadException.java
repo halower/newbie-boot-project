@@ -20,8 +20,8 @@
 package com.newbie.core.exception;
 
 /**
- * @author: halower
- * @date: 2019/6/21 10:03
+ * @Author: halower
+ * @Date: 2019/6/21 10:03
  *
  */
 public class FileDownloadException extends RuntimeException {

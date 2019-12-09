@@ -41,7 +41,7 @@ import static org.springframework.util.CollectionUtils.isEmpty;
 /**
  * Introspective {@link DubboMetadataService} implementation
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class IntrospectiveDubboMetadataService implements DubboMetadataService {
 

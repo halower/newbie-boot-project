@@ -31,8 +31,8 @@
 //import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
- * @author: halower
- * @date: 2019/7/5 14:01
+ * @Author: halower
+ * @Date: 2019/7/5 14:01
  *配合apm的需求，当前废弃
  */
 //@Configuration

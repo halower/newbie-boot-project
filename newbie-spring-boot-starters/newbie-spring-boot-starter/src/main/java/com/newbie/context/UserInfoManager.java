@@ -20,8 +20,8 @@
 package com.newbie.context;
 
 /**
- * @author: halower
- * @date: 2019/5/22 13:45
+ * @Author: halower
+ * @Date: 2019/5/22 13:45
  *
  */
 public class UserInfoManager {

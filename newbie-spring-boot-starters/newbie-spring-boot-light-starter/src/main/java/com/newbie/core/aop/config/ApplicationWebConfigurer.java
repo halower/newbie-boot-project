@@ -19,13 +19,10 @@
 
 package com.newbie.core.aop.config;
 
-import com.newbie.core.datasource.aop.DataSourceInterceptor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.format.datetime.DateFormatter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -34,8 +31,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class ApplicationWebConfigurer implements WebMvcConfigurer {
 
-    @Autowired
-    private DataSourceInterceptor dataSourceInterceptor;
+//    @Autowired
+//    private DataSourceInterceptor dataSourceInterceptor;
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -49,9 +46,9 @@ public class ApplicationWebConfigurer implements WebMvcConfigurer {
         //转换成对应的日期格式
         registry.addFormatter(new DateFormatter("yyyy-MM-dd HH:mm:ss"));
     }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(dataSourceInterceptor);
-    }
+//
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(dataSourceInterceptor);
+//    }
 }

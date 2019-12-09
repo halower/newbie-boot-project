@@ -55,7 +55,7 @@ import java.util.Map;
 /**
  * Dubbo Auto-{@link Configuration} for {@link LoadBalanced @LoadBalanced} {@link RestTemplate}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Configuration
 @ConditionalOnClass(name = {"org.springframework.web.client.RestTemplate"})

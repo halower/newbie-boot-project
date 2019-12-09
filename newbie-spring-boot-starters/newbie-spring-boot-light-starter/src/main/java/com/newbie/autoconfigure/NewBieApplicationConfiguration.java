@@ -33,7 +33,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
- * @author halower
+ * @Author halower
  */
 @EnableAsync
 @EnableConfigurationProperties({
@@ -48,7 +48,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
         MyMetaObjectHandler.class
 })
 @Configuration
-@EnableSwagger2Doc
 @PropertySource("classpath:/META-INF/app-config.properties")
 public class NewBieApplicationConfiguration {
 }

@@ -49,8 +49,8 @@ import java.util.*;
 import java.util.function.Function;
 
 /**
- * @author: halower
- * @date: 2019/4/12 10:04
+ * @Author: halower
+ * @Date: 2019/4/12 10:04
  *
  */
 @Repository
@@ -183,6 +183,8 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, false);
         kvs.forEach((k, v) -> criteria.set(root.get(k), v));
+        criteria.set(root.get("zhxgsj"), new Date());
+        criteria.set(root.get("sjbsbh"),  Utils.random.getUUID());
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -208,6 +210,8 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, true);
         kvs.forEach((k, v) -> criteria.set(root.get(k), v));
+        criteria.set(root.get("zhxgsj"), new Date());
+        criteria.set(root.get("sjbsbh"),  Utils.random.getUUID());
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -431,6 +435,9 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         var map = new HashMap<String, Object>();
         Field[] fields = Utils.bean.getFields(obj);
         for (Field field : fields) {
+            if(field.getName() == "zhxgsj" || field.getName() == "sjbsbh") {
+                continue;
+            }
             field.setAccessible(true);
             Object val = null;
             try {

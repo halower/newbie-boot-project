@@ -28,7 +28,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * normal ones, but only are used to Dubbo's service discovery even if it is based on Spring Cloud Commons abstraction.
  * However, current application will be registered by other DiscoveryClientAutoConfiguration.
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class DubboServiceRegistrationApplicationContextInitializer implements
         ApplicationContextInitializer<ConfigurableApplicationContext> {

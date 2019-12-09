@@ -63,7 +63,7 @@ public class DynamicDataSourceContextHolder {
     /**
      *  判断指定的DataSource是否存在
      */
-    public static boolean containsDataSource(DatabaseSourceKey dataSourceId) {
-        return databaseSourceKeys.contains(dataSourceId);
+    public static boolean containsDataSource(DatabaseSourceKey databaseSourceKey) {
+        return databaseSourceKeys.contains(databaseSourceKey);
     }
 }

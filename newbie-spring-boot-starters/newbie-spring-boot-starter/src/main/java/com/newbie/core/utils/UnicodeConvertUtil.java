@@ -19,7 +19,7 @@
 package com.newbie.core.utils;
 
 /**
- * @author: halower
+ * @Author: halower
  * @since : 2019/8/7 11:47
  */
 public class UnicodeConvertUtil {

@@ -29,8 +29,8 @@ import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: halower
- * @date: 2019/5/22 14:56
+ * @Author: halower
+ * @Date: 2019/5/22 14:56
  *
  */
 @Component

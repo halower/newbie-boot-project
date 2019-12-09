@@ -13,8 +13,8 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 /**
- * @author: halower
- * @date: 2019/6/26 14:21
+ * @Author: halower
+ * @Date: 2019/6/26 14:21
  *
  */
 class MPCodeGenPlugin implements Plugin<Project> {

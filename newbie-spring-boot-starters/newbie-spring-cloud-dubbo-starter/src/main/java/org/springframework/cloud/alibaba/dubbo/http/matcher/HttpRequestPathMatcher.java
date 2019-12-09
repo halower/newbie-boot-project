@@ -35,7 +35,7 @@ import java.util.Set;
 /**
  * {@link HttpRequest} {@link URI} {@link HttpRequestMatcher matcher}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class HttpRequestPathMatcher extends AbstractHttpRequestMatcher {
 

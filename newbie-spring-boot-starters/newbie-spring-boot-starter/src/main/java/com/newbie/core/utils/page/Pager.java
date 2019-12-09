@@ -25,8 +25,8 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 /**
- * @author: halower
- * @date: 2019/4/13 15:00
+ * @Author: halower
+ * @Date: 2019/4/13 15:00
  *
  */    //new Pager<UserDeptRole>()
 public class Pager<T> {

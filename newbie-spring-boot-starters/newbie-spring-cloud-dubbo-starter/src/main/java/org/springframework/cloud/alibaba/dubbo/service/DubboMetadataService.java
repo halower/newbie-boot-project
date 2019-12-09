@@ -34,7 +34,7 @@ import java.util.Set;
  * <p>
  * The interface contract's version must be {@link #VERSION} constant and group must be current Dubbo application name
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public interface DubboMetadataService {
 

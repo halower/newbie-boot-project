@@ -89,4 +89,9 @@ public abstract class BaseEntity implements Serializable {
             this.setSjly(netID);
         }
     }
+
+    @PreUpdate
+    protected void preUpdate() {
+       this.setSjbsbh(Utils.random.getUUID());
+    }
 }

@@ -34,8 +34,8 @@ import java.util.List;
 import java.util.function.Function;
 
 /**
- * @author: halower
- * @date: 2019/4/22 8:43
+ * @Author: halower
+ * @Date: 2019/4/22 8:43
  *
  */
 public class QueryBuilder<E> {

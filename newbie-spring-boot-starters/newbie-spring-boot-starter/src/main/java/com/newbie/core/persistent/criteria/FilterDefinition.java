@@ -24,8 +24,8 @@ import com.newbie.core.persistent.criteria.enums.Operator;
 import lombok.Data;
 
 /**
- * @author: halower
- * @date: 2019/4/24 11:43
+ * @Author: halower
+ * @Date: 2019/4/24 11:43
  *
  */
 @Data

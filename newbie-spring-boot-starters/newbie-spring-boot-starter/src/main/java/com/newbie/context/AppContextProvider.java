@@ -25,8 +25,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author: halower
- * @date: 2019/4/25 19:57
+ * @Author: halower
+ * @Date: 2019/4/25 19:57
  *
  */
 @Configuration

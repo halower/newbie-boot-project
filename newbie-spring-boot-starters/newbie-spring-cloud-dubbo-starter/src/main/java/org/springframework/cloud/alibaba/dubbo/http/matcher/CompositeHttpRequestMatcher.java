@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * Composite {@link HttpRequestMatcher} implementation
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public abstract class CompositeHttpRequestMatcher extends AbstractHttpRequestMatcher {
 

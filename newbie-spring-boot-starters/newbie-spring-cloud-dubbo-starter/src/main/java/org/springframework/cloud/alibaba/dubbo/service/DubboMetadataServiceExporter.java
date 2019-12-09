@@ -38,7 +38,7 @@ import java.util.function.Supplier;
 /**
  * {@link DubboMetadataService} exporter
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Component
 public class DubboMetadataServiceExporter {

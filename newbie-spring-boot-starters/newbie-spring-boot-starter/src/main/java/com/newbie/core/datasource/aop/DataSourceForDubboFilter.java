@@ -33,9 +33,8 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /**
- * @author: halower
- * @date: 2019/5/22 14:06
- *
+ * @Author: halower
+ * @Date: 2019/5/22 14:06
  */
 @Configuration
 @Component
@@ -43,24 +42,26 @@ public class DataSourceForDubboFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         Result result;
-       try{
-           String write_read_db_type = RpcContext.getContext().getAttachment(NewbieBootInfraConstants.READ_WRITE_DB_TYPE);
-           if (!StringUtils.isEmpty(write_read_db_type)) {
-                   var legal_db_request = Arrays.asList(NewbieBootInfraConstants.LEGAL_DB_REQUEST.split(","));
-                   if (!legal_db_request.contains(write_read_db_type.toUpperCase())) {
-                       throw new BusinessException("当前请求库不存在");
-                   }
-                   var databaseSourceKey = DatabaseSourceKey.valueOf(write_read_db_type.toUpperCase(Locale.ENGLISH));
-                   DynamicDataSourceContextHolder.setDataSourceType(databaseSourceKey);
-           } else {
-               DynamicDataSourceContextHolder.setDataSourceType(DatabaseSourceKey.DEFAULT);
-           }
+        try {
+            String write_read_db_type = RpcContext.getContext().getAttachment(NewbieBootInfraConstants.READ_WRITE_DB_TYPE);
+            if(StringUtils.isEmpty(write_read_db_type)) {
+                write_read_db_type = "DEFAULT";
+            }
+            if (RpcContext.getContext().isProviderSide()) {
+                var legal_db_request = Arrays.asList(NewbieBootInfraConstants.LEGAL_DB_REQUEST.split(","));
+                if (!legal_db_request.contains(write_read_db_type.toUpperCase())) {
+                    throw new BusinessException("当前请求库不存在");
+                }
+                var databaseSourceKey = DatabaseSourceKey.valueOf(write_read_db_type.toUpperCase(Locale.ENGLISH));
+                DynamicDataSourceContextHolder.setDataSourceType(databaseSourceKey);
+            }
             result = invoker.invoke(invocation);
             return result;
-       }
-       finally {
-           DynamicDataSourceContextHolder.clearDataSourceType();
-       }
+        } finally {
+            if (RpcContext.getContext().isProviderSide()) {
+                DynamicDataSourceContextHolder.clearDataSourceType();
+            }
+        }
     }
 }
 

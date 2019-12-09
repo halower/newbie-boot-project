@@ -29,8 +29,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author: halower
- * @date: 2019/4/17 13:35
+ * @Author: halower
+ * @Date: 2019/4/17 13:35
  *
  */
 public class SftlTemplateResolver implements TemplateResolver {

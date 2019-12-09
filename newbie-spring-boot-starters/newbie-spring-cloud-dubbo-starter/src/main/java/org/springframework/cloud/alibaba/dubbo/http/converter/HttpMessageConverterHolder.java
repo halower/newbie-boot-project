@@ -25,7 +25,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 /**
  * {@link HttpMessageConverter} Holder with {@link MediaType}.
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 public class HttpMessageConverterHolder {
 

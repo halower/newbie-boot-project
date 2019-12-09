@@ -74,7 +74,7 @@ import static org.springframework.util.StringUtils.hasText;
 /**
  * Dubbo Service Metadata {@link Repository}
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @Author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  */
 @Repository
 public class DubboServiceMetadataRepository {

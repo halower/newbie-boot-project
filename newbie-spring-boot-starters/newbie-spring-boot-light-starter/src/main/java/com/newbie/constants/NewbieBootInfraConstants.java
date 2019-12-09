@@ -53,6 +53,9 @@ public class NewbieBootInfraConstants {
     public static final String ENDPOINTS_WEB_EXPOSURE_INCLUDE_CONFIG     = "management.endpoints.web.exposure.include";
 
     public static final String CURRENT_USER_INFO = "CURRENT_USER_INFO";
+
+    public static final String READ_WRITE_DB_TYPE = "READ_WRITE_DB_TYPE";
+
     /**
      * 读写标记
      */
