@@ -19,7 +19,10 @@
 
 package com.newbie.core.datasource;
 
+import com.zaxxer.hikari.HikariDataSource;
+import io.netty.util.internal.StringUtil;
 import lombok.var;
+import org.apache.dubbo.common.utils.StringUtils;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
@@ -35,10 +38,10 @@ import java.util.Map;
 
 /**
  * 注册动态数据源
+ *
  * @Author halower
  */
 public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar, EnvironmentAware {
-
     private DataSource defaultDataSource;
 
     /**
@@ -79,19 +82,89 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
     }
 
 
-    private  DataSource buildDataSource(Environment environment, String key) {
-        String prefix = "default".equals(key)? "spring.datasource": "spring.datasource."+key;
-        String driverClassName  = environment.getProperty(prefix+".driver-class-name");
-        String url  = environment.getProperty(prefix+".url");
-        String username  = environment.getProperty(prefix+".username");
-        String password  = environment.getProperty(prefix+".password");
+    private DataSource buildDataSource(Environment environment, String key) {
+        String prefix = "default".equals(key) ? "spring.datasource" : "spring.datasource." + key;
+        String driverClassName = environment.getProperty(prefix + ".driver-class-name");
+        String url = environment.getProperty(prefix + ".url");
+        String username = environment.getProperty(prefix + ".username");
+        String password = environment.getProperty(prefix + ".password");
 
-
-        return DataSourceBuilder.create()
+        DataSource dataSource = DataSourceBuilder.create()
                 .driverClassName(driverClassName)
                 .url(url)
                 .username(username)
                 .password(password)
                 .build();
+
+        HikariDataSource hikariDataSource = (HikariDataSource) dataSource;
+        String minimum_idle = environment.getProperty(prefix + ".hikari.minimum-idle");
+        String maximum_pool_size = environment.getProperty(prefix + ".hikari.maximum-pool-size");
+        String connection_init_sql = environment.getProperty(prefix + ".hikari.connection-init-sql");
+        String connection_test_query = environment.getProperty(prefix + ".hikari.connection-test-query");
+        String max_lifetime = environment.getProperty(prefix + ".hikari.max-lifetime");
+        String leak_detection_threshold = environment.getProperty(prefix + ".hikari.leak-detection-threshold");
+        String idle_timeout = environment.getProperty(prefix + ".hikari.idle-timeout");
+        String allow_pool_suspension = environment.getProperty(prefix + ".hikari.allow-pool-suspension");
+        String initialization_fail_timeout = environment.getProperty(prefix + ".hikari.initialization-fail-timeout");
+        String is_auto_commit = environment.getProperty(prefix + ".hikari.is-auto-commit");
+        String is_register_mbeans = environment.getProperty(prefix + ".hikari.is-register-mbeans");
+        String validation_timeout = environment.getProperty(prefix + ".hikari.validation-timeout");
+        String pool_name = environment.getProperty(prefix + ".hikari.pool-name");
+
+        if(!StringUtil.isNullOrEmpty(minimum_idle) && StringUtils.isInteger(minimum_idle)) {
+            hikariDataSource.setMinimumIdle(Integer.parseInt(minimum_idle));
+        }
+
+        if(!StringUtil.isNullOrEmpty(pool_name)) {
+            hikariDataSource.setPoolName(pool_name);
+        }
+
+        if(!StringUtil.isNullOrEmpty(validation_timeout) && StringUtils.isInteger(validation_timeout)) {
+            hikariDataSource.setValidationTimeout(Integer.parseInt(validation_timeout));
+        }
+
+        if(!StringUtil.isNullOrEmpty(maximum_pool_size) && StringUtils.isInteger(maximum_pool_size)) {
+            hikariDataSource.setMaximumPoolSize(Integer.parseInt(maximum_pool_size));
+        }
+
+        if(!StringUtil.isNullOrEmpty(connection_init_sql)) {
+            hikariDataSource.setConnectionInitSql(connection_init_sql);
+        }
+
+        if(!StringUtil.isNullOrEmpty(connection_test_query)) {
+            hikariDataSource.setConnectionInitSql(connection_test_query);
+        }
+
+        if(!StringUtil.isNullOrEmpty(max_lifetime) && StringUtils.isInteger(max_lifetime)) {
+            hikariDataSource.setMaxLifetime(Integer.parseInt(max_lifetime));
+        }
+
+        if(!StringUtil.isNullOrEmpty(leak_detection_threshold) && StringUtils.isInteger(leak_detection_threshold)) {
+            hikariDataSource.setLeakDetectionThreshold(Integer.parseInt(leak_detection_threshold));
+        }
+        if(!StringUtil.isNullOrEmpty(leak_detection_threshold) && StringUtils.isInteger(leak_detection_threshold)) {
+            hikariDataSource.setLeakDetectionThreshold(Integer.parseInt(leak_detection_threshold));
+        }
+
+        if(!StringUtil.isNullOrEmpty(idle_timeout) && StringUtils.isInteger(idle_timeout)) {
+            hikariDataSource.setIdleTimeout(Integer.parseInt(idle_timeout));
+        }
+
+        if(!StringUtil.isNullOrEmpty(initialization_fail_timeout) && StringUtils.isInteger(initialization_fail_timeout)) {
+            hikariDataSource.setInitializationFailTimeout(Integer.parseInt(initialization_fail_timeout));
+        }
+
+        if(!StringUtil.isNullOrEmpty(allow_pool_suspension)) {
+            hikariDataSource.setAllowPoolSuspension(Boolean.parseBoolean(allow_pool_suspension));
+        }
+
+        if(!StringUtil.isNullOrEmpty(is_auto_commit)) {
+            hikariDataSource.setAutoCommit(Boolean.parseBoolean(is_auto_commit));
+        }
+
+        if(!StringUtil.isNullOrEmpty(is_register_mbeans)) {
+            hikariDataSource.setRegisterMbeans(Boolean.parseBoolean(is_register_mbeans));
+        }
+        return hikariDataSource;
     }
 }

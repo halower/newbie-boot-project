@@ -21,117 +21,71 @@ package com.newbie.core.aop;
 
 import com.alibaba.fastjson.JSON;
 import com.newbie.constants.NewbieBootInfraConstants;
-import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.context.CurrentUserContext;
-import com.newbie.core.exception.BusinessException;
 import com.newbie.context.UserInfoManager;
-import com.newbie.context.NewBieBootEnvUtil;
-import com.newbie.dto.ResponseTypes;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtException;
-import io.jsonwebtoken.Jwts;
+import io.netty.util.internal.StringUtil;
 import lombok.extern.log4j.Log4j2;
-import lombok.var;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.StringUtils;
 import org.apache.dubbo.rpc.RpcContext;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
  * @Author: halower
  * @Date: 2019/5/22 13:40
+ * @Update Date: 2019.12.18
+ * @UpdateDesc: 修改原有JWT TOKEN逻辑到简单获取用户信息
  */
 @Configuration
 @Component
 @Log4j2
 public class UserInfoForWebFilter implements Filter {
-    @Autowired
-    private NewBieBasicConfiguration configuration;
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpRequest = (HttpServletRequest)request;
-        HttpServletResponse httpResponse = (HttpServletResponse)response;
-        String path = httpRequest.getRequestURI().substring(httpRequest.getContextPath().length()).replaceAll("[/]+$", "");
-        boolean allowedPath = configuration.getExcludeFilterPath().contains(path);
-        if(allowedPath) {
-            chain.doFilter(request,response);
-        } else{
-            try {
-                final String prefix = "Bearer ";
-                final String dev = "dev";
-                final String authHeader = "Authorization";
-                final String bmsahHeader = "X-BMSAH";
-                var basicConfiguration = NewBieBootEnvUtil.getBean(NewBieBasicConfiguration.class);
-                String authorization = httpRequest.getHeader(authHeader);
-                String bmsah = httpRequest.getHeader(bmsahHeader);
-                if(basicConfiguration.getEnv().equals(dev)) {
-                    if(null == authorization ) {
-                        bindFormDefaultValue(bmsah);
-                        chain.doFilter(request,response);
-                    } else {
-                        if(!StringUtils.startsWithIgnoreCase(authorization, prefix)){
-                            httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN,ResponseTypes.TOKEN_UNVALID.getDesc());
-                        }
-                        bindUserInfoForToken(httpRequest, prefix, authHeader, basicConfiguration, bmsah);
-                        chain.doFilter(request,response);
-                    }
-                }
-                else  {
-                    if(null == authorization || !StringUtils.startsWithIgnoreCase(authorization, prefix)){
-                        httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN,ResponseTypes.TOKEN_UNVALID.getDesc());
-                    }
-                    bindUserInfoForToken(httpRequest, prefix, authHeader, basicConfiguration, bmsah);
-                    chain.doFilter(request,response);
-                }
-            }catch (Exception ex) {
-                ex.printStackTrace();
-                log.error(ex.getMessage());
-            }finally {
-                UserInfoManager.getInstance().remove();
-            }
-        }
-    }
-
-    private void bindFormDefaultValue(String _bmsah) {
-        CurrentUserContext currentUserContext;
-        currentUserContext = defaultUserInfo(_bmsah);
-        UserInfoManager.getInstance().bind(currentUserContext);
-        RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO,JSON.toJSONString(currentUserContext));
-    }
-
-    private void bindUserInfoForToken(HttpServletRequest httpRequest, String prefix, String authHeader, NewBieBasicConfiguration basicConfiguration, String bmsah) {
-        CurrentUserContext currentUserContext;
-        String token = httpRequest.getHeader(authHeader).replace(prefix, "").trim();
-        Claims claims;
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        final String identityHeader = "X-IDENTITY";
+        final String bmsahHeader = "X-BMSAH";
+        String identity = httpRequest.getHeader(identityHeader);
+        String bmsah = httpRequest.getHeader(bmsahHeader);
+        // 备注目前生产环境也没有修改这个变量，因此dev不一定就是开发环境
+        // 通过 "X-IDENTITY"来过滤即可
         try{
-             claims = Jwts.parser()
-                    .setSigningKey(basicConfiguration.getAuthSecretKey()).parseClaimsJws(token)
-                    .getBody();
-        } catch (JwtException ex) {
+            if (null == identity || StringUtil.isNullOrEmpty(identity)) {
+                bindFormDefaultValue(bmsah);
+                chain.doFilter(request, response);
+            } else {
+                // client object -> JSON.stringify -> base64
+                // server base64 ---> string ----> object
+                String originIdentityStr= StringUtils.newStringUtf8(Base64.decodeBase64(identity));
+                CurrentUserContext userContext = JSON.parseObject(originIdentityStr, CurrentUserContext.class);
+                userContext.setBmsah(bmsah);
+                UserInfoManager.getInstance().bind(userContext);
+                RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO, originIdentityStr);
+                chain.doFilter(request, response);
+            }
+        }catch (Exception ex){
+            ex.printStackTrace();
             log.error(ex.getMessage());
-            throw new BusinessException(ResponseTypes.UNAUTHORIZED);
+        } finally {
+            UserInfoManager.getInstance().remove();
         }
-        currentUserContext = JSON.parseObject(claims.getSubject(), CurrentUserContext.class);
-        currentUserContext.setBmsah(bmsah);
-        UserInfoManager.getInstance().bind(currentUserContext);
-        RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO,JSON.toJSONString(currentUserContext));
     }
-    private CurrentUserContext defaultUserInfo(String _bmsah) {
-        CurrentUserContext currentUserContext;
-        currentUserContext = CurrentUserContext.builder()
-                 .dlbm("第三方")
-                 .rybm("C000000001")
-                 .dwmc("第三方单位")
-                 .bmsah(_bmsah)
-                 .dwbm("C00001").build();
-        currentUserContext.setBmsah(_bmsah);
-        return currentUserContext;
+
+    private void bindFormDefaultValue(String bmsah) {
+        CurrentUserContext userContext = CurrentUserContext.builder()
+                .dlbm("本地模式调试")
+                .rybm("0000000001")
+                .dwmc("控制台")
+                .bmsah(bmsah)
+                .dwbm("000001").build();
+        UserInfoManager.getInstance().bind(userContext);
+        RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO, JSON.toJSONString(userContext));
     }
 }
 

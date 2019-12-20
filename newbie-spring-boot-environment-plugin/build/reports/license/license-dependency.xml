@@ -1,7 +1,0 @@
-<licenses>
-  <license name='No license found'>
-    <dependency>groovy-all-2.4.12.jar</dependency>
-    <dependency>gradle-installation-beacon-4.7.jar</dependency>
-    <dependency>gradle-api-4.7.jar</dependency>
-  </license>
-</licenses>

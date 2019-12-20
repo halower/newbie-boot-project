@@ -60,7 +60,7 @@ public class EnvironmentCustomizer implements EnvironmentPostProcessor {
     }
 
     /**
-     * {@link org.springframework.boot.ResourceBanner#getVersionsMap}
+     * {@link org.springframework.boot.ResourceBanner}
      */
     private Properties getNewbieBootVersionProperties() {
         Properties properties = new Properties();

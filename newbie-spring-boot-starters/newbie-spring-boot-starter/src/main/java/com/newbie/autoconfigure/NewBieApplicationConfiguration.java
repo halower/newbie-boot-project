@@ -26,7 +26,6 @@ import com.newbie.core.exception.handler.GlobalExceptionHandler;
 import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
-import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
