@@ -22,12 +22,10 @@ package com.newbie.core.audit;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.newbie.core.utils.Utils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * 注意： 这里是按照项目的特殊情况进行定制的,后期可能做进一步调整

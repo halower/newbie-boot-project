@@ -23,9 +23,6 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Arrays;
-import java.util.List;
-
 
 @Data
 @Configuration
@@ -33,28 +30,23 @@ import java.util.List;
 public class NewBieBasicConfiguration {
     private String env = "dev";
 
-    private String netID ="1";
+    private String networkId ="1";
 
     private Boolean autoPackageReturnClass = false;
 
     private String authSecretKey="1b6ba62cff8629865a6b9dffa1586d74";
 
-    @Deprecated
-    private List<String> excludeFilterPath = Arrays.asList(
-            "/api/org/unit/getUnitTree",
-            "/api/org/user/login");
-    @Deprecated
-    private boolean autoRecordRequestDetails = false;
-    @Deprecated
-    private boolean receiveRequestEvent = false;
-    @Deprecated
-    private List<String> apmProperties = Arrays.asList(
-            "trxid", "spanid", "pspanid", "start");
-
-    @Deprecated
-    private List<String> apmExcludeMethods = Arrays.asList(
-            "handleException", "error","uiConfiguration","securityConfiguration","swaggerResources","getDocumentation");
     private DubboConfig dubbo;
+
+    private DatasourceTracker tracker;
+
+    @Data
+    public static class DatasourceTracker {
+        private Boolean sqlFormat = true;
+        private Boolean enabled = false;
+        private Boolean thorwException = true;
+        private Integer elapsed = 100;
+    }
 
     @Data
     public static class DubboConfig {

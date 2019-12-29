@@ -19,8 +19,7 @@
 
 package com.newbie.core.persistent.config;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
-
+import com.newbie.swagger.EnableSwagger2Doc;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

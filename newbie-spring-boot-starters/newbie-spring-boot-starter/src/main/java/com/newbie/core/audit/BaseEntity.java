@@ -26,6 +26,7 @@ import com.newbie.context.NewBieBootEnvUtil;
 import com.newbie.core.utils.Utils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.apache.dubbo.common.utils.StringUtils;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -56,7 +57,7 @@ public abstract class BaseEntity implements Serializable {
     @LastModifiedDate
     @Column(name = "ZHXGSJ")
     @TableField(value = "ZHXGSJ", fill = FieldFill.INSERT_UPDATE)
-    private Date zhxgsj = new Date();
+    private Date zhxgsj;
 
     /**
      * 数据标识编号
@@ -82,16 +83,14 @@ public abstract class BaseEntity implements Serializable {
 
     @PrePersist
     protected void prePersist() {
-        String netID = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.net-id");
-        if(netID == null || netID != null) {
-            setSjly("1");
-        } else {
-            this.setSjly(netID);
-        }
+        String networkId = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id");
+        this.setSjly(StringUtils.isEmpty(networkId)? "1" : networkId);
     }
 
     @PreUpdate
     protected void preUpdate() {
        this.setSjbsbh(Utils.random.getUUID());
+        String networkId = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id");
+        this.setSjly(StringUtils.isEmpty(networkId)? "1" : networkId);
     }
 }

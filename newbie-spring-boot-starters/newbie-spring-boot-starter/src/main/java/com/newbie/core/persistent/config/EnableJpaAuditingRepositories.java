@@ -20,7 +20,7 @@
 package com.newbie.core.persistent.config;
 
 import com.newbie.core.persistent.simple.CustomizedRepositoryImpl;
-import com.spring4all.swagger.EnableSwagger2Doc;
+import com.newbie.swagger.EnableSwagger2Doc;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 

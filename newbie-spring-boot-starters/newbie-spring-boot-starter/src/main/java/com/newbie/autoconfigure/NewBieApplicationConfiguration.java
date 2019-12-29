@@ -19,6 +19,7 @@
 
 package com.newbie.autoconfigure;
 
+
 import com.newbie.core.aop.config.ApplicationWebConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.audit.CustomAuditorAware;
@@ -26,6 +27,9 @@ import com.newbie.core.exception.handler.GlobalExceptionHandler;
 import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
+import com.newbie.spi.SwaggerManagerAutoConfig;
+import com.newbie.swagger.SwaggerAutoConfiguration;
+import com.newbie.swagger.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -37,7 +41,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
  */
 @EnableAsync
 @EnableConfigurationProperties({
-        NewBieBasicConfiguration.class
+        NewBieBasicConfiguration.class,
+        SwaggerProperties.class
   }
 )
 @Import({
@@ -46,7 +51,9 @@ import org.springframework.scheduling.annotation.EnableAsync;
         GlobalExceptionHandler.class,
         ApplicationWebConfigurer.class,
         MybatisConfig.class,
-        MyMetaObjectHandler.class
+        MyMetaObjectHandler.class,
+        SwaggerManagerAutoConfig.class,
+        SwaggerAutoConfiguration.class
 })
 @Configuration
 @PropertySource("classpath:/META-INF/app-config.properties")

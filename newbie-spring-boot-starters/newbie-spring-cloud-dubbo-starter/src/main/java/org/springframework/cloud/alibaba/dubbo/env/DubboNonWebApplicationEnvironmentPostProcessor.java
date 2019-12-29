@@ -69,7 +69,7 @@ public class DubboNonWebApplicationEnvironmentPostProcessor implements Environme
 
     private static final String PROTOCOLS_PROPERTY_NAME_PREFIX = "dubbo.protocols";
 
-    private static final String REST_PROTOCOL = "rest";
+    private static final String REST_PROTOCOL = "controller";
 
     private final Logger logger = LoggerFactory.getLogger(DubboNonWebApplicationEnvironmentPostProcessor.class);
 
@@ -99,7 +99,7 @@ public class DubboNonWebApplicationEnvironmentPostProcessor implements Environme
 
     /**
      * Reset server port property if it's absent, whose value is configured by "dubbbo.protocol.port"
-     * or "dubbo.protcols.rest.port"
+     * or "dubbo.protcols.controller.port"
      *
      * @param environment
      * @param defaultProperties

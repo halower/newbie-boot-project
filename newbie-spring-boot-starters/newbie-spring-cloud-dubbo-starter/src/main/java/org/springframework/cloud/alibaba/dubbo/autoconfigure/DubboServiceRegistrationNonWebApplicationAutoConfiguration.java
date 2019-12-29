@@ -61,7 +61,7 @@ import static org.springframework.cloud.alibaba.dubbo.autoconfigure.DubboService
 @Aspect
 public class DubboServiceRegistrationNonWebApplicationAutoConfiguration {
 
-    private static final String REST_PROTOCOL = "rest";
+    private static final String REST_PROTOCOL = "controller";
 
     @Autowired
     private ServiceRegistry serviceRegistry;
@@ -96,7 +96,7 @@ public class DubboServiceRegistrationNonWebApplicationAutoConfiguration {
     }
 
     /**
-     * Set web port from {@link ServiceBean#getExportedUrls() exported URLs}  if "rest" protocol is present.
+     * Set web port from {@link ServiceBean#getExportedUrls() exported URLs}  if "controller" protocol is present.
      */
     private void setServerPort() {
         if (serverPort == null) {

@@ -49,6 +49,7 @@ public class StartEventListener {
     @EventListener(WebServerInitializedEvent.class)
     public void afterStart(WebServerInitializedEvent event) {
         Environment environment = event.getApplicationContext().getEnvironment();
+        NewBieBootEnvUtil.setApplicationContext(event.getApplicationContext());
         String appName = environment.getProperty("spring.application.name");
         int localPort = event.getWebServer().getPort();
         String profile = StringUtils.arrayToCommaDelimitedString(environment.getActiveProfiles());

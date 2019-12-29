@@ -1,5 +1,5 @@
 group = 'com.github.halower'
-version = "alpha.2.1.9"
+version = "alpha.2.2.0"
 
 dependencies {
     implementation ("org.springframework.boot:spring-boot-starter")
@@ -18,7 +18,11 @@ dependencies {
     implementation("org.apache.commons:commons-lang3")
     implementation("org.apache.httpcomponents:httpclient")
     implementation("com.github.halower:newbie-spring-boot-api-dto:alpha.2.1.1")
-    implementation("com.spring4all:swagger-spring-boot-starter")
+    implementation ("com.github.klboke:p6spy-spring-boot-starter:1.0")
+    implementation ("p6spy:p6spy:3.8.6")
+    implementation("io.springfox:springfox-swagger-ui:2.9.2")
+    implementation("io.springfox:springfox-swagger2:2.9.2")
+    implementation("io.springfox:springfox-bean-validators:2.9.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

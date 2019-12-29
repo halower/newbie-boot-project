@@ -53,11 +53,7 @@ public class StartEventListener {
         int localPort = event.getWebServer().getPort();
         String profile = StringUtils.arrayToCommaDelimitedString(environment.getActiveProfiles());
         NewBieBootEnvUtil.setApplicationContext(context);
-        String networkFlag = environment.getProperty("application.network-flag");
-        if( StringUtils.isEmpty(networkFlag)) {
-            networkFlag = "1";
-        }
-        NewBieBootEnvUtil.setNetworkFalg(networkFlag);
+
         if (ClassUtils.isPresent("springfox.documentation.spring.web.plugins.Docket", null)) {
             var runInfo =  String.format(
                     "-本地 API文档地址:http://localhost:%s/swagger-ui.html\n" +

@@ -84,10 +84,19 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
 
     private DataSource buildDataSource(Environment environment, String key) {
         String prefix = "default".equals(key) ? "spring.datasource" : "spring.datasource." + key;
+        String dataSourceTrackedStr = environment.getProperty("application.tracker.enabled");
         String driverClassName = environment.getProperty(prefix + ".driver-class-name");
         String url = environment.getProperty(prefix + ".url");
         String username = environment.getProperty(prefix + ".username");
         String password = environment.getProperty(prefix + ".password");
+        if(StringUtils.isNotEmpty(dataSourceTrackedStr)) {
+            if(dataSourceTrackedStr.trim().toLowerCase().equals("true")) {
+                driverClassName = environment.getProperty(prefix + ".tracker-driver-class-name");
+                url=  environment.getProperty(prefix + ".tracker-url");
+                username = environment.getProperty(prefix + ".tracker-username");
+                password = environment.getProperty(prefix + ".tracker-password");
+            }
+        }
 
         DataSource dataSource = DataSourceBuilder.create()
                 .driverClassName(driverClassName)

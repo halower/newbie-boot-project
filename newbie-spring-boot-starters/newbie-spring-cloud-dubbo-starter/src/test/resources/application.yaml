@@ -6,7 +6,7 @@ dubbo:
       name: dubbo
       port: 12345
     rest:
-      name: rest
+      name: controller
       port: 8081
       server: netty
   registry:

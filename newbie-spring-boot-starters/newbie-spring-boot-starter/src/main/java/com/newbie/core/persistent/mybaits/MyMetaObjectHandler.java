@@ -21,17 +21,10 @@ package com.newbie.core.persistent.mybaits;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.newbie.context.NewBieBootEnvUtil;
-import com.newbie.core.aop.config.NewBieBasicConfiguration;
-import com.newbie.core.exception.BusinessException;
 import com.newbie.core.utils.Utils;
-import com.newbie.dto.ResponseTypes;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j2;
-import lombok.var;
 import org.apache.ibatis.reflection.MetaObject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -49,8 +42,8 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
         this.setFieldValByName("sfsc", "N", metaObject);
         this.setFieldValByName("sjbsbh", Utils.random.getUUID(), metaObject);
-        var datasourceFrom  = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.net-id", "1");
-        this.setFieldValByName("sjly", datasourceFrom, metaObject);
+        String networkId  = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id", "1");
+        this.setFieldValByName("sjly", networkId, metaObject);
     }
 
     @Override

@@ -31,16 +31,6 @@ public class NewBieBootEnvUtil {
 
     private static ApplicationContext context ;
 
-    public static String getNetworkFalg() {
-        return networkFalg;
-    }
-
-    public static void setNetworkFalg(String networkFalg) {
-        NewBieBootEnvUtil.networkFalg = networkFalg;
-    }
-
-    /*业务字段*/
-    private static String networkFalg;
 
     public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
         if (environment instanceof ConfigurableEnvironment) {
