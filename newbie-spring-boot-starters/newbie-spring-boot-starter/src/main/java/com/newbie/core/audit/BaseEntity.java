@@ -23,7 +23,10 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.newbie.context.NewBieBootEnvUtil;
+import com.newbie.core.exception.BusinessException;
 import com.newbie.core.utils.Utils;
+import com.newbie.dto.ResponseTypes;
+import io.netty.util.internal.StringUtil;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.dubbo.common.utils.StringUtils;
@@ -84,13 +87,20 @@ public abstract class BaseEntity implements Serializable {
     @PrePersist
     protected void prePersist() {
         String networkId = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id");
-        this.setSjly(StringUtils.isEmpty(networkId)? "1" : networkId);
+        if(StringUtil.isNullOrEmpty(networkId)) {
+            throw new BusinessException(ResponseTypes.READ_FAIL, "网络标识ID未正确读取，请检查配置");
+        }
+
+        this.setSjly(networkId);
     }
 
     @PreUpdate
     protected void preUpdate() {
        this.setSjbsbh(Utils.random.getUUID());
         String networkId = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id");
-        this.setSjly(StringUtils.isEmpty(networkId)? "1" : networkId);
+        if(StringUtil.isNullOrEmpty(networkId)) {
+            throw new BusinessException(ResponseTypes.READ_FAIL, "网络标识ID未正确读取，请检查配置");
+        }
+        this.setSjly(networkId);
     }
 }

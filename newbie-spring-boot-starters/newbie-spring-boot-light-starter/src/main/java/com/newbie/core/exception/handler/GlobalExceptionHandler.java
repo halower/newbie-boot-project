@@ -28,6 +28,7 @@ import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
+import org.apache.dubbo.rpc.RpcException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -40,6 +41,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -54,7 +56,7 @@ import java.util.regex.Pattern;
 @Order(value = Ordered.HIGHEST_PRECEDENCE)
 public class GlobalExceptionHandler  {
     @Autowired
-    NewBieBasicConfiguration  configuration;
+    NewBieBasicConfiguration configuration;
 
     /**
      *  请求参数校验
@@ -138,6 +140,34 @@ public class GlobalExceptionHandler  {
             }
         }
         return new ResponseResult(ResponseTypes.UNKNOW,e.getMessage());
+    }
+
+    @ExceptionHandler(ConstraintViolationException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseResult constraintViolationExceptionHandler(ConstraintViolationException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("远程调用参数绑定异常",  e);
+        var violationse = e.getConstraintViolations().iterator();
+        StringBuilder msgs = new StringBuilder();
+        while (violationse.hasNext()) {
+            var vio =  violationse.next();
+            var filed = vio.getPropertyPath().toString();
+            msgs.append(filed + ":" + vio.getMessage());
+        }
+        return new ResponseResult(ResponseTypes.REMOTE_CALL_FAIL, msgs.toString());
+    }
+
+    @ExceptionHandler(RpcException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ResponseResult rpcExceptionHandler(RpcException e) {
+        if(configuration.getEnv().equals("dev")){
+            e.printStackTrace();
+        }
+        log.error("远程调用异常",  e);
+        var message =  e.getMessage();
+        return new ResponseResult(ResponseTypes.REMOTE_CALL_FAIL, message);
     }
 
 

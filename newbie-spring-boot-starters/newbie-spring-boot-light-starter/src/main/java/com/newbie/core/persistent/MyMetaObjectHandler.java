@@ -21,7 +21,10 @@ package com.newbie.core.persistent;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.newbie.context.NewBieBootEnvUtil;
+import com.newbie.core.exception.BusinessException;
 import com.newbie.core.utils.Utils;
+import com.newbie.dto.ResponseTypes;
+import io.netty.util.internal.StringUtil;
 import lombok.extern.log4j.Log4j2;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.context.annotation.Configuration;
@@ -41,7 +44,11 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
         this.setFieldValByName("sfsc", "N", metaObject);
         this.setFieldValByName("sjbsbh", Utils.random.getUUID(), metaObject);
-        String networkId  = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id", "1");
+        String networkId = NewBieBootEnvUtil.getContext().getEnvironment().getProperty("application.network-id");
+        if(StringUtil.isNullOrEmpty(networkId)) {
+            throw new BusinessException(ResponseTypes.READ_FAIL, "网络标识ID未正确读取，请检查配置");
+        }
+
         this.setFieldValByName("sjly", networkId, metaObject);
     }
 
