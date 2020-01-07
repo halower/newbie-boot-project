@@ -30,6 +30,7 @@ import lombok.Data;
  */
 @Data
 @Builder
+@Deprecated
 public class Pagination<T> implements Serializable {
 	private List<T> content;
 	private int current;

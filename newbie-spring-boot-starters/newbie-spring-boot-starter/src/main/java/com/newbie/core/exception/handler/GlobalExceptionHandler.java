@@ -24,6 +24,7 @@ import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.FileDownloadException;
 import com.newbie.core.exception.ResourceNotFoundException;
+import com.newbie.core.validation.dubbo.ValidateInfoBuilder;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.slf4j.Slf4j;
@@ -132,7 +133,7 @@ public class GlobalExceptionHandler  {
         log.error("系统内部异常，异常信息", e);
         final String clazzName = "com.newbie.core.exception.BusinessException";
         if(e.getMessage().startsWith(clazzName)) {
-            Matcher matcher = Pattern.compile("("+clazzName+"\\{.*\\})").matcher(e.getMessage());
+            Matcher matcher = Pattern.compile("("+clazzName+"\\{[\\s\\S]*\\})").matcher(e.getMessage());
             if(matcher.find()){
                 var exStr = matcher.group(0).replace("\\","").substring(clazzName.length());
                 var exception = JSON.parseObject(exStr, BusinessException.class);
@@ -148,15 +149,8 @@ public class GlobalExceptionHandler  {
         if(configuration.getEnv().equals("dev")){
             e.printStackTrace();
         }
-        log.error("远程调用参数绑定异常",  e);
-        var violationse = e.getConstraintViolations().iterator();
-        StringBuilder msgs = new StringBuilder();
-        while (violationse.hasNext()) {
-            var vio =  violationse.next();
-            var filed = vio.getPropertyPath().toString();
-            msgs.append(filed + ":" + vio.getMessage());
-        }
-        return new ResponseResult(ResponseTypes.REMOTE_CALL_FAIL, msgs.toString());
+        var details = ValidateInfoBuilder.info(e);
+        return new ResponseResult(ResponseTypes.REMOTE_CALL_FAIL, details.toString());
     }
 
     @ExceptionHandler(RpcException.class)

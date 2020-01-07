@@ -32,10 +32,10 @@ public class NewBieBootInfrastructureSpringContextInitializer implements
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
         Environment environment = applicationContext.getEnvironment();
+        if(NewBieBootEnvUtil.appIsStarted) return;
         if (NewBieBootEnvUtil.isSpringCloudBootstrapEnvironment(environment)) {
-           System.out.println("\n当前接入SpringCloud环境");
+            System.out.println("\n当前接入SpringCloud环境");
         }
-
         System.out.println("\nNewBieBoot基础设施已经准备就绪!");
     }
 

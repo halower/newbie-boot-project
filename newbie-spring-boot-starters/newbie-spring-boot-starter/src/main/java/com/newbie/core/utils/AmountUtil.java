@@ -75,7 +75,7 @@ public class AmountUtil {
     }
 
     // 将金额小数部分转换为中文大写
-    private static String fraction2rmb(String fraction) {
+    private  String fraction2rmb(String fraction) {
         char jiao = fraction.charAt(0); // 角
         char fen = fraction.charAt(1); // 分
         return (RMB_NUMS[jiao - '0'] + (jiao > '0' ? UNITS[1] : ""))
@@ -83,7 +83,7 @@ public class AmountUtil {
     }
 
     // 将金额整数部分转换为中文大写
-    private static String integer2rmb(String integer) {
+    private  String integer2rmb(String integer) {
         StringBuilder buffer = new StringBuilder();
         // 从个位数开始转换
         int i, j;

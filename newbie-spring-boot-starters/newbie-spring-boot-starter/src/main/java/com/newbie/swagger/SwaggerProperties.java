@@ -1,3 +1,21 @@
+/*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
 package com.newbie.swagger;
 
 import lombok.Data;
@@ -31,7 +49,7 @@ public class SwaggerProperties {
     /**
      * 开放API验证
      */
-    private Boolean openapiEnabled = true;
+    private Boolean openApiValidateEnabled = true;
 
     /**
      * 标题
@@ -306,14 +324,14 @@ public class SwaggerProperties {
         /**
          * 支持页面提交的请求类型
          **/
-        private String submitMethods;
+        private String submitMethods = "get,post,put,delete,patch";
 
         /**
          * 支持页面提交的请求类型
          **/
         @Getter
         @Setter
-        private Boolean dispalyTryItOut = false;
+        private Boolean displayTryItOut = false;
 
         /**
          * 请求超时时间
@@ -384,10 +402,14 @@ public class SwaggerProperties {
         @Setter
         private String validatorUrl;
 
-       public String getSubmitMethods() {
-        return this.dispalyTryItOut ? "get,post,put,delete,patch" : "";
+        public String getSubmitMethods() {
+            return !this.displayTryItOut ? "" :  this.submitMethods;
+        }
+
+        public void setSubmitMethods(String submitMethods) {
+            this.submitMethods = submitMethods;
+        }
     }
-}
 
     /**
      * securitySchemes 支持方式之一 ApiKey

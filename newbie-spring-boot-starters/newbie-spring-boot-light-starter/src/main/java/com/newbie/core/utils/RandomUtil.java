@@ -28,7 +28,7 @@ import java.util.UUID;
  */
 public class RandomUtil {
     public String getUUID() {
-        return UUID.randomUUID().toString().replace("-", "");
+        return UUID.randomUUID().toString().replace("-","");
     }
 
     public String simpleKey() {

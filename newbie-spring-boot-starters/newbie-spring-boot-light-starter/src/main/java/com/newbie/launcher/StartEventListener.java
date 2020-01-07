@@ -60,6 +60,7 @@ public class StartEventListener {
                             "-局域网 API文档地址:http://%s:%s/swagger-ui.html\n" +
                             "服务[%s]启动完成，当前使用的端口:[%s]，环境变量:[%s]",
                     localPort, Utils.network.getHostIp(),localPort, appName, localPort, profile);
+            NewBieBootEnvUtil.appIsStarted = true;
             System.out.println(runInfo);
         }
     }

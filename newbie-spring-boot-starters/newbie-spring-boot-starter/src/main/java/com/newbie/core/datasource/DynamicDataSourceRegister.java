@@ -141,7 +141,7 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         }
 
         if(!StringUtil.isNullOrEmpty(connection_test_query)) {
-            hikariDataSource.setConnectionInitSql(connection_test_query);
+            hikariDataSource.setConnectionTestQuery(connection_test_query);
         }
 
         if(!StringUtil.isNullOrEmpty(max_lifetime) && StringUtils.isInteger(max_lifetime)) {

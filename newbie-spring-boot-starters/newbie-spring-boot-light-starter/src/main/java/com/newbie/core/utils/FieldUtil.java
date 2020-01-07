@@ -75,7 +75,7 @@ public class FieldUtil {
      * @param idNumber 身份编号
      */
     public boolean validateIdNumber(String idNumber) {
-        return IdcardUtils.validateCard(idNumber);
+        return Utils.idcard.validateCard(idNumber);
     }
 
 
@@ -121,7 +121,7 @@ public class FieldUtil {
      * @return 年龄
      */
     public int getAgeByIdCard(String idNumber) {
-        return IdcardUtils.getAgeByIdCard(idNumber);
+        return Utils.idcard.getAgeByIdCard(idNumber);
     }
 
     /**
@@ -131,7 +131,7 @@ public class FieldUtil {
      * @return 生日(yyyyMMdd)
      */
     public String getBirthByIdCard(String idNumber) {
-        return IdcardUtils.getBirthByIdCard(idNumber);
+        return Utils.idcard.getBirthByIdCard(idNumber);
     }
 
     /**
@@ -141,7 +141,7 @@ public class FieldUtil {
      * @return 生日(yyyy)
      */
     public Short getYearByIdCard(String idNumber) {
-        return IdcardUtils.getYearByIdCard(idNumber);
+        return Utils.idcard.getYearByIdCard(idNumber);
     }
 
     /**
@@ -151,7 +151,7 @@ public class FieldUtil {
      * @return 生日(MM)
      */
     public Short getMonthByIdCard(String idNumber) {
-        return IdcardUtils.getMonthByIdCard(idNumber);
+        return Utils.idcard.getMonthByIdCard(idNumber);
     }
 
     /**
@@ -161,7 +161,7 @@ public class FieldUtil {
      * @return 生日(dd)
      */
     public Short getDateByIdCard(String idNumber) {
-        return IdcardUtils.getDateByIdCard(idNumber);
+        return Utils.idcard.getDateByIdCard(idNumber);
     }
 
     /**
@@ -171,7 +171,7 @@ public class FieldUtil {
      * @return 性别(M-男，F-女，N-未知)
      */
     public String getGenderByIdCard(String idNumber) {
-        return IdcardUtils.getGenderByIdCard(idNumber);
+        return Utils.idcard.getGenderByIdCard(idNumber);
     }
 
     /**
@@ -181,7 +181,7 @@ public class FieldUtil {
      * @return 省级编码。
      */
     public String getProvinceByIdCard(String idNumber) {
-        return IdcardUtils.getProvinceByIdCard(idNumber);
+        return Utils.idcard.getProvinceByIdCard(idNumber);
     }
 
 

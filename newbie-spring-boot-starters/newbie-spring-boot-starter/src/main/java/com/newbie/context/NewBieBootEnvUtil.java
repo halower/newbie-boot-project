@@ -31,6 +31,8 @@ public class NewBieBootEnvUtil {
 
     private static ApplicationContext context ;
 
+    public static Boolean appIsStarted = false;
+
     public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
         if (environment instanceof ConfigurableEnvironment) {
             return !((ConfigurableEnvironment) environment).getPropertySources().contains(
@@ -59,6 +61,4 @@ public class NewBieBootEnvUtil {
     public static <T> T getBean(Class<T> t){
         return context.getBean(t);
     }
-
-
 }

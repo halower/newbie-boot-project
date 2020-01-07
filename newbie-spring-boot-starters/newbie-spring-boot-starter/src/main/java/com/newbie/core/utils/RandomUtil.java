@@ -31,7 +31,7 @@ public class RandomUtil {
         return UUID.randomUUID().toString().replace("-","");
     }
 
-    public static String simpleKey() {
+    public String simpleKey() {
         return String.valueOf(System.nanoTime());
     }
 }

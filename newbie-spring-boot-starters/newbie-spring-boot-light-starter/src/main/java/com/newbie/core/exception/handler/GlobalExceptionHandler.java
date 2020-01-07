@@ -154,7 +154,7 @@ public class GlobalExceptionHandler  {
         while (violationse.hasNext()) {
             var vio =  violationse.next();
             var filed = vio.getPropertyPath().toString();
-            msgs.append(filed + ":" + vio.getMessage());
+            msgs.append(filed + ":" + vio.getMessage() + "\r\n");
         }
         return new ResponseResult(ResponseTypes.REMOTE_CALL_FAIL, msgs.toString());
     }

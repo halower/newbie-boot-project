@@ -1,8 +1,25 @@
+/*
+ * Apache License
+ *
+ * Copyright (c) 2019  halower (halower@foxmail.com).
+ *
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p>
+ * https://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
 package com.newbie.swagger;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
-import com.newbie.spi.SwaggerManager;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
@@ -46,7 +63,7 @@ public class SwaggerAutoConfiguration implements BeanFactoryAware {
     private BeanFactory beanFactory;
 
     @Autowired(required = false)
-    private SwaggerManager swaggerManager;
+    private  SwaggerReader swaggerReader;
 
     @Bean
     @ConditionalOnMissingBean
@@ -131,13 +148,14 @@ public class SwaggerAutoConfiguration implements BeanFactoryAware {
 
             Predicate<RequestHandler> predicate = input -> {
                 if (input.isAnnotatedWith(ApiOperation.class)){
-                    if(swaggerProperties.getOpenapiEnabled()) {
+                    if(swaggerProperties.getOpenApiValidateEnabled() ) {
                         String path = input.key().getPathMappings().toArray()[0].toString();
                         String description = input.findAnnotation(ApiOperation.class).get().value();
                         String requestMethod = ((RequestMethod)input.key().getSupportedMethods().toArray()[0]).name();
-                        if(swaggerManager != null) {
-                            return swaggerManager.show(path, description,requestMethod);
+                        if(swaggerReader !=null) {
+                          return swaggerReader.scan(path, description, requestMethod);
                         }
+                        return true;
                     }
                     return true;
                 }

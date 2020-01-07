@@ -31,6 +31,7 @@ public class NewBieBootEnvUtil {
 
     private static ApplicationContext context ;
 
+    public static Boolean appIsStarted = false;
 
     public static boolean isSpringCloudBootstrapEnvironment(Environment environment) {
         if (environment instanceof ConfigurableEnvironment) {

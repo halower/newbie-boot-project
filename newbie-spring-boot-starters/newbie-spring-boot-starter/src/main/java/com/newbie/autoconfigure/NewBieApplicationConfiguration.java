@@ -24,10 +24,11 @@ import com.newbie.core.aop.config.ApplicationWebConfigurer;
 import com.newbie.core.aop.config.NewBieBasicConfiguration;
 import com.newbie.core.audit.CustomAuditorAware;
 import com.newbie.core.exception.handler.GlobalExceptionHandler;
+import com.newbie.core.monitor.p6spy.P6spyAutoConfiguration;
+import com.newbie.core.monitor.p6spy.P6spyProperties;
 import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
-import com.newbie.spi.SwaggerManagerAutoConfig;
 import com.newbie.swagger.SwaggerAutoConfiguration;
 import com.newbie.swagger.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -42,7 +43,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @EnableAsync
 @EnableConfigurationProperties({
         NewBieBasicConfiguration.class,
-        SwaggerProperties.class
+        SwaggerProperties.class,
+        P6spyProperties.class
   }
 )
 @Import({
@@ -52,7 +54,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
         ApplicationWebConfigurer.class,
         MybatisConfig.class,
         MyMetaObjectHandler.class,
-        SwaggerManagerAutoConfig.class,
         SwaggerAutoConfiguration.class
 })
 @Configuration

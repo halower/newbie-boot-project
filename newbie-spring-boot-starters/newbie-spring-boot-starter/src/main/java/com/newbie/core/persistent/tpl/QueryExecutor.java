@@ -23,6 +23,7 @@ import com.newbie.core.utils.page.Pager;
 import com.newbie.core.utils.page.Pagination;
 import lombok.SneakyThrows;
 import lombok.var;
+import org.apache.commons.beanutils.BeanUtils;
 import org.hibernate.query.NativeQuery;
 import org.springframework.data.domain.PageRequest;
 
@@ -80,7 +81,7 @@ public class QueryExecutor<T> {
 
     private Query getQuery(EntityManager em, String tplName, String method, Object entity,Class<T> clazz, boolean isNativeQuery) {
         var tplModel = new HashMap<String,Object>();
-        var fieldMap =  Utils.bean.getFields(entity.getClass());
+        var fieldMap = Utils.bean.getFields(entity.getClass());
         var fields = fieldMap.values();
         setTemplateParameters(entity, tplModel, fields);
         var sql = new SQLTemplateResolver(tplName).getSql(method,tplModel);

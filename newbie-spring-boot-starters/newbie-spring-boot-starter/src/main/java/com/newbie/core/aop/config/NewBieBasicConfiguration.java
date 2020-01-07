@@ -30,7 +30,7 @@ import org.springframework.context.annotation.Configuration;
 public class NewBieBasicConfiguration {
     private String env = "dev";
 
-    private String networkId ="1";
+    private String networkId;
 
     private Boolean autoPackageReturnClass = false;
 

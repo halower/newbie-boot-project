@@ -81,6 +81,11 @@ public class Utils {
     public static NetworkUtil network = new NetworkUtil();
 
     /**
+     *  身份证相关
+     */
+    public static IdcardUtil idcard= new IdcardUtil();
+
+    /**
      * 随机数
      */
     public static RandomUtil random = new RandomUtil();

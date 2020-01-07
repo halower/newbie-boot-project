@@ -28,7 +28,8 @@ import java.util.List;
  * @Author: halower
  * @Date: 2019/4/13 15:00
  *
- */    //new Pager<UserDeptRole>()
+ */
+@Deprecated
 public class Pager<T> {
     /**
      * 分页
