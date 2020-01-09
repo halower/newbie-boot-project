@@ -18,13 +18,21 @@
  */
 package com.newbie.swagger;
 
+import java.util.List;
+
 public interface SwaggerReader {
     /**
-     * 是否显示
-     * @param path
-     * @param description
-     * @param requestMethod
+     * 是否列入swagger清单
+     * @param path 请求路径
+     * @param description 描述
+     * @param requestMethod 请求方式
+     * @return 列入swagger清单结果 （true为显示在清单中,反之亦然)
+     */
+     boolean listed(String path, String description, String requestMethod);
+
+    /**
+     * 获取所有展示Swagger测试按钮的路径
      * @return
      */
-    boolean scan(String path, String description, String requestMethod);
+    List<String> listTryItOutPaths();
 }

@@ -331,7 +331,7 @@ public class SwaggerProperties {
          **/
         @Getter
         @Setter
-        private Boolean displayTryItOut = false;
+        private Boolean displayTryItOut = true;
 
         /**
          * 请求超时时间

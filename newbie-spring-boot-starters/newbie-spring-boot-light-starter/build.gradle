@@ -20,7 +20,6 @@ dependencies {
     implementation("com.github.halower:newbie-spring-boot-api-dto:alpha.2.1.1")
     implementation ("p6spy:p6spy:3.8.6")
     implementation("io.springfox:springfox-swagger2:2.9.2")
-    implementation("io.springfox:springfox-swagger-ui:2.9.2")
     implementation("io.springfox:springfox-bean-validators:2.9.2")
     implementation("io.swagger:swagger-annotations:1.5.22")
     implementation("io.swagger:swagger-models:1.5.22")

@@ -36,6 +36,7 @@ class CustomDeployPlugin implements Plugin<Project> {
                 def random = new Random()
                 application.withWriter { def writer ->
                     writer.writeLine "spring.profiles.active=dev"
+                    writer.writeLine "dubbo.registry.register=false"
                     writer.writeLine dubboVersionKey + "=" + random.nextInt(3) + "." + random.nextInt(10)  + "." +random.nextInt(15)
                 }
             }

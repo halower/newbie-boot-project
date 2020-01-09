@@ -30,6 +30,7 @@ import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
 import com.newbie.launcher.StartEventListener;
 import com.newbie.swagger.SwaggerAutoConfiguration;
+import com.newbie.swagger.SwaggerController;
 import com.newbie.swagger.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -54,7 +55,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
         ApplicationWebConfigurer.class,
         MybatisConfig.class,
         MyMetaObjectHandler.class,
-        SwaggerAutoConfiguration.class
+        SwaggerAutoConfiguration.class,
+        SwaggerController.class
 })
 @Configuration
 @PropertySource("classpath:/META-INF/app-config.properties")

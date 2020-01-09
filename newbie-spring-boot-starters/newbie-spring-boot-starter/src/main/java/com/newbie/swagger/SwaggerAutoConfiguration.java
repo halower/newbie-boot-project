@@ -153,7 +153,7 @@ public class SwaggerAutoConfiguration implements BeanFactoryAware {
                         String description = input.findAnnotation(ApiOperation.class).get().value();
                         String requestMethod = ((RequestMethod)input.key().getSupportedMethods().toArray()[0]).name();
                         if(swaggerReader !=null) {
-                          return swaggerReader.scan(path, description, requestMethod);
+                          return swaggerReader.listed(path, description, requestMethod);
                         }
                         return true;
                     }
