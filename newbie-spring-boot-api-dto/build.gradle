@@ -1,8 +1,0 @@
-group = 'com.github.halower'
-version = "alpha.2.1.1"
-
-dependencies {
-    compileOnly("org.projectlombok:lombok")
-    implementation("org.modelmapper:modelmapper")
-    implementation("com.fasterxml.jackson.core:jackson-annotations")
-}

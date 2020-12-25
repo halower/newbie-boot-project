@@ -1,2 +1,0 @@
-userInfoFilter=com.newbie.core.aop.UserInfoForDubboFilter
-dataSourceFilter=com.newbie.core.datasource.aop.DataSourceForDubboFilter
