@@ -1,0 +1,13 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.newbie.initializer.NewbieBootContextInitializer
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.newbie.autoconfigure.NewBieApplicationConfiguration,\
+  com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration,\
+  com.newbie.core.monitor.p6spy.P6spyAutoConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.newbie.context.EnvironmentCustomizer
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.newbie.launcher.NewbieBootRunListener
+
+

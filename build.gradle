@@ -1,0 +1,56 @@
+allprojects {
+    group "com.github.halower"
+    version "2.0.0.A2"
+
+    ext {
+        configuration = [
+                javaVersion = JavaVersion.VERSION_1_8,
+                mavenRepository= "http://192.168.7.197:8081"
+        ]
+
+        remoteReopsitory = {
+            maven {
+                credentials {
+                    username = 'admin'
+                    password = 'admin123'
+                }
+
+                def releasesRepoUrl = "http://192.168.7.197:8081/repository/maven-releases/"
+                def snapshotsRepoUrl = "http://192.168.7.197:8081/repository/maven-snapshots/"
+                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+            }
+        }
+
+        lib = [
+                "sqlserver" : "com.microsoft.sqlserver:sqljdbc4:4.0",
+                "postgresql": "org.postgresql:postgresql:9.4.1212",
+                "oracle"    : "com.oracle:ojdbc6:11.2.0.3",
+                "dm"        : "com.dm:jdbcDriver:18",
+                "h2"        : "com.h2database:h2:1.4.197",
+                "mysql"     : "mysql:mysql-connector-java:8.0.15",
+                "sqlite"    : "org.xerial:sqlite-jdbc:3.27.2.1",
+        ]
+        
+        basic_version = "2.0.0.A2"
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    repositories {
+        if (version.endsWith('-SNAPSHOT')) {
+            maven { url "$mavenRepository/repository/maven-snapshots/" }
+        } else {
+            maven { url "$mavenRepository/repository/maven-public/" }
+        }
+    }
+    
+    
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, "minutes"
+    }
+}
+
+
+

@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+    id 'nebula.optional-base' version '3.0.3'
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架针对dubbo与springcloud的集成，改方案已经废弃后续无需关注"
+ 
+
+dependencies {
+    api  'org.springframework.boot:spring-boot-actuator:2.1.2.RELEASE',optional
+    api  'org.springframework.boot:spring-boot-actuator-autoconfigure:2.1.2.RELEASE',optional
+    api  'org.springframework.boot:spring-boot-configuration-processor:2.1.2.RELEASE',optional
+    api  'org.springframework.boot:spring-boot:2.1.2.RELEASE',optional
+    api  'org.springframework.boot:spring-boot-autoconfigure:2.1.2.RELEASE',optional
+    api  'org.springframework.cloud:spring-cloud-commons:2.1.0.RELEASE',optional
+    api  'org.springframework.cloud:spring-cloud-context:2.1.0.RELEASE',optional
+    api  'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.0.RELEASE',optional
+    api( 'org.springframework.cloud:spring-cloud-starter-zookeeper-discovery:2.1.0.RELEASE',optional)
+    api( 'org.apache.zookeeper:zookeeper:3.4.12') {
+        exclude(module: 'slf4j-log4j12')
+    }
+    api( 'org.apache.curator:curator-framework:4.0.1') {
+        exclude(module: 'zookeeper')
+    }
+    api  'org.springframework.cloud:spring-cloud-starter-consul-discovery:2.1.0.RELEASE',optional
+    api  'org.springframework.cloud:spring-cloud-openfeign-core:2.1.0.RELEASE'
+    api( 'org.apache.dubbo:dubbo:2.7.1') {
+        exclude(module: 'spring')
+        exclude(module: 'servlet-api')
+        exclude(module: 'log4j')
+    }
+    api  'org.apache.dubbo:dubbo-spring-boot-starter:2.7.0'
+    api  'io.netty:netty-all:4.1.31.Final'
+    api  'io.github.openfeign:feign-jaxrs2:9.7.0'
+    testCompile  'junit:junit:4.12'
+    testCompile  'org.springframework:spring-test:5.1.4.RELEASE'
+    testCompile  'org.springframework.boot:spring-boot-starter-web:2.1.2.RELEASE'
+    testCompile  'org.springframework.boot:spring-boot-test:2.1.2.RELEASE'
+    compileOnly  'javax.servlet:javax.servlet-api:4.0.1'
+}

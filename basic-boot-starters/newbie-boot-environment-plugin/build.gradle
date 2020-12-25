@@ -1,0 +1,32 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架针对开发环境切换的插件，该插件已经废弃不再维护"
+
+
+repositories {
+    maven { url 'http://192.168.7.23:8081/repository/maven-public/' }
+}
+
+dependencies { 
+    compile gradleApi()
+    compile localGroovy()
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "SWAGGER外部依赖注入与网关过滤约定"
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}

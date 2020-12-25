@@ -1,0 +1,38 @@
+plugins {
+    id 'maven-publish'
+    id 'java-platform'
+}
+
+
+description = "基础框架依赖统一管理入口"
+
+javaPlatform {
+    allowDependencies()
+}
+
+dependencies {
+    api platform('org.springframework.boot:spring-boot-dependencies:2.3.1.RELEASE')
+    api platform('org.junit:junit-bom:5.3.2')
+    constraints {
+        api 'com.alibaba.edas:edas-dubbo-extension:2.0.2'
+        api 'com.alibaba.cloud:spring-cloud-starter-acm:1.0.9'
+        api 'org.apache.dubbo:dubbo-registry-nacos:2.7.8'
+        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.8'
+        api 'com.alibaba.cloud:spring-cloud-starter-acm:1.0.9'
+        api 'org.springframework.cloud:spring-cloud-starter-alicloud-ans:0.9.0.RELEASE'
+        api 'org.springframework.cloud:spring-cloud-alibaba-nacos-discovery:0.9.0.RELEASE'
+        api 'org.springframework.cloud:spring-cloud-alibaba-nacos-config:0.9.0.RELEASE'
+    }
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        versionPlatform(MavenPublication) {
+            from components.javaPlatform
+        }
+    }
+}
+
+
+

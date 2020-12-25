@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+
+ //
+
+description = "基础框架针对nacos注册中心+ acm 配置中心的启动依赖"
+
+
+dependencies {
+    api platform(project(path: ":basic-cloud-extension-denpendencies"))
+    api 'org.springframework.cloud:spring-cloud-alibaba-nacos-discovery'
+    api 'org.apache.dubbo:dubbo-spring-boot-starter'
+    api 'org.apache.dubbo:dubbo-registry-nacos'
+    api 'com.alibaba.cloud:spring-cloud-starter-acm'
+}
+
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}

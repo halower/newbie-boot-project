@@ -1,0 +1,83 @@
+import java.text.SimpleDateFormat
+
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架all-in-one的基础包"
+
+dependencies {
+    api enforcedPlatform(project(path: ":basic-boot-dependencies"))
+    api("p6spy:p6spy")
+    api("com.alibaba:fastjson")
+    api("joda-time:joda-time")
+    api("org.apache.dubbo:dubbo")
+    api("commons-io:commons-io")
+    api("org.projectlombok:lombok")
+    api("io.swagger:swagger-models"){
+        force = true
+    }
+    compileOnlyApi 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    api("io.swagger:swagger-annotations")
+    api("io.springfox:springfox-swagger2")
+    api("org.apache.commons:commons-lang3")
+    api("javax.validation:validation-api")
+    api("commons-beanutils:commons-beanutils")
+    api("io.springfox:springfox-bean-validators")
+    api("com.baomidou:mybatis-plus-boot-starter")
+    api("com.github.halower:newbie-spring-boot-api-dto")
+    api("org.springframework.boot:spring-boot-starter-freemarker")
+    api("org.springframework.boot:spring-boot-starter-web")
+    api("org.springframework.boot:spring-boot-starter-actuator")
+    api("org.springframework.boot:spring-boot-starter-data-jpa")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.3.2.RELEASE'
+    api("com.github.halower:newbie-spring-boot-swagger-spi")
+}
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+    afterEvaluate {
+        manifest {
+            attributes 'Implementation-Version': "$basic_version"
+            attributes 'Build-date': new Date();
+            attributes 'Application-Version': project.version
+            attributes 'Built-Gradle': gradle.gradleVersion
+            attributes 'Build-OS': System.getProperty("os.name")
+            attributes 'Built-By': System.getProperty("user.name")
+            attributes 'Build-Jdk': System.getProperty("java.version")
+            attributes 'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
+        }
+    }
+}
+
+
+task publishingConfiguration {
+    doLast {
+        println publishing.publications.bootJava
+    }
+}
+
+publishing {
+    repositories remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            artifactId = 'newbie-spring-boot-starter'
+            from components.java
+        }
+    }
+}

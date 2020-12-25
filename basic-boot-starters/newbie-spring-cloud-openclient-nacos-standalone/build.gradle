@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架针对nacos注册中心+ nacos配置中心的启动依赖"
+
+
+dependencies {
+    api platform(project(path: ":basic-cloud-extension-denpendencies"))
+    api 'org.springframework.cloud:spring-cloud-alibaba-nacos-discovery'
+    api 'org.apache.dubbo:dubbo-spring-boot-starter'
+    api 'org.apache.dubbo:dubbo-registry-nacos'
+    api 'org.springframework.cloud:spring-cloud-alibaba-nacos-config'
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}

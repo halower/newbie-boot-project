@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架外部可能依赖的DTO类"
+
+dependencies {
+    api platform(project(path: ":basic-boot-dependencies"))
+    compileOnlyApi 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    api("org.modelmapper:modelmapper")
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            artifactId = 'newbie-spring-boot-api-dto'
+            from components.java
+        }
+    }
+}

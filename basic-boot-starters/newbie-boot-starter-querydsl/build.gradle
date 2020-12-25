@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架针对JPA支持QueryDSL的扩展"
+
+dependencies {
+    api platform(project(path: ":basic-boot-dependencies"))
+    compileOnlyApi 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    api 'com.querydsl:querydsl-jpa'
+    api 'com.querydsl:querydsl-apt'
+    api 'com.querydsl:querydsl-sql'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+}
+
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}

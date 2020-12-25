@@ -1,0 +1,3 @@
+#userInfoFilter=com.newbie.core.aop.UserInfoForDubboFilter
+#dataSourceFilter=com.newbie.core.datasource.aop.DataSourceForDubboFilter
+com.newbie.core.dubbo.DubboDataSourceChangeWrapper

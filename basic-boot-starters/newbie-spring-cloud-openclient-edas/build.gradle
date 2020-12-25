@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+description = "基础框架针对edas注册中心+ edas配置中心的启动依赖"
+
+dependencies {
+    api platform(project(path: ":basic-cloud-extension-denpendencies"))
+    api 'org.apache.dubbo:dubbo-spring-boot-starter'
+    api 'com.alibaba.edas:edas-dubbo-extension'
+    api 'org.springframework.cloud:spring-cloud-starter-alicloud-ans'
+    api 'com.alibaba.cloud:spring-cloud-starter-acm'
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
+

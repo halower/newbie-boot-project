@@ -1,0 +1,9 @@
+rootProject.name = 'basic-boot-project'
+include 'basic-boot-dependencies'
+include 'basic-boot-management'
+
+file("${rootDir}/basic-boot-starters").eachDirMatch(~/newbie-.*/) {
+    include "basic-boot-starters:${it.name}"
+}
+include 'basic-cloud-extension-denpendencies'
+

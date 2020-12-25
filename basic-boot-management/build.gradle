@@ -1,0 +1,38 @@
+plugins {
+    id "maven-publish"
+    id "java-platform"
+}
+
+
+description = "基础框架依赖统一管理入口"
+
+javaPlatform {
+    allowDependencies()
+}
+
+
+dependencies {
+    api platform("org.springframework.boot:spring-boot-dependencies:2.4.1")
+    api platform("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9")
+    api platform("org.springframework.cloud:spring-cloud-contract-dependencies:2.2.5.RELEASE")
+    api platform("org.junit:junit-bom:5.3.2")
+    constraints {
+        api "com.github.halower:newbie-boot-starter:$basic_version"
+        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.8'
+        api "com.github.halower:newbie-spring-cloud-openclient-edas:$basic_version"
+        api "com.github.halower:newbie-spring-cloud-openclient-nacos:$basic_version"
+        api "com.github.halower:newbie-spring-cloud-openclient-nacos-standalone:$basic_version"
+    }
+}
+
+publishing {
+    repositories  remoteReopsitory
+    publications {
+        versionPlatform(MavenPublication) {
+            from components.javaPlatform
+        }
+    }
+}
+
+
+
