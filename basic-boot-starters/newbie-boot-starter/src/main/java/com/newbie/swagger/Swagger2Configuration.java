@@ -32,4 +32,7 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
         BeanValidatorPluginsConfiguration.class
 })
 public class Swagger2Configuration {
+    public static void main(String[] args) {
+
+    }
 }

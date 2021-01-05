@@ -19,18 +19,18 @@
 
 package com.newbie.core.persistent.simple;
 
-import com.newbie.core.util.RandomUtil;
-import lombok.var;
-import lombok.SneakyThrows;
 import com.newbie.core.annotations.DeletedId;
 import com.newbie.core.annotations.DeletedIds;
 import com.newbie.core.annotations.UpdatedId;
 import com.newbie.core.persistent.config.FieldInfo;
 import com.newbie.core.persistent.criteria.QueryBuilder;
 import com.newbie.core.persistent.tpl.QueryExecutor;
-import com.newbie.core.util.BeanUtil;
+import com.newbie.core.util.id.IdUtil;
+import com.newbie.core.util.reflect.ReflectionUtil;
 import com.newbie.core.utils.page.Pager;
 import com.newbie.core.utils.page.Pagination;
+import lombok.SneakyThrows;
+import lombok.var;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
@@ -184,7 +184,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, false);
-        final Set<String> fields = BeanUtil.getFields(entityType).keySet();
+        final Set<String> fields = ReflectionUtil.getFields(entityType,true).keySet();
         if( kvs.size() > fields.size()) {
             kvs.forEach((k, v) -> {
                 if(Stream.of(fields).anyMatch(f -> f.equals(k))){
@@ -199,7 +199,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
             });
         }
         criteria.set(root.get("zhxgsj"), new Date());
-        criteria.set(root.get("sjbsbh"),  RandomUtil.getUUID());
+        criteria.set(root.get("sjbsbh"),  IdUtil.fastUUID().toString());
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -224,7 +224,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
         CriteriaUpdate<T> criteria = cb.createCriteriaUpdate(entityType);
         Root<T> root = criteria.from(entityType);
         Map<String, Object> kvs = getFiledAndValue(entity, true);
-        final Set<String> fields = BeanUtil.getFields(entityType).keySet();
+        final Set<String> fields = ReflectionUtil.getFields(entityType,true).keySet();
         if( kvs.size() > fields.size()) {
             kvs.forEach((k, v) -> {
                 if(Stream.of(fields).anyMatch(f -> f.equals(k))){
@@ -239,7 +239,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
             });
         }
         criteria.set(root.get("zhxgsj"), new Date());
-        criteria.set(root.get("sjbsbh"),  RandomUtil.getUUID());
+        criteria.set(root.get("sjbsbh"), IdUtil.fastUUID().toString());
         var ids = getUpdatedIds(entity);
         List<Predicate> listWhere = new ArrayList<>();
         ids.forEach(id -> {
@@ -461,7 +461,7 @@ public class CustomizedRepositoryImpl<T, ID extends Serializable> extends Simple
 
     private static Map<String, Object> getFiledAndValue(Object obj, boolean ignoreNullFields) {
         var map = new HashMap<String, Object>();
-        Field[] fields = BeanUtil.getFields(obj);
+        Field[] fields = ReflectionUtil.getFields(obj);
         for (Field field : fields) {
             if(field.getName() == "zhxgsj" || field.getName() == "sjbsbh") {
                 continue;

@@ -21,10 +21,10 @@ package com.newbie.core.exception.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.newbie.core.config.NewbieBootBasicProperties;
+import com.newbie.core.dubbo.validation.ValidateInfoBuilder;
 import com.newbie.core.exception.BusinessException;
 import com.newbie.core.exception.FileDownloadException;
 import com.newbie.core.exception.ResourceNotFoundException;
-import com.newbie.core.dubbo.validation.ValidateInfoBuilder;
 import com.newbie.dto.ResponseResult;
 import com.newbie.dto.ResponseTypes;
 import lombok.extern.slf4j.Slf4j;

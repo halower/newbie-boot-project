@@ -29,9 +29,7 @@ import org.springframework.core.env.Environment;
 
 import static java.lang.reflect.Proxy.newProxyInstance;
 import static org.springframework.cloud.alibaba.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration.TARGETER_CLASS_NAME;
-import static org.springframework.util.ClassUtils.getUserClass;
-import static org.springframework.util.ClassUtils.isPresent;
-import static org.springframework.util.ClassUtils.resolveClassName;
+import static org.springframework.util.ClassUtils.*;
 
 /**
  * org.springframework.cloud.openfeign.Targeter {@link BeanPostProcessor}

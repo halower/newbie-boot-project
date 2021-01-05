@@ -6,8 +6,6 @@ import org.junit.Test;
 import org.springframework.mock.http.client.MockClientHttpRequest;
 
 import java.net.URI;
-import java.util.List;
-import java.util.Map;
 
 /**
  * {@link HttpRequestParamsMatcher} Test

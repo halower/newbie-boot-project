@@ -26,7 +26,6 @@ import com.newbie.core.config.NewbieBootBasicProperties;
 import com.newbie.core.datasource.crypt.DssDecryptService;
 import com.newbie.core.exception.handler.GlobalExceptionHandler;
 import com.newbie.core.monitor.p6spy.P6spyProperties;
-import com.newbie.core.resttemplate.RestClientConfig;
 import com.newbie.core.schedule.CleanTomcatTmpFileTask;
 import com.newbie.endpoint.NewbieBootVersionEndpoint;
 import com.newbie.swagger.SwaggerAutoConfiguration;
@@ -59,7 +58,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
         CleanTomcatTmpFileTask.class,
         DssDecryptService.class,
         NewbieBootContext.class,
-        RestClientConfig.class
 })
 public class NewBieApplicationConfiguration {
 }

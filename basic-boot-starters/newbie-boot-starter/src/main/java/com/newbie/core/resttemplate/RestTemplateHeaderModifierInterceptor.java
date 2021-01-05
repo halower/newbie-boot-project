@@ -3,7 +3,7 @@ package com.newbie.core.resttemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.newbie.context.CurrentUserContext;
 import com.newbie.context.UserInfoManager;
-import com.newbie.core.util.Network;
+import com.newbie.core.util.net.NetUtil;
 import org.apache.tomcat.util.codec.binary.StringUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
@@ -21,7 +21,7 @@ public class RestTemplateHeaderModifierInterceptor
         HttpHeaders headers = request.getHeaders();
         CurrentUserContext userContext = UserInfoManager.getInstance().getUserInfo();
         headers.add("X-BMSAH", userContext.getBmsah());
-        headers.add("x-forwarded-for", Network.getHostIp());
+        headers.add("x-forwarded-for", NetUtil.getLocalHost());
         headers.add("X-IDENTITY", StringUtils.newStringUtf8(Base64.getEncoder().encodeToString(new ObjectMapper().writeValueAsBytes(userContext)).getBytes()));
 
         ObjectMapper mapper = new ObjectMapper();

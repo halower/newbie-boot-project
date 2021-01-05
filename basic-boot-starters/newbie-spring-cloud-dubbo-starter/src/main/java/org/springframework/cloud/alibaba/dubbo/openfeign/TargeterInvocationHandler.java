@@ -20,18 +20,13 @@
 package org.springframework.cloud.alibaba.dubbo.openfeign;
 
 
-import org.apache.dubbo.rpc.service.GenericService;
-
 import feign.Contract;
 import feign.Target;
+import org.apache.dubbo.rpc.service.GenericService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.alibaba.dubbo.annotation.DubboTransported;
-import org.springframework.cloud.alibaba.dubbo.metadata.DubboRestServiceMetadata;
-import org.springframework.cloud.alibaba.dubbo.metadata.DubboTransportedMethodMetadata;
-import org.springframework.cloud.alibaba.dubbo.metadata.MethodMetadata;
-import org.springframework.cloud.alibaba.dubbo.metadata.RequestMetadata;
-import org.springframework.cloud.alibaba.dubbo.metadata.RestMethodMetadata;
+import org.springframework.cloud.alibaba.dubbo.metadata.*;
 import org.springframework.cloud.alibaba.dubbo.metadata.repository.DubboServiceMetadataRepository;
 import org.springframework.cloud.alibaba.dubbo.metadata.resolver.DubboTransportedMethodMetadataResolver;
 import org.springframework.cloud.alibaba.dubbo.service.DubboGenericServiceExecutionContextFactory;

@@ -2,7 +2,8 @@ package com.newbie.launcher;
 
 import com.newbie.context.NewbieBootContext;
 import com.newbie.core.datasource.jdbctemplate.JdbcTemplateManager;
-import com.newbie.core.util.Network;
+import com.newbie.core.util.net.NetUtil;
+import com.newbie.core.util.text.StringUtil;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.time.StopWatch;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,6 @@ import org.springframework.boot.SpringApplicationRunListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.util.ClassUtils;
-import org.springframework.util.StringUtils;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -52,26 +52,26 @@ public class NewbieBootRunListener implements SpringApplicationRunListener {
         clock.stop();
         final String baseDir = context.getEnvironment().getProperty("server.tomcat.basedir");
         final Boolean autoClean = Boolean.parseBoolean(
-                StringUtils.isEmpty(context.getEnvironment().getProperty("application.tomcat.autoClean"))? "false":
+                StringUtil.isNullOrEmpty(context.getEnvironment().getProperty("application.tomcat.autoClean"))? "false":
                 context.getEnvironment().getProperty("application.tomcat.auto-clean"));
-        if (!StringUtils.isEmpty(baseDir) && autoClean) {
+        if (!StringUtil.isNullOrEmpty(baseDir) && autoClean) {
             File targetFile = new File(baseDir);
             if (!targetFile.exists()) {
                 targetFile.mkdirs();
                 System.out.println("Tomcat创建临时文件目录成功");
             }
         }
-        applicationName
-                = context.getEnvironment().getProperty("spring.application.name");
+        applicationName = context.getEnvironment().getProperty("spring.application.name");
         String localPort = context.getEnvironment().getProperty("server.port");
-        String profile = StringUtils.arrayToCommaDelimitedString(context.getEnvironment().getActiveProfiles());
+        localPort = StringUtil.isNullOrEmpty(localPort) ? "8080" : localPort;
+        String profile = StringUtil.arrayToCommaDelimitedString(context.getEnvironment().getActiveProfiles());
         if (ClassUtils.isPresent("springfox.documentation.spring.web.plugins.Docket", null)) {
             String start_description = String.format(
                     "-本地API文档地址:http://localhost:%s/swagger-ui.html\n" +
                     "-局域网API文档地址:http://%s:%s/swagger-ui.html\n" +
                     "服务[%s]启动完成，当前使用的端口:[%s]，环境变量:[%s]\n" +
                     "本次启动共耗时: [%s]",
-                    localPort, Network.getHostIp(), localPort, applicationName, localPort, profile, clock.getTime(TimeUnit.MILLISECONDS) / 1000 + " 秒");
+                    localPort, NetUtil.getLocalHost(), localPort, applicationName, localPort, profile, clock.getTime(TimeUnit.MILLISECONDS) / 1000 + " 秒");
             System.out.println( start_description);
             NewbieBootContext.appIsStarted = true;
             if(null != jdbcTemplateManager) {

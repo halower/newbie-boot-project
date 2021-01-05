@@ -25,7 +25,7 @@ import java.util.UUID;
  * @Author: halower
  * * @deprecated
  * * This method is no longer acceptable to compute time between versions.
- * * <p> Use {@link com.newbie.core.util.RandomUtil } instead.
+ * * <p> Use {@link com.newbie.core.util.id.IdUtil } instead.
  */
 @Deprecated
 public class RandomUtil {

@@ -22,9 +22,7 @@ import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.core.datasource.DynamicDataSourceContextHolder;
 import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.context.annotation.Conditional;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

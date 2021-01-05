@@ -19,11 +19,10 @@
 
 package org.springframework.cloud.alibaba.dubbo.util;
 
-import org.apache.dubbo.common.URL;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import org.apache.dubbo.common.URL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;

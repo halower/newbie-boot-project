@@ -23,16 +23,11 @@ import org.apache.dubbo.common.Constants;
 import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.rpc.ExporterListener;
 import org.apache.dubbo.rpc.Filter;
-
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.client.RestTemplate;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 import static org.apache.dubbo.common.Constants.DEFAULT_RETRIES;
 

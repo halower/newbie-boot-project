@@ -13,16 +13,13 @@ targetCompatibility = javaVersion
 description = "基础框架all-in-one的基础包"
 
 dependencies {
-    api enforcedPlatform(project(path: ":basic-boot-dependencies"))
+    api platform(project(path: ":basic-boot-dependencies"))
     api("p6spy:p6spy")
     api("com.alibaba:fastjson")
     api("joda-time:joda-time")
     api("org.apache.dubbo:dubbo")
     api("commons-io:commons-io")
     api("org.projectlombok:lombok")
-    api("io.swagger:swagger-models"){
-        force = true
-    }
     compileOnlyApi 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
     api("io.swagger:swagger-annotations")
@@ -30,15 +27,18 @@ dependencies {
     api("org.apache.commons:commons-lang3")
     api("javax.validation:validation-api")
     api("commons-beanutils:commons-beanutils")
-    api("io.springfox:springfox-bean-validators")
+    api("io.swagger:swagger-models:1.5.22")
+    api 'org.reflections:reflections:0.9.10'
+    api("io.springfox:springfox-bean-validators:2.9.2")
     api("com.baomidou:mybatis-plus-boot-starter")
     api("com.github.halower:newbie-spring-boot-api-dto")
     api("org.springframework.boot:spring-boot-starter-freemarker")
     api("org.springframework.boot:spring-boot-starter-web")
     api("org.springframework.boot:spring-boot-starter-actuator")
     api("org.springframework.boot:spring-boot-starter-data-jpa")
+    api("com.google.guava:guava:25.0-jre")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.3.2.RELEASE'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.3.1.RELEASE'
     api("com.github.halower:newbie-spring-boot-swagger-spi")
 }
 
@@ -54,7 +54,7 @@ java {
     afterEvaluate {
         manifest {
             attributes 'Implementation-Version': "$basic_version"
-            attributes 'Build-date': new Date();
+            attributes 'Build-date': new Date()
             attributes 'Application-Version': project.version
             attributes 'Built-Gradle': gradle.gradleVersion
             attributes 'Build-OS': System.getProperty("os.name")

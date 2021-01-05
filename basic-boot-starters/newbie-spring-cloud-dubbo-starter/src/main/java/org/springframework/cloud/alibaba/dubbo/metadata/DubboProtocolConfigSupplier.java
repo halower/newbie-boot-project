@@ -20,7 +20,6 @@
 package org.springframework.cloud.alibaba.dubbo.metadata;
 
 import org.apache.dubbo.config.ProtocolConfig;
-
 import org.springframework.beans.factory.ObjectProvider;
 
 import java.util.Collection;

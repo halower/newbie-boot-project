@@ -19,7 +19,7 @@
 
 package com.newbie.core.utils;
 
-import com.newbie.core.util.Amount;
+import com.newbie.core.util.other.Amount;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

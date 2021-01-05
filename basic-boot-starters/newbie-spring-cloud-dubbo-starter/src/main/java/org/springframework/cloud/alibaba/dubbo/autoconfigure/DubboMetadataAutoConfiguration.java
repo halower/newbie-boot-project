@@ -19,11 +19,10 @@
 
 package org.springframework.cloud.alibaba.dubbo.autoconfigure;
 
+import feign.Contract;
 import org.apache.dubbo.config.ProtocolConfig;
 import org.apache.dubbo.config.spring.ServiceBean;
 import org.apache.dubbo.config.spring.context.event.ServiceBeanExportedEvent;
-
-import feign.Contract;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

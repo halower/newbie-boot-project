@@ -18,17 +18,18 @@ dependencies {
     constraints {
         api 'com.github.halower:newbie-spring-boot-api-dto:alpha.2.1.1'
         api 'com.github.halower:newbie-spring-boot-swagger-spi:alpha.2.2.1'
-        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.8'
+        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.7'
         api 'p6spy:p6spy:3.8.6'
         api 'com.baomidou:mybatis-plus-boot-starter:3.4.1'
         api 'io.springfox:springfox-swagger2:2.9.2'
         api 'io.springfox:springfox-bean-validators:2.9.2'
         api 'io.springfox:swagger-models:1.5.22'
+        api 'org.reflections:reflections:0.9.10'
         api 'io.swagger:swagger-annotations:1.5.22'
         api 'org.apache.commons:commons-lang3:3.9'
         api 'commons-beanutils:commons-beanutils:1.9.3'
         api 'commons-io:commons-io:2.8.0'
-        api 'org.apache.dubbo:dubbo:2.7.8'
+        api 'org.apache.dubbo:dubbo:2.7.7'
         api 'javax.validation:validation-api:2.0.1.Final'
         api 'joda-time:joda-time:2.10.8'
         api 'org.freemarker:freemarker:2.3.30'
@@ -38,6 +39,7 @@ dependencies {
         api 'com.querydsl:querydsl-jpa:4.3.1'
         api 'com.querydsl:querydsl-apt:4.2.1'
         api 'com.querydsl:querydsl-sql:4.2.1'
+        api 'log4j:log4j:1.2.17'
     }
 }
 

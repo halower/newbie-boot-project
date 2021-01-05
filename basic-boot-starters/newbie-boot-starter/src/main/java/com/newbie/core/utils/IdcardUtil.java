@@ -19,6 +19,8 @@
 
 package com.newbie.core.utils;
 
+import com.newbie.core.util.other.Idcard;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -30,7 +32,7 @@ import java.util.Map;
  * 身份证工具类
  * * @deprecated
  * * This method is no longer acceptable to compute time between versions.
- * * <p> Use {@link com.newbie.core.util.Idcard } instead.
+ * * <p> Use {@link Idcard } instead.
  */
 @Deprecated
 public class IdcardUtil {

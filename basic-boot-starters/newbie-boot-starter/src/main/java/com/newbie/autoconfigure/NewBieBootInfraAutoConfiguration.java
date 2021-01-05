@@ -30,6 +30,7 @@ import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
 
 
 /**
@@ -41,8 +42,6 @@ import org.springframework.context.annotation.Import;
         WebFilterConfiguration.class,
         GlobalReturnConfiguration.class,
         DataSourceForWebFilter.class,
-//      UserInfoForDubboFilter.class,
-  //    DataSourceForDubboFilter.class,
         MybatisConfig.class,
         MyMetaObjectHandler.class,
         DynamicJdbcTemplateManager.class,
@@ -50,6 +49,7 @@ import org.springframework.context.annotation.Import;
         DynamicDataSourceRegister.class
 })
 @Configuration
+@PropertySource("classpath:/META-INF/app-config.properties")
 public class NewBieBootInfraAutoConfiguration {
 }
 

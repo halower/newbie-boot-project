@@ -19,11 +19,10 @@
 
 package org.springframework.cloud.alibaba.dubbo.autoconfigure;
 
-import org.apache.dubbo.config.RegistryConfig;
-import org.apache.dubbo.config.spring.ServiceBean;
-
 import com.ecwid.consul.v1.agent.model.NewService;
 import com.netflix.appinfo.InstanceInfo;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.spring.ServiceBean;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

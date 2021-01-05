@@ -21,13 +21,12 @@ package com.newbie.core.persistent.mybaits;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.newbie.core.exception.BusinessException;
-import com.newbie.core.util.RandomUtil;
+import com.newbie.core.util.id.IdUtil;
 import com.newbie.dto.ResponseTypes;
 import io.netty.util.internal.StringUtil;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 
@@ -47,7 +46,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         this.setFieldValByName("cjsj", new Date(), metaObject);
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
         this.setFieldValByName("sfsc", "N", metaObject);
-        this.setFieldValByName("sjbsbh", RandomUtil.getUUID(), metaObject);
+        this.setFieldValByName("sjbsbh",  IdUtil.fastUUID().toString(), metaObject);
         String networkId = applicationContext.getEnvironment().getProperty("application.network-id");
         if(StringUtil.isNullOrEmpty(networkId)) {
             throw new BusinessException(ResponseTypes.READ_FAIL, "网络标识ID未正确读取，请检查配置");
@@ -59,6 +58,6 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void updateFill(MetaObject metaObject) {
         this.setFieldValByName("zhxgsj", new Date(), metaObject);
-        this.setFieldValByName("sjbsbh", RandomUtil.getUUID(), metaObject);
+        this.setFieldValByName("sjbsbh", IdUtil.fastUUID().toString(), metaObject);
     }
 }

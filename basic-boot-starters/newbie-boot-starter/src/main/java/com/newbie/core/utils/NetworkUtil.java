@@ -19,7 +19,6 @@
 
 package com.newbie.core.utils;
 
-import lombok.extern.log4j.Log4j;
 import lombok.extern.log4j.Log4j2;
 
 import java.net.Inet4Address;

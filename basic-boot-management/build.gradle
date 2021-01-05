@@ -12,13 +12,21 @@ javaPlatform {
 
 
 dependencies {
-    api platform("org.springframework.boot:spring-boot-dependencies:2.4.1")
-    api platform("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9")
-    api platform("org.springframework.cloud:spring-cloud-contract-dependencies:2.2.5.RELEASE")
     api platform("org.junit:junit-bom:5.3.2")
     constraints {
         api "com.github.halower:newbie-boot-starter:$basic_version"
-        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.8'
+        api 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.7'
+        api 'com.dm:dialect:hibernate5.0'
+        api 'com.dm:hibernateSpatial:1.0'
+        api 'com.dm:jdbcDriver:18'
+        api 'org.apache.poi:poi:4.1.2'
+        api 'javax.validation:validation-api:2.0.1.Final'
+        api 'cn.afterturn:easypoi-spring-boot-starter:4.1.2'
+        api 'io.swagger:swagger-annotations:1.5.22'
+        api 'org.apache.kafka:kafka-clients:2.0.1'
+        api 'com.github.pagehelper:pagehelper:5.1.4'
+        api 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3'
+        api "com.github.halower:newbie-spring-boot-api-dto:$basic_version"
         api "com.github.halower:newbie-spring-cloud-openclient-edas:$basic_version"
         api "com.github.halower:newbie-spring-cloud-openclient-nacos:$basic_version"
         api "com.github.halower:newbie-spring-cloud-openclient-nacos-standalone:$basic_version"

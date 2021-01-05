@@ -1,6 +1,6 @@
 allprojects {
     group "com.github.halower"
-    version "2.0.0.A2"
+    version "2.0.0.B7"
 
     ext {
         configuration = [
@@ -31,7 +31,7 @@ allprojects {
                 "sqlite"    : "org.xerial:sqlite-jdbc:3.27.2.1",
         ]
         
-        basic_version = "2.0.0.A2"
+        basic_version = "2.0.0.B7"
     }
 
     tasks.withType(JavaCompile) {
@@ -45,8 +45,8 @@ allprojects {
             maven { url "$mavenRepository/repository/maven-public/" }
         }
     }
-    
-    
+
+
     configurations.all {
         resolutionStrategy.cacheChangingModulesFor 0, "minutes"
     }

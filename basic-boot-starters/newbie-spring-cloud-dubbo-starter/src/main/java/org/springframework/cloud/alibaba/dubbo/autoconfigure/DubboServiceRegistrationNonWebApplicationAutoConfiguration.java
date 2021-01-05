@@ -19,10 +19,9 @@
 
 package org.springframework.cloud.alibaba.dubbo.autoconfigure;
 
+import com.ecwid.consul.v1.agent.model.NewService;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.config.spring.ServiceBean;
-
-import com.ecwid.consul.v1.agent.model.NewService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

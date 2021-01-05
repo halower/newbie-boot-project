@@ -19,7 +19,7 @@
 
 package com.newbie.core.persistent.tpl;
 
-import com.newbie.core.util.BeanUtil;
+import com.newbie.core.util.reflect.ReflectionUtil;
 import com.newbie.core.utils.page.Pager;
 import com.newbie.core.utils.page.Pagination;
 import lombok.SneakyThrows;
@@ -81,7 +81,8 @@ public class QueryExecutor<T> {
 
     private Query getQuery(EntityManager em, String tplName, String method, Object entity,Class<T> clazz, boolean isNativeQuery) {
         var tplModel = new HashMap<String,Object>();
-        var fieldMap = BeanUtil.getFields(entity.getClass());
+
+        var fieldMap = ReflectionUtil.getFields(entity.getClass(), true);
         var fields = fieldMap.values();
         setTemplateParameters(entity, tplModel, fields);
         var sql = new SQLTemplateResolver(tplName).getSql(method,tplModel);

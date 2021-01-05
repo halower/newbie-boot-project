@@ -21,7 +21,6 @@ package org.springframework.cloud.alibaba.dubbo.service;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.config.annotation.Service;
-
 import org.springframework.cloud.alibaba.dubbo.metadata.ServiceRestMetadata;
 
 import java.util.List;

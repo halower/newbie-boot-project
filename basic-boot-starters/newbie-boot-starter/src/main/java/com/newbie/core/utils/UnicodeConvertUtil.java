@@ -18,12 +18,7 @@
  */
 package com.newbie.core.utils;
 
-/**
- * @Author: halower
- * * @deprecated
- * * This method is no longer acceptable to compute time between versions.
- * * <p> Use {@link com.newbie.core.util.UnicodeConverter } instead.
- */
+
 @Deprecated
 public class UnicodeConvertUtil {
 

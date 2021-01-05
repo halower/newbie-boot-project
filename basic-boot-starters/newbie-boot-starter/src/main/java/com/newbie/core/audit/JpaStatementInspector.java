@@ -1,7 +1,7 @@
 package com.newbie.core.audit;
 
 import com.newbie.context.NewbieBootContext;
-import com.newbie.core.util.RandomUtil;
+import com.newbie.core.util.id.IdUtil;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
@@ -67,7 +67,7 @@ public class JpaStatementInspector implements StatementInspector {
     }
 
     private void processUpdate(Update update) {
-        String bsbh = RandomUtil.getUUID();
+        String bsbh = IdUtil.fastUUID().toString();
         String date = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss").format(new Date());
         String netId = NewbieBootContext.getApplicationContext().getEnvironment().getProperty("application.network-id");
         // 处理已有字段的更新
@@ -96,7 +96,7 @@ public class JpaStatementInspector implements StatementInspector {
 
 
     public void processInsert(Insert insert) {
-        String bsbh = RandomUtil.getUUID();
+        String bsbh = IdUtil.fastUUID().toString();
         String date = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss").format(new Date());
         String netId = NewbieBootContext.getApplicationContext().getEnvironment().getProperty("application.network-id");
         // 处理已有字段的更新

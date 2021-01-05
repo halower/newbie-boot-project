@@ -24,7 +24,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.newbie.context.NewbieBootContext;
 import com.newbie.core.exception.BusinessException;
-import com.newbie.core.util.RandomUtil;
+import com.newbie.core.util.id.IdUtil;
 import com.newbie.dto.ResponseTypes;
 import io.netty.util.internal.StringUtil;
 import lombok.Data;
@@ -66,7 +66,7 @@ public abstract class BaseEntity implements Serializable {
      */
     @Column(name = "SJBSBH")
     @TableField(value = "SJBSBH", fill = FieldFill.INSERT)
-    private String sjbsbh = RandomUtil.getUUID();
+    private String sjbsbh = IdUtil.fastUUID().toString();
 
     /**
      * 是否删除
@@ -98,7 +98,7 @@ public abstract class BaseEntity implements Serializable {
         if(StringUtil.isNullOrEmpty(networkId)) {
             throw new BusinessException(ResponseTypes.READ_FAIL, "网络标识ID未正确读取，请检查配置");
         }
-        this.setSjbsbh(RandomUtil.getUUID());
+        this.setSjbsbh(IdUtil.fastUUID().toString());
         this.setSjly(networkId);
     }
 }

@@ -27,7 +27,6 @@ import javassist.NotFoundException;
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.MutablePropertyValues;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -39,7 +38,6 @@ import org.springframework.core.type.AnnotationMetadata;
 import javax.sql.DataSource;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -108,15 +106,15 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
         if(dataSourceTracked) { //开启数据源监控
             CURRENT_DATASOURCE_MODEL|= DATABASE_TRACKERD;
             dataSourceUrlEncrypted = StringUtils.isEmpty(datasourceTrackedProp)? false:  datasourceTrackedProp.contains("jdbc");
-            CURRENT_DATASOURCE_MODEL = dataSourceUrlEncrypted ? CURRENT_DATASOURCE_MODEL | DATABASE_URL_ENCRYPTED : 0;
+            CURRENT_DATASOURCE_MODEL |= dataSourceUrlEncrypted ? CURRENT_DATASOURCE_MODEL | DATABASE_URL_ENCRYPTED : 0;
         } else {
             dataSourceUrlEncrypted = StringUtils.isEmpty(datasourceProp)? false:  datasourceProp.contains("jdbc");
-            CURRENT_DATASOURCE_MODEL = dataSourceUrlEncrypted ? CURRENT_DATASOURCE_MODEL | DATABASE_URL_ENCRYPTED : 0;
+            CURRENT_DATASOURCE_MODEL |= dataSourceUrlEncrypted ? CURRENT_DATASOURCE_MODEL | DATABASE_URL_ENCRYPTED : 0;
         }
-        String driverClassName = null;
-        String url = null;
-        String username = null;
-        String password = null;
+        String driverClassName = environment.getProperty(prefix + ".driver-class-name");
+        String url = environment.getProperty(prefix + ".url");
+        String username = environment.getProperty(prefix + ".username");
+        String password = environment.getProperty(prefix + ".password");
         if(CURRENT_DATASOURCE_MODEL == DATABASE_TRACKERD) {
             driverClassName = environment.getProperty(prefix + ".tracker-driver-class-name");
             url = environment.getProperty(prefix + ".tracker-url");
@@ -124,7 +122,6 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
             password = environment.getProperty(prefix + ".tracker-password");
         }
         if(CURRENT_DATASOURCE_MODEL == DATABASE_URL_ENCRYPTED) {
-            driverClassName = environment.getProperty(prefix + ".driver-class-name");
             HashMap<String,String> dbMetaInfo = decrypt(environment,prefix + ".url",prefix + ".username",prefix + ".password");
             url = dbMetaInfo.get("url");
             username = dbMetaInfo.get("username");
