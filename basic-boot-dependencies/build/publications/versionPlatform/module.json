@@ -1,0 +1,465 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "basic-boot-dependencies",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-dependencies",
+          "version": {
+            "requires": "2.3.1.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-dependencies",
+          "version": {
+            "requires": "Hoxton.SR9"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-contract-dependencies",
+          "version": {
+            "requires": "2.2.5.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto",
+          "version": {
+            "requires": "alpha.2.1.1"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-swagger-spi",
+          "version": {
+            "requires": "alpha.2.2.1"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "p6spy",
+          "module": "p6spy",
+          "version": {
+            "requires": "3.8.6"
+          }
+        },
+        {
+          "group": "com.baomidou",
+          "module": "mybatis-plus-boot-starter",
+          "version": {
+            "requires": "3.4.1"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-swagger2",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-bean-validators",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "swagger-models",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.reflections",
+          "module": "reflections",
+          "version": {
+            "requires": "0.9.10"
+          }
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.9"
+          }
+        },
+        {
+          "group": "commons-beanutils",
+          "module": "commons-beanutils",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api",
+          "version": {
+            "requires": "2.0.1.Final"
+          }
+        },
+        {
+          "group": "joda-time",
+          "module": "joda-time",
+          "version": {
+            "requires": "2.10.8"
+          }
+        },
+        {
+          "group": "org.freemarker",
+          "module": "freemarker",
+          "version": {
+            "requires": "2.3.30"
+          }
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok",
+          "version": {
+            "requires": "1.18.16"
+          }
+        },
+        {
+          "group": "org.modelmapper",
+          "module": "modelmapper",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.alibaba",
+          "module": "fastjson",
+          "version": {
+            "requires": "1.2.75"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-jpa",
+          "version": {
+            "requires": "4.3.1"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-apt",
+          "version": {
+            "requires": "4.2.1"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-sql",
+          "version": {
+            "requires": "4.2.1"
+          }
+        },
+        {
+          "group": "log4j",
+          "module": "log4j",
+          "version": {
+            "requires": "1.2.17"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-dependencies",
+          "version": {
+            "requires": "2.3.1.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-dependencies",
+          "version": {
+            "requires": "Hoxton.SR9"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-contract-dependencies",
+          "version": {
+            "requires": "2.2.5.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto",
+          "version": {
+            "requires": "alpha.2.1.1"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-swagger-spi",
+          "version": {
+            "requires": "alpha.2.2.1"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "p6spy",
+          "module": "p6spy",
+          "version": {
+            "requires": "3.8.6"
+          }
+        },
+        {
+          "group": "com.baomidou",
+          "module": "mybatis-plus-boot-starter",
+          "version": {
+            "requires": "3.4.1"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-swagger2",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-bean-validators",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "swagger-models",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.reflections",
+          "module": "reflections",
+          "version": {
+            "requires": "0.9.10"
+          }
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.9"
+          }
+        },
+        {
+          "group": "commons-beanutils",
+          "module": "commons-beanutils",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.8.0"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api",
+          "version": {
+            "requires": "2.0.1.Final"
+          }
+        },
+        {
+          "group": "joda-time",
+          "module": "joda-time",
+          "version": {
+            "requires": "2.10.8"
+          }
+        },
+        {
+          "group": "org.freemarker",
+          "module": "freemarker",
+          "version": {
+            "requires": "2.3.30"
+          }
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok",
+          "version": {
+            "requires": "1.18.16"
+          }
+        },
+        {
+          "group": "org.modelmapper",
+          "module": "modelmapper",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.alibaba",
+          "module": "fastjson",
+          "version": {
+            "requires": "1.2.75"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-jpa",
+          "version": {
+            "requires": "4.3.1"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-apt",
+          "version": {
+            "requires": "4.2.1"
+          }
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-sql",
+          "version": {
+            "requires": "4.2.1"
+          }
+        },
+        {
+          "group": "log4j",
+          "module": "log4j",
+          "version": {
+            "requires": "1.2.17"
+          }
+        }
+      ]
+    }
+  ]
+}

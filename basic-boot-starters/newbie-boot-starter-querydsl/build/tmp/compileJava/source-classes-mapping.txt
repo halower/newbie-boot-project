@@ -1,0 +1,6 @@
+com/newbie/querydsl/ExtendedQueryDslJpaRepository.java
+ com.newbie.querydsl.ExtendedQueryDslJpaRepository
+com/newbie/querydsl/EnableQueryDSLRepositories.java
+ com.newbie.querydsl.EnableQueryDSLRepositories
+com/newbie/querydsl/DefaultExtendedQueryDslJpaRepository.java
+ com.newbie.querydsl.DefaultExtendedQueryDslJpaRepository

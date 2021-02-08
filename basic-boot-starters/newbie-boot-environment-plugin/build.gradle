@@ -10,7 +10,7 @@ description = "基础框架针对开发环境切换的插件，该插件已经�
 
 
 repositories {
-    maven { url 'http://192.168.7.23:8081/repository/maven-public/' }
+    maven { url 'http://192.168.7.197:8081/repository/maven-public/' }
 }
 
 dependencies { 

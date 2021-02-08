@@ -1,0 +1,163 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-boot-starter-querydsl",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-jpa"
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-apt"
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-sql"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-boot-starter-querydsl-1.0.3.jar",
+          "url": "newbie-boot-starter-querydsl-1.0.3.jar",
+          "size": 4930,
+          "sha512": "8a408128e63059f477a51b1ce453469ba296f7bfc7aef92df6843e051ead361b3df3d7b18fce2bd2365d00d4c0f195abeda4fa3d12fb53a703075aa9e96a36bb",
+          "sha256": "e12717a1029a371dfeecb91f45ea9caf5f804874896a3303f46c1a454d4a93d6",
+          "sha1": "4ce11dcf4972cf06a2b0ad62d0c4bfeff2da5700",
+          "md5": "0e52b3c41c5278017981769c1dcd1676"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-jpa"
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-apt"
+        },
+        {
+          "group": "com.querydsl",
+          "module": "querydsl-sql"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-boot-starter-querydsl-1.0.3.jar",
+          "url": "newbie-boot-starter-querydsl-1.0.3.jar",
+          "size": 4930,
+          "sha512": "8a408128e63059f477a51b1ce453469ba296f7bfc7aef92df6843e051ead361b3df3d7b18fce2bd2365d00d4c0f195abeda4fa3d12fb53a703075aa9e96a36bb",
+          "sha256": "e12717a1029a371dfeecb91f45ea9caf5f804874896a3303f46c1a454d4a93d6",
+          "sha1": "4ce11dcf4972cf06a2b0ad62d0c4bfeff2da5700",
+          "md5": "0e52b3c41c5278017981769c1dcd1676"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "newbie-boot-starter-querydsl-1.0.3-javadoc.jar",
+          "url": "newbie-boot-starter-querydsl-1.0.3-javadoc.jar",
+          "size": 27201,
+          "sha512": "152843f79816ef2d4b8000bade5d099ab88204a7d712b4224ed6400e49417decf7ae8239f0dfe48730b927f9c91b71a78c1d335c367aa496d78d4830bfd87955",
+          "sha256": "2e3280ffe9b05a37daf5ffd3914b1745980d4af67034d9ca0af67318ef9bbf50",
+          "sha1": "435e1f90dab489f45bb9c1d06da9a9b2f5b952da",
+          "md5": "44a44ef4a7047d40ab168866be67f611"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "newbie-boot-starter-querydsl-1.0.3-sources.jar",
+          "url": "newbie-boot-starter-querydsl-1.0.3-sources.jar",
+          "size": 4124,
+          "sha512": "85d3d41e856202d640ce0681dfe01eafd2c59dd076931fe513d3f66b5a38c93ce76e707ed3e31140642c97181a2d6e2d11ade7316a2bfe7e780fce8d0db8577b",
+          "sha256": "a5f629246e6af7c35329650136ff812e3f7ec1f6bdb6146a488702ca44a195b5",
+          "sha1": "5df9cb9dd2390aa20215353e5e6e8bb2c0010f4e",
+          "md5": "587f56d4d29fa003a43f3829c94e6574"
+        }
+      ]
+    }
+  ]
+}

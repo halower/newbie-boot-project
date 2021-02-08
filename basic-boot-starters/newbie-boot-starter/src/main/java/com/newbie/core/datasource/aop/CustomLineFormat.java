@@ -20,7 +20,7 @@ package com.newbie.core.datasource.aop;
 
 import com.newbie.context.NewbieBootContext;
 import com.newbie.core.datasource.util.SQLFormatter;
-import com.newbie.core.exception.BusinessException;
+import com.newbie.core.exception.Asserts;
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.env.Environment;
@@ -45,7 +45,7 @@ public class CustomLineFormat implements MessageFormattingStrategy {
                     String thorwExceptionStr = StringUtils.defaultIfEmpty(env.getProperty("application.tracker.thorw-exception"), "true");
                     Boolean thorwException = Boolean.parseBoolean(thorwExceptionStr);
                     if(thorwException) {
-                        throw  new BusinessException("警告: 当前为非查询操作缺失公共字段( zhxgsj|sjbsbh|sjly )的维护");
+                        Asserts.fail("警告: 当前为非查询操作缺失公共字段( zhxgsj|sjbsbh|sjly )的维护");
                     }
                 }
             }

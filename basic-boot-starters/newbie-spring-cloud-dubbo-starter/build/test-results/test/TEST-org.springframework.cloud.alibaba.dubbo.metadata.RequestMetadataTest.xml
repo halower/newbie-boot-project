@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cloud.alibaba.dubbo.metadata.RequestMetadataTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-04T09:27:23" hostname="DESKTOP-4DO1SUF" time="0.002">
+  <properties/>
+  <testcase name="testEqualsAndHashCodeAndCompareTo" classname="org.springframework.cloud.alibaba.dubbo.metadata.RequestMetadataTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

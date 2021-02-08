@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Application-Version: 1.0.3
+Build-date: Mon Feb 08 16:03:15 CST 2021
+Implementation-Version: 1.0.0(GA)
+Build-Timestamp: 2021-02-08 16:03:15
+Built-By: windows
+Build-OS: Windows 10
+Built-Gradle: 6.7.1
+Build-Jdk: 1.8.0_131
+

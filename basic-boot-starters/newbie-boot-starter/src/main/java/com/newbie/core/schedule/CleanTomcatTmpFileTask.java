@@ -1,6 +1,7 @@
 package com.newbie.core.schedule;
 
-import com.newbie.core.exception.BusinessException;
+import com.newbie.common.api.JsonResult;
+import com.newbie.core.exception.Asserts;
 import io.netty.util.internal.StringUtil;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +21,7 @@ public class CleanTomcatTmpFileTask {
     public void deleteTmpFileTask() {
         if(StringUtil.isNullOrEmpty(tmp_dir)){
             log.error("Tomcat临时目录未指定");
-            throw new BusinessException("Tomcat临时目录未指定");
+            Asserts.fail("Tomcat临时目录未指定");
         }
         File targetFile = new File(tmp_dir);
         if (!targetFile.exists()) {

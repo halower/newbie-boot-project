@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.halower</groupId>
+    <groupId>cn.tfswx</groupId>
     <artifactId>newbie-spring-boot-management</artifactId>
-    <version>2.0.0.B7</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <properties>
-        <newbie_apidto_version>2.0.0.B7</newbie_apidto_version>
-        <newbie_boot_stater_version>2.0.0.B7</newbie_boot_stater_version>
-        <newbie_openclient_edas_version>2.0.0.B7</newbie_openclient_edas_version>
-        <newbie_openclient_nacos_version>2.0.0.B7</newbie_openclient_nacos_version>
-        <newbie_openclient_nacos_standalone_version>2.0.0.B7</newbie_openclient_nacos_standalone_version>
-        <newbie-spring-boot-starter-querydsl>2.0.0.B7</newbie-spring-boot-starter-querydsl>
+        <newbie_apidto_version>1.0.0</newbie_apidto_version>
+        <newbie_boot_stater_version>1.0.0</newbie_boot_stater_version>
+        <newbie_openclient_edas_version>1.0.0</newbie_openclient_edas_version>
+        <newbie_openclient_nacos_version>1.0.0</newbie_openclient_nacos_version>
+        <newbie_openclient_nacos_standalone_version>1.0.0</newbie_openclient_nacos_standalone_version>
+        <newbie-spring-boot-starter-querydsl>1.0.0</newbie-spring-boot-starter-querydsl>
         <dm_version>18</dm_version>
         <dm_dialect_version>hibernate5.0</dm_dialect_version>
         <dm_hibernatespatial_version>1.0</dm_hibernatespatial_version>

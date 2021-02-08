@@ -1,0 +1,166 @@
+com/newbie/core/annotations/DomainFactory.java
+ com.newbie.core.annotations.DomainFactory
+com/newbie/constants/NewbieBootInfraConstants.java
+ com.newbie.constants.NewbieBootInfraConstants
+com/newbie/core/config/ApplicationWebConfigurer.java
+ com.newbie.core.config.ApplicationWebConfigurer
+com/newbie/endpoint/NewbieBootVersionEndpoint.java
+ com.newbie.endpoint.NewbieBootVersionEndpoint
+com/newbie/core/datasource/DynamicDataSourceRegister.java
+ com.newbie.core.datasource.DynamicDataSourceRegister
+com/newbie/core/annotations/DomainEntity.java
+ com.newbie.core.annotations.DomainEntity
+com/newbie/core/config/WebFilterConfiguration.java
+ com.newbie.core.config.WebFilterConfiguration
+com/newbie/context/CurrentUserContext.java
+ com.newbie.context.CurrentUserContext
+ com.newbie.context.CurrentUserContext$CurrentUserContextBuilder
+com/newbie/core/datasource/aop/CustomLineFormat.java
+ com.newbie.core.datasource.aop.CustomLineFormat
+com/newbie/core/annotations/UpdatedId.java
+ com.newbie.core.annotations.UpdatedId
+com/newbie/core/aop/UserInfoForDubboFilter.java
+ com.newbie.core.aop.UserInfoForDubboFilter
+com/newbie/core/aop/UserInfoForWebFilter.java
+ com.newbie.core.aop.UserInfoForWebFilter
+com/newbie/core/annotations/DomainAggregate.java
+ com.newbie.core.annotations.DomainAggregate
+com/newbie/swagger/SwaggerProperties.java
+ com.newbie.swagger.SwaggerProperties
+com/newbie/core/persistent/mybaits/CommonServiceImpl.java
+ com.newbie.core.persistent.mybaits.CommonServiceImpl
+com/newbie/core/dubbo/validation/ValidateInfoBuilder.java
+ com.newbie.core.dubbo.validation.ValidateInfoBuilder
+com/newbie/core/datasource/DynamicDataSource.java
+ com.newbie.core.datasource.DynamicDataSource
+com/newbie/core/persistent/mybaits/MybatisConfig.java
+ com.newbie.core.persistent.mybaits.MybatisConfig
+com/newbie/launcher/StartEventListener.java
+ com.newbie.launcher.StartEventListener
+com/newbie/core/datasource/annotation/DS.java
+ com.newbie.core.datasource.annotation.DS
+com/newbie/core/datasource/crypt/CustomDecryptInputDTO.java
+ com.newbie.core.datasource.crypt.CustomDecryptInputDTO
+com/newbie/core/event/spring/SpringBaseEvent.java
+ com.newbie.core.event.spring.SpringBaseEvent
+com/newbie/core/resttemplate/RestTemplateFactory.java
+ com.newbie.core.resttemplate.RestTemplateFactory
+org/springframework/boot/env/OriginTrackedPropertiesLoader.java
+ org.springframework.boot.env.OriginTrackedPropertiesLoader
+ org.springframework.boot.env.OriginTrackedPropertiesLoader$CharacterReader
+com/newbie/core/annotations/ApplicationService.java
+ com.newbie.core.annotations.ApplicationService
+com/newbie/core/datasource/aop/Binder.java
+ com.newbie.core.datasource.aop.Binder
+com/newbie/core/log/LogbackProperties.java
+ com.newbie.core.log.LogbackProperties
+com/newbie/core/dubbo/validation/DubboProviderValidation.java
+ com.newbie.core.dubbo.validation.DubboProviderValidation
+com/newbie/common/api/ResultCode.java
+ com.newbie.common.api.ResultCode
+com/newbie/core/resttemplate/RestTemplateDecorator.java
+ com.newbie.core.resttemplate.RestTemplateDecorator
+com/newbie/core/annotations/DomainRepository.java
+ com.newbie.core.annotations.DomainRepository
+com/newbie/core/annotations/DomainSpecification.java
+ com.newbie.core.annotations.DomainSpecification
+com/newbie/core/datasource/crypt/DssDecryptService.java
+ com.newbie.core.datasource.crypt.DssDecryptService
+com/newbie/core/dubbo/DubboDataSourceChangeWrapper.java
+ com.newbie.core.dubbo.DubboDataSourceChangeWrapper
+com/newbie/core/annotations/DomainValueObject.java
+ com.newbie.core.annotations.DomainValueObject
+com/newbie/core/annotations/DeletedId.java
+ com.newbie.core.annotations.DeletedId
+com/newbie/core/config/NewbieBootBasicProperties.java
+ com.newbie.core.config.NewbieBootBasicProperties
+ com.newbie.core.config.NewbieBootBasicProperties$Datasource
+ com.newbie.core.config.NewbieBootBasicProperties$DatasourceTracker
+ com.newbie.core.config.NewbieBootBasicProperties$Tomcat
+com/newbie/swagger/Knife4jAutoConfiguration.java
+ com.newbie.swagger.Knife4jAutoConfiguration
+com/newbie/core/datasource/aop/DataSourceForWebFilter.java
+ com.newbie.core.datasource.aop.DataSourceForWebFilter
+com/newbie/initializer/NewbieBootContextInitializer.java
+ com.newbie.initializer.NewbieBootContextInitializer
+com/newbie/common/api/CommonPage.java
+ com.newbie.common.api.CommonPage
+com/newbie/core/datasource/util/SQLFormatter.java
+ com.newbie.core.datasource.util.SQLFormatter
+ com.newbie.core.datasource.util.SQLFormatter$FormatProcess
+com/newbie/core/resttemplate/RestTemplateHeaderModifierInterceptor.java
+ com.newbie.core.resttemplate.RestTemplateHeaderModifierInterceptor
+com/newbie/core/datasource/crypt/DssResultDTO.java
+ com.newbie.core.datasource.crypt.DssResultDTO
+com/newbie/core/datasource/aop/DynamicDataSourceAspect.java
+ com.newbie.core.datasource.aop.DynamicDataSourceAspect
+com/newbie/core/dubbo/validation/DubboProviderValidator.java
+ com.newbie.core.dubbo.validation.DubboProviderValidator
+com/newbie/core/monitor/p6spy/P6spyProperties.java
+ com.newbie.core.monitor.p6spy.P6spyProperties
+com/newbie/core/conventions/ApplicationService.java
+ com.newbie.core.conventions.ApplicationService
+com/newbie/core/persistent/mybaits/CommonMapper.java
+ com.newbie.core.persistent.mybaits.CommonMapper
+com/newbie/common/api/JsonResult.java
+ com.newbie.common.api.JsonResult
+com/newbie/core/conventions/DomainService.java
+ com.newbie.core.conventions.DomainService
+com/newbie/core/monitor/p6spy/P6spyAutoConfiguration.java
+ com.newbie.core.monitor.p6spy.P6spyAutoConfiguration
+com/newbie/core/persistent/mybaits/SelectByPage.java
+ com.newbie.core.persistent.mybaits.SelectByPage
+com/newbie/core/exception/GlobalExceptionHandler.java
+ com.newbie.core.exception.GlobalExceptionHandler
+com/newbie/core/event/EventHandler.java
+ com.newbie.core.event.EventHandler
+com/newbie/core/datasource/DynamicDataSourceContextHolder.java
+ com.newbie.core.datasource.DynamicDataSourceContextHolder
+com/newbie/swagger/Knife4jConfiguration.java
+ com.newbie.swagger.Knife4jConfiguration
+com/newbie/core/schedule/CleanTomcatTmpFileTask.java
+ com.newbie.core.schedule.CleanTomcatTmpFileTask
+com/newbie/autoconfigure/NewBieBootInfraAutoConfiguration.java
+ com.newbie.autoconfigure.NewBieBootInfraAutoConfiguration
+com/newbie/core/datasource/jdbctemplate/DynamicJdbcTemplateManager.java
+ com.newbie.core.datasource.jdbctemplate.DynamicJdbcTemplateManager
+com/newbie/context/NewbieBootContext.java
+ com.newbie.context.NewbieBootContext
+com/newbie/core/entity/SelfRef.java
+ com.newbie.core.entity.SelfRef
+com/newbie/core/datasource/jdbctemplate/JdbcTemplateManager.java
+ com.newbie.core.datasource.jdbctemplate.JdbcTemplateManager
+com/newbie/core/event/EventBus.java
+ com.newbie.core.event.EventBus
+com/newbie/constants/ServiceVersion.java
+ com.newbie.constants.ServiceVersion
+com/newbie/context/EnvironmentCustomizer.java
+ com.newbie.context.EnvironmentCustomizer
+com/newbie/core/datasource/crypt/DssDecryptInputDTO.java
+ com.newbie.core.datasource.crypt.DssDecryptInputDTO
+com/newbie/context/UserInfoManager.java
+ com.newbie.context.UserInfoManager
+com/newbie/core/config/GlobalReturnConfiguration.java
+ com.newbie.core.config.GlobalReturnConfiguration
+com/newbie/core/entity/AggregateRoot.java
+ com.newbie.core.entity.AggregateRoot
+com/newbie/core/persistent/mybaits/CustomerSqlInjector.java
+ com.newbie.core.persistent.mybaits.CustomerSqlInjector
+com/newbie/common/api/IErrorCode.java
+ com.newbie.common.api.IErrorCode
+com/newbie/core/annotations/DeletedIds.java
+ com.newbie.core.annotations.DeletedIds
+com/newbie/core/exception/Asserts.java
+ com.newbie.core.exception.Asserts
+com/newbie/core/entity/BaseDomainEntity.java
+ com.newbie.core.entity.BaseDomainEntity
+com/newbie/core/event/EventData.java
+ com.newbie.core.event.EventData
+com/newbie/core/annotations/DomainService.java
+ com.newbie.core.annotations.DomainService
+com/newbie/autoconfigure/NewBieApplicationConfiguration.java
+ com.newbie.autoconfigure.NewBieApplicationConfiguration
+com/newbie/core/datasource/aop/DataSourceForDubboFilter.java
+ com.newbie.core.datasource.aop.DataSourceForDubboFilter
+com/newbie/core/exception/ApiException.java
+ com.newbie.core.exception.ApiException

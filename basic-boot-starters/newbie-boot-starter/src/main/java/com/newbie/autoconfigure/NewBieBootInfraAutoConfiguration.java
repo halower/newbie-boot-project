@@ -26,8 +26,8 @@ import com.newbie.core.datasource.DynamicDataSourceRegister;
 import com.newbie.core.datasource.aop.DataSourceForWebFilter;
 import com.newbie.core.datasource.aop.DynamicDataSourceAspect;
 import com.newbie.core.datasource.jdbctemplate.DynamicJdbcTemplateManager;
-import com.newbie.core.persistent.mybaits.MyMetaObjectHandler;
 import com.newbie.core.persistent.mybaits.MybatisConfig;
+import com.newbie.launcher.StartEventListener;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
@@ -43,10 +43,10 @@ import org.springframework.context.annotation.PropertySource;
         GlobalReturnConfiguration.class,
         DataSourceForWebFilter.class,
         MybatisConfig.class,
-        MyMetaObjectHandler.class,
         DynamicJdbcTemplateManager.class,
         DynamicDataSourceAspect.class,
-        DynamicDataSourceRegister.class
+        DynamicDataSourceRegister.class,
+        StartEventListener.class
 })
 @Configuration
 @PropertySource("classpath:/META-INF/app-config.properties")

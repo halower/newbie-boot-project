@@ -1,0 +1,27 @@
+org/springframework/cloud/alibaba/dubbo/autoconfigure/DubboServiceRegistrationAutoConfigurationTest.java
+ org.springframework.cloud.alibaba.dubbo.autoconfigure.DubboServiceRegistrationAutoConfigurationTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/ConsumeMediaTypeExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.ConsumeMediaTypeExpressionTest
+org/springframework/cloud/alibaba/dubbo/metadata/RequestMetadataTest.java
+ org.springframework.cloud.alibaba.dubbo.metadata.RequestMetadataTest
+org/springframework/cloud/alibaba/dubbo/metadata/resolver/DubboTransportedMethodMetadataResolverTest.java
+ org.springframework.cloud.alibaba.dubbo.metadata.resolver.DubboTransportedMethodMetadataResolverTest
+ org.springframework.cloud.alibaba.dubbo.metadata.resolver.DubboTransportedMethodMetadataResolverTest$TestDefaultService
+org/springframework/cloud/alibaba/dubbo/http/matcher/HeaderExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.HeaderExpressionTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/HttpRequestMethodsMatcherTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.HttpRequestMethodsMatcherTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/HttpRequestParamsMatcherTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.HttpRequestParamsMatcherTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/AbstractMediaTypeExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.AbstractMediaTypeExpressionTest
+org/springframework/cloud/alibaba/dubbo/http/util/HttpUtilsTest.java
+ org.springframework.cloud.alibaba.dubbo.http.util.HttpUtilsTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/ParamExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.ParamExpressionTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/AbstractNameValueExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.AbstractNameValueExpressionTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/AbstractHttpRequestMatcherTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.AbstractHttpRequestMatcherTest
+org/springframework/cloud/alibaba/dubbo/http/matcher/ProduceMediaTypeExpressionTest.java
+ org.springframework.cloud.alibaba.dubbo.http.matcher.ProduceMediaTypeExpressionTest

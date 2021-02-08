@@ -32,7 +32,6 @@ import org.apache.dubbo.rpc.*;
  * @Date: 2019/5/22 14:06
  *
  */
-@Deprecated
 public class UserInfoForDubboFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {

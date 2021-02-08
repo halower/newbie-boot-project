@@ -18,7 +18,7 @@
  */
 package com.newbie.core.dubbo.validation;
 
-import com.newbie.core.exception.BusinessException;
+import com.newbie.core.exception.Asserts;
 import com.newbie.dto.ResponseTypes;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.utils.ReflectUtils;
@@ -42,7 +42,7 @@ public class DubboProviderValidator extends JValidator implements Validator {
             super.validate(methodName,parameterTypes,arguments);
         }catch (ConstraintViolationException e){
             StringBuilder details = ValidateInfoBuilder.info(e);
-            throw new BusinessException(ResponseTypes.REMOTE_CALL_FAIL, details.toString());
+            Asserts.fail(details.toString());
         }
     }
 }

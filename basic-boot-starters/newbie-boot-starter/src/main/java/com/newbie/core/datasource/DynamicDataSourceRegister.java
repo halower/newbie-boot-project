@@ -52,7 +52,7 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
     private Map<String, DataSource> customDataSources = new HashMap<>();
 
     @Override
-    public void setEnvironment(Environment environment) {
+    public void setEnvironment(Environment environment)  {
         final String datasourceList = environment.getProperty("application.datasource.list");
         if(StringUtils.isNotEmpty(datasourceList)) {
             String[] targetDatasource = datasourceList.split(",");
@@ -227,8 +227,8 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
 
         final CustomDecryptInputDTO customDecryptInputDTO = new CustomDecryptInputDTO();
         customDecryptInputDTO.setDecryptMap(map);
-        Map decryptMap = new DssDecryptService().decrypt(environment,customDecryptInputDTO);
         HashMap<String,String> ret = new HashMap();
+        Map decryptMap = new DssDecryptService().decrypt(environment,customDecryptInputDTO);
         ret.put("url",decryptMap.get("url").toString());
         ret.put("username",decryptMap.get("username").toString());
         ret.put("password",decryptMap.get("password").toString());

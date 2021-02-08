@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <springProperty scop="context" name="log_home" source="application.logback.file-path" defaultValue="/logs"/>
+    <springProperty scop="context" name="spring.datasource.url" source="spring.datasource.url" defaultValue=""/>
+    <springProperty scop="context" name="spring.datasource.driver-class-name" source="spring.datasource.driver-class-name" defaultValue=""/>
+    <springProperty scop="context" name="spring.datasource.username" source="spring.datasource.username" defaultValue=""/>
+    <springProperty scop="context" name="spring.datasource.password" source="spring.datasource.password" defaultValue=""/>
+    <springProperty scop="context" name="application.logback.use-db" source="application.logback.use-db" defaultValue="false"/>
+    <springProperty scop="context" name="application.logback.use-file" source="application.logback.use-file" defaultValue="false"/>
+    <property name="pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg %n"/>
+    <property name="pattern-color" value="%yellow(%d{yyyy-MM-dd HH:mm:ss.SSS}) %X{userId} [%thread] %highlight(%-5level) %green(%logger{50}) - %highlight(%msg) %n"/>
+
+    <!-- 控制台输出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 控制台输出-带颜色 -->
+    <appender name="CONSOLE-WITH-COLOR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern-color}</pattern>
+        </encoder>
+    </appender>
+
+    <if condition='property("application.logback.use-db").equals("true")'>
+        <then>
+            <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+                <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+                    <driverClass>${spring.datasource.driver-class-name}</driverClass>
+                    <url>${spring.datasource.url}</url>
+                    <user>${spring.datasource.username}</user>
+                    <password>${spring.datasource.password}</password>
+                </connectionSource>
+            </appender>
+        </then>
+    </if>
+
+    <!-- 文件输出 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log_home}/all.%d.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE-WITH-COLOR"/>
+        <if condition='property("application.logback.use-db").equals("true")'>
+            <then>
+                <appender-ref ref="DB"/>
+            </then>
+        </if>
+        <if condition='property("application.logback.use-file").equals("true")'>
+            <then>
+                <appender-ref ref="FILE"/>
+            </then>
+        </if>
+    </root>
+</configuration>

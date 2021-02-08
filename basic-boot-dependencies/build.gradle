@@ -31,8 +31,6 @@ dependencies {
         api 'commons-io:commons-io:2.8.0'
         api 'org.apache.dubbo:dubbo:2.7.7'
         api 'javax.validation:validation-api:2.0.1.Final'
-        api 'joda-time:joda-time:2.10.8'
-        api 'org.freemarker:freemarker:2.3.30'
         api 'org.projectlombok:lombok:1.18.16'
         api 'org.modelmapper:modelmapper:2.1.0'
         api 'com.alibaba:fastjson:1.2.75'

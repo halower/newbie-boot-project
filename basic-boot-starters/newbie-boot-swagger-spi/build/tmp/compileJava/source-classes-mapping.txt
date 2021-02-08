@@ -1,0 +1,2 @@
+com/newbie/swagger/spi/SwaggerReader.java
+ com.newbie.swagger.spi.SwaggerReader

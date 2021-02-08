@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <spring_boot_version>2.4.0</spring_boot_version>
+        <spring_boot_version>2.3.1.RELEASE</spring_boot_version>
         <query_dsljpa_version>4.2.1</query_dsljpa_version>
         <query_dslsql_version>4.2.1</query_dslsql_version>
         <lombok_version>1.18.4</lombok_version>

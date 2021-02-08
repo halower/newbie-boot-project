@@ -1,0 +1,183 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "basic-cloud-extension-denpendencies",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-dependencies",
+          "version": {
+            "requires": "2.3.1.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.alibaba.edas",
+          "module": "edas-dubbo-extension",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "com.alibaba.cloud",
+          "module": "spring-cloud-starter-acm",
+          "version": {
+            "requires": "1.0.9"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-registry-nacos",
+          "version": {
+            "requires": "2.7.8"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.8"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-alicloud-ans",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-discovery",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-config",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-dependencies",
+          "version": {
+            "requires": "2.3.1.RELEASE"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.alibaba.edas",
+          "module": "edas-dubbo-extension",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "com.alibaba.cloud",
+          "module": "spring-cloud-starter-acm",
+          "version": {
+            "requires": "1.0.9"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-registry-nacos",
+          "version": {
+            "requires": "2.7.8"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.8"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-alicloud-ans",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-discovery",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-config",
+          "version": {
+            "requires": "0.9.0.RELEASE"
+          }
+        }
+      ]
+    }
+  ]
+}

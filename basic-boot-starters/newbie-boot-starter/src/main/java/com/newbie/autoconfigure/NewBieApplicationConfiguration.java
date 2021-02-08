@@ -24,12 +24,12 @@ import com.newbie.context.NewbieBootContext;
 import com.newbie.core.config.ApplicationWebConfigurer;
 import com.newbie.core.config.NewbieBootBasicProperties;
 import com.newbie.core.datasource.crypt.DssDecryptService;
-import com.newbie.core.exception.handler.GlobalExceptionHandler;
+import com.newbie.core.exception.GlobalExceptionHandler;
+import com.newbie.core.log.LogbackProperties;
 import com.newbie.core.monitor.p6spy.P6spyProperties;
 import com.newbie.core.schedule.CleanTomcatTmpFileTask;
 import com.newbie.endpoint.NewbieBootVersionEndpoint;
-import com.newbie.swagger.SwaggerAutoConfiguration;
-import com.newbie.swagger.SwaggerController;
+import com.newbie.swagger.Knife4jConfiguration;
 import com.newbie.swagger.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -45,19 +45,19 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableAspectJAutoProxy
 @EnableConfigurationProperties({
         NewbieBootBasicProperties.class,
+        P6spyProperties.class,
         SwaggerProperties.class,
-        P6spyProperties.class
+        LogbackProperties.class
   }
 )
 @Import({
         GlobalExceptionHandler.class,
         ApplicationWebConfigurer.class,
-        SwaggerAutoConfiguration.class,
-        SwaggerController.class,
         NewbieBootVersionEndpoint.class,
         CleanTomcatTmpFileTask.class,
         DssDecryptService.class,
         NewbieBootContext.class,
+        Knife4jConfiguration.class
 })
 public class NewBieApplicationConfiguration {
 }

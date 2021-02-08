@@ -19,14 +19,6 @@
 
 package com.newbie.constants;
 
-import com.google.common.collect.ImmutableMap;
-import com.newbie.core.persistent.common.DateParameterConstructor;
-import com.newbie.core.persistent.common.ParameterConstructor;
-import com.newbie.core.persistent.common.TimeParameterConstructor;
-import com.newbie.core.persistent.common.TimeStampParameterConstructor;
-
-import java.util.Map;
-
 /**
  * NewbieBootInfraConstants
  *
@@ -58,11 +50,6 @@ public class NewbieBootInfraConstants {
     public static final String CURRENT_USER_INFO = "CURRENT_USER_INFO";
 
     public static final String READ_WRITE_DB_TYPE = "READ_WRITE_DB_TYPE";
-
-    public static final Map<String, ParameterConstructor> DATE_PARAMETER_PROCESSOR = ImmutableMap.<String, ParameterConstructor>builder()
-            .put("DATE", new DateParameterConstructor())
-            .put("TIME", new TimeParameterConstructor())
-            .put("TIMESTAMP", new TimeStampParameterConstructor()).build();
 
     /**
      * 读写标记

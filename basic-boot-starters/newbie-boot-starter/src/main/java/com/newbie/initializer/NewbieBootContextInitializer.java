@@ -21,20 +21,22 @@ package com.newbie.initializer;
 
 
 import com.newbie.context.NewbieBootContext;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.ConfigurableEnvironment;
 
+@Log4j2
 public class NewbieBootContextInitializer implements  ApplicationContextInitializer<ConfigurableApplicationContext>, Ordered {
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext)  {
         ConfigurableEnvironment environment = applicationContext.getEnvironment();
         if(!NewbieBootContext.appIsStarted) {
             if (NewbieBootContext.isSpringCloudBootstrapEnvironment(environment)) {
-                System.out.println("\n当前接入SpringCloud环境");
+                log.info("\033[32;4m" + "当前接入SpringCloud环境!" + "\033[0m");
             }
-            System.out.println("\nNewBieBoot基础设施已经准备就绪!");
+            log.info("\033[32;4m" + "TFStarter基础设施已经准备就绪!" + "\033[0m");
         }
     }
 

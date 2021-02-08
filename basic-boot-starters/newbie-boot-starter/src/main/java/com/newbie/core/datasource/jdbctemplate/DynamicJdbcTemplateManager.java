@@ -12,6 +12,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,6 +21,8 @@ public class DynamicJdbcTemplateManager implements JdbcTemplateManager, Applicat
     private ApplicationContext applicationContext;
 
     public void init() {
+        Boolean datasourceEnabled = Arrays.stream( applicationContext.getBeanDefinitionNames()).anyMatch(name -> name.equals("org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"));
+        if(!datasourceEnabled) return;
         final Environment environment = applicationContext.getEnvironment();
         String datasourceList = environment.getProperty("application.datasource.list");
         String[] targetDatasource = StringUtils.isNotEmpty(datasourceList) ? datasourceList.split(",") : new String[]{"default"};

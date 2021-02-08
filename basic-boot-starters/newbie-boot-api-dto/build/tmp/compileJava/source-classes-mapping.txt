@@ -1,0 +1,14 @@
+com/newbie/dto/DTO.java
+ com.newbie.dto.DTO
+com/newbie/dto/InputDTO.java
+ com.newbie.dto.InputDTO
+com/newbie/dto/OutputDTO.java
+ com.newbie.dto.OutputDTO
+com/newbie/mapper/GenericsToken.java
+ com.newbie.mapper.GenericsToken
+com/newbie/dto/ResponseTypes.java
+ com.newbie.dto.ResponseTypes
+com/newbie/dto/ResponseResult.java
+ com.newbie.dto.ResponseResult
+com/newbie/mapper/Mapper.java
+ com.newbie.mapper.Mapper

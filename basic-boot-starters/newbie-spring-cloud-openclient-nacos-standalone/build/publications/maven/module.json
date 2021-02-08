@@ -1,0 +1,119 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-spring-cloud-openclient-nacos-standalone",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-cloud-extension-denpendencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-discovery"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-registry-nacos"
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-config"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-cloud-openclient-nacos-standalone-1.0.3.jar",
+          "url": "newbie-spring-cloud-openclient-nacos-standalone-1.0.3.jar",
+          "size": 261,
+          "sha512": "c337348a5d18515b5c33507c534ce70672d0c8ed1900d6c81a7266f7d18bdb1362b93624e606ee5686bfc90c0289e36e1ee9dcfc192e9b048054e405208d1bbf",
+          "sha256": "eb3c9e75fd47e314b4417617c6a0d15d81cebe658a66bc47e6178ffcf56280a6",
+          "sha1": "eb5035e7701ac83b16b1f87a9e909496a3189e6d",
+          "md5": "5d096f1bfb2b05566f3ad55343ef14d1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-cloud-extension-denpendencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-discovery"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-registry-nacos"
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-alibaba-nacos-config"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-cloud-openclient-nacos-standalone-1.0.3.jar",
+          "url": "newbie-spring-cloud-openclient-nacos-standalone-1.0.3.jar",
+          "size": 261,
+          "sha512": "c337348a5d18515b5c33507c534ce70672d0c8ed1900d6c81a7266f7d18bdb1362b93624e606ee5686bfc90c0289e36e1ee9dcfc192e9b048054e405208d1bbf",
+          "sha256": "eb3c9e75fd47e314b4417617c6a0d15d81cebe658a66bc47e6178ffcf56280a6",
+          "sha1": "eb5035e7701ac83b16b1f87a9e909496a3189e6d",
+          "md5": "5d096f1bfb2b05566f3ad55343ef14d1"
+        }
+      ]
+    }
+  ]
+}

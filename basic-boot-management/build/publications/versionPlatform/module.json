@@ -1,0 +1,287 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "basic-boot-management",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.github.halower",
+          "module": "newbie-boot-starter",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "dialect",
+          "version": {
+            "requires": "hibernate5.0"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "hibernateSpatial",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "jdbcDriver",
+          "version": {
+            "requires": "18"
+          }
+        },
+        {
+          "group": "org.apache.poi",
+          "module": "poi",
+          "version": {
+            "requires": "4.1.2"
+          }
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api",
+          "version": {
+            "requires": "2.0.1.Final"
+          }
+        },
+        {
+          "group": "cn.afterturn",
+          "module": "easypoi-spring-boot-starter",
+          "version": {
+            "requires": "4.1.2"
+          }
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.apache.kafka",
+          "module": "kafka-clients",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "com.github.pagehelper",
+          "module": "pagehelper",
+          "version": {
+            "requires": "5.1.4"
+          }
+        },
+        {
+          "group": "com.github.pagehelper",
+          "module": "pagehelper-spring-boot-starter",
+          "version": {
+            "requires": "1.2.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-edas",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-nacos",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-nacos-standalone",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.junit",
+          "module": "junit-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "com.github.halower",
+          "module": "newbie-boot-starter",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter",
+          "version": {
+            "requires": "2.7.7"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "dialect",
+          "version": {
+            "requires": "hibernate5.0"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "hibernateSpatial",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "jdbcDriver",
+          "version": {
+            "requires": "18"
+          }
+        },
+        {
+          "group": "org.apache.poi",
+          "module": "poi",
+          "version": {
+            "requires": "4.1.2"
+          }
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api",
+          "version": {
+            "requires": "2.0.1.Final"
+          }
+        },
+        {
+          "group": "cn.afterturn",
+          "module": "easypoi-spring-boot-starter",
+          "version": {
+            "requires": "4.1.2"
+          }
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations",
+          "version": {
+            "requires": "1.5.22"
+          }
+        },
+        {
+          "group": "org.apache.kafka",
+          "module": "kafka-clients",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "com.github.pagehelper",
+          "module": "pagehelper",
+          "version": {
+            "requires": "5.1.4"
+          }
+        },
+        {
+          "group": "com.github.pagehelper",
+          "module": "pagehelper-spring-boot-starter",
+          "version": {
+            "requires": "1.2.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-edas",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-nacos",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-cloud-openclient-nacos-standalone",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ]
+    }
+  ]
+}

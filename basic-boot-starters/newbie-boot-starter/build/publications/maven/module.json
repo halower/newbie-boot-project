@@ -1,0 +1,339 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tfswx",
+    "module": "tf-spring-boot-starter",
+    "version": "0.0.15",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "7dyunfbtkbakrbkxmgbkbtngtm"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "p6spy",
+          "module": "p6spy"
+        },
+        {
+          "group": "com.alibaba",
+          "module": "fastjson"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo"
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io"
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok"
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations"
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-swagger2"
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3"
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api"
+        },
+        {
+          "group": "commons-beanutils",
+          "module": "commons-beanutils"
+        },
+        {
+          "group": "org.reflections",
+          "module": "reflections",
+          "version": {
+            "requires": "0.9.10"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-bean-validators",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "com.baomidou",
+          "module": "mybatis-plus-boot-starter"
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-aop"
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "25.0-jre"
+          }
+        },
+        {
+          "group": "cn.hutool",
+          "module": "hutool-all",
+          "version": {
+            "requires": "5.5.8"
+          }
+        },
+        {
+          "group": "com.nepxion",
+          "module": "banner",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "com.github.xiaoymin",
+          "module": "knife4j-spring-boot-starter",
+          "version": {
+            "requires": "3.0.2"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation"
+        }
+      ],
+      "files": [
+        {
+          "name": "tf-spring-boot-starter-0.0.15.jar",
+          "url": "tf-spring-boot-starter-0.0.15.jar",
+          "size": 1695381,
+          "sha512": "bdbba31c25f5612fa2d0e9abcd8780962bd7a8bfcd1c5567b68cff217d6ad33e8c7773c1158eae92393a1a6c0c58a3e2f5005ed603e58d3ccefd22113e5c32bb",
+          "sha256": "cc4dd368aeb6c73a084b7931e989119d131a579f95e8f8ce4ca2534c69a627f9",
+          "sha1": "3d3bfb03627e515ff47653294524b27639227646",
+          "md5": "e2f2a6715d232f48d7baab0322b1e11f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "p6spy",
+          "module": "p6spy"
+        },
+        {
+          "group": "com.alibaba",
+          "module": "fastjson"
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo"
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io"
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok"
+        },
+        {
+          "group": "io.swagger",
+          "module": "swagger-annotations"
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-swagger2"
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3"
+        },
+        {
+          "group": "javax.validation",
+          "module": "validation-api"
+        },
+        {
+          "group": "commons-beanutils",
+          "module": "commons-beanutils"
+        },
+        {
+          "group": "org.reflections",
+          "module": "reflections",
+          "version": {
+            "requires": "0.9.10"
+          }
+        },
+        {
+          "group": "io.springfox",
+          "module": "springfox-bean-validators",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "com.baomidou",
+          "module": "mybatis-plus-boot-starter"
+        },
+        {
+          "group": "com.github.halower",
+          "module": "newbie-spring-boot-api-dto"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator"
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-aop"
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "25.0-jre"
+          }
+        },
+        {
+          "group": "cn.hutool",
+          "module": "hutool-all",
+          "version": {
+            "requires": "5.5.8"
+          }
+        },
+        {
+          "group": "com.nepxion",
+          "module": "banner",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "com.github.xiaoymin",
+          "module": "knife4j-spring-boot-starter",
+          "version": {
+            "requires": "3.0.2"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation"
+        }
+      ],
+      "files": [
+        {
+          "name": "tf-spring-boot-starter-0.0.15.jar",
+          "url": "tf-spring-boot-starter-0.0.15.jar",
+          "size": 1695381,
+          "sha512": "bdbba31c25f5612fa2d0e9abcd8780962bd7a8bfcd1c5567b68cff217d6ad33e8c7773c1158eae92393a1a6c0c58a3e2f5005ed603e58d3ccefd22113e5c32bb",
+          "sha256": "cc4dd368aeb6c73a084b7931e989119d131a579f95e8f8ce4ca2534c69a627f9",
+          "sha1": "3d3bfb03627e515ff47653294524b27639227646",
+          "md5": "e2f2a6715d232f48d7baab0322b1e11f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tf-spring-boot-starter-0.0.15-javadoc.jar",
+          "url": "tf-spring-boot-starter-0.0.15-javadoc.jar",
+          "size": 354533,
+          "sha512": "b9ffe2d944b0cc5623ff14a4801e6224de7f4e341ae23b9fd126c59a9dd491336af34f9d8c96fb2cacba2b389e3b03d046c1cb2a255772d85161f5c2ca7d91e9",
+          "sha256": "da2a8c9aea83b551264a992eef3f323b826e9768bab3ed607686f5305a8ecac5",
+          "sha1": "92d6399761bb6a4a99efb72b3a939740582445e8",
+          "md5": "8ea430ce5ae32c2717f20629b9791cd1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tf-spring-boot-starter-0.0.15-sources.jar",
+          "url": "tf-spring-boot-starter-0.0.15-sources.jar",
+          "size": 1668715,
+          "sha512": "746d748c7f80875effaf6d3aaa509f07e142f5ae2ba30ae3634a97bccc9c37f1c8566d986788109db93a7bd696fb61ee346361d5e2068d4f6fc55e3241142a66",
+          "sha256": "1f9de7c89ed33657d1d170090fdddd3de3bed925f7fa862c529fed96593958af",
+          "sha1": "fd6416d33806c80db55247677dd9364085c5bb4d",
+          "md5": "48b61c218f34dda139b7752b0e028b52"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-boot-mybatis-codegen-plugin",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "sat5mzva65c2dpoeigua5k7ete"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "newbie-boot-mybatis-codegen-plugin-1.0.3.jar",
+          "url": "newbie-boot-mybatis-codegen-plugin-1.0.3.jar",
+          "size": 16494,
+          "sha512": "3a78a84ae42cbcab51898496d756c2af562896eba83aa6cdc4098f064530b4434cbd804fac483743caf55e7b54342fc2ae7837dfcea15bcda62fba6d7d604f3b",
+          "sha256": "b319cad31029f2aea10266ef27e70c92cc04e7f75520970c602292de64f3a237",
+          "sha1": "3b8e3c5dff15800be0f7b1cbb90b9bbe171096bf",
+          "md5": "c08772ac4d1bc7d8fa4e4ad0335cb943"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.microsoft.sqlserver",
+          "module": "sqljdbc4",
+          "version": {
+            "requires": "4.0"
+          }
+        },
+        {
+          "group": "org.postgresql",
+          "module": "postgresql",
+          "version": {
+            "requires": "9.4.1212"
+          }
+        },
+        {
+          "group": "com.oracle",
+          "module": "ojdbc6",
+          "version": {
+            "requires": "11.2.0.3"
+          }
+        },
+        {
+          "group": "com.h2database",
+          "module": "h2",
+          "version": {
+            "requires": "1.4.197"
+          }
+        },
+        {
+          "group": "mysql",
+          "module": "mysql-connector-java",
+          "version": {
+            "requires": "8.0.15"
+          }
+        },
+        {
+          "group": "org.xerial",
+          "module": "sqlite-jdbc",
+          "version": {
+            "requires": "3.27.2.1"
+          }
+        },
+        {
+          "group": "com.dm",
+          "module": "jdbcDriver",
+          "version": {
+            "requires": "18"
+          }
+        },
+        {
+          "group": "com.github.halower",
+          "module": "mybatis-plus-generator",
+          "version": {
+            "requires": "alpha.2.1.3"
+          }
+        },
+        {
+          "group": "org.freemarker",
+          "module": "freemarker",
+          "version": {
+            "requires": "2.3.28"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-boot-mybatis-codegen-plugin-1.0.3.jar",
+          "url": "newbie-boot-mybatis-codegen-plugin-1.0.3.jar",
+          "size": 16494,
+          "sha512": "3a78a84ae42cbcab51898496d756c2af562896eba83aa6cdc4098f064530b4434cbd804fac483743caf55e7b54342fc2ae7837dfcea15bcda62fba6d7d604f3b",
+          "sha256": "b319cad31029f2aea10266ef27e70c92cc04e7f75520970c602292de64f3a237",
+          "sha1": "3b8e3c5dff15800be0f7b1cbb90b9bbe171096bf",
+          "md5": "c08772ac4d1bc7d8fa4e4ad0335cb943"
+        }
+      ]
+    }
+  ]
+}

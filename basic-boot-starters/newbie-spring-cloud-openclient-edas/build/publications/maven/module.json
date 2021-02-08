@@ -1,0 +1,119 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-spring-cloud-openclient-edas",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-cloud-extension-denpendencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter"
+        },
+        {
+          "group": "com.alibaba.edas",
+          "module": "edas-dubbo-extension"
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-alicloud-ans"
+        },
+        {
+          "group": "com.alibaba.cloud",
+          "module": "spring-cloud-starter-acm"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-cloud-openclient-edas-1.0.3.jar",
+          "url": "newbie-spring-cloud-openclient-edas-1.0.3.jar",
+          "size": 261,
+          "sha512": "e8e3bf15dba5a36294fb420658f6e94cb05557bee23f8f85a083f881e7aaa79a618167c3afa63faac20bfa4ac190c11946414b2e26ce501d41cce5f5c3cbd6a7",
+          "sha256": "e138e9a0aaa86c6fd40f834dc4e756abf56cab6134c3f15b84896a3d60ee06da",
+          "sha1": "1e8772fa76219381cbe96b23a9abd117ce4c56b0",
+          "md5": "3819bf740a5a5d34bfa952fee5e82548"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-cloud-extension-denpendencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.apache.dubbo",
+          "module": "dubbo-spring-boot-starter"
+        },
+        {
+          "group": "com.alibaba.edas",
+          "module": "edas-dubbo-extension"
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-alicloud-ans"
+        },
+        {
+          "group": "com.alibaba.cloud",
+          "module": "spring-cloud-starter-acm"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-cloud-openclient-edas-1.0.3.jar",
+          "url": "newbie-spring-cloud-openclient-edas-1.0.3.jar",
+          "size": 261,
+          "sha512": "e8e3bf15dba5a36294fb420658f6e94cb05557bee23f8f85a083f881e7aaa79a618167c3afa63faac20bfa4ac190c11946414b2e26ce501d41cce5f5c3cbd6a7",
+          "sha256": "e138e9a0aaa86c6fd40f834dc4e756abf56cab6134c3f15b84896a3d60ee06da",
+          "sha1": "1e8772fa76219381cbe96b23a9abd117ce4c56b0",
+          "md5": "3819bf740a5a5d34bfa952fee5e82548"
+        }
+      ]
+    }
+  ]
+}

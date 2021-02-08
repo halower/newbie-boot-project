@@ -1,0 +1,99 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-spring-boot-api-dto",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.modelmapper",
+          "module": "modelmapper"
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-boot-api-dto-1.0.3.jar",
+          "url": "newbie-spring-boot-api-dto-1.0.3.jar",
+          "size": 7070,
+          "sha512": "d7c5f3e897f018bb42ece6dc03f9f9dcece4cbd08647ed6015200509445591267c67ad21ca90632171fc5622b55f471719b0106771597d160d34cdb16832ee2a",
+          "sha256": "a2e5b75c1d2b43270da8da93c4819a1241d1dbdf6adef4c460ab1b3966826e1c",
+          "sha1": "405d7770af7d89163e1d1385afe0923aeb2d14aa",
+          "md5": "77bf31943654f370abff710c8a7015e0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "cn.tfswx",
+          "module": "basic-boot-dependencies",
+          "version": {
+            "requires": "1.0.3"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.modelmapper",
+          "module": "modelmapper"
+        }
+      ],
+      "files": [
+        {
+          "name": "newbie-spring-boot-api-dto-1.0.3.jar",
+          "url": "newbie-spring-boot-api-dto-1.0.3.jar",
+          "size": 7070,
+          "sha512": "d7c5f3e897f018bb42ece6dc03f9f9dcece4cbd08647ed6015200509445591267c67ad21ca90632171fc5622b55f471719b0106771597d160d34cdb16832ee2a",
+          "sha256": "a2e5b75c1d2b43270da8da93c4819a1241d1dbdf6adef4c460ab1b3966826e1c",
+          "sha1": "405d7770af7d89163e1d1385afe0923aeb2d14aa",
+          "md5": "77bf31943654f370abff710c8a7015e0"
+        }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,7 @@
  */
 package com.newbie.core.config;
 
+import com.newbie.common.api.JsonResult;
 import com.newbie.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
@@ -42,10 +43,10 @@ public class GlobalReturnConfiguration  implements ResponseBodyAdvice<Object> {
     public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
 
         if (configuration.getAutoPackageReturnClass())  {
-            if (body instanceof ResponseResult) {
+            if (body instanceof JsonResult) {
                 return body;
             }
-            return new ResponseResult(body);
+            return JsonResult.success(body);
         } else {
             return body;
         }

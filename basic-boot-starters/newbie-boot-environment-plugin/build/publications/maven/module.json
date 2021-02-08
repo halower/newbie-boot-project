@@ -1,0 +1,61 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "cn.tfswx",
+    "module": "newbie-boot-environment-plugin",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "s3ed7uzfnnewtf32a7p7uotrha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "newbie-boot-environment-plugin-1.0.3.jar",
+          "url": "newbie-boot-environment-plugin-1.0.3.jar",
+          "size": 11475,
+          "sha512": "3f66ab4b6070539d37545c53429c91f542c34b463cc8162d992ab3c7727324726ae35ef5f016a508703cd1698040c9dc7397b2a3572c30f2f9d4dbe6fe643a48",
+          "sha256": "30a098404ab7d1d65a33f4fc4ffb20babe483f93bf0e08223b3f13ca49b71dcf",
+          "sha1": "c1f9dc37e94f6297bf2bcae191a16582f25f9dc6",
+          "md5": "77fdf14e9189fb2ea58fabed7fd43093"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "newbie-boot-environment-plugin-1.0.3.jar",
+          "url": "newbie-boot-environment-plugin-1.0.3.jar",
+          "size": 11475,
+          "sha512": "3f66ab4b6070539d37545c53429c91f542c34b463cc8162d992ab3c7727324726ae35ef5f016a508703cd1698040c9dc7397b2a3572c30f2f9d4dbe6fe643a48",
+          "sha256": "30a098404ab7d1d65a33f4fc4ffb20babe483f93bf0e08223b3f13ca49b71dcf",
+          "sha1": "c1f9dc37e94f6297bf2bcae191a16582f25f9dc6",
+          "md5": "77fdf14e9189fb2ea58fabed7fd43093"
+        }
+      ]
+    }
+  ]
+}

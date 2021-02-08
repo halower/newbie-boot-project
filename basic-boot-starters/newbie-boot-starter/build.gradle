@@ -16,7 +16,6 @@ dependencies {
     api platform(project(path: ":basic-boot-dependencies"))
     api("p6spy:p6spy")
     api("com.alibaba:fastjson")
-    api("joda-time:joda-time")
     api("org.apache.dubbo:dubbo")
     api("commons-io:commons-io")
     api("org.projectlombok:lombok")
@@ -27,25 +26,41 @@ dependencies {
     api("org.apache.commons:commons-lang3")
     api("javax.validation:validation-api")
     api("commons-beanutils:commons-beanutils")
-    api("io.swagger:swagger-models:1.5.22")
     api 'org.reflections:reflections:0.9.10'
     api("io.springfox:springfox-bean-validators:2.9.2")
     api("com.baomidou:mybatis-plus-boot-starter")
     api("com.github.halower:newbie-spring-boot-api-dto")
-    api("org.springframework.boot:spring-boot-starter-freemarker")
     api("org.springframework.boot:spring-boot-starter-web")
     api("org.springframework.boot:spring-boot-starter-actuator")
-    api("org.springframework.boot:spring-boot-starter-data-jpa")
+    api("org.springframework.boot:spring-boot-starter-aop")
     api("com.google.guava:guava:25.0-jre")
+    api("cn.hutool:hutool-all:5.5.8")
+    api("com.nepxion:banner:1.0.2")
+    api("com.github.xiaoymin:knife4j-spring-boot-starter:3.0.2")
+    api("org.springframework.boot:spring-boot-starter-validation")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.3.1.RELEASE'
-    api("com.github.halower:newbie-spring-boot-swagger-spi")
 }
 
 tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
     options.addStringOption('encoding', 'UTF-8')
     options.addStringOption('charSet', 'UTF-8')
+}
+
+jar {
+    afterEvaluate {
+        manifest {
+            attributes 'Implementation-Version':  "1.0.0(GA)"
+            attributes 'Build-date': new Date()
+            attributes 'Application-Version': project.version
+            attributes 'Built-Gradle': gradle.gradleVersion
+            attributes 'Build-OS': System.getProperty("os.name")
+            attributes 'Built-By': System.getProperty("user.name")
+            attributes 'Build-Jdk': System.getProperty("java.version")
+            attributes 'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
+        }
+    }
 }
 
 java {
@@ -76,7 +91,9 @@ publishing {
     repositories remoteReopsitory
     publications {
         maven(MavenPublication) {
-            artifactId = 'newbie-spring-boot-starter'
+            groupId = 'com.tfswx'
+            artifactId = 'tf-spring-boot-starter'
+            version= '0.0.15'
             from components.java
         }
     }

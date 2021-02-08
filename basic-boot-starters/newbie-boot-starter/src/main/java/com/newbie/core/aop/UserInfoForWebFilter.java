@@ -20,6 +20,7 @@
 package com.newbie.core.aop;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONException;
 import com.newbie.constants.NewbieBootInfraConstants;
 import com.newbie.context.CurrentUserContext;
 import com.newbie.context.UserInfoManager;
@@ -50,23 +51,25 @@ public class UserInfoForWebFilter implements Filter {
         String bmsah = httpRequest.getHeader(bmsahHeader);
         // 备注目前生产环境也没有修改这个变量，因此dev不一定就是开发环境
         // 通过 "X-IDENTITY"来过滤即可
-
-        try{
-            if (StringUtil.isNullOrEmpty(identity)) {
-                bindFormDefaultValue(bmsah);
-                chain.doFilter(request, response);
-            } else {
-                // client object -> JSON.stringify -> base64
-                // server base64 ---> string ----> object
-                String originIdentityStr= StringUtils.newStringUtf8(Base64.decodeBase64(identity));
-                CurrentUserContext userContext = JSON.parseObject(originIdentityStr, CurrentUserContext.class);
+        if (StringUtil.isNullOrEmpty(identity)) {
+            bindFormDefaultValue(bmsah);
+            chain.doFilter(request, response);
+        } else {
+            // client object -> JSON.stringify -> base64
+            // server base64 ---> string ----> object
+            String originIdentityStr = StringUtils.newStringUtf8(Base64.decodeBase64(identity));
+            CurrentUserContext userContext;
+            try {
+                userContext = JSON.parseObject(originIdentityStr, CurrentUserContext.class);
                 userContext.setBmsah(bmsah);
                 UserInfoManager.getInstance().bind(userContext);
                 RpcContext.getContext().setAttachment(NewbieBootInfraConstants.CURRENT_USER_INFO, originIdentityStr);
                 chain.doFilter(request, response);
+            } catch (JSONException e) {
+                log.error("参数解析异常, X-IDENTITY:" + originIdentityStr);
+            } finally {
+                UserInfoManager.getInstance().remove();
             }
-        }finally {
-            UserInfoManager.getInstance().remove();
         }
     }
 
