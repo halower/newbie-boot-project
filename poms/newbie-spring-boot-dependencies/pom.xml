@@ -24,9 +24,9 @@
         <aliyun_sdk_oss_version>2.8.3</aliyun_sdk_oss_version>
         <logstash_version>5.2</logstash_version>
         <freemark_version>2.3.23</freemark_version>
-        <httpclient_version>4.5.7</httpclient_version>
+        <httpclient_version>4.5.13</httpclient_version>
         <joda_time_version>2.5</joda_time_version>
-        <http_client_version>4.5.7</http_client_version>
+        <http_client_version>4.5.13</http_client_version>
         <jlinq_version>1.8.25</jlinq_version>
         <validation_api_version>2.0.1.Final</validation_api_version>
         <jackson_annotations_version>2.9.5</jackson_annotations_version>
