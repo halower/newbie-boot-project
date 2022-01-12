@@ -14,7 +14,7 @@
         <query_dsljpa_version>4.2.1</query_dsljpa_version>
         <query_dslsql_version>4.2.1</query_dslsql_version>
         <lombok_version>1.18.4</lombok_version>
-        <dubbo_version>2.7.7</dubbo_version>
+        <dubbo_version>2.7.15</dubbo_version>
         <modelmapper_version>2.1.0</modelmapper_version>
         <fastjson_version>1.2.75</fastjson_version>
         <spring4all_version>1.9.0.RELEASE</spring4all_version>
